@@ -52,6 +52,7 @@ export function SignInForm() {
           },
           onError: (ctx) => {
             toast.error(ctx.error.message);
+            console.log(ctx.error.message);
             form.reset();
           },
         },
