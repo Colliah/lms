@@ -15,9 +15,29 @@ export async function getPronunciationExercise(params: GetPronunciationParams) {
     });
     const level = profile?.currentLevel || ProficiencyLevel.A1;
 
-    return await prisma.pronunciationExercise.findFirst({
+    const exercise = await prisma.pronunciationExercise.findFirst({
       where: { difficulty: level },
+      select: {
+        id: true,
+        content: true,
+        phonetic: true,
+        audioUrl: true,
+        tips: true,
+      },
     });
+
+    if (!exercise) {
+      return null;
+    }
+
+    // Map 'content' to 'targetPhrase' to match component interface
+    return {
+      id: exercise.id,
+      targetPhrase: exercise.content,
+      phonetic: exercise.phonetic,
+      audioUrl: exercise.audioUrl,
+      tips: exercise.tips,
+    };
   } catch (error) {
     console.error("getPronunciationExercise error:", error);
     throw new Error("Failed to fetch pronunciation exercise");

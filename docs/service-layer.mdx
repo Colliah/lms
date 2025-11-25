@@ -1,0 +1,481 @@
+---
+title: "Service Layer Documentation"
+description: "Business logic and database operations for the LMS"
+---
+
+# Service Layer Documentation
+
+The service layer contains all business logic and database operations, separated from the API layer for better testability and maintainability.
+
+## Architecture Principles
+
+### 1. Separation of Concerns
+- **Services**: Handle business logic, database queries, complex calculations
+- **Actions**: Handle authentication, input validation, error transformation
+
+### 2. Error Handling
+- Services **throw errors** for any failure
+- Actions **catch** and transform errors into user-friendly responses
+- UI displays error messages from action responses
+
+### 3. Type Safety
+- All functions use TypeScript with strict typing
+- RORO pattern (Receive an Object, Return an Object)
+- Import enums from generated Prisma client
+
+---
+
+## Vocabulary Service
+
+File: [`services/vocabulary.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/vocabulary.ts)
+
+### getDailyVocabulary
+
+Fetches due reviews and new words based on user level and progress.
+
+```typescript
+interface GetDailyVocabularyParams {
+  userId: string;
+  maxWords?: number;
+}
+
+interface DailyVocabularyResult {
+  reviews: Array<{
+    word: Word & { audios, images, examples };
+    easeFactor: number;
+    intervalDays: number;
+    nextReviewDate: Date;
+  }>;
+  newWords: Array<Word & { audios, images, examples }>;
+}
+
+export async function getDailyVocabulary(
+  params: GetDailyVocabularyParams
+): Promise<DailyVocabularyResult>
+```
+
+**Logic**:
+1. Fetch words due for review (`nextReviewDate <= now`)
+2. Calculate remaining slots for new words
+3. Fetch new words matching user's proficiency level
+4. Include related data (audio, images, examples)
+5. Limit total to `maxWords` (default: 20)
+
+**Usage**:
+```typescript
+const result = await getDailyVocabulary({ userId: "user_123" });
+```
+
+---
+
+### submitReview
+
+Processes a vocabulary review using the SM-2 spaced repetition algorithm.
+
+```typescript
+interface SubmitReviewParams {
+  userId: string;
+  wordId: string;
+  quality: ReviewQuality; // AGAIN, HARD, GOOD, EASY
+}
+
+interface SubmitReviewResult {
+  nextReviewDate: Date;
+  intervalDays: number;
+  mastered: boolean;
+}
+
+export async function submitReview(
+  params: SubmitReviewParams
+): Promise<SubmitReviewResult>
+```
+
+**SM-2 Algorithm Implementation**:
+
+```typescript
+function calculateSM2(params: SM2Params): SM2Result {
+  const qualityMap = {
+    AGAIN: 0,
+    HARD: 3,
+    GOOD: 4,
+    EASY: 5,
+  };
+  
+  const q = qualityMap[quality];
+  
+  // Calculate new ease factor
+  let newEaseFactor = easeFactor + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+  newEaseFactor = Math.max(1.3, newEaseFactor); // Minimum 1.3
+  
+  // Calculate interval
+  if (q >= 3) {
+    // Successful review
+    if (repetitionCount === 0) newIntervalDays = 1;
+    else if (repetitionCount === 1) newIntervalDays = 6;
+    else newIntervalDays = Math.round(intervalDays * newEaseFactor);
+    newRepetitionCount += 1;
+  } else {
+    // Failed review - reset
+    newIntervalDays = 1;
+    newRepetitionCount = 0;
+  }
+  
+  return {
+    easeFactor: newEaseFactor,
+    intervalDays: newIntervalDays,
+    repetitionCount: newRepetitionCount,
+    nextReviewDate: new Date(Date.now() + newIntervalDays * 86400000),
+  };
+}
+```
+
+**Process**:
+1. Get or create UserWordProgress
+2. Apply SM-2 algorithm based on quality rating
+3. Update progress record
+4. Log review in UserWordReview
+5. Update DailyActivity counters
+6. Mark as mastered if appropriate criteria met
+
+---
+
+### getVocabularyStats
+
+Returns aggregated statistics about user's vocabulary progress.
+
+```typescript
+interface VocabularyStatsResult {
+  totalWords: number;
+  masteredWords: number;
+  learningWords: number;
+  dueReviews: number;
+  accuracyRate: number; // Percentage of GOOD/EASY reviews
+}
+
+export async function getVocabularyStats(
+  params: { userId: string }
+): Promise<VocabularyStatsResult>
+```
+
+**Calculations**:
+- `totalWords`: Count of all UserWordProgress records
+- `masteredWords`: Count where `mastered = true`
+- `dueReviews`: Count where `nextReviewDate <= now`
+- `accuracyRate`: (GOOD + EASY reviews) / total reviews in last 30 days
+
+---
+
+## Progress Service
+
+File: [`services/progress.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/progress.ts)
+
+### calculateStreak
+
+Determines user's current streak with freeze logic.
+
+```typescript
+interface StreakResult {
+  currentStreak: number;
+  longestStreak: number;
+  lastActivityDate: Date | null;
+  freezesAvailable: number;
+}
+
+export async function calculateStreak(
+  params: { userId: string }
+): Promise<StreakResult>
+```
+
+**Streak Logic**:
+```typescript
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const daysSinceActivity = Math.floor(
+  (today.getTime() - lastActivity.getTime()) / 86400000
+);
+
+if (daysSinceActivity > 1 && freezesAvailable > 0) {
+  // Use freeze, maintain streak
+  return updateStreak({ freezesAvailable: -1 });
+} else if (daysSinceActivity > 1) {
+  // Streak broken
+  return updateStreak({ currentStreak: 0 });
+}
+```
+
+---
+
+### getDashboardStats
+
+Aggregates all metrics for the dashboard display.
+
+```typescript
+interface DashboardStatsResult {
+  streak: StreakResult;
+  vocabularyStats: {
+    totalWords: number;
+    masteredWords: number;
+    dueReviews: number;
+  };
+  todayActivity: {
+    wordsLearned: number;
+    wordsReviewed: number;
+    exercisesCompleted: number;
+    totalMinutes: number;
+  };
+  weeklyProgress: Array<{
+    date: string;
+    minutes: number;
+  }>;
+}
+```
+
+**Data Sources**:
+- Streak from `UserStreak`
+- Vocabulary from `UserWordProgress` aggregations
+- Today's activity from `DailyActivity` (today's date)
+- Weekly progress from `DailyActivity` (last 7 days)
+
+---
+
+### logStudySession
+
+Records a study session and updates related metrics.
+
+```typescript
+interface LogStudySessionParams {
+  userId: string;
+  module: string; // "vocabulary", "grammar", etc.
+  duration: number; // minutes
+}
+
+export async function logStudySession(
+  params: LogStudySessionParams
+): Promise<{ success: boolean }>
+```
+
+**Process**:
+1. Create `StudySession` record
+2. Update `DailyActivity.totalMinutes`
+3. Call `incrementStreak` to update streak
+
+---
+
+## Grammar Service
+
+File: [`services/grammar.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/grammar.ts)
+
+### getExercisesByTopic
+
+```typescript
+interface GetExercisesByTopicParams {
+  topicId: string;
+  difficulty?: ProficiencyLevel;
+}
+
+export async function getExercisesByTopic(
+  params: GetExercisesByTopicParams
+)
+```
+
+Returns exercises with questions, but **excludes** `correctAnswer` and `explanation` from question data.
+
+---
+
+### submitExercise
+
+```typescript
+interface SubmitExerciseParams {
+  userId: string;
+  exerciseId: string;
+  answers: Record<string, string>; // questionId -> answer
+}
+
+interface SubmitExerciseResult {
+  score: number;
+  feedback: Record<string, {
+    isCorrect: boolean;
+    explanation: string;
+    correctAnswer: string;
+  }>;
+  completed: boolean;
+}
+```
+
+**Grading Logic**:
+1. Fetch exercise with all questions
+2. Compare user answers to correct answers
+3. Calculate score percentage
+4. Generate feedback for each question
+5. Save submission and update progress
+6. Mark completed if score >= 70%
+
+---
+
+## Reading Service
+
+File: [`services/reading.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/reading.ts)
+
+### getPassageByLevel
+
+```typescript
+interface GetPassageParams {
+  userId: string;
+  level?: ProficiencyLevel;
+}
+
+export async function getPassageByLevel(
+  params: GetPassageParams
+)
+```
+
+**Logic**:
+1. Get user's current level from profile if not provided
+2. Find passages the user hasn't completed
+3. Return passage at appropriate difficulty level
+4. Include questions (without answers)
+
+---
+
+### submitReadingAnswers
+
+```typescript
+interface SubmitReadingParams {
+  userId: string;
+  passageId: string;
+  answers: Record<string, string>;
+  readingTimeSeconds: number;
+}
+
+export async function submitReadingAnswers(
+  params: SubmitReadingParams
+): Promise<{
+  score: number;
+  completed: boolean;
+  wordsPerMinute: number;
+}>
+```
+
+**Calculations**:
+- `score`: (correct answers / total questions) * 100
+- `wordsPerMinute`: (wordCount / readingTimeSeconds) * 60
+- `completed`: score >= 70
+
+Updates `UserReadingProgress` and `DailyActivity`.
+
+---
+
+## Writing Service
+
+File: [`services/writing.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/writing.ts)
+
+### getWritingPrompt
+
+Returns a prompt matching user's level and optional type filter.
+
+### submitWriting
+
+```typescript
+interface SubmitWritingParams {
+  userId: string;
+  promptId: string;
+  content: string;
+}
+
+export async function submitWriting(
+  params: SubmitWritingParams
+)
+```
+
+**Process**:
+1. Calculate word count from content
+2. Create `UserWriting` record
+3. Generate placeholder `WritingFeedback` (for AI integration)
+4. Update `DailyActivity.writingCount`
+
+---
+
+## Speaking Service
+
+File: [`services/speaking.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/speaking.ts)
+
+### submitPronunciation
+
+```typescript
+interface SubmitPronunciationParams {
+  userId: string;
+  exerciseId: string;
+  recordingUrl: string;
+}
+
+export async function submitPronunciation(
+  params: SubmitPronunciationParams
+)
+```
+
+Currently uses placeholder scoring. In production, integrate with speech recognition API.
+
+---
+
+## Analytics Service
+
+File: [`services/analytics.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/services/analytics.ts)
+
+### generateAnalyticsSnapshot
+
+Creates daily performance snapshot across all modules.
+
+```typescript
+export async function generateAnalyticsSnapshot(
+  params: { userId: string }
+)
+```
+
+**Metrics Calculated**:
+- `vocabularyMastery`: % of words mastered
+- `grammarAccuracy`: Average grammar exercise score
+- `readingSpeed`: Average WPM
+- `timeSpent`: Total daily minutes
+
+---
+
+## Service Layer Best Practices
+
+### 1. Always Use Transactions for Complex Operations
+```typescript
+await prisma.$transaction(async (tx) => {
+  await tx.userWordProgress.update(...);
+  await tx.userWordReview.create(...);
+  await tx.dailyActivity.upsert(...);
+});
+```
+
+### 2. Validate Input Before Database Operations
+```typescript
+if (!userId || !wordId) {
+  throw new Error("Missing required parameters");
+}
+```
+
+### 3. Use Descriptive Error Messages
+```typescript
+throw new Error("Failed to fetch vocabulary: user not found");
+```
+
+### 4. Return Structured Data
+```typescript
+return {
+  success: true,
+  data: { ... },
+  meta: { ... }
+};
+```
+
+### 5. Log Errors for Debugging
+```typescript
+catch (error) {
+  console.error("serviceFunctionName error:", error);
+  throw new Error("User-friendly error message");
+}
+```

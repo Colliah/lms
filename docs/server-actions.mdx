@@ -1,0 +1,599 @@
+---
+title: "Server Actions API Documentation"
+description: "Next.js Server Actions for secure, type-safe API endpoints"
+---
+
+# Server Actions API Documentation
+
+Server Actions provide the API layer for the LMS, handling authentication, input validation, and error transformation.
+
+## Architecture
+
+### Layer Responsibilities
+
+```
+┌─────────────────────────────────────┐
+│         UI Components               │
+│  (Client Components & Pages)        │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│       Server Actions                │
+│  • Authentication Check             │
+│  • Input Validation (Future: Zod)  │
+│  • Call Service Functions           │
+│  • Transform Errors                 │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│       Service Layer                 │
+│  • Business Logic                   │
+│  • Database Operations              │
+│  • Complex Calculations             │
+└─────────────────────────────────────┘
+```
+
+---
+
+## Standard Action Pattern
+
+All server actions follow this consistent pattern:
+
+```typescript
+"use server";
+
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
+import { serviceFunction } from "@/services/module";
+
+export async function actionName(data: {
+  param1: string;
+  param2: number;
+}) {
+  try {
+    // 1. Authentication Check
+    const session = await auth.api.getSession({
+      headers: await headers(),
+    });
+
+    if (!session) {
+      return { success: false, error: "Unauthorized" };
+    }
+
+    // 2. Call Service Layer
+    const result = await serviceFunction({
+      userId: session.user.id,
+      ...data,
+    });
+
+    // 3. Return Success Response
+    return { success: true, data: result };
+    
+  } catch (error) {
+    // 4. Error Handling
+    console.error("actionName error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Operation failed"
+    };
+  }
+}
+```
+
+---
+
+## Response Format
+
+All actions return a discriminated union type:
+
+```typescript
+type ActionResponse<T> =
+  | { success: true; data: T }
+  | { success: false; error: string };
+```
+
+**Success Response**:
+```typescript
+{
+  success: true,
+  data: {
+    // Type-safe data matching service function return
+  }
+}
+```
+
+**Error Response**:
+```typescript
+{
+  success: false,
+  error: "Human-readable error message"
+}
+```
+
+---
+
+## Vocabulary Actions
+
+File: [`app/actions/vocabulary.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/vocabulary.ts)
+
+### fetchDailyVocabularyAction
+
+```typescript
+export async function fetchDailyVocabularyAction()
+```
+
+**Returns**: Daily words and reviews for authenticated user.
+
+**Usage**:
+```typescript
+const result = await fetchDailyVocabularyAction();
+
+if (result.success) {
+  const { reviews, newWords } = result.data;
+  // Render flashcards
+} else {
+  // Show error: result.error
+}
+```
+
+---
+
+### submitVocabularyReviewAction
+
+```typescript
+export async function submitVocabularyReviewAction(data: {
+  wordId: string;
+  quality: ReviewQuality;
+})
+```
+
+**Process**:
+1. Authenticates user
+2. Calls `submitReview` service
+3. Returns next review date and interval
+
+**Example**:
+```typescript
+const result = await submitVocabularyReviewAction({
+  wordId: "word_123",
+  quality: ReviewQuality.GOOD,
+});
+
+if (result.success) {
+  console.log(`Next review: ${result.data.nextReviewDate}`);
+}
+```
+
+---
+
+### getVocabularyStatsAction
+
+```typescript
+export async function getVocabularyStatsAction()
+```
+
+Returns aggregated vocabulary statistics for dashboard display.
+
+---
+
+## Progress Actions
+
+File: [`app/actions/progress.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/progress.ts)
+
+### getDashboardStatsAction
+
+```typescript
+export async function getDashboardStatsAction()
+```
+
+Fetches all dashboard metrics in a single call:
+- Streak information
+- Vocabulary stats
+- Today's activity
+- Weekly progress chart data
+
+**Usage in Server Component**:
+```typescript
+// app/(root)/page.tsx
+export default async function DashboardPage() {
+  const result = await getDashboardStatsAction();
+  
+  if (!result.success) {
+    return <ErrorDisplay message={result.error} />;
+  }
+  
+  return <Dashboard data={result.data} />;
+}
+```
+
+---
+
+### logStudySessionAction
+
+```typescript
+export async function logStudySessionAction(data: {
+  module: string;
+  duration: number; // minutes
+})
+```
+
+Records a completed study session.
+
+**Example**:
+```typescript
+// When user finishes vocabulary review
+await logStudySessionAction({
+  module: "vocabulary",
+  duration: 15,
+});
+```
+
+---
+
+### checkInAction
+
+```typescript
+export async function checkInAction()
+```
+
+Manually increments user's streak (for streak freeze feature).
+
+---
+
+## Grammar Actions
+
+File: [`app/actions/grammar.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/grammar.ts)
+
+### fetchGrammarExercisesAction
+
+```typescript
+export async function fetchGrammarExercisesAction(data: {
+  topicId: string;
+  difficulty?: ProficiencyLevel;
+})
+```
+
+Fetches exercises for a topic. Questions exclude correct answers.
+
+---
+
+### submitGrammarExerciseAction
+
+```typescript
+export async function submitGrammarExerciseAction(data: {
+  exerciseId: string;
+  answers: Record<string, string>;
+})
+```
+
+**Returns**:
+```typescript
+{
+  score: number;
+  feedback: Record<string, {
+    isCorrect: boolean;
+    explanation: string;
+    correctAnswer: string;
+  }>;
+  completed: boolean;
+}
+```
+
+**Client Usage**:
+```typescript
+const result = await submitGrammarExerciseAction({
+  exerciseId: "ex_123",
+  answers: {
+    "q1": "Option A",
+    "q2": "is",
+  },
+});
+
+if (result.success) {
+  const { score, feedback, completed } = result.data;
+  // Display results
+}
+```
+
+---
+
+## Reading Actions
+
+File: [`app/actions/reading.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/reading.ts)
+
+### fetchReadingPassageAction
+
+```typescript
+export async function fetchReadingPassageAction(data?: {
+  level?: ProficiencyLevel;
+})
+```
+
+Fetches a reading passage appropriate for user's level.
+
+---
+
+### submitReadingAnswersAction
+
+```typescript
+export async function submitReadingAnswersAction(data: {
+  passageId: string;
+  answers: Record<string, string>;
+  readingTimeSeconds: number;
+})
+```
+
+**Returns**:
+```typescript
+{
+  score: number;
+  completed: boolean;
+  wordsPerMinute: number;
+}
+```
+
+---
+
+## Writing Actions
+
+File: [`app/actions/writing.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/writing.ts)
+
+### fetchWritingPromptAction
+
+```typescript
+export async function fetchWritingPromptAction(data?: {
+  type?: WritingType;
+})
+```
+
+Returns a writing prompt for the user's level.
+
+---
+
+### submitWritingAction
+
+```typescript
+export async function submitWritingAction(data: {
+  promptId: string;
+  content: string;
+})
+```
+
+Submits user's writing and generates AI feedback (placeholder).
+
+---
+
+## Speaking Actions
+
+File: [`app/actions/speaking.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/speaking.ts)
+
+### fetchPronunciationExerciseAction
+
+```typescript
+export async function fetchPronunciationExerciseAction()
+```
+
+Returns a pronunciation exercise for user's level.
+
+---
+
+### submitPronunciationAction
+
+```typescript
+export async function submitPronunciationAction(data: {
+  exerciseId: string;
+  recordingUrl: string;
+})
+```
+
+**Note**: In production, you'd upload the audio file to cloud storage (S3, Cloudinary) first, then submit the URL.
+
+---
+
+## Analytics Actions
+
+File: [`app/actions/analytics.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/analytics.ts)
+
+### getDetailedAnalyticsAction
+
+```typescript
+export async function getDetailedAnalyticsAction()
+```
+
+Returns analytics snapshots and weakness areas.
+
+---
+
+### generateAnalyticsSnapshotAction
+
+```typescript
+export async function generateAnalyticsSnapshotAction()
+```
+
+Manually triggers snapshot generation (usually done automatically).
+
+---
+
+## User Profile Actions
+
+File: [`app/actions/user-profile.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/user-profile.ts)
+
+### saveOnboardingAction
+
+```typescript
+export async function saveOnboardingAction(data: {
+  currentLevel: ProficiencyLevel;
+  goals: LearningGoal[];
+  interests: string[];
+  dailyCommitment: number;
+  learningStyle: LearningStyle;
+})
+```
+
+Saves user's onboarding preferences.
+
+---
+
+### updatePreferencesAction
+
+```typescript
+export async function updatePreferencesAction(data: {
+  emailNotifications?: boolean;
+  pushNotifications?: boolean;
+  dailyReminder?: boolean;
+  reminderTime?: string;
+  soundEffects?: boolean;
+  autoPlayAudio?: boolean;
+  showTranslations?: boolean;
+  interfaceLanguage?: string;
+  translationLanguage?: string;
+})
+```
+
+Updates user preferences.
+
+---
+
+## Error Handling Best Practices
+
+### 1. Catch Service Errors
+```typescript
+try {
+  const result = await serviceFunction(params);
+  return { success: true, data: result };
+} catch (error) {
+  return {
+    success: false,
+    error: error instanceof Error ? error.message : "Unknown error"
+  };
+}
+```
+
+### 2. Log Errors for Debugging
+```typescript
+catch (error) {
+  console.error("actionName error:", error);
+  return { success: false, error: "User-friendly message" };
+}
+```
+
+### 3. Type-Safe Error Messages
+```typescript
+// Bad
+return { success: false, error: error };
+
+// Good
+return {
+  success: false,
+  error: error instanceof Error ? error.message : "Operation failed"
+};
+```
+
+---
+
+## Client-Side Usage Patterns
+
+### In Server Components
+```typescript
+// Direct call (no state management needed)
+export default async function Page() {
+  const result = await fetchDataAction();
+  
+  if (!result.success) {
+    return <Error message={result.error} />;
+  }
+  
+  return <Display data={result.data} />;
+}
+```
+
+### In Client Components
+```typescript
+"use client";
+
+import { useState } from "react";
+import { submitAction } from "@/app/actions/module";
+
+export default function Component() {
+  const [isLoading, setIsLoading] = useState(false);
+  
+  async function handleSubmit() {
+    setIsLoading(true);
+    const result = await submitAction(data);
+    
+    if (result.success) {
+      // Handle success
+    } else {
+      // Show error: result.error
+    }
+    setIsLoading(false);
+  }
+  
+  return <button onClick={handleSubmit}>Submit</button>;
+}
+```
+
+### With React Transition
+```typescript
+"use client";
+
+import { useTransition } from "react";
+
+export default function Component() {
+  const [isPending, startTransition] = useTransition();
+  
+  function handleAction() {
+    startTransition(async () => {
+      const result = await actionName();
+      // Handle result
+    });
+  }
+}
+```
+
+---
+
+## Future Enhancements
+
+### Add Input Validation with Zod
+```typescript
+import { z } from "zod";
+
+const schema = z.object({
+  wordId: z.string().cuid(),
+  quality: z.nativeEnum(ReviewQuality),
+});
+
+export async function submitReview(data: unknown) {
+  const validated = schema.parse(data);
+  // Use validated data
+}
+```
+
+### Add Rate Limiting
+```typescript
+import { rateLimit } from "@/lib/rate-limit";
+
+export async function actionName(data: Params) {
+  const { success } = await rateLimit.check(userId);
+  if (!success) {
+    return { success: false, error: "Too many requests" };
+  }
+  // Continue...
+}
+```
+
+### Add Caching
+```typescript
+import { unstable_cache } from "next/cache";
+
+export const getCachedData = unstable_cache(
+  async (userId: string) => {
+    return await fetchData(userId);
+  },
+  ["cache-key"],
+  { revalidate: 3600 }
+);
+```
