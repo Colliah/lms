@@ -1,8 +1,6 @@
 import { Suspense } from "react";
-import {
-  getDashboardStatsAction,
-  getVocabularyStatsAction,
-} from "@/actions/progress";
+import { getDashboardStatsAction } from "@/actions/progress";
+import { getVocabularyStatsAction } from "@/actions/vocabulary";
 import QuickActions from "@/components/dashboard/quick-actions";
 import StatsCards from "@/components/dashboard/stats-cards";
 import WeeklyChart from "@/components/dashboard/weekly-chart";
