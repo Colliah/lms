@@ -36,6 +36,16 @@ async function DashboardContent() {
     );
   }
 
+  if (!dashboardResult.data || !vocabResult.data) {
+    return (
+      <div className="container mx-auto py-8">
+        <div className="rounded-lg border border-destructive bg-destructive/10 p-6">
+          <p className="text-destructive">No data available</p>
+        </div>
+      </div>
+    );
+  }
+
   const { streak, todayActivity, weeklyProgress } = dashboardResult.data;
   const vocabularyStats = vocabResult.data;
 
