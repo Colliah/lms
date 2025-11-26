@@ -1,4 +1,4 @@
-import { fetchWritingPromptAction } from "@/app/actions/writing";
+import { fetchWritingPromptAction } from "@/actions/writing";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import WritingEditor from "@/components/writing/writing-editor";
 

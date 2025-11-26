@@ -1,4 +1,4 @@
-import { fetchPronunciationExerciseAction } from "@/app/actions/speaking";
+import { fetchPronunciationExerciseAction } from "@/actions/speaking";
 import PronunciationPractice from "@/components/speaking/pronunciation-practice";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 

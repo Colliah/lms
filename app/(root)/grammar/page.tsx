@@ -1,4 +1,4 @@
-import { fetchGrammarExercisesAction } from "@/app/actions/grammar";
+import { fetchGrammarExercisesAction } from "@/actions/grammar";
 import GrammarExerciseInterface from "@/components/grammar/grammar-exercise-interface";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 

@@ -4,7 +4,7 @@ import { ArrowLeft, Clock } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { submitReadingAnswersAction } from "@/app/actions/reading";
+import { submitReadingAnswersAction } from "@/actions/reading";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";

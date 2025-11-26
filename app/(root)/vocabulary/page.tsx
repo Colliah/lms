@@ -1,4 +1,4 @@
-import { fetchDailyVocabularyAction } from "@/app/actions/vocabulary";
+import { fetchDailyVocabularyAction } from "@/actions/vocabulary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import VocabularyLearning from "@/components/vocabulary/vocabulary-learning";
 

@@ -138,7 +138,7 @@ export function AppSidebar() {
                 asChild
                 isActive={pathname.startsWith("/docs")}
               >
-                <Link href="/docs">
+                <Link href="/docs/introduction">
                   <BookText />
                   <span>Documentation</span>
                 </Link>

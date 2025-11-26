@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { submitGrammarExerciseAction } from "@/app/actions/grammar";
+import { submitGrammarExerciseAction } from "@/actions/grammar";
 import type { ExerciseType } from "@/app/generated/prisma/enums";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

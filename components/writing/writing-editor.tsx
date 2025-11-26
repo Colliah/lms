@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { submitWritingAction } from "@/app/actions/writing";
+import { submitWritingAction } from "@/actions/writing";
 import type { WritingType } from "@/app/generated/prisma/enums";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

@@ -1,4 +1,4 @@
-import { fetchReadingPassageAction } from "@/app/actions/reading";
+import { fetchReadingPassageAction } from "@/actions/reading";
 import ReadingPassageInterface from "@/components/reading/reading-passage-interface";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 

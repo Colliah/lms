@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { submitVocabularyReviewAction } from "@/app/actions/vocabulary";
+import { submitVocabularyReviewAction } from "@/actions/vocabulary";
 import type { ReviewQuality } from "@/app/generated/prisma/enums";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";

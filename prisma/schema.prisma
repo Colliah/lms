@@ -134,18 +134,19 @@ enum LearningStyle {
 }
 
 model UserProfile {
-  id              String           @id @default(cuid())
-  userId          String           @unique
-  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
-  currentLevel    ProficiencyLevel @default(A1)
-  goals           LearningGoal[]
-  interests       String[] // Topics the user is interested in
-  dailyCommitment Int              @default(15) // Minutes per day
-  learningStyle   LearningStyle    @default(MIXED)
-  onboardingDone  Boolean          @default(false)
-  assessmentScore Int? // Initial assessment score
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
+  id                    String            @id @default(cuid())
+  userId                String            @unique
+  user                  User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  currentLevel          ProficiencyLevel  @default(A1)
+  targetLevel           ProficiencyLevel?
+  goals                 LearningGoal[] // User's learning goals
+  interests             String[] // Array of topics interested in
+  dailyCommitment       Int               @default(15) // Minutes per day
+  learningStyle         LearningStyle     @default(READING_WRITING)
+  onboardingCompleted   Boolean           @default(false)
+  onboardingCompletedAt DateTime?
+  createdAt             DateTime          @default(now())
+  updatedAt             DateTime          @updatedAt
 
   @@map("user_profile")
 }

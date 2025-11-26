@@ -1,5 +1,5 @@
-import { getDashboardStatsAction } from "@/app/actions/progress";
-import { getVocabularyStatsAction } from "@/app/actions/vocabulary";
+import { getDashboardStatsAction } from "@/actions/progress";
+import { getVocabularyStatsAction } from "@/actions/vocabulary";
 import QuickActions from "@/components/dashboard/quick-actions";
 
 import StatsCards from "@/components/dashboard/stats-cards";

@@ -4,7 +4,7 @@ import { ArrowLeft, Mic, Volume2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { submitPronunciationAction } from "@/app/actions/speaking";
+import { submitPronunciationAction } from "@/actions/speaking";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
