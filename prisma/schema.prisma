@@ -28,29 +28,30 @@ model User {
   updatedAt           DateTime  @default(now()) @updatedAt
   phoneNumber         String?
   phoneNumberVerified Boolean?
+  role                UserRole  @default(USER)
   username            String?
   displayUsername     String?
   sessions            Session[]
   accounts            Account[]
 
   // Extended relations
-  profile              UserProfile?
-  preferences          UserPreferences?
-  wordProgress         UserWordProgress[]
-  wordReviews          UserWordReview[]
-  grammarProgress      UserGrammarProgress[]
-  grammarSubmissions   UserGrammarSubmission[]
-  streak               UserStreak?
-  achievements         UserAchievement[]
-  dailyActivities      DailyActivity[]
-  studySessions        StudySession[]
-  readingProgress      UserReadingProgress[]
-  savedVocabulary      SavedVocabulary[]
-  writings             UserWriting[]
-  pronunciations       UserPronunciation[]
-  analyticsSnapshots   AnalyticsSnapshot[]
-  learningPaths        LearningPath[]
-  weaknessAreas        WeaknessArea[]
+  profile            UserProfile?
+  preferences        UserPreferences?
+  wordProgress       UserWordProgress[]
+  wordReviews        UserWordReview[]
+  grammarProgress    UserGrammarProgress[]
+  grammarSubmissions UserGrammarSubmission[]
+  streak             UserStreak?
+  achievements       UserAchievement[]
+  dailyActivities    DailyActivity[]
+  studySessions      StudySession[]
+  readingProgress    UserReadingProgress[]
+  savedVocabulary    SavedVocabulary[]
+  writings           UserWriting[]
+  pronunciations     UserPronunciation[]
+  analyticsSnapshots AnalyticsSnapshot[]
+  learningPaths      LearningPath[]
+  weaknessAreas      WeaknessArea[]
 
   @@unique([email])
   @@unique([phoneNumber])
@@ -133,37 +134,37 @@ enum LearningStyle {
 }
 
 model UserProfile {
-  id               String           @id @default(cuid())
-  userId           String           @unique
-  user             User             @relation(fields: [userId], references: [id], onDelete: Cascade)
-  currentLevel     ProficiencyLevel @default(A1)
-  goals            LearningGoal[]
-  interests        String[] // Topics the user is interested in
-  dailyCommitment  Int              @default(15) // Minutes per day
-  learningStyle    LearningStyle    @default(MIXED)
-  onboardingDone   Boolean          @default(false)
-  assessmentScore  Int? // Initial assessment score
-  createdAt        DateTime         @default(now())
-  updatedAt        DateTime         @updatedAt
+  id              String           @id @default(cuid())
+  userId          String           @unique
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  currentLevel    ProficiencyLevel @default(A1)
+  goals           LearningGoal[]
+  interests       String[] // Topics the user is interested in
+  dailyCommitment Int              @default(15) // Minutes per day
+  learningStyle   LearningStyle    @default(MIXED)
+  onboardingDone  Boolean          @default(false)
+  assessmentScore Int? // Initial assessment score
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
 
   @@map("user_profile")
 }
 
 model UserPreferences {
-  id                    String   @id @default(cuid())
-  userId                String   @unique
-  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  emailNotifications    Boolean  @default(true)
-  pushNotifications     Boolean  @default(true)
-  dailyReminder         Boolean  @default(true)
-  reminderTime          String   @default("09:00") // Format: "HH:MM"
-  soundEffects          Boolean  @default(true)
-  autoPlayAudio         Boolean  @default(true)
-  showTranslations      Boolean  @default(true)
-  interfaceLanguage     String   @default("en")
-  translationLanguage   String   @default("vi") // Vietnamese default
-  createdAt             DateTime @default(now())
-  updatedAt             DateTime @updatedAt
+  id                  String   @id @default(cuid())
+  userId              String   @unique
+  user                User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  emailNotifications  Boolean  @default(true)
+  pushNotifications   Boolean  @default(true)
+  dailyReminder       Boolean  @default(true)
+  reminderTime        String   @default("09:00") // Format: "HH:MM"
+  soundEffects        Boolean  @default(true)
+  autoPlayAudio       Boolean  @default(true)
+  showTranslations    Boolean  @default(true)
+  interfaceLanguage   String   @default("en")
+  translationLanguage String   @default("vi") // Vietnamese default
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
 
   @@map("user_preferences")
 }
@@ -186,21 +187,21 @@ enum PartOfSpeech {
 }
 
 model Word {
-  id               String             @id @default(cuid())
-  word             String             @unique
-  translation      String // Primary translation
-  phonetic         String? // IPA pronunciation
-  difficulty       ProficiencyLevel
-  partOfSpeech     PartOfSpeech
-  definition       String // English definition
-  createdAt        DateTime           @default(now())
-  updatedAt        DateTime           @updatedAt
-  categories       WordCategory[]
-  audios           WordAudio[]
-  images           WordImage[]
-  examples         ExampleSentence[]
-  userProgress     UserWordProgress[]
-  savedByUsers     SavedVocabulary[]
+  id           String             @id @default(cuid())
+  word         String             @unique
+  translation  String // Primary translation
+  phonetic     String? // IPA pronunciation
+  difficulty   ProficiencyLevel
+  partOfSpeech PartOfSpeech
+  definition   String // English definition
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+  categories   WordCategory[]
+  audios       WordAudio[]
+  images       WordImage[]
+  examples     ExampleSentence[]
+  userProgress UserWordProgress[]
+  savedByUsers SavedVocabulary[]
 
   @@index([difficulty])
   @@index([word])
@@ -257,25 +258,25 @@ enum ReviewQuality {
 }
 
 model UserWordProgress {
-  id              String           @id @default(cuid())
-  userId          String
-  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
-  wordId          String
-  word            Word             @relation(fields: [wordId], references: [id], onDelete: Cascade)
-  
+  id     String @id @default(cuid())
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  wordId String
+  word   Word   @relation(fields: [wordId], references: [id], onDelete: Cascade)
+
   // SM-2 Algorithm fields
-  easeFactor      Float            @default(2.5) // Ranges from 1.3 to 2.5+
-  intervalDays    Int              @default(0) // Days until next review
-  repetitionCount Int              @default(0) // Number of successful reviews
+  easeFactor      Float    @default(2.5) // Ranges from 1.3 to 2.5+
+  intervalDays    Int      @default(0) // Days until next review
+  repetitionCount Int      @default(0) // Number of successful reviews
   nextReviewDate  DateTime
-  
+
   // Status
-  mastered        Boolean          @default(false) // 21 days interval reached
-  lastReviewed    DateTime?
-  
-  createdAt       DateTime         @default(now())
-  updatedAt       DateTime         @updatedAt
-  reviews         UserWordReview[]
+  mastered     Boolean   @default(false) // 21 days interval reached
+  lastReviewed DateTime?
+
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+  reviews   UserWordReview[]
 
   @@unique([userId, wordId])
   @@index([userId, nextReviewDate])
@@ -283,13 +284,13 @@ model UserWordProgress {
 }
 
 model UserWordReview {
-  id         String            @id @default(cuid())
+  id         String           @id @default(cuid())
   userId     String
-  user       User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
   progressId String
-  progress   UserWordProgress  @relation(fields: [progressId], references: [id], onDelete: Cascade)
+  progress   UserWordProgress @relation(fields: [progressId], references: [id], onDelete: Cascade)
   quality    ReviewQuality
-  reviewedAt DateTime          @default(now())
+  reviewedAt DateTime         @default(now())
 
   @@index([userId, reviewedAt])
   @@map("user_word_review")
@@ -319,13 +320,13 @@ enum ExerciseType {
 }
 
 model GrammarExercise {
-  id          String                 @id @default(cuid())
+  id          String                  @id @default(cuid())
   topicId     String
-  topic       GrammarTopic           @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  topic       GrammarTopic            @relation(fields: [topicId], references: [id], onDelete: Cascade)
   title       String
   description String?
   difficulty  ProficiencyLevel
-  createdAt   DateTime               @default(now())
+  createdAt   DateTime                @default(now())
   questions   GrammarQuestion[]
   progress    UserGrammarProgress[]
   submissions UserGrammarSubmission[]
@@ -335,32 +336,32 @@ model GrammarExercise {
 }
 
 model GrammarQuestion {
-  id             String         @id @default(cuid())
-  exerciseId     String
-  exercise       GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
-  type           ExerciseType
-  question       String
-  options        String[] // For multiple choice
-  correctAnswer  String
-  explanation    String
-  orderIndex     Int // Question order in exercise
+  id            String          @id @default(cuid())
+  exerciseId    String
+  exercise      GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  type          ExerciseType
+  question      String
+  options       String[] // For multiple choice
+  correctAnswer String
+  explanation   String
+  orderIndex    Int // Question order in exercise
 
   @@index([exerciseId])
   @@map("grammar_question")
 }
 
 model UserGrammarProgress {
-  id               String          @id @default(cuid())
-  userId           String
-  user             User            @relation(fields: [userId], references: [id], onDelete: Cascade)
-  exerciseId       String
-  exercise         GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
-  completed        Boolean         @default(false)
-  score            Int? // Percentage
-  attemptsCount    Int             @default(0)
-  lastAttemptAt    DateTime?
-  createdAt        DateTime        @default(now())
-  updatedAt        DateTime        @updatedAt
+  id            String          @id @default(cuid())
+  userId        String
+  user          User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exerciseId    String
+  exercise      GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  completed     Boolean         @default(false)
+  score         Int? // Percentage
+  attemptsCount Int             @default(0)
+  lastAttemptAt DateTime?
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
 
   @@unique([userId, exerciseId])
   @@index([userId, completed])
@@ -368,15 +369,15 @@ model UserGrammarProgress {
 }
 
 model UserGrammarSubmission {
-  id           String          @id @default(cuid())
-  userId       String
-  user         User            @relation(fields: [userId], references: [id], onDelete: Cascade)
-  exerciseId   String
-  exercise     GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
-  answers      Json // Map of questionId -> userAnswer
-  score        Int // Percentage
-  feedback     Json // Map of questionId -> isCorrect and explanation
-  submittedAt  DateTime        @default(now())
+  id          String          @id @default(cuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exerciseId  String
+  exercise    GrammarExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  answers     Json // Map of questionId -> userAnswer
+  score       Int // Percentage
+  feedback    Json // Map of questionId -> isCorrect and explanation
+  submittedAt DateTime        @default(now())
 
   @@index([userId, submittedAt])
   @@map("user_grammar_submission")
@@ -387,15 +388,15 @@ model UserGrammarSubmission {
 // ============================================================
 
 model UserStreak {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  currentStreak     Int      @default(0)
-  longestStreak     Int      @default(0)
-  lastActivityDate  DateTime?
-  freezesAvailable  Int      @default(0) // Streak freeze items
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  id               String    @id @default(cuid())
+  userId           String    @unique
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  currentStreak    Int       @default(0)
+  longestStreak    Int       @default(0)
+  lastActivityDate DateTime?
+  freezesAvailable Int       @default(0) // Streak freeze items
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
 
   @@map("user_streak")
 }
@@ -437,19 +438,19 @@ model UserAchievement {
 }
 
 model DailyActivity {
-  id              String   @id @default(cuid())
-  userId          String
-  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  date            DateTime @db.Date
-  wordsLearned    Int      @default(0)
-  wordsReviewed   Int      @default(0)
-  exercisesCount  Int      @default(0)
-  readingCount    Int      @default(0)
-  writingCount    Int      @default(0)
-  speakingCount   Int      @default(0)
-  totalMinutes    Int      @default(0)
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date           DateTime @db.Date
+  wordsLearned   Int      @default(0)
+  wordsReviewed  Int      @default(0)
+  exercisesCount Int      @default(0)
+  readingCount   Int      @default(0)
+  writingCount   Int      @default(0)
+  speakingCount  Int      @default(0)
+  totalMinutes   Int      @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
 
   @@unique([userId, date])
   @@index([userId, date])
@@ -457,12 +458,12 @@ model DailyActivity {
 }
 
 model StudySession {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   module    String // "vocabulary", "grammar", "reading", etc.
   duration  Int // Minutes
-  startedAt DateTime @default(now())
+  startedAt DateTime  @default(now())
   endedAt   DateTime?
 
   @@index([userId, startedAt])
@@ -474,48 +475,48 @@ model StudySession {
 // ============================================================
 
 model ReadingPassage {
-  id          String                @id @default(cuid())
-  title       String
-  content     String                @db.Text
-  difficulty  ProficiencyLevel
-  topics      String[] // e.g., ["technology", "travel"]
-  wordCount   Int
-  audioUrl    String? // Optional narration
-  createdAt   DateTime              @default(now())
-  questions   ReadingQuestion[]
-  progress    UserReadingProgress[]
+  id         String                @id @default(cuid())
+  title      String
+  content    String                @db.Text
+  difficulty ProficiencyLevel
+  topics     String[] // e.g., ["technology", "travel"]
+  wordCount  Int
+  audioUrl   String? // Optional narration
+  createdAt  DateTime              @default(now())
+  questions  ReadingQuestion[]
+  progress   UserReadingProgress[]
 
   @@index([difficulty])
   @@map("reading_passage")
 }
 
 model ReadingQuestion {
-  id        String         @id @default(cuid())
-  passageId String
-  passage   ReadingPassage @relation(fields: [passageId], references: [id], onDelete: Cascade)
-  question  String
-  options   String[] // For multiple choice
-  answer    String
+  id          String         @id @default(cuid())
+  passageId   String
+  passage     ReadingPassage @relation(fields: [passageId], references: [id], onDelete: Cascade)
+  question    String
+  options     String[] // For multiple choice
+  answer      String
   explanation String?
-  orderIndex Int
+  orderIndex  Int
 
   @@index([passageId])
   @@map("reading_question")
 }
 
 model UserReadingProgress {
-  id            String         @id @default(cuid())
-  userId        String
-  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  passageId     String
-  passage       ReadingPassage @relation(fields: [passageId], references: [id], onDelete: Cascade)
-  completed     Boolean        @default(false)
-  answers       Json? // Map of questionId -> answer
-  score         Int? // Percentage
-  readingTime   Int? // Seconds
+  id             String         @id @default(cuid())
+  userId         String
+  user           User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  passageId      String
+  passage        ReadingPassage @relation(fields: [passageId], references: [id], onDelete: Cascade)
+  completed      Boolean        @default(false)
+  answers        Json? // Map of questionId -> answer
+  score          Int? // Percentage
+  readingTime    Int? // Seconds
   wordsPerMinute Int? // Calculated WPM
-  completedAt   DateTime?
-  createdAt     DateTime       @default(now())
+  completedAt    DateTime?
+  createdAt      DateTime       @default(now())
 
   @@unique([userId, passageId])
   @@index([userId, completed])
@@ -523,13 +524,13 @@ model UserReadingProgress {
 }
 
 model SavedVocabulary {
-  id        String   @id @default(cuid())
-  userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  wordId    String
-  word      Word     @relation(fields: [wordId], references: [id], onDelete: Cascade)
-  context   String? // The sentence where user found the word
-  savedAt   DateTime @default(now())
+  id      String   @id @default(cuid())
+  userId  String
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  wordId  String
+  word    Word     @relation(fields: [wordId], references: [id], onDelete: Cascade)
+  context String? // The sentence where user found the word
+  savedAt DateTime @default(now())
 
   @@unique([userId, wordId])
   @@index([userId, savedAt])
@@ -550,16 +551,21 @@ enum WritingType {
   ARGUMENTATIVE
 }
 
+enum UserRole {
+  USER
+  ADMIN
+}
+
 model WritingPrompt {
-  id          String                @id @default(cuid())
+  id          String           @id @default(cuid())
   type        WritingType
   difficulty  ProficiencyLevel
   title       String
-  prompt      String                @db.Text
+  prompt      String           @db.Text
   guidelines  String? // Tips or structure guidance
-  minWords    Int                   @default(50)
-  maxWords    Int                   @default(500)
-  createdAt   DateTime              @default(now())
+  minWords    Int              @default(50)
+  maxWords    Int              @default(500)
+  createdAt   DateTime         @default(now())
   submissions UserWriting[]
 
   @@index([difficulty, type])
@@ -567,15 +573,15 @@ model WritingPrompt {
 }
 
 model UserWriting {
-  id         String         @id @default(cuid())
-  userId     String
-  user       User           @relation(fields: [userId], references: [id], onDelete: Cascade)
-  promptId   String
-  prompt     WritingPrompt  @relation(fields: [promptId], references: [id], onDelete: Cascade)
-  content    String         @db.Text
-  wordCount  Int
-  submittedAt DateTime      @default(now())
-  feedback   WritingFeedback?
+  id          String           @id @default(cuid())
+  userId      String
+  user        User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  promptId    String
+  prompt      WritingPrompt    @relation(fields: [promptId], references: [id], onDelete: Cascade)
+  content     String           @db.Text
+  wordCount   Int
+  submittedAt DateTime         @default(now())
+  feedback    WritingFeedback?
 
   @@index([userId, submittedAt])
   @@map("user_writing")
@@ -618,15 +624,15 @@ model PronunciationExercise {
 }
 
 model UserPronunciation {
-  id          String                 @id @default(cuid())
-  userId      String
-  user        User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  exerciseId  String
-  exercise    PronunciationExercise  @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  id           String                @id @default(cuid())
+  userId       String
+  user         User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exerciseId   String
+  exercise     PronunciationExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
   recordingUrl String // User's recording
-  score       Int? // 0-100 accuracy score
-  feedback    String? // What to improve
-  attemptedAt DateTime               @default(now())
+  score        Int? // 0-100 accuracy score
+  feedback     String? // What to improve
+  attemptedAt  DateTime              @default(now())
 
   @@index([userId, attemptedAt])
   @@map("user_pronunciation")
@@ -651,17 +657,17 @@ model ConversationScenario {
 // ============================================================
 
 model AnalyticsSnapshot {
-  id                String   @id @default(cuid())
-  userId            String
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  date              DateTime @db.Date
-  vocabularyMastery Int // Percentage
-  grammarAccuracy   Int // Percentage
-  readingSpeed      Int // WPM
-  writingScore      Int // Average score
+  id                 String   @id @default(cuid())
+  userId             String
+  user               User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date               DateTime @db.Date
+  vocabularyMastery  Int // Percentage
+  grammarAccuracy    Int // Percentage
+  readingSpeed       Int // WPM
+  writingScore       Int // Average score
   pronunciationScore Int // Average score
-  timeSpent         Int // Minutes
-  createdAt         DateTime @default(now())
+  timeSpent          Int // Minutes
+  createdAt          DateTime @default(now())
 
   @@unique([userId, date])
   @@index([userId, date])
@@ -682,15 +688,15 @@ model LearningPath {
 }
 
 model WeaknessArea {
-  id          String   @id @default(cuid())
-  userId      String
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  category    String // "vocabulary", "grammar", "pronunciation"
+  id           String    @id @default(cuid())
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  category     String // "vocabulary", "grammar", "pronunciation"
   specificArea String // e.g., "past_tense", "prepositions"
-  severity    Int // 1-10
-  suggestions String[]
-  identifiedAt DateTime @default(now())
-  resolvedAt  DateTime?
+  severity     Int // 1-10
+  suggestions  String[]
+  identifiedAt DateTime  @default(now())
+  resolvedAt   DateTime?
 
   @@index([userId, category, resolvedAt])
   @@map("weakness_area")

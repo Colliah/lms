@@ -3,6 +3,7 @@
 import {
   BookMarked,
   BookOpen,
+  BookText,
   FileText,
   GraduationCap,
   LayoutDashboard,
@@ -24,6 +25,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { authClient } from "@/lib/auth-client";
 
 const mainNav = [
   {
@@ -71,6 +73,8 @@ const settingsNav = [
 
 export function AppSidebar() {
   const pathname = usePathname();
+  const { data: session } = authClient.useSession();
+  const isAdmin = session?.user?.role === "ADMIN";
 
   return (
     <Sidebar>
@@ -128,6 +132,19 @@ export function AppSidebar() {
               </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
+          {isAdmin && (
+            <SidebarMenuItem>
+              <SidebarMenuButton
+                asChild
+                isActive={pathname.startsWith("/docs")}
+              >
+                <Link href="/docs">
+                  <BookText />
+                  <span>Documentation</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          )}
         </SidebarMenu>
       </SidebarFooter>
     </Sidebar>
