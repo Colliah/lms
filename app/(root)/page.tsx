@@ -1,81 +1,73 @@
-import { getDashboardStatsAction } from "@/actions/progress";
-import { getVocabularyStatsAction } from "@/actions/vocabulary";
+import { Suspense } from "react";
+import {
+  getDashboardStatsAction,
+  getVocabularyStatsAction,
+} from "@/actions/progress";
 import QuickActions from "@/components/dashboard/quick-actions";
-
 import StatsCards from "@/components/dashboard/stats-cards";
 import WeeklyChart from "@/components/dashboard/weekly-chart";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { DashboardSkeleton } from "@/components/skeletons/dashboard-skeleton";
 
-export default async function DashboardPage() {
+async function DashboardContent() {
   const [dashboardResult, vocabResult] = await Promise.all([
     getDashboardStatsAction(),
     getVocabularyStatsAction(),
   ]);
 
-  if (!dashboardResult.success || !vocabResult.success) {
+  if (!dashboardResult.success) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <Card className="max-w-md">
-          <CardHeader>
-            <CardTitle>Error Loading Dashboard</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              {dashboardResult.error ||
-                vocabResult.error ||
-                "Failed to load dashboard data"}
-            </p>
-          </CardContent>
-        </Card>
+      <div className="container mx-auto py-8">
+        <div className="rounded-lg border border-destructive bg-destructive/10 p-6">
+          <p className="text-destructive">
+            Failed to load dashboard: {dashboardResult.error}
+          </p>
+        </div>
       </div>
     );
   }
 
-  // Extract data after success check with proper type narrowing
-  const { data: dashboard } = dashboardResult;
-  const { data: vocabStats } = vocabResult;
-
-  // Additional safety check (should never happen after success check)
-  if (!dashboard || !vocabStats) {
+  if (!vocabResult.success) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <Card className="max-w-md">
-          <CardHeader>
-            <CardTitle>Error Loading Dashboard</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              Failed to load dashboard data
-            </p>
-          </CardContent>
-        </Card>
+      <div className="container mx-auto py-8">
+        <div className="rounded-lg border border-destructive bg-destructive/10 p-6">
+          <p className="text-destructive">
+            Failed to load vocabulary stats: {vocabResult.error}
+          </p>
+        </div>
       </div>
     );
   }
+
+  const { streak, todayActivity, weeklyProgress } = dashboardResult.data;
+  const vocabularyStats = vocabResult.data;
 
   return (
-    <div className="container mx-auto py-8 px-4 space-y-8">
-      <div className="space-y-2">
-        <h1 className="text-4xl font-bold tracking-tight">Dashboard</h1>
+    <div className="container mx-auto py-8 space-y-6">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <p className="text-muted-foreground">
-          Track your learning progress and continue your journey
+          Welcome back! Here's your learning progress.
         </p>
       </div>
 
       <StatsCards
-        streak={dashboard.streak}
-        vocabularyStats={vocabStats}
-        todayActivity={dashboard.todayActivity}
+        streak={streak}
+        vocabularyStats={vocabularyStats}
+        todayActivity={todayActivity}
       />
 
-      <div className="grid gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <WeeklyChart data={dashboard.weeklyProgress} />
-        </div>
-        <div>
-          <QuickActions vocabStats={vocabStats} />
-        </div>
+      <div className="grid gap-6 lg:grid-cols-2">
+        <WeeklyChart data={weeklyProgress} />
+        <QuickActions vocabStats={vocabularyStats} />
       </div>
     </div>
+  );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<DashboardSkeleton />}>
+      <DashboardContent />
+    </Suspense>
   );
 }

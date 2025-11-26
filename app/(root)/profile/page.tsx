@@ -1,38 +1,45 @@
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+"use client";
+
+import { useState } from "react";
+import { AchievementShowcase } from "@/components/profile/achievement-showcase";
+import { ProfileInfo } from "@/components/profile/profile-info";
+import ProfilePreferences from "@/components/profile/profile-preferences";
+import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function ProfilePage() {
-  return (
-    <div className="container mx-auto py-8 px-4">
-      <div className="space-y-6">
-        <div className="space-y-2">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Profile & Settings
-          </h1>
-          <p className="text-muted-foreground">
-            Manage your learning preferences and view progress
-          </p>
-        </div>
+  const [activeTab, setActiveTab] = useState("info");
 
-        <Card className="max-w-2xl">
-          <CardHeader>
-            <CardTitle>User Profile</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-muted-foreground">
-              Profile settings and achievement gallery will be available soon.
-            </p>
-            <Link href="/">
-              <Button variant="outline">
-                <ArrowRight className="h-4 w-4 mr-2" />
-                Back to Dashboard
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
+  return (
+    <div className="container mx-auto py-8 space-y-6">
+      <div>
+        <h1 className="text-3xl font-bold tracking-tight">Profile</h1>
+        <p className="text-muted-foreground">
+          Manage your profile, preferences, and achievements
+        </p>
       </div>
+
+      <Separator />
+
+      <Tabs value={activeTab} onValueChange={setActiveTab}>
+        <TabsList>
+          <TabsTrigger value="info">Personal Info</TabsTrigger>
+          <TabsTrigger value="preferences">Preferences</TabsTrigger>
+          <TabsTrigger value="achievements">Achievements</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="info" className="space-y-6 mt-6">
+          <ProfileInfo />
+        </TabsContent>
+
+        <TabsContent value="preferences" className="space-y-6 mt-6">
+          <ProfilePreferences />
+        </TabsContent>
+
+        <TabsContent value="achievements" className="space-y-6 mt-6">
+          <AchievementShowcase />
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }

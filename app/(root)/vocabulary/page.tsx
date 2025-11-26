@@ -1,54 +1,60 @@
+import { Suspense } from "react";
 import { fetchDailyVocabularyAction } from "@/actions/vocabulary";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { VocabularySkeleton } from "@/components/skeletons/vocabulary-skeleton";
 import VocabularyLearning from "@/components/vocabulary/vocabulary-learning";
 
-export default async function VocabularyPage() {
+async function VocabularyContent() {
   const result = await fetchDailyVocabularyAction();
 
   if (!result.success || !result.data) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <Card className="max-w-md">
-          <CardHeader>
-            <CardTitle>Error Loading Vocabulary</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              {result.error || "Failed to load vocabulary"}
-            </p>
-          </CardContent>
-        </Card>
+      <div className="container mx-auto py-8 flex items-center justify-center min-h-[400px]">
+        <div className="rounded-lg border border-destructive bg-destructive/10 p-6 max-w-md">
+          <p className="text-destructive">
+            Failed to load vocabulary:{" "}
+            {result.success ? "No data available" : result.error}
+          </p>
+        </div>
       </div>
     );
   }
 
   const { reviews, newWords } = result.data;
-  const allWords = [
-    ...reviews.map((r) => ({ ...r.word, isReview: true, progressId: r.id })),
-    ...newWords.map((w) => ({ ...w, isReview: false })),
-  ];
+
+  // Transform reviews to flatten the nested word structure and add isReview flag
+  const reviewWords = reviews.map((review) => ({
+    ...review.word,
+    isReview: true,
+  }));
+
+  // Add isReview flag to new words
+  const newWordsWithFlag = newWords.map((word) => ({
+    ...word,
+    isReview: false,
+  }));
+
+  const allWords = [...reviewWords, ...newWordsWithFlag];
 
   if (allWords.length === 0) {
     return (
-      <div className="flex min-h-screen items-center justify-center">
-        <Card className="max-w-md">
-          <CardHeader>
-            <CardTitle>All Caught Up! 🎉</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground">
-              You've completed all your reviews for today. Great job! Come back
-              tomorrow for more words.
-            </p>
-          </CardContent>
-        </Card>
+      <div className="container mx-auto py-8 flex items-center justify-center min-h-[400px]">
+        <div className="text-center space-y-2">
+          <h2 className="text-2xl font-bold">All caught up!</h2>
+          <p className="text-muted-foreground">
+            No words due for review right now. Check back later!
+          </p>
+        </div>
       </div>
     );
   }
 
+  return <VocabularyLearning words={allWords} />;
+}
+
+export default function VocabularyPage() {
   return (
-    <div className="container mx-auto py-8 px-4">
-      <VocabularyLearning words={allWords} />
-    </div>
+    <Suspense fallback={<VocabularySkeleton />}>
+      <VocabularyContent />
+    </Suspense>
   );
 }

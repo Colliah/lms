@@ -28,7 +28,7 @@ export async function completeOnboardingAction(data: CompleteOnboardingParams) {
       return { success: false, error: "Unauthorized" };
     }
 
-    // Create or update user profile
+    // Create or update user profile with goals
     await prisma.userProfile.upsert({
       where: { userId: session.user.id },
       create: {
@@ -52,14 +52,23 @@ export async function completeOnboardingAction(data: CompleteOnboardingParams) {
       },
     });
 
-    // Initialize user streak
+    // Create or update user preferences
+    await prisma.userPreferences.upsert({
+      where: { userId: session.user.id },
+      create: {
+        userId: session.user.id,
+      },
+      update: {},
+    });
+
+    // Initialize user streak with 2 free freezes
     await prisma.userStreak.upsert({
       where: { userId: session.user.id },
       create: {
         userId: session.user.id,
         currentStreak: 0,
         longestStreak: 0,
-        freezesAvailable: 2, // Give 2 free streak freezes to new users
+        freezesAvailable: 2,
       },
       update: {},
     });

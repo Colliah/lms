@@ -23,6 +23,7 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 - [x] Grammar, Reading, Writing, Speaking models
 - [x] Progress tracking and gamification models
 - [x] Analytics and reporting models
+- [x] User role system (USER, ADMIN)
 
 #### 1.2 Service Layer
 - [x] Vocabulary service with SM-2 algorithm
@@ -39,13 +40,14 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 - [x] Vocabulary actions (daily fetch, review submission)
 - [x] Progress actions (dashboard stats, logging)
 - [x] User profile actions (onboarding, preferences)
+- [x] Profile actions (update profile, fetch achievements)
 - [x] Grammar, Reading, Writing, Speaking actions
 - [x] Analytics actions
 
 #### 1.4 Core UI Components
 - [x] Dashboard with stats cards and charts
 - [x] Vocabulary flashcard system
-- [x] Navigation sidebar
+- [x] Navigation sidebar with role-based access
 - [x] Grammar exercise interface
 - [x] Reading comprehension interface
 - [x] Writing editor
@@ -58,31 +60,81 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 - [x] Writing prompts
 - [x] Achievement definitions
 
+#### 1.6 Documentation
+- [x] Database schema documentation
+- [x] Service layer documentation
+- [x] Server actions API documentation
+- [x] UI components documentation
+- [x] Setup and deployment guide
+- [x] Introduction document
+- [x] Implementation plan
+
 ---
 
-### Phase 2: Polish & Enhancement 🚧
+### Phase 2.1: User Experience ✅
 
-**Timeline**: Weeks 5-8  
-**Status**: IN PROGRESS
+**Timeline**: Week 5  
+**Status**: COMPLETED
 
-#### 2.1 User Experience
-- [ ] Onboarding flow with level assessment
-- [ ] User preferences management
-- [ ] Profile customization
-- [ ] Tutorial tooltips and help system
-- [ ] Loading states and skeleton screens
-- [ ] Error boundaries and graceful error handling
-- [ ] Toast notifications for actions
+#### Onboarding Flow
+- [x] Multi-step wizard (5 screens)
+- [x] Welcome screen with feature highlights
+- [x] Level assessment quiz (5 questions, auto-calculation)
+- [x] Learning goals selection (multi-select)
+- [x] Study schedule configuration (slider 5-120 min)
+- [x] Learning style identification
+- [x] Completion screen with auto-save
+- [x] Onboarding server action
+- [x] Progress indicator component
+- [x] Session storage state management
 
-#### 2.2 Content Expansion
-- [ ] Expand vocabulary to 2000+ words
+#### User Preferences Management
+- [x] Comprehensive preferences page
+- [x] Notification settings (email, push, daily reminders with time)
+- [x] Learning preferences (sound effects, auto-play audio, translations)
+- [x] Language settings (interface and translation languages)
+- [x] Preferences server actions (fetch & update)
+- [x] Toast notifications for save feedback
+
+#### Profile Customization
+- [x] Tab-based profile organization (Info, Preferences, Achievements)
+- [x] Avatar display with initials fallback
+- [x] Display name editor
+- [x] Email display (read-only)
+- [x] Bio field (500 character limit)
+- [x] Edit/Save/Cancel workflow with unsaved changes detection
+- [x] Achievement showcase with earned badges
+- [x] Profile server actions
+
+#### UI Enhancements
+- [x] Loading states with skeleton screens (Dashboard, Vocabulary)
+- [x] Global error boundary component
+- [x] Toast notifications (Sonner library)
+- [x] Confirmation dialogs (ConfirmDialog component)
+- [x] Tutorial tooltips with localStorage persistence
+- [x] Suspense integration for async data fetching
+
+---
+
+### Phase 2.2: Content Expansion 📅
+
+**Timeline**: Week 6  
+**Status**: PLANNED
+
+- [ ] Expand vocabulary database to 2000+ words
 - [ ] Add 100+ grammar exercises
 - [ ] Create 50+ reading passages
 - [ ] Design 30+ writing prompts
 - [ ] Add pronunciation exercises
 - [ ] Create conversation scenarios
 
-#### 2.3 Advanced Features
+---
+
+### Phase 2.3: Advanced Features 📅
+
+**Timeline**: Week 7  
+**Status**: PLANNED
+
 - [ ] Saved vocabulary lists
 - [ ] Custom study sessions
 - [ ] Spaced repetition scheduler visualization
@@ -91,20 +143,34 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 - [ ] Achievement unlock animations
 - [ ] Leaderboards (optional)
 
-#### 2.4 Mobile Responsiveness
+---
+
+### Phase 2.4: Mobile Responsiveness 📅
+
+**Timeline**: Week 7-8  
+**Status**: PLANNED
+
 - [ ] Optimize layouts for mobile (320px+)
 - [ ] Touch-friendly interactions
 - [ ] Mobile navigation drawer
 - [ ] Progressive Web App (PWA) setup
 - [ ] Offline functionality basics
 
-#### 2.5 Performance Optimization
-- [ ] Implement React Query for caching
-- [ ] Add page-level caching strategies
-- [ ] Optimize images and assets
+---
+
+### Phase 2.5: Performance Optimization 📅
+
+**Timeline**: Week 8  
+**Status**: PLANNED
+
+- [ ] TanStack Query integration for client-side data fetching
+- [ ] Optimistic updates for user actions
+- [ ] Background refetching for fresh data
+- [ ] Query invalidation strategies
+- [ ] Page-level caching strategies
+- [ ] Image optimization
 - [ ] Code splitting for large components
 - [ ] Database query optimization
-- [ ] Connection pooling setup
 
 ---
 
@@ -115,276 +181,31 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 
 #### 3.1 AI-Powered Features
 - [ ] Writing feedback with GPT-4
-  - Grammar error detection
-  - Vocabulary suggestions
-  - Structure analysis
-  - Tone and style feedback
 - [ ] Speech recognition for pronunciation
-  - Web Speech API integration
-  - Phoneme-level analysis
-  - Intonation feedback
 - [ ] Intelligent content recommendations
 - [ ] Adaptive difficulty adjustment
-- [ ] Personalized study plan generation
 
 #### 3.2 Advanced Analytics
 - [ ] Learning velocity tracking
 - [ ] Retention curve visualization
-- [ ] Predictive performance modeling
-- [ ] Comparative analytics (peer comparison)
+- [ ] Historical trend analysis (charts)
 - [ ] Export reports (PDF, CSV)
-- [ ] Historical trend analysis
-
-#### 3.3 Content Intelligence
-- [ ] Automatic difficulty classification
-- [ ] Related content suggestions
-- [ ] Dynamic exercise generation
-- [ ] Context-aware vocabulary selection
-- [ ] Reading level assessment
-
----
-
-### Phase 4: Community & Social Features 📅
-
-**Timeline**: Weeks 13-16  
-**Status**: PLANNED
-
-#### 4.1 Social Learning
-- [ ] Study groups
-- [ ] Peer challenges
-- [ ] Shared vocabulary lists
-- [ ] Discussion forums
-- [ ] User profiles (public/private)
-- [ ] Following system
-
-#### 4.2 Collaborative Features
-- [ ] Peer review for writing
-- [ ] Community-created content
-- [ ] Study partner matching
-- [ ] Group study sessions
-- [ ] Shared progress milestones
-
-#### 4.3 Competitive Elements
-- [ ] Weekly challenges
-- [ ] Achievement comparisons
-- [ ] Leaderboards (vocabulary, streaks)
-- [ ] Tournaments and events
-- [ ] Rewards and badges
-
----
-
-### Phase 5: Platform Expansion 📅
-
-**Timeline**: Weeks 17-20  
-**Status**: PLANNED
-
-#### 5.1 Mobile Apps
-- [ ] React Native setup
-- [ ] iOS app development
-- [ ] Android app development
-- [ ] Push notifications
-- [ ] Offline sync
-- [ ] App Store deployment
-
-#### 5.2 Additional Content Types
-- [ ] Video lessons
-- [ ] Audio podcasts
-- [ ] Interactive dialogues
-- [ ] Cultural content
-- [ ] Business English modules
-- [ ] Test preparation (IELTS, TOEFL)
-
-#### 5.3 Teacher/Admin Portal
-- [ ] Content management system
-- [ ] Student progress monitoring
-- [ ] Assignment creation
-- [ ] Grading interface
-- [ ] Class management
-- [ ] Bulk operations
-
-#### 5.4 Integrations
-- [ ] Google Classroom
-- [ ] Microsoft Teams
-- [ ] Zoom for live sessions
-- [ ] Calendar sync
-- [ ] Email notifications
-- [ ] Zapier automation
-
----
-
-## Technical Implementation Details
-
-### Database Migrations Strategy
-
-**Development**:
-```bash
-bun run db:push  # Fast schema updates
-```
-
-**Production**:
-```bash
-bunx prisma migrate deploy  # Safe migrations
-```
-
-**Rollback Plan**:
-- Maintain migration history
-- Test migrations on staging
-- Backup before production deployment
-
-### Deployment Pipeline
-
-1. **CI/CD Setup**:
-   - GitHub Actions for automated testing
-   - Vercel for preview deployments
-   - Production deployment on merge to main
-
-2. **Environments**:
-   - **Development**: Local + Prisma Postgres
-   - **Staging**: Vercel + Neon Database
-   - **Production**: Vercel + Supabase/Neon
-
-3. **Monitoring**:
-   - Sentry for error tracking
-   - Vercel Analytics for performance
-   - PostHog for user behavior
-   - Uptime monitoring
-
-### Testing Strategy
-
-**Unit Tests** (Services):
-```bash
-bun test services/
-```
-
-**Integration Tests** (API):
-```bash
-bun test app/actions/
-```
-
-**E2E Tests** (User Flows):
-```bash
-bunx playwright test
-```
-
-**Coverage Goals**:
-- Services: 80%+
-- Actions: 70%+
-- Components: 60%+
-
-### Performance Targets
-
-- **First Contentful Paint**: < 1.5s
-- **Time to Interactive**: < 3.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-- **API Response Time**: < 200ms (p95)
-
-### Security Measures
-
-- [ ] Rate limiting on server actions
-- [ ] Input validation with Zod
-- [ ] SQL injection prevention (Prisma)
-- [ ] XSS protection (React escaping)
-- [ ] CSRF tokens (Next.js built-in)
-- [ ] Secure headers configuration
-- [ ] Regular dependency updates
-- [ ] Security audit reviews
-
----
-
-## Resource Requirements
-
-### Development Team
-- 1 Full-Stack Developer (Phase 1-2)
-- 1 Frontend Specialist (Phase 2-3)
-- 1 AI/ML Engineer (Phase 3)
-- 1 Mobile Developer (Phase 5)
-- 1 Content Creator (Ongoing)
-
-### Infrastructure
-- PostgreSQL database (Managed service)
-- Vercel hosting (Pro plan)
-- Cloud storage (S3/Cloudinary) for media
-- Email service (SendGrid/Postmark)
-- AI API credits (OpenAI/Anthropic)
-
-### Third-Party Services
-- Better Auth (Authentication)
-- Stripe (Payments - future)
-- Sentry (Error tracking)
-- PostHog (Analytics)
-- Vercel (Hosting + Analytics)
-
----
-
-## Success Metrics
-
-### User Engagement
-- Daily Active Users (DAU)
-- Weekly Active Users (WAU)
-- Average session duration
-- Streak retention rate
-- Module completion rates
-
-### Learning Outcomes
-- Vocabulary retention rate
-- Grammar accuracy improvement
-- Reading speed increase
-- Writing quality scores
-- Pronunciation accuracy
-
-### Platform Health
-- API response times
-- Error rates
-- Uptime percentage
-- Page load performance
-- User satisfaction (NPS)
-
----
-
-## Risk Mitigation
-
-### Technical Risks
-- **Database Performance**: Implement caching, connection pooling
-- **Scalability**: Design for horizontal scaling from day 1
-- **Data Loss**: Regular backups, point-in-time recovery
-- **Security Breaches**: Regular audits, penetration testing
-
-### Product Risks
-- **Low User Engagement**: Gamification, social features
-- **Content Quality**: Review process, user feedback
-- **Feature Creep**: Strict prioritization, MVP-first approach
-- **Competition**: Focus on unique value (SM-2, AI feedback)
-
----
-
-## Timeline Summary
-
-| Phase | Duration | Key Deliverables | Status |
-|-------|----------|------------------|--------|
-| Phase 1 | Weeks 1-4 | Core features, MVP | ✅ Complete |
-| Phase 2 | Weeks 5-8 | Polish, content expansion | 🚧 In Progress |
-| Phase 3 | Weeks 9-12 | AI integration, analytics | 📅 Planned |
-| Phase 4 | Weeks 13-16 | Social features | 📅 Planned |
-| Phase 5 | Weeks 17-20 | Platform expansion | 📅 Planned |
 
 ---
 
 ## Next Immediate Steps
 
-1. ✅ Complete core UI components
-2. ✅ Implement all learning modules
-3. ✅ Create comprehensive documentation
-4. 🎯 Build onboarding flow
-5. 🎯 Expand vocabulary database to 2000+ words
-6. 🎯 Add user preferences and customization
-7. 🎯 Implement achievement unlock system
-8. 🎯 Optimize mobile experience
-9. 🎯 Set up production deployment
-10. 🎯 Launch beta testing program
+1. ✅ Complete Phase 1 (Foundation)
+2. ✅ Complete Phase 2.1 (User Experience)
+3. 🎯 Phase 2.2: Content expansion (2000+ vocabulary words)
+4. 🎯 Phase 2.5: TanStack Query integration
+5. 🎯 Phase 2.4: Mobile responsiveness
+6. 🎯 Phase 3.1: AI writing feedback integration
+7. 🎯 Production deployment setup
+8. 🎯 Beta testing program launch
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: January 2025  
+**Document Version**: 2.0  
+**Last Updated**: November 2025  
 **Status**: Living Document (Updated Weekly)
