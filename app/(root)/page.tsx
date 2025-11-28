@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { getDashboardStatsAction } from "@/actions/progress";
 import { getVocabularyStatsAction } from "@/actions/vocabulary";
+import { WordOfTheDay } from "@/components/ai/word-of-day";
 import QuickActions from "@/components/dashboard/quick-actions";
 import StatsCards from "@/components/dashboard/stats-cards";
 import WeeklyChart from "@/components/dashboard/weekly-chart";
@@ -57,6 +58,9 @@ async function DashboardContent() {
           Welcome back! Here's your learning progress.
         </p>
       </div>
+
+      {/* Word of the Day */}
+      <WordOfTheDay />
 
       <StatsCards
         streak={streak}

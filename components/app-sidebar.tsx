@@ -9,6 +9,7 @@ import {
   LayoutDashboard,
   Mic,
   Pencil,
+  Sparkles,
   User,
 } from "lucide-react";
 import Link from "next/link";
@@ -60,6 +61,11 @@ const learningNav = [
     title: "Speaking",
     url: "/speaking",
     icon: Mic,
+  },
+  {
+    title: "AI Quiz",
+    url: "/quiz",
+    icon: Sparkles,
   },
 ];
 

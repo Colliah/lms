@@ -6,9 +6,11 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { submitWritingAction } from "@/actions/writing";
 import type { WritingType } from "@/app/generated/prisma/enums";
+import { GrammarChecker } from "@/components/ai/grammar-checker";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 
 interface Prompt {
@@ -91,41 +93,54 @@ export default function WritingEditor({ prompt }: WritingEditorProps) {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle>Your Response</CardTitle>
-                <div className="flex items-center gap-2">
-                  <span
-                    className={`text-sm ${
-                      isValid ? "text-green-600" : "text-muted-foreground"
-                    }`}
-                  >
-                    {wordCount} words
-                  </span>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <Textarea
-                placeholder="Start writing your response here..."
-                value={content}
-                onChange={(e) => setContent(e.target.value)}
-                className="min-h-[400px] resize-none text-base"
-                disabled={isSubmitting}
-              />
-            </CardContent>
-          </Card>
+          <Tabs defaultValue="write">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="write">Write</TabsTrigger>
+              <TabsTrigger value="grammar">Grammar Check</TabsTrigger>
+            </TabsList>
 
-          <div className="flex justify-end">
-            <Button
-              onClick={handleSubmit}
-              disabled={isSubmitting || !isValid || wordCount === 0}
-              size="lg"
-            >
-              {isSubmitting ? "Submitting..." : "Submit Writing"}
-            </Button>
-          </div>
+            <TabsContent value="write" className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Your Response</CardTitle>
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`text-sm ${
+                          isValid ? "text-green-600" : "text-muted-foreground"
+                        }`}
+                      >
+                        {wordCount} words
+                      </span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <Textarea
+                    placeholder="Start writing your response here..."
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
+                    className="min-h-[400px] resize-none text-base"
+                    disabled={isSubmitting}
+                  />
+                </CardContent>
+              </Card>
+
+              <div className="flex justify-end">
+                <Button
+                  onClick={handleSubmit}
+                  disabled={isSubmitting || !isValid || wordCount === 0}
+                  size="lg"
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Writing"}
+                </Button>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="grammar">
+              <GrammarChecker initialText={content} onTextChange={setContent} />
+            </TabsContent>
+          </Tabs>
         </>
       ) : (
         <Card>

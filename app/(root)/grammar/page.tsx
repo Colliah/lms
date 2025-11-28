@@ -5,9 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default async function GrammarPage({
   searchParams,
 }: {
-  searchParams: { topicId?: string };
+  searchParams: Promise<{ topicId?: string }>;
 }) {
-  const topicId = searchParams.topicId;
+  const topicId = (await searchParams).topicId;
 
   if (!topicId) {
     return (

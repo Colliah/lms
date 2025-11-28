@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { fetchDailyVocabularyAction } from "@/actions/vocabulary";
+import { PronunciationPractice } from "@/components/ai/pronunciation-practice";
 import { VocabularySkeleton } from "@/components/skeletons/vocabulary-skeleton";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import VocabularyLearning from "@/components/vocabulary/vocabulary-learning";
 
 async function VocabularyContent() {
@@ -48,7 +50,30 @@ async function VocabularyContent() {
     );
   }
 
-  return <VocabularyLearning words={allWords} />;
+  // Get first word for pronunciation practice
+  const firstWord = allWords[0];
+
+  return (
+    <div className="container mx-auto py-8 px-4">
+      <Tabs defaultValue="flashcards">
+        <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-6">
+          <TabsTrigger value="flashcards">Flashcards</TabsTrigger>
+          <TabsTrigger value="pronunciation">Pronunciation</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="flashcards">
+          <VocabularyLearning words={allWords} />
+        </TabsContent>
+
+        <TabsContent value="pronunciation" className="max-w-2xl mx-auto">
+          <PronunciationPractice
+            targetWord={firstWord.word}
+            phonetic={firstWord.phonetic || undefined}
+          />
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
 }
 
 export default function VocabularyPage() {
