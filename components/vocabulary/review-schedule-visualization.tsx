@@ -1,12 +1,11 @@
 "use client";
 
 import { Calendar, Clock, GraduationCap, TrendingUp } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
-import { getReviewScheduleAction } from "@/actions/vocabulary";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useReviewSchedule } from "@/hooks/use-queries";
 
 interface ReviewScheduleData {
   overdue: number;
@@ -28,20 +27,7 @@ interface ReviewScheduleData {
 }
 
 export function ReviewScheduleVisualization() {
-  const [data, setData] = useState<ReviewScheduleData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const loadData = useCallback(async () => {
-    const result = await getReviewScheduleAction();
-    if (result.success && result.data) {
-      setData(result.data as ReviewScheduleData);
-    }
-    setIsLoading(false);
-  }, []);
-
-  useEffect(() => {
-    loadData();
-  }, [loadData]);
+  const { data, isLoading } = useReviewSchedule();
 
   if (isLoading) {
     return (

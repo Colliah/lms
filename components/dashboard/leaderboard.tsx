@@ -1,13 +1,13 @@
 "use client";
 
 import { Crown, Flame, Medal, Trophy, User } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
-import { getLeaderboardAction } from "@/actions/leaderboard";
+import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLeaderboard } from "@/hooks/use-queries";
 
 interface LeaderboardEntry {
   rank: number;
@@ -29,22 +29,8 @@ const rankIcons = {
 };
 
 export function Leaderboard() {
-  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [type, setType] = useState<LeaderboardType>("weekly");
-  const [isLoading, setIsLoading] = useState(true);
-
-  const loadLeaderboard = useCallback(async () => {
-    setIsLoading(true);
-    const result = await getLeaderboardAction(type);
-    if (result.success && result.data) {
-      setEntries(result.data);
-    }
-    setIsLoading(false);
-  }, [type]);
-
-  useEffect(() => {
-    loadLeaderboard();
-  }, [loadLeaderboard]);
+  const { data: entries = [], isLoading } = useLeaderboard(type);
 
   return (
     <Card>

@@ -1,15 +1,12 @@
 "use client";
 
 import { Bookmark, Trash2, Volume2 } from "lucide-react";
-import { useCallback, useEffect, useState, useTransition } from "react";
-import {
-  getSavedWordsAction,
-  unsaveWordAction,
-} from "@/actions/saved-vocabulary";
+import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useSavedWords, useUnsaveWord } from "@/hooks/use-queries";
 import { TTSService } from "@/lib/tts";
 
 interface SavedWord {
@@ -29,38 +26,18 @@ interface SavedWord {
 }
 
 export function SavedVocabularyList() {
-  const [savedWords, setSavedWords] = useState<SavedWord[]>([]);
-  const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isPending, startTransition] = useTransition();
   const [playingWord, setPlayingWord] = useState<string | null>(null);
 
-  const loadSavedWords = useCallback(async () => {
-    setIsLoading(true);
-    const result = await getSavedWordsAction({ page });
+  const { data, isLoading } = useSavedWords(page);
+  const unsaveMutation = useUnsaveWord();
 
-    if (result.success && result.data) {
-      setSavedWords(result.data.words as unknown as SavedWord[]);
-      setTotal(result.data.total);
-      setTotalPages(result.data.totalPages);
-    }
-    setIsLoading(false);
-  }, [page]);
-
-  useEffect(() => {
-    loadSavedWords();
-  }, [loadSavedWords]);
+  const savedWords = (data?.words ?? []) as unknown as SavedWord[];
+  const total = data?.total ?? 0;
+  const totalPages = data?.totalPages ?? 1;
 
   async function handleUnsave(wordId: string) {
-    startTransition(async () => {
-      const result = await unsaveWordAction(wordId);
-      if (result.success) {
-        setSavedWords((prev) => prev.filter((w) => w.wordId !== wordId));
-        setTotal((prev) => prev - 1);
-      }
-    });
+    unsaveMutation.mutate(wordId);
   }
 
   async function playWord(word: string) {
@@ -133,7 +110,7 @@ export function SavedVocabularyList() {
                     variant="ghost"
                     className="h-7 w-7 text-destructive hover:text-destructive"
                     onClick={() => handleUnsave(saved.wordId)}
-                    disabled={isPending}
+                    disabled={unsaveMutation.isPending}
                   >
                     <Trash2 className="h-4 w-4" />
                   </Button>

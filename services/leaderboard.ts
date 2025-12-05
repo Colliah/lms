@@ -66,6 +66,7 @@ export async function getLeaderboard(
           select: { id: true },
         },
       },
+      cacheStrategy: { ttl: 300 }, // Cache for 5 min - frequently changing data
     });
 
     // Calculate scores for each user

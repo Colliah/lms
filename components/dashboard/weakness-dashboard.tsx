@@ -7,13 +7,12 @@ import {
   RefreshCw,
   TrendingUp,
 } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
-import { analyzeWeaknessesAction } from "@/actions/weakness";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useWeaknesses } from "@/hooks/use-queries";
 
 interface Weakness {
   category: string;
@@ -46,23 +45,12 @@ function getSeverityLevel(severity: number): "high" | "medium" | "low" {
 }
 
 export function WeaknessDashboard() {
-  const [weaknesses, setWeaknesses] = useState<Weakness[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-
-  const loadWeaknesses = useCallback(async () => {
-    setIsAnalyzing(true);
-    const result = await analyzeWeaknessesAction();
-    if (result.success && result.data) {
-      setWeaknesses(result.data);
-    }
-    setIsAnalyzing(false);
-    setIsLoading(false);
-  }, []);
-
-  useEffect(() => {
-    loadWeaknesses();
-  }, [loadWeaknesses]);
+  const {
+    data: weaknesses = [],
+    isLoading,
+    refetch,
+    isFetching,
+  } = useWeaknesses();
 
   if (isLoading) {
     return (
@@ -89,12 +77,12 @@ export function WeaknessDashboard() {
           </p>
         </div>
         <Button
-          onClick={loadWeaknesses}
-          disabled={isAnalyzing}
+          onClick={() => refetch()}
+          disabled={isFetching}
           variant="outline"
         >
           <RefreshCw
-            className={`h-4 w-4 mr-2 ${isAnalyzing ? "animate-spin" : ""}`}
+            className={`h-4 w-4 mr-2 ${isFetching ? "animate-spin" : ""}`}
           />
           Refresh Analysis
         </Button>

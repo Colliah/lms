@@ -69,6 +69,7 @@ export async function getPassageById(passageId: string) {
           },
         },
       },
+      cacheStrategy: { ttl: 900 }, // Cache for 15 min - content data
     });
 
     return passage;
@@ -177,6 +178,7 @@ export async function getAllPassages(userId?: string) {
           select: { id: true },
         },
       },
+      cacheStrategy: { ttl: 900 }, // Cache for 15 min - content list
     })) as unknown as Array<{
       id: string;
       title: string;

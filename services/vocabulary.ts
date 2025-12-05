@@ -447,6 +447,7 @@ export async function getCategories() {
       include: {
         _count: { select: { words: true } },
       },
+      cacheStrategy: { ttl: 3600 }, // Cache for 1 hour - static data
     });
 
     return categories.map((cat) => ({

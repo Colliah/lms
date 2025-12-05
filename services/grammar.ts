@@ -181,6 +181,7 @@ export async function getAllTopics(userId?: string) {
           },
         },
       },
+      cacheStrategy: { ttl: 1800 }, // Cache for 30 min - semi-static data
     });
 
     // If userId provided, get progress for each topic

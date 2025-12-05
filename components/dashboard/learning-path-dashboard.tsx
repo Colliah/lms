@@ -10,14 +10,13 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
-import { generateLearningPathAction } from "@/actions/learning-path";
 import type { ProficiencyLevel } from "@/app/generated/prisma/enums";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useLearningPath } from "@/hooks/use-dashboard";
 
 interface LearningRecommendation {
   type: "vocabulary" | "grammar" | "reading";
@@ -55,27 +54,7 @@ const priorityColors = {
 };
 
 export function LearningPathDashboard() {
-  const [data, setData] = useState<LearningPathData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isRefreshing, setIsRefreshing] = useState(false);
-
-  const loadPath = useCallback(async () => {
-    const result = await generateLearningPathAction();
-    if (result.success && result.data) {
-      setData(result.data as LearningPathData);
-    }
-    setIsLoading(false);
-    setIsRefreshing(false);
-  }, []);
-
-  useEffect(() => {
-    loadPath();
-  }, [loadPath]);
-
-  function refreshPath() {
-    setIsRefreshing(true);
-    loadPath();
-  }
+  const { data, isLoading, refetch, isFetching } = useLearningPath();
 
   if (isLoading) {
     return (
@@ -127,13 +106,13 @@ export function LearningPathDashboard() {
           </div>
         </div>
         <Button
-          onClick={refreshPath}
-          disabled={isRefreshing}
+          onClick={() => refetch()}
+          disabled={isFetching}
           variant="outline"
           size="sm"
         >
           <RefreshCw
-            className={`h-4 w-4 mr-2 ${isRefreshing ? "animate-spin" : ""}`}
+            className={`h-4 w-4 mr-2 ${isFetching ? "animate-spin" : ""}`}
           />
           Refresh
         </Button>

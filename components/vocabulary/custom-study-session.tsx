@@ -1,11 +1,8 @@
 "use client";
 
 import { BookOpen, GraduationCap, Play, RefreshCw } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
-import {
-  createStudySessionAction,
-  getStudySessionOptionsAction,
-} from "@/actions/study-session";
+import { useState } from "react";
+import { createStudySessionAction } from "@/actions/study-session";
 import type { ProficiencyLevel } from "@/app/generated/prisma/enums";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -20,14 +17,8 @@ import {
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Slider } from "@/components/ui/slider";
+import { useStudySessionOptions } from "@/hooks/use-queries";
 import VocabularyLearning from "./vocabulary-learning";
-
-interface StudyOptions {
-  dueReviewCount: number;
-  newWordsCount: number;
-  categories: Array<{ id: string; name: string; wordCount: number }>;
-  levels: ProficiencyLevel[];
-}
 
 interface StudyWord {
   id: string;
@@ -43,8 +34,7 @@ interface StudyWord {
 }
 
 export function CustomStudySession() {
-  const [options, setOptions] = useState<StudyOptions | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const { data: options, isLoading, refetch } = useStudySessionOptions();
   const [isCreating, setIsCreating] = useState(false);
 
   // Session config
@@ -56,18 +46,6 @@ export function CustomStudySession() {
 
   // Active session
   const [sessionWords, setSessionWords] = useState<StudyWord[] | null>(null);
-
-  const loadOptions = useCallback(async () => {
-    const result = await getStudySessionOptionsAction();
-    if (result.success && result.data) {
-      setOptions(result.data);
-    }
-    setIsLoading(false);
-  }, []);
-
-  useEffect(() => {
-    loadOptions();
-  }, [loadOptions]);
 
   async function startSession() {
     setIsCreating(true);
@@ -87,7 +65,7 @@ export function CustomStudySession() {
 
   function endSession() {
     setSessionWords(null);
-    loadOptions(); // Refresh counts
+    refetch(); // Refresh counts
   }
 
   if (isLoading) {
