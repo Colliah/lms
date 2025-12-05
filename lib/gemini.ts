@@ -11,7 +11,7 @@ export const GeminiService = {
    */
   async generateContent(
     prompt: string,
-    model = "gemini-2.5-flash",
+    model = "gemini-2.5-flash"
   ): Promise<string> {
     try {
       if (!process.env.GEMINI_API_KEY) {
@@ -35,7 +35,7 @@ export const GeminiService = {
    */
   async generateJSON<T>(
     prompt: string,
-    model = "gemini-2.5-flash",
+    model = "gemini-2.5-flash"
   ): Promise<T> {
     try {
       const response = await genAI.models.generateContent({
@@ -67,7 +67,9 @@ export const GeminiService = {
       if (response.candidates?.[0]?.content?.parts) {
         for (const part of response.candidates[0].content.parts) {
           if (part.inlineData && part.inlineData.data) {
-            return `data:${part.inlineData.mimeType || "image/png"};base64,${part.inlineData.data}`;
+            return `data:${part.inlineData.mimeType || "image/png"};base64,${
+              part.inlineData.data
+            }`;
           }
         }
       }
@@ -161,7 +163,7 @@ export const GeminiService = {
    */
   async evaluatePronunciation(
     targetWord: string,
-    spokenText: string,
+    spokenText: string
   ): Promise<string> {
     const prompt = `I am practicing English pronunciation. I tried to say "${targetWord}". The speech recognition heard "${spokenText}".
     Analyze this. 
@@ -178,11 +180,79 @@ export const GeminiService = {
    * Get Word of the Day
    */
   async getWordOfTheDay(): Promise<WordOfDay | null> {
-    const prompt = `Generate a random useful English "Word of the Day" for an intermediate learner. 
-    Return a JSON object with: "word", "type" (part of speech), "definition" (English), "vietnameseDefinition" (Vietnamese translation of definition), "example".`;
+    const prompt = `
+  Generate a random, useful English "Word of the Day" for an intermediate learner (Band A, B or C preferred for interesting nuances).
 
+  Return the output as a valid JSON object with these exact fields:
+  - "word": The English word.
+  - "ipa": The International Phonetic Alphabet pronunciation.
+  - "type": Part of speech and always uppercase first letter.
+  - "band": Strictly "A", "B", or "C".
+  - "definition": English definition, explain simple.
+  - "vietnameseDefinition": Vietnamese definition explain simple.
+  - "example": Array of exactly 3 items (Strictly follow Rule 3).
+  - "synonym": Array of exactly 5 synonyms.
+  - "antonym": Array of exactly 5 antonyms.
+  - "image_prompt": "A hyper-detailed, realistic image description specifically based on the word. It must vividly depict a scene, action, or object that literally represents the meaning of the word with precise visual elements, lighting, and textures."
+
+  --- CRITICAL SELECTION RULES ---
+
+    1. THE "ANTI-BOREDOM" PROTOCOL (STRICT DIVERSITY)
+  You must NOT default to common topics like "Emotions", "Weather", or "Daily Routine" unless specifically necessary.
+  Before selecting a word, you must internally simulate rolling a 20-sided die to pick a **Random Domain** from this list:
+
+  1.  **Hard Sciences**: Astrophysics, Quantum Mechanics, Geology, Marine Biology.
+  2.  **The Arts**: Renaissance Art, Music Theory, Cinematography, Architecture (Baroque/Gothic).
+  3.  **Philosophy & History**: Stoicism, Ancient Rome, Victorian Era, Logic Fallacies.
+  4.  **Modern Life**: Corporate Jargon, Cybersecurity, Fintech/Crypto, Social Media Slang (Gen Z).
+  5.  **Nature & Environment**: Mycology (Mushrooms), Meteorology, Ornithology (Birds), Botany.
+  6.  **Culinary & Lifestyle**: Gastronomy, Oenology (Wine), Textile/Fashion, Interior Design.
+  7.  **Niche Hobbies**: Philately, Chess, Spelunking, Pottery.
+  8.  **Abstract Concepts**: Time, Memory, Probability, Aesthetics.
+  9.  **Emotions (Complex)**: Nostalgia, Melancholy, Serendipity, Epiphany.
+  10. **Business & Law**: Litigation, Marketing, Real Estate, Economics.
+
+  2. EXCLUSION LIST (NO DUPLICATES)
+  Check the candidate word against this list. If it exists, discard it and pick another immediately.
+  **BANNED WORDS:**
+  [INSERT_USED_WORDS_HERE]
+
+  3. SELECTION CRITERIA
+  - **The Word**: Can be a Noun, Verb, Adjective, or an Idiom.
+  - **Complexity**: Aim for words that are "cool to know" or "highly useful" (e.g., instead of "Sad", use "Melancholic" or "Despondent"; instead of "Eat", use "Devour" or "Savor").
+  - **Relevance**: Even if the word is academic, the example sentence must be relatable to modern life.
+
+  4. **STRICT DATA STRUCTURE FOR 'EXAMPLE'**:
+     - The "example" field MUST be an array of objects, NOT strings.
+     - Each object inside the array must have exactly these two keys:
+       1. "sentence": The English sentence containing the word.
+       2. "translation": The Vietnamese translation of that sentence.
+     
+  5. **Content Quality**:
+     - Avoid overly simple words (like "Happy", "Run", "Eat").
+     - Prefer words that express specific nuances or complex ideas suitable for an intermediate/advanced learner.
+`;
     try {
-      return await this.generateJSON<WordOfDay>(prompt);
+      const wordData = await this.generateJSON<WordOfDay>(prompt);
+
+      if (!wordData || !wordData.word) {
+        throw new Error("Invalid data format from Gemini");
+      }
+
+      const imagePrompt =
+        wordData.image_prompt ||
+        `illustration of ${wordData.word} minimalist flat design`;
+
+      const randomSeed = Math.floor(Math.random() * 1000);
+
+      const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(
+        imagePrompt
+      )}?width=800&height=600&nologo=true&seed=${randomSeed}`;
+
+      return {
+        ...wordData,
+        image: imageUrl,
+      };
     } catch (error) {
       console.error("Word of day error:", error);
       return null;
@@ -190,7 +260,6 @@ export const GeminiService = {
   },
 };
 
-// Type definitions
 export interface AIResourceEntry {
   phrase: string;
   meaning: string;
@@ -200,8 +269,17 @@ export interface AIResourceEntry {
 
 export interface WordOfDay {
   word: string;
+  ipa: string;
   type: string;
+  band: string;
   definition: string;
   vietnameseDefinition: string;
-  example: string;
+  example: {
+    sentence: string;
+    translation: string;
+  }[];
+  synonym: string[];
+  antonym: string[];
+  image_prompt: string;
+  image?: string | null;
 }

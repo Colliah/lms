@@ -52,26 +52,27 @@ async function DashboardContent() {
 
   return (
     <div className="container mx-auto py-8 space-y-6">
-      <div>
+      {/* <div>
         <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <p className="text-muted-foreground">
           Welcome back! Here's your learning progress.
         </p>
-      </div>
+      </div> */}
 
       {/* Word of the Day */}
-      <WordOfTheDay />
 
-      <StatsCards
+      {/* <StatsCards
         streak={streak}
         vocabularyStats={vocabularyStats}
         todayActivity={todayActivity}
-      />
+      /> */}
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <WordOfTheDay />
+
+      {/* <div className="grid gap-6 lg:grid-cols-2">
         <WeeklyChart data={weeklyProgress} />
         <QuickActions vocabStats={vocabularyStats} />
-      </div>
+      </div> */}
     </div>
   );
 }
