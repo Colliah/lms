@@ -3,6 +3,9 @@ import { getDashboardStatsAction } from "@/actions/progress";
 import { getVocabularyStatsAction } from "@/actions/vocabulary";
 import { WordOfTheDay } from "@/components/ai/word-of-day";
 import { DashboardSkeleton } from "@/components/skeletons/dashboard-skeleton";
+import QuickActions from "@/components/dashboard/quick-actions";
+import StatsCards from "@/components/dashboard/stats-cards";
+import WeeklyChart from "@/components/dashboard/weekly-chart";
 
 async function DashboardContent() {
   const [dashboardResult, vocabResult] = await Promise.all([
@@ -49,27 +52,27 @@ async function DashboardContent() {
 
   return (
     <div className="container mx-auto py-8 space-y-6">
-      {/* <div>
+      <div>
         <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
         <p className="text-muted-foreground">
           Welcome back! Here's your learning progress.
         </p>
-      </div> */}
+      </div>
 
       {/* Word of the Day */}
 
-      {/* <StatsCards
+      <StatsCards
         streak={streak}
         vocabularyStats={vocabularyStats}
         todayActivity={todayActivity}
-      /> */}
+      />
 
       <WordOfTheDay />
 
-      {/* <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2">
         <WeeklyChart data={weeklyProgress} />
         <QuickActions vocabStats={vocabularyStats} />
-      </div> */}
+      </div>
     </div>
   );
 }

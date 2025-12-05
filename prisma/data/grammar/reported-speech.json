@@ -1,0 +1,519 @@
+{
+  "topic": {
+    "name": "Reported Speech",
+    "description": "Report what others said using proper tense changes",
+    "difficulty": "B1"
+  },
+  "exercises": [
+    {
+      "title": "Reporting Simple Statements",
+      "description": "Practice converting direct statements into reported speech, focusing on basic tense changes.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"I work in a bank,\" she said.\nShe said that she ___ in a bank.",
+          "options": ["works", "worked", "is working", "will work"],
+          "correctAnswer": "worked",
+          "explanation": "When reporting a statement, the tense usually shifts back one step. Present Simple \"work\" becomes Past Simple \"worked\". (Khi tường thuật một câu nói, thì của động từ thường lùi về một thì. Hiện tại đơn \"work\" trở thành Quá khứ đơn \"worked\".)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"I am feeling tired,\" he told me.\nHe told me that he ___ tired.",
+          "options": ["was feeling", "is feeling", "feels", "has felt"],
+          "correctAnswer": "was feeling",
+          "explanation": "Present Continuous \"am feeling\" changes to Past Continuous \"was feeling\" in reported speech. (Thì Hiện tại tiếp diễn \"am feeling\" chuyển thành Quá khứ tiếp diễn \"was feeling\" trong lời nói gián tiếp.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"We went to Paris last year,\" they announced.\nThey announced that they ___ to Paris the previous year.",
+          "options": ["went", "had gone", "go", "have gone"],
+          "correctAnswer": "had gone",
+          "explanation": "Past Simple \"went\" becomes Past Perfect \"had gone\" in reported speech. Note also the change of \"last year\" to \"the previous year\". (Thì Quá khứ đơn \"went\" chuyển thành Quá khứ hoàn thành \"had gone\". Chú ý thêm sự thay đổi \"last year\" thành \"the previous year\".)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"I will call you tomorrow,\" Mark promised.\nMark promised that he ___ me the next day.",
+          "options": ["would call", "will call", "calls", "called"],
+          "correctAnswer": "would call",
+          "explanation": "\"Will\" changes to \"would\" in reported speech. Also, \"tomorrow\" changes to \"the next day\". (Từ \"Will\" chuyển thành \"would\" trong lời nói gián tiếp. \"Tomorrow\" cũng đổi thành \"the next day\".)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"I can't swim,\" she admitted.\nShe admitted that she ___ swim.",
+          "options": ["couldn't", "can't", "doesn't", "wasn't able to"],
+          "correctAnswer": "couldn't",
+          "explanation": "Modal verb \"can't\" changes to \"couldn't\" in reported speech. (Động từ khuyết thiếu \"can't\" chuyển thành \"couldn't\" khi tường thuật.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"I have finished my homework,\" Tom said.\nTom said that he ___ his homework.",
+          "options": [
+            "had finished",
+            "has finished",
+            "finished",
+            "would finish"
+          ],
+          "correctAnswer": "had finished",
+          "explanation": "Present Perfect \"have finished\" changes to Past Perfect \"had finished\" in reported speech. (Thì Hiện tại hoàn thành \"have finished\" chuyển thành Quá khứ hoàn thành \"had finished\" trong lời nói gián tiếp.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Reporting Direct Questions",
+      "description": "Practice converting direct questions (yes/no and wh-questions) into reported speech.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Are you ready?\" she asked me.\nShe asked me ___ ready.",
+          "options": ["if I was", "if I am", "am I", "was I"],
+          "correctAnswer": "if I was",
+          "explanation": "For Yes/No questions, we use 'if' or 'whether'. The word order changes to subject + verb, and the tense shifts back. \"Are you\" becomes \"I was\". (Đối với câu hỏi Yes/No, chúng ta dùng 'if' hoặc 'whether'. Thứ tự từ thay đổi thành chủ ngữ + động từ, và thì lùi về một thì.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Where do you live?\" he asked.\nHe asked me ___ lived.",
+          "options": ["where I", "where do I", "where did I", "where I do"],
+          "correctAnswer": "where I",
+          "explanation": "For Wh-questions, we use the Wh-word as the conjunction. The word order is subject + verb (not question order), and the tense shifts back. \"Where do you live?\" becomes \"where I lived\". (Với câu hỏi Wh-, chúng ta dùng từ Wh- đó làm từ nối. Thứ tự từ là chủ ngữ + động từ (không phải thứ tự câu hỏi), và thì lùi về một thì.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Did you enjoy the party?\" my friend asked.\nMy friend asked me ___ the party.",
+          "options": [
+            "if I had enjoyed",
+            "if I enjoyed",
+            "if I enjoy",
+            "did I enjoy"
+          ],
+          "correctAnswer": "if I had enjoyed",
+          "explanation": "Past Simple \"Did you enjoy\" changes to Past Perfect \"had enjoyed\" in reported speech. (Thì Quá khứ đơn \"Did you enjoy\" chuyển thành Quá khứ hoàn thành \"had enjoyed\" trong lời nói gián tiếp.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"What are you doing?\" the teacher asked.\nThe teacher asked me ___ then.",
+          "options": [
+            "what I was doing",
+            "what I am doing",
+            "what am I doing",
+            "what was I doing"
+          ],
+          "correctAnswer": "what I was doing",
+          "explanation": "Present Continuous \"are you doing\" changes to Past Continuous \"was doing\" in reported speech, and the word order is subject + verb. \"Now\" would change to \"then\". (Thì Hiện tại tiếp diễn \"are you doing\" chuyển thành Quá khứ tiếp diễn \"was doing\" trong lời nói gián tiếp, và thứ tự từ là chủ ngữ + động từ. \"Now\" sẽ đổi thành \"then\".)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Can you help me?\" she asked.\nShe asked him ___ her.",
+          "options": [
+            "if he could help",
+            "if he can help",
+            "if he helps",
+            "could he help"
+          ],
+          "correctAnswer": "if he could help",
+          "explanation": "Modal verb \"can\" changes to \"could\" in reported speech. Remember to use 'if' for Yes/No questions. (Động từ khuyết thiếu \"can\" chuyển thành \"could\" khi tường thuật. Nhớ dùng 'if' cho câu hỏi Yes/No.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"What time is the train?\" he asked.\nHe asked what time ___ train was.",
+          "options": ["the", "is the", "was the", "the is"],
+          "correctAnswer": "the",
+          "explanation": "In reported questions, the word order is subject + verb, not verb + subject. So, \"what time the train was,\" not \"what time was the train\". (Trong câu hỏi gián tiếp, thứ tự từ là chủ ngữ + động từ, không phải động từ + chủ ngữ. Vì vậy, \"what time the train was,\" không phải \"what time was the train\".)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Reporting Commands and Instructions",
+      "description": "Practice converting direct commands into reported speech using 'told + object + to-infinitive'.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Close the window!\" my mother said.\nMy mother told me ___ the window.",
+          "options": ["to close", "close", "closing", "that I close"],
+          "correctAnswer": "to close",
+          "explanation": "To report a command, we usually use 'told + object + to + infinitive'. (Để tường thuật một mệnh lệnh, chúng ta thường dùng cấu trúc 'told + tân ngữ + to + động từ nguyên mẫu'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Don't touch that!\" the guide warned us.\nThe guide warned us ___ that.",
+          "options": [
+            "not to touch",
+            "don't touch",
+            "didn't touch",
+            "not touching"
+          ],
+          "correctAnswer": "not to touch",
+          "explanation": "For negative commands, we use 'not to + infinitive'. (Đối với mệnh lệnh phủ định, chúng ta dùng 'not to + động từ nguyên mẫu'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Sit down,\" the teacher said to the students.\nThe teacher told the students ___ down.",
+          "options": ["to sit", "sit", "sitting", "that they sit"],
+          "correctAnswer": "to sit",
+          "explanation": "This is a direct command. We report it using 'told + object + to + infinitive'. (Đây là một mệnh lệnh trực tiếp. Chúng ta tường thuật nó bằng cách dùng 'told + tân ngữ + to + động từ nguyên mẫu'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Please wait here,\" she said to me.\nShe told me ___ there.",
+          "options": ["to wait", "wait", "waiting", "that I wait"],
+          "correctAnswer": "to wait",
+          "explanation": "Even with \"please,\" it's a polite command/request, and we still use 'told/asked + object + to + infinitive'. \"Here\" changes to \"there\". (Ngay cả khi có \"please\", đó vẫn là một mệnh lệnh/yêu cầu lịch sự, và chúng ta vẫn dùng 'told/asked + tân ngữ + to + động từ nguyên mẫu'. \"Here\" đổi thành \"there\".)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Don't forget your keys,\" he reminded me.\nHe reminded me ___ my keys.",
+          "options": [
+            "not to forget",
+            "don't forget",
+            "didn't forget",
+            "not forgetting"
+          ],
+          "correctAnswer": "not to forget",
+          "explanation": "The reporting verb 'reminded' also uses the 'object + to-infinitive' structure for commands/instructions. (Động từ tường thuật 'reminded' cũng sử dụng cấu trúc 'tân ngữ + to-infinitive' cho mệnh lệnh/hướng dẫn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Be quiet!\" the librarian told the children.\nThe librarian told the children ___ quiet.",
+          "options": ["to be", "be", "being", "that they be"],
+          "correctAnswer": "to be",
+          "explanation": "The verb \"be\" also follows the 'to + infinitive' structure for reported commands. (Động từ \"be\" cũng tuân theo cấu trúc 'to + động từ nguyên mẫu' cho mệnh lệnh được tường thuật.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Reporting Polite Requests",
+      "description": "Practice converting direct polite requests into reported speech using 'asked + object + to-infinitive'.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Could you open the door, please?\" he asked.\nHe asked me ___ the door.",
+          "options": ["to open", "open", "opening", "if I opened"],
+          "correctAnswer": "to open",
+          "explanation": "For polite requests, especially those with \"could you\" or \"would you,\" we typically use 'asked + object + to + infinitive'. (Đối với các yêu cầu lịch sự, đặc biệt là với \"could you\" hoặc \"would you\", chúng ta thường dùng 'asked + tân ngữ + to + động từ nguyên mẫu'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Would you mind helping me with this box?\" she asked.\nShe asked me ___ her with that box.",
+          "options": ["to help", "help", "helping", "if I helped"],
+          "correctAnswer": "to help",
+          "explanation": "Requests using \"Would you mind...\" are also reported with 'asked + object + to + infinitive'. Remember to change \"this\" to \"that\". (Các yêu cầu dùng \"Would you mind...\" cũng được tường thuật bằng 'asked + tân ngữ + to + động từ nguyên mẫu'. Nhớ đổi \"this\" thành \"that\".)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Please don't make so much noise,\" the neighbor requested.\nThe neighbor requested them ___ so much noise.",
+          "options": ["not to make", "don't make", "didn't make", "not making"],
+          "correctAnswer": "not to make",
+          "explanation": "Negative requests, like commands, use 'not to + infinitive'. (Yêu cầu phủ định, giống như mệnh lệnh, sử dụng 'not to + động từ nguyên mẫu'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Would you help me carry these bags?\" she asked.\nShe asked him ___ those bags.",
+          "options": [
+            "to help her carry",
+            "help her carry",
+            "if he would help her carry",
+            "if he helped her carry"
+          ],
+          "correctAnswer": "to help her carry",
+          "explanation": "Requests with \"Would you...\" are typically reported using 'asked + object + to + infinitive'. Remember to change \"these\" to \"those\". (Yêu cầu với \"Would you...\" thường được tường thuật bằng cách dùng 'asked + tân ngữ + to + động từ nguyên mẫu'. Nhớ đổi \"these\" thành \"those\".)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "\"Please pass me the sugar,\" he said.\nHe asked her ___ the sugar.",
+          "options": [
+            "to pass him",
+            "pass him",
+            "passing him",
+            "if she passed him"
+          ],
+          "correctAnswer": "to pass him",
+          "explanation": "Simple requests with \"please\" are reported using 'asked + object + to + infinitive'. (Các yêu cầu đơn giản có \"please\" được tường thuật bằng cách dùng 'asked + tân ngữ + to + động từ nguyên mẫu'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "\"Could you send me an email with the details?\" she asked.\nShe asked him ___ an email with the details.",
+          "options": [
+            "to send her",
+            "send her",
+            "if he could send her",
+            "if he sent her"
+          ],
+          "correctAnswer": "to send her",
+          "explanation": "This polite request (starting with \"Could you...\") is reported with 'asked + object + to + infinitive'. (Yêu cầu lịch sự này (bắt đầu bằng \"Could you...\") được tường thuật bằng cấu trúc 'asked + tân ngữ + to + động từ nguyên mẫu'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Reported Speech: Time and Place Changes",
+      "description": "Practice transforming direct speech into reported speech, focusing on how time and place expressions change.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'I visited Paris last year.' Reported: She said she had visited Paris ___.",
+          "options": [
+            "the year before",
+            "last year",
+            "previous year",
+            "a year ago"
+          ],
+          "correctAnswer": "the year before",
+          "explanation": "When reporting 'last year', it changes to 'the year before' or 'the previous year' in reported speech. ('last year' becomes 'the year before' or 'the previous year' - năm ngoái thành năm trước đó/năm trước).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'We'll meet here tomorrow.' Reported: They said they would meet ___ the next day.",
+          "options": ["here", "there", "in this place", "at this place"],
+          "correctAnswer": "there",
+          "explanation": "'Here' in direct speech changes to 'there' in reported speech, indicating a change in location reference. ('here' thành 'there' - ở đây thành ở đó).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'I'm coming now.' Reported: He told me he was coming ___.",
+          "options": ["now", "then", "at the moment", "right away"],
+          "correctAnswer": "then",
+          "explanation": "'Now' in direct speech changes to 'then' in reported speech, referring to that specific past moment. ('now' thành 'then' - bây giờ thành lúc đó).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'I saw him two days ago.' Reported: She mentioned she had seen him ___.",
+          "options": [
+            "two days ago",
+            "before two days",
+            "two days before",
+            "the two previous days"
+          ],
+          "correctAnswer": "two days before",
+          "explanation": "'Ago' in direct speech typically changes to 'before' or 'earlier' in reported speech. ('ago' thành 'before' hoặc 'earlier' - cách đây thành trước đó).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'I will call you this evening.' Reported: He promised he would call me ___ evening.",
+          "options": ["this", "that", "the", "an"],
+          "correctAnswer": "that",
+          "explanation": "'This' (referring to time, e.g., 'this evening') changes to 'that' in reported speech. ('this' thành 'that' - ví dụ 'tối nay' thành 'tối hôm đó').",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'The meeting is today.' Reported: She announced that the meeting was ___.",
+          "options": ["today", "that day", "the day", "on that day"],
+          "correctAnswer": "that day",
+          "explanation": "'Today' in direct speech changes to 'that day' in reported speech. ('today' thành 'that day' - hôm nay thành ngày hôm đó).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Advanced Reporting Verbs",
+      "description": "Learn and practice using a variety of reporting verbs beyond 'said' and 'told', such as 'admitted', 'suggested', 'promised', 'warned', 'explained'.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'Let's go to the cinema tonight!' Reported: He ___ going to the cinema that night.",
+          "options": ["suggested", "recommended", "offered", "advised"],
+          "correctAnswer": "suggested",
+          "explanation": "'Suggested' is followed by a gerund (-ing form) when reporting a suggestion. ('suggested' + V-ing - đề nghị làm gì).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'I didn't break the vase!' Reported: The child ___ breaking the vase.",
+          "options": ["denied", "refused", "admitted", "explained"],
+          "correctAnswer": "denied",
+          "explanation": "'Denied' is used when someone says they did not do something, and it is followed by a gerund. ('denied' + V-ing - phủ nhận làm gì).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'You should study harder.' Reported: The teacher ___ me to study harder.",
+          "options": ["suggested", "advised", "insisted", "ordered"],
+          "correctAnswer": "advised",
+          "explanation": "'Advised' is typically followed by an object and a to-infinitive when giving a recommendation or counsel. ('advised someone to do something' - khuyên ai làm gì).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'I will definitely pay you back tomorrow.' Reported: He ___ to pay me back the next day.",
+          "options": ["promised", "offered", "insisted", "threatened"],
+          "correctAnswer": "promised",
+          "explanation": "'Promised' is used when someone makes a firm intention to do something in the future, and it's followed by a to-infinitive. ('promised to do something' - hứa sẽ làm gì).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'Don't touch that wire!' Reported: The electrician ___ us not to touch that wire.",
+          "options": ["ordered", "warned", "threatened", "explained"],
+          "correctAnswer": "warned",
+          "explanation": "'Warned' is used to tell someone about a potential danger. It's often followed by an object + (not) to-infinitive. ('warned someone (not) to do something' - cảnh báo ai (không) làm gì).",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the error: 'She insisted on us to stay for dinner.'",
+          "options": [
+            "She insisted us to stay for dinner.",
+            "She insisted that we stayed for dinner.",
+            "She insisted on us staying for dinner.",
+            "She insisted us staying for dinner."
+          ],
+          "correctAnswer": "She insisted on us staying for dinner.",
+          "explanation": "'Insist on' is followed by a gerund, not a to-infinitive. If you want to specify who, use a possessive form or an object pronoun before the gerund. (Cấu trúc 'insist on' + V-ing - khăng khăng/nhấn mạnh làm gì).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Say vs Tell in Reported Speech",
+      "description": "Differentiate between 'say' and 'tell' and practice their correct usage in reported speech contexts.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She ___ that she was tired after the long journey.",
+          "options": ["told", "said", "spoke", "mentioned to"],
+          "correctAnswer": "said",
+          "explanation": "'Say' is used when we don't mention the listener. ('say that...' - nói rằng...).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He ___ me that he would be late for the meeting.",
+          "options": ["said", "told", "spoke", "expressed"],
+          "correctAnswer": "told",
+          "explanation": "'Tell' is used when we mention the listener (e.g., 'told me', 'told him'). ('tell someone that...' - nói với ai rằng...).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The manager ___ everyone to submit their reports by Friday.",
+          "options": ["said", "told", "spoke", "announced"],
+          "correctAnswer": "told",
+          "explanation": "'Tell' is used with an object and a to-infinitive to report commands or instructions. ('tell someone to do something' - bảo ai làm gì).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My grandmother always ___ interesting stories about her youth.",
+          "options": ["says", "tells", "speaks", "mentions"],
+          "correctAnswer": "tells",
+          "explanation": "We use 'tell a story/a lie/a joke' as fixed phrases. ('tell a story' - kể chuyện).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The sign ___ 'No Parking'.",
+          "options": ["tells", "says", "speaks", "states"],
+          "correctAnswer": "says",
+          "explanation": "'Say' is used to refer to words on signs, books, etc. ('The sign says...' - Biển báo ghi/nói...).",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the error: 'He said me to open the door.'",
+          "options": [
+            "He told me to open the door.",
+            "He said to me open the door.",
+            "He said I open the door.",
+            "He told me open the door."
+          ],
+          "correctAnswer": "He told me to open the door.",
+          "explanation": "To report a command or request, use 'tell' with an object and a to-infinitive (tell + object + to-infinitive). You cannot use 'say' in this structure. (Dùng 'tell somebody to do something' chứ không dùng 'say somebody to do something' khi ra lệnh/yêu cầu).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Comprehensive Reported Speech Practice",
+      "description": "Consolidate your knowledge of reported speech by practicing changes in tense, time, place, and using various reporting verbs.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'I will finish my project by Friday.' Reported: She ___ she would finish her project by Friday.",
+          "options": ["said", "told", "promised", "explained"],
+          "correctAnswer": "said",
+          "explanation": "While 'promised' is also possible, 'said' is a neutral reporting verb suitable here, and it doesn't require an object. (Khi không có tân ngữ đi kèm, 'said' là lựa chọn phổ biến và trung lập).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'I can help you with this now.' Reported: He offered ___ me with that then.",
+          "options": ["helping", "to help", "he would help", "that he helps"],
+          "correctAnswer": "to help",
+          "explanation": "'Offer' is usually followed by a to-infinitive when reporting an offer. Also, 'this' changes to 'that' and 'now' to 'then'. ('offered to do something' - đề nghị giúp).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'We saw them here last week.' Reported: They claimed they had seen them ___ the week before.",
+          "options": ["here", "there", "at that place", "in this location"],
+          "correctAnswer": "there",
+          "explanation": "'Here' changes to 'there' and 'last week' changes to 'the week before' in reported speech. ('here' thành 'there' và 'last week' thành 'the week before').",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Direct: 'Why are you so late?' Reported: The teacher ___ why I was so late.",
+          "options": ["asked", "told", "wondered", "said"],
+          "correctAnswer": "asked",
+          "explanation": "'Asked' is used for reporting questions. The word order becomes subject + verb, not verb + subject. ('asked' dùng để thuật lại câu hỏi, theo sau là cấu trúc khẳng định: chủ ngữ + động từ).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Direct: 'I must finish my report by tomorrow.' Reported: She explained that she ___ to finish her report by the next day.",
+          "options": ["had to", "must", "should", "would have"],
+          "correctAnswer": "had to",
+          "explanation": "'Must' often changes to 'had to' in reported speech, especially when expressing obligation. 'Tomorrow' changes to 'the next day'. ('must' thường đổi thành 'had to' trong lời nói gián tiếp khi diễn tả sự bắt buộc).",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the error: 'He told that he couldn't come to the party.'",
+          "options": [
+            "He said that he couldn't come to the party.",
+            "He told me that he couldn't come to the party.",
+            "He told he couldn't come to the party.",
+            "He said me that he couldn't come to the party."
+          ],
+          "correctAnswer": "He told me that he couldn't come to the party.",
+          "explanation": "'Tell' always requires an object (e.g., 'me', 'him', 'us') after it, unlike 'say'. The sentence can also be corrected to 'He said that he couldn't come to the party.' (Động từ 'tell' luôn cần một tân ngữ trực tiếp theo sau, ví dụ 'told me', 'told him'. Nếu không có tân ngữ, hãy dùng 'say').",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

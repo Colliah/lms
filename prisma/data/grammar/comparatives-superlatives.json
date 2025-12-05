@@ -1,0 +1,499 @@
+{
+  "topic": {
+    "name": "Comparatives and Superlatives",
+    "description": "Compare people, places, and things using adjectives",
+    "difficulty": "A2"
+  },
+  "exercises": [
+    {
+      "title": "Making Comparisons: Shorter Adjectives (-er)",
+      "description": "Practice forming comparative adjectives with -er for short words (e.g., 'tall' becomes 'taller').",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My new phone is ___ (small) than my old one.",
+          "options": ["small", "smaller", "smallest", "more small"],
+          "correctAnswer": "smaller",
+          "explanation": "For short adjectives like 'small' (one syllable), we add '-er' to form the comparative. 'Smaller' means nhỏ hơn. (Đối với tính từ ngắn, chúng ta thêm '-er' để tạo thành dạng so sánh hơn.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My brother is ___ than me.",
+          "options": ["tall", "taller", "tallest", "more tall"],
+          "correctAnswer": "taller",
+          "explanation": "'Tall' is a short adjective. To compare two things, we add '-er' to the adjective. 'Taller' means cao hơn. (Khi so sánh hai người/vật với tính từ ngắn, ta thêm '-er' vào tính từ.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The red car is ___ (fast) than the blue car.",
+          "options": ["fast", "faster", "fastest", "more fast"],
+          "correctAnswer": "faster",
+          "explanation": "The adjective 'fast' is a short adjective. We add '-er' to make it comparative. 'Faster' means nhanh hơn. (Tính từ 'fast' ngắn, nên thêm '-er' để so sánh.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Life in the countryside is ___ than in the city.",
+          "options": ["quiet", "quieter", "quietest", "more quiet"],
+          "correctAnswer": "quieter",
+          "explanation": "'Quiet' is a two-syllable adjective ending in -et, which usually takes '-er' in the comparative form. 'Quieter' means yên tĩnh hơn. (Với tính từ 'quiet', ta thêm '-er'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Today's weather is ___ (warm) than yesterday.",
+          "options": ["warm", "warmer", "warmest", "more warm"],
+          "correctAnswer": "warmer",
+          "explanation": "'Warm' is a short adjective. To compare today's weather with yesterday's, we use 'warmer', meaning ấm hơn. (Tính từ 'warm' ngắn, ta dùng 'warmer' để so sánh.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Sarah's hair is ___ than Maria's.",
+          "options": ["long", "longer", "longest", "more long"],
+          "correctAnswer": "longer",
+          "explanation": "For the short adjective 'long', the comparative form is 'longer', meaning dài hơn. (Tính từ 'long' ngắn, so sánh hơn là 'longer'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Making Comparisons: Longer Adjectives (more)",
+      "description": "Practice forming comparative adjectives using 'more' for long words (e.g., 'beautiful' becomes 'more beautiful').",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This math problem is ___ (difficult) than the last one.",
+          "options": [
+            "difficulter",
+            "more difficult",
+            "most difficult",
+            "difficultest"
+          ],
+          "correctAnswer": "more difficult",
+          "explanation": "For long adjectives (usually three or more syllables) like 'difficult', we use 'more' before the adjective to form the comparative. 'More difficult' means khó hơn. (Đối với tính từ dài, chúng ta dùng 'more' đứng trước tính từ để tạo thành dạng so sánh hơn.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Learning a new language is ___ than learning to cook.",
+          "options": [
+            "interestinger",
+            "more interesting",
+            "most interesting",
+            "interesting"
+          ],
+          "correctAnswer": "more interesting",
+          "explanation": "'Interesting' is a long adjective. We use 'more' to form its comparative. 'More interesting' means thú vị hơn. (Với tính từ dài như 'interesting', ta dùng 'more'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Living in the city is ___ (expensive) than living in a small town.",
+          "options": [
+            "expensiver",
+            "more expensive",
+            "most expensive",
+            "expensivest"
+          ],
+          "correctAnswer": "more expensive",
+          "explanation": "'Expensive' is a long adjective. We use 'more expensive' to compare, meaning đắt đỏ hơn. (Tính từ 'expensive' là tính từ dài, dùng 'more expensive'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My sister is ___ than I am.",
+          "options": [
+            "beautifuler",
+            "more beautiful",
+            "beautifulest",
+            "most beautiful"
+          ],
+          "correctAnswer": "more beautiful",
+          "explanation": "'Beautiful' is a long adjective. Its comparative form is 'more beautiful', meaning xinh đẹp hơn. (Với tính từ dài 'beautiful', dạng so sánh hơn là 'more beautiful'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Her presentation was ___ (impressive) than his.",
+          "options": [
+            "impressiver",
+            "more impressive",
+            "most impressive",
+            "impressivest"
+          ],
+          "correctAnswer": "more impressive",
+          "explanation": "'Impressive' is a long adjective. We use 'more impressive' for comparison, meaning ấn tượng hơn. (Tính từ 'impressive' dài, nên dùng 'more impressive'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Reading books is ___ for your brain than watching TV.",
+          "options": ["usefuler", "more useful", "most useful", "useful"],
+          "correctAnswer": "more useful",
+          "explanation": "'Useful' is a two-syllable adjective ending in -ful, which typically uses 'more' for the comparative. 'More useful' means hữu ích hơn. (Tính từ 'useful' thường dùng 'more' để so sánh hơn.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "The Best of All: Superlative Adjectives (-est)",
+      "description": "Practice forming superlative adjectives with -est for short words (e.g., 'tall' becomes 'tallest').",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Mount Everest is the ___ (high) mountain in the world.",
+          "options": ["high", "higher", "highest", "most high"],
+          "correctAnswer": "highest",
+          "explanation": "For short adjectives like 'high', we add '-est' and use 'the' before it to form the superlative. 'Highest' means cao nhất. (Đối với tính từ ngắn, chúng ta dùng 'the' + tính từ thêm '-est' để tạo thành dạng so sánh nhất.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My dog is the ___ pet in our family.",
+          "options": ["funny", "funnier", "funniest", "more funny"],
+          "correctAnswer": "funniest",
+          "explanation": "'Funny' is a short adjective ending in -y. We change 'y' to 'i' and add '-est'. 'Funniest' means hài hước nhất. (Tính từ 'funny' kết thúc bằng -y, đổi y thành i rồi thêm '-est'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "January is usually the ___ (cold) month of the year.",
+          "options": ["cold", "colder", "coldest", "most cold"],
+          "correctAnswer": "coldest",
+          "explanation": "For the short adjective 'cold', the superlative form is 'the coldest', meaning lạnh nhất. (Với tính từ ngắn 'cold', so sánh nhất là 'the coldest'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "This is the ___ pizza I've ever eaten!",
+          "options": ["tasty", "tastier", "tastiest", "more tasty"],
+          "correctAnswer": "tastiest",
+          "explanation": "'Tasty' ends in -y. To form the superlative, change 'y' to 'i' and add '-est'. 'Tastiest' means ngon nhất. (Tính từ 'tasty' có y cuối, đổi y thành i rồi thêm '-est'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He is the ___ (tall) player on the basketball team.",
+          "options": ["tall", "taller", "tallest", "most tall"],
+          "correctAnswer": "tallest",
+          "explanation": "To show he is number one in height among many, we use the superlative form 'the tallest', meaning cao nhất. (Để chỉ người cao nhất trong một nhóm, ta dùng 'the tallest'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The Amazon River is the ___ river in South America.",
+          "options": ["long", "longer", "longest", "more long"],
+          "correctAnswer": "longest",
+          "explanation": "'Long' is a short adjective. Its superlative form is 'the longest', meaning dài nhất. (Tính từ 'long' ngắn, so sánh nhất là 'the longest'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Comparing and Ranking: Mixed Practice",
+      "description": "Practice using various comparative and superlative forms, including irregular adjectives, to compare and rank.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This movie is ___ (good) than the one we watched last week.",
+          "options": ["gooder", "better", "goodest", "more good"],
+          "correctAnswer": "better",
+          "explanation": "'Good' is an irregular adjective. Its comparative form is 'better', meaning tốt hơn. (Tính từ 'good' là bất quy tắc, dạng so sánh hơn là 'better'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She is the ___ student in her class.",
+          "options": ["smart", "smarter", "smartest", "most smart"],
+          "correctAnswer": "smartest",
+          "explanation": "'Smart' is a short adjective. Its superlative form is 'the smartest', meaning thông minh nhất. (Tính từ ngắn 'smart', so sánh nhất là 'the smartest'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The traffic today is ___ (bad) than it was yesterday.",
+          "options": ["bader", "worse", "badest", "more bad"],
+          "correctAnswer": "worse",
+          "explanation": "'Bad' is an irregular adjective. Its comparative form is 'worse', meaning tệ hơn/xấu hơn. (Tính từ 'bad' là bất quy tắc, dạng so sánh hơn là 'worse'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Learning English is ___ than I expected.",
+          "options": [
+            "interestinger",
+            "more interesting",
+            "most interesting",
+            "interesting"
+          ],
+          "correctAnswer": "more interesting",
+          "explanation": "'Interesting' is a long adjective, so we use 'more interesting' for comparison, meaning thú vị hơn. (Với tính từ dài 'interesting', dùng 'more interesting' để so sánh.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This is the ___ (good) coffee I've ever tasted.",
+          "options": ["gooder", "better", "best", "most good"],
+          "correctAnswer": "best",
+          "explanation": "'Good' is an irregular adjective. Its superlative form is 'best', meaning ngon nhất/tốt nhất. (Tính từ 'good' là bất quy tắc, dạng so sánh nhất là 'best'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Which city is the ___ expensive in your country?",
+          "options": ["more", "most", "less", "least"],
+          "correctAnswer": "most",
+          "explanation": "'Expensive' is a long adjective. To form the superlative, we use 'the most' before the adjective. 'Most expensive' means đắt đỏ nhất. (Với tính từ dài 'expensive', dạng so sánh nhất là 'the most expensive'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Superlative Adjectives: Using 'Most'",
+      "description": "Practice forming superlative adjectives with 'most' for long adjectives (three or more syllables).",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Learning a new language is ___ interesting thing I've done this year.",
+          "options": ["more", "most", "the most", "a most"],
+          "correctAnswer": "the most",
+          "explanation": "We use 'the most' before long adjectives (three or more syllables) to form the superlative, indicating something is superior to all others in a group. (Chúng ta dùng 'the most' trước tính từ dài để tạo thành dạng so sánh nhất, thể hiện điều gì đó vượt trội nhất trong một nhóm.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "This is ___ beautiful song on the album.",
+          "options": ["more", "most", "the most", "a most"],
+          "correctAnswer": "the most",
+          "explanation": "'Beautiful' is a long adjective, so we use 'the most' for its superlative form. (Beautiful là một tính từ dài, nên chúng ta dùng 'the most' cho dạng so sánh nhất của nó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "For me, the Eiffel Tower is ___ impressive landmark in Paris.",
+          "options": ["most", "more", "the most", "much most"],
+          "correctAnswer": "the most",
+          "explanation": "'Impressive' is a long adjective. To show it's the top among many, we use 'the most'. (Impressive là một tính từ dài. Để thể hiện nó là hàng đầu trong số nhiều, chúng ta dùng 'the most'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "The book was most difficult story I have ever read.",
+          "options": [
+            "The book was the most difficult story I have ever read.",
+            "The book was more difficult story I have ever read.",
+            "The book was a most difficult story I have ever read.",
+            "The book was most difficult story I ever read."
+          ],
+          "correctAnswer": "The book was the most difficult story I have ever read.",
+          "explanation": "For superlative adjectives like 'difficult', we must use the definite article 'the' before 'most'. (Đối với tính từ so sánh nhất như 'difficult', chúng ta phải dùng mạo từ 'the' trước 'most'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She thinks that classical music is ___ relaxing type of music.",
+          "options": ["more", "most", "the most", "most of"],
+          "correctAnswer": "the most",
+          "explanation": "'Relaxing' is a long adjective. We use 'the most' to form its superlative. (Relaxing là một tính từ dài. Chúng ta dùng 'the most' để tạo thành dạng so sánh nhất của nó.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Public speaking is ___ challenging skill to master for many people.",
+          "options": ["most", "the most", "more", "a most"],
+          "correctAnswer": "the most",
+          "explanation": "'Challenging' is a long adjective. When comparing it to all other skills, we use 'the most' to indicate it's the top. (Challenging là một tính từ dài. Khi so sánh nó với tất cả các kỹ năng khác, chúng ta dùng 'the most' để chỉ ra rằng nó là hàng đầu.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Irregular Comparisons",
+      "description": "Practice using irregular comparative and superlative forms of adjectives and adverbs.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I feel much ___ today than I did yesterday.",
+          "options": ["good", "better", "best", "more good"],
+          "correctAnswer": "better",
+          "explanation": "'Good' has an irregular comparative form: good - better - best. Here we compare two days, so 'better' is correct. (Tính từ 'good' có dạng so sánh bất quy tắc: good - better - best. Ở đây chúng ta so sánh hai ngày, nên 'better' là đúng.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "That was the ___ movie I've ever seen!",
+          "options": ["bad", "worse", "worst", "badder"],
+          "correctAnswer": "worst",
+          "explanation": "'Bad' has an irregular superlative form: bad - worse - worst. This sentence refers to the absolute lowest quality. (Tính từ 'bad' có dạng so sánh bất quy tắc: bad - worse - worst. Câu này đề cập đến chất lượng tệ nhất tuyệt đối.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Can you give me a little ___ information about the project?",
+          "options": ["much", "many", "more", "most"],
+          "correctAnswer": "more",
+          "explanation": "'Much/many' have irregular comparative and superlative forms: much/many - more - most. 'More' is used here to ask for additional information. (Much/many có dạng so sánh bất quy tắc: much/many - more - most. 'More' được dùng ở đây để hỏi thêm thông tin.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "My old car was much farer than my new one.",
+          "options": [
+            "My old car was much farther than my new one.",
+            "My old car was much farthest than my new one.",
+            "My old car was much more far than my new one.",
+            "My old car was much farther then my new one."
+          ],
+          "correctAnswer": "My old car was much farther than my new one.",
+          "explanation": "'Far' has irregular comparative forms: far - farther/further - farthest/furthest. 'Farther' is commonly used for physical distance. (Far có dạng so sánh bất quy tắc: far - farther/further - farthest/furthest. 'Farther' thường được dùng cho khoảng cách vật lý.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Out of all the students, she performed ___ on the test.",
+          "options": ["good", "better", "best", "well"],
+          "correctAnswer": "best",
+          "explanation": "'Well' (adverb) also has irregular forms: well - better - best. Since we are comparing her performance to all other students, the superlative 'best' is needed. (Well (trạng từ) cũng có dạng bất quy tắc: well - better - best. Vì chúng ta so sánh hiệu suất của cô ấy với tất cả học sinh khác, nên cần dùng dạng so sánh nhất 'best'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He has the ___ money of anyone I know, but he's very happy.",
+          "options": ["little", "less", "least", "littlest"],
+          "correctAnswer": "least",
+          "explanation": "'Little' has irregular forms: little - less - least. 'The least' means the smallest amount, referring to money here. (Little có dạng bất quy tắc: little - less - least. 'The least' có nghĩa là số lượng nhỏ nhất, ở đây là tiền.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "As...as Comparisons",
+      "description": "Practice using 'as...as' to show equality or inequality between two things.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My new phone isn't ___ fast ___ my old one.",
+          "options": ["as / as", "so / as", "too / as", "such / as"],
+          "correctAnswer": "as / as",
+          "explanation": "We use 'as...as' to compare two things, showing they are equal or not equal. In negative sentences, 'so...as' can sometimes be used instead of 'as...as', but 'as...as' is always correct. (Chúng ta dùng 'as...as' để so sánh hai vật, thể hiện chúng bằng hoặc không bằng nhau. Trong câu phủ định, 'so...as' đôi khi có thể dùng thay cho 'as...as', nhưng 'as...as' luôn đúng.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Eating vegetables is ___ important ___ eating fruits for a healthy diet.",
+          "options": ["as / as", "so / as", "more / than", "the most / of"],
+          "correctAnswer": "as / as",
+          "explanation": "To show that two things have the same level of importance, we use 'as...as'. (Để thể hiện hai điều có cùng mức độ quan trọng, chúng ta dùng 'as...as'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The exam wasn't ___ difficult ___ I expected.",
+          "options": ["as / as", "so / than", "more / than", "too / as"],
+          "correctAnswer": "as / as",
+          "explanation": "The structure 'not as...as' is used to show inequality, meaning it was less difficult than expected. (Cấu trúc 'not as...as' được dùng để thể hiện sự không bằng nhau, có nghĩa là nó ít khó hơn mong đợi.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Running is not as fun as swimming for me.",
+          "options": [
+            "Running is not as fun as swimming for me.",
+            "Running is not as fun than swimming for me.",
+            "Running is not so fun as swimming for me.",
+            "Running is not fun as swimming for me."
+          ],
+          "correctAnswer": "Running is not as fun as swimming for me.",
+          "explanation": "The correct structure for comparing equality or inequality is 'as + adjective/adverb + as'. The original sentence is already correct. (Cấu trúc đúng để so sánh sự bằng nhau hoặc không bằng nhau là 'as + tính từ/trạng từ + as'. Câu gốc đã đúng.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He's ___ tall ___ his older brother.",
+          "options": ["as / as", "so / as", "too / like", "very / than"],
+          "correctAnswer": "as / as",
+          "explanation": "We use 'as...as' to state that two people or things are equal in a certain quality (e.g., height). (Chúng ta dùng 'as...as' để nói rằng hai người hoặc vật bằng nhau về một tính chất nào đó (ví dụ, chiều cao).)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Please try to be ___ quiet ___ possible during the movie.",
+          "options": ["as / as", "so / as", "more / than", "the most / of"],
+          "correctAnswer": "as / as",
+          "explanation": "The phrase 'as...as possible' is a common idiom meaning to the greatest degree possible. (Cụm từ 'as...as possible' là một thành ngữ phổ biến có nghĩa là ở mức độ cao nhất có thể.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Mixed Comparatives and Superlatives",
+      "description": "Practice a variety of comparative and superlative forms, including regular and irregular adjectives and adverbs.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The Amazon River is ___ river in the world.",
+          "options": ["longer", "the longest", "long", "most long"],
+          "correctAnswer": "the longest",
+          "explanation": "'Long' is a short adjective. For superlatives, we add '-est' and 'the' before it. (Long là một tính từ ngắn. Đối với dạng so sánh nhất, chúng ta thêm '-est' và 'the' vào trước nó.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Traveling by train is usually ___ comfortable than by bus.",
+          "options": ["more", "most", "as", "much"],
+          "correctAnswer": "more",
+          "explanation": "'Comfortable' is a long adjective. For comparatives, we use 'more' before it. (Comfortable là một tính từ dài. Đối với dạng so sánh hơn, chúng ta dùng 'more' trước nó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He sings ___ of all the contestants.",
+          "options": ["good", "better", "best", "the best"],
+          "correctAnswer": "the best",
+          "explanation": "'Well' (adverb, derived from 'good') has an irregular superlative form: well - better - best. Since we are comparing him to all contestants, 'the best' is correct. (Well (trạng từ, có nguồn gốc từ 'good') có dạng so sánh nhất bất quy tắc: well - better - best. Vì chúng ta so sánh anh ấy với tất cả thí sinh, nên 'the best' là đúng.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "My sister is a little more taller than me.",
+          "options": [
+            "My sister is a little taller than me.",
+            "My sister is a little tallest than me.",
+            "My sister is a little more tall than me.",
+            "My sister is a little taller then me."
+          ],
+          "correctAnswer": "My sister is a little taller than me.",
+          "explanation": "'Tall' is a short adjective. Its comparative form is 'taller'. We don't use 'more' with short adjectives. (Tall là một tính từ ngắn. Dạng so sánh hơn của nó là 'taller'. Chúng ta không dùng 'more' với tính từ ngắn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "This coffee is not ___ hot ___ the one I had yesterday.",
+          "options": ["as / as", "so / than", "more / than", "too / as"],
+          "correctAnswer": "as / as",
+          "explanation": "We use 'as...as' to compare equality or inequality. 'Not as...as' means it's less hot. (Chúng ta dùng 'as...as' để so sánh sự bằng nhau hoặc không bằng nhau. 'Not as...as' có nghĩa là nó ít nóng hơn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "That was ___ difficult test I've ever taken.",
+          "options": ["more", "most", "the most", "a most"],
+          "correctAnswer": "the most",
+          "explanation": "'Difficult' is a long adjective (three or more syllables). To form the superlative, we use 'the most'. (Difficult là một tính từ dài (ba âm tiết trở lên). Để tạo thành dạng so sánh nhất, chúng ta dùng 'the most'.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

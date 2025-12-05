@@ -1,0 +1,244 @@
+{
+  "topic": {
+    "name": "Relative Clauses",
+    "description": "Connect ideas using who, which, that, where, when, and whose",
+    "difficulty": "B1"
+  },
+  "exercises": [
+    {
+      "title": "Describing Places with 'Where'",
+      "description": "Practice using 'where' to introduce relative clauses that provide more information about places.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This is the old café ___ we first met for coffee.",
+          "options": ["where", "which", "when", "that"],
+          "correctAnswer": "where",
+          "explanation": "'Where' is used to refer to a place (the café) in a relative clause. (Sử dụng 'where' để chỉ địa điểm.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I can't forget the beautiful park ___ we had our picnic last summer.",
+          "options": ["which", "that", "where", "in which"],
+          "correctAnswer": "where",
+          "explanation": "'Where' is appropriate here because it refers to the park as a place where an action (having a picnic) occurred. While 'in which' is also correct, 'where' is a more common and natural choice for B2.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Do you know a good restaurant ___ I can find authentic Italian food?",
+          "options": ["where", "which", "that", "it"],
+          "correctAnswer": "where",
+          "explanation": "'Where' introduces a relative clause giving information about the restaurant (a place). (Dùng 'where' để bổ nghĩa cho danh từ chỉ địa điểm 'restaurant'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The office ___ she works is located in the city center.",
+          "options": ["who", "when", "where", "which"],
+          "correctAnswer": "where",
+          "explanation": "'Where' refers to 'the office' as the place of work. 'Which' would require a preposition (e.g., 'in which' or 'which she works in').",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We visited the village ___ my grandparents grew up.",
+          "options": ["where", "which", "that", "whom"],
+          "correctAnswer": "where",
+          "explanation": "The village is a place, and 'where' introduces the clause describing the activity there (growing up). (Ngôi làng là địa điểm, vậy nên 'where' được dùng để giới thiệu mệnh đề miêu tả hoạt động diễn ra ở đó.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The museum ___ the rare artifacts are displayed is open until 7 PM.",
+          "options": ["which", "that", "where", "whom"],
+          "correctAnswer": "where",
+          "explanation": "'Where' specifies the location within the museum where the artifacts are displayed.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Specifying Time with 'When'",
+      "description": "Practice using 'when' to introduce relative clauses that provide more information about a time.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I'll never forget the day ___ I graduated from university.",
+          "options": ["when", "where", "which", "that"],
+          "correctAnswer": "when",
+          "explanation": "'When' is used to refer to a specific time (the day) in a relative clause. (Sử dụng 'when' để chỉ thời gian.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "There was a time ___ people communicated mostly through letters.",
+          "options": ["which", "that", "when", "where"],
+          "correctAnswer": "when",
+          "explanation": "'When' correctly introduces a relative clause describing a period of time.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Spring is the season ___ the flowers start to bloom.",
+          "options": ["when", "which", "that", "it"],
+          "correctAnswer": "when",
+          "explanation": "'When' refers to 'the season' (a period of time). (Dùng 'when' để bổ nghĩa cho danh từ chỉ thời gian 'season'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Do you remember the year ___ we took that amazing trip to Thailand?",
+          "options": ["who", "where", "when", "which"],
+          "correctAnswer": "when",
+          "explanation": "'When' refers to 'the year' as the time of the trip. 'Which' would need a preposition like 'in which'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The morning ___ the accident happened was very foggy.",
+          "options": ["when", "which", "that", "whom"],
+          "correctAnswer": "when",
+          "explanation": "'When' introduces a clause that specifies the particular morning (a point in time). (Buổi sáng là thời điểm, vậy nên 'when' được dùng để giới thiệu mệnh đề chỉ thời gian.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I always enjoy those quiet evenings ___ I can relax with a good book.",
+          "options": ["which", "that", "when", "where"],
+          "correctAnswer": "when",
+          "explanation": "'When' clarifies which specific evenings are being referred to – those for relaxing.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Showing Possession with 'Whose'",
+      "description": "Practice using 'whose' to introduce relative clauses that show possession.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The student ___ essay won the prize is from Japan.",
+          "options": ["whose", "who", "which", "whom"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' shows possession (the essay belongs to the student). It replaces 'the student's essay' or 'the essay of the student'. (Sử dụng 'whose' để thể hiện sự sở hữu.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I saw a dog ___ leg was injured.",
+          "options": ["who", "which", "whose", "that"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' indicates that the leg belongs to the dog. It can be used for both people and animals.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She introduced me to her neighbor ___ car was stolen last night.",
+          "options": ["whose", "who", "which", "whom"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' shows that the car belongs to the neighbor. (Dùng 'whose' để chỉ ra 'cái xe' thuộc về 'người hàng xóm'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The company ___ reputation is excellent just announced record profits.",
+          "options": ["which", "that", "whose", "of which"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' is used to show that the excellent reputation belongs to the company. 'Of which' would also be possible but is more formal.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He's an artist ___ work is admired by many people.",
+          "options": ["whose", "who", "which", "whom"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' indicates that the work belongs to the artist. (Từ 'whose' cho biết 'tác phẩm' thuộc về 'nghệ sĩ'.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We visited a historic house ___ roof desperately needed repair.",
+          "options": ["which", "that", "whose", "of which"],
+          "correctAnswer": "whose",
+          "explanation": "'Whose' is used here to show that the roof belongs to the house. It works for both animate and inanimate nouns.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Omitting Relative Pronouns",
+      "description": "Practice identifying when relative pronouns (who, whom, which, that) can be omitted in defining relative clauses.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The book ___ you lent me was fascinating. (Can the relative pronoun be omitted?)",
+          "options": [
+            "Yes",
+            "No",
+            "Only if 'that' is used",
+            "Only if 'which' is used"
+          ],
+          "correctAnswer": "Yes",
+          "explanation": "The relative pronoun 'that' or 'which' can be omitted here because it is the object of the verb 'lent' (you lent *the book* to me). (Đại từ quan hệ có thể lược bỏ khi nó là tân ngữ của mệnh đề quan hệ.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The man ___ introduced me to his wife is a doctor. (Can the relative pronoun be omitted?)",
+          "options": ["Yes", "No", "Sometimes", "Only in formal writing"],
+          "correctAnswer": "No",
+          "explanation": "The relative pronoun 'who' (or 'that') is the subject of the verb 'introduced'. When the relative pronoun is the subject of the relative clause, it *cannot* be omitted. (Đại từ quan hệ là chủ ngữ của mệnh đề quan hệ thì không thể lược bỏ.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The email ___ I sent yesterday has not been delivered yet. (Write the pronoun that is typically omitted, or 'cannot omit' if not possible)",
+          "options": ["that", "which", "it", "cannot omit"],
+          "correctAnswer": "that",
+          "explanation": "'That' or 'which' can be omitted because it is the object of the verb 'sent' (I sent *the email*). 'That' is a common choice for omission. (Đại từ quan hệ là tân ngữ thì có thể lược bỏ.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Choose the sentence where the relative pronoun *cannot* be omitted.",
+          "options": [
+            "The car that he bought is very expensive.",
+            "This is the novel which I recommended to you.",
+            "I know the girl who lives next door.",
+            "She loved the gift that you gave her."
+          ],
+          "correctAnswer": "I know the girl who lives next door.",
+          "explanation": "In this sentence, 'who' is the subject of the verb 'lives'. Relative pronouns acting as subjects cannot be omitted. In the other sentences, the pronoun is the object and can be omitted. (Trong câu này, 'who' là chủ ngữ của động từ 'lives', do đó không thể lược bỏ. Các câu khác, đại từ quan hệ là tân ngữ nên có thể lược bỏ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence if the relative pronoun can be omitted: \"The person whom I spoke to was very helpful.\"",
+          "options": [
+            "The person I spoke to was very helpful.",
+            "The person who I spoke to was very helpful.",
+            "The person whom I spoke was very helpful.",
+            "The person whom I spoke to, was very helpful."
+          ],
+          "correctAnswer": "The person I spoke to was very helpful.",
+          "explanation": "'Whom' is the object of the preposition 'to' (I spoke to *the person*). When the relative pronoun is an object (of a verb or preposition), it can be omitted in a defining relative clause. (Khi đại từ quan hệ là tân ngữ (của động từ hoặc giới từ), nó có thể được lược bỏ.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The new smartphone ___ they released last week is getting great reviews. (Fill in the pronoun that can be omitted, or 'cannot omit')",
+          "options": ["which", "that", "it", "cannot omit"],
+          "correctAnswer": "which",
+          "explanation": "'Which' or 'that' can be omitted here because it is the object of the verb 'released' (they released *the smartphone*). 'Which' is a valid option for omission. (Đại từ quan hệ là tân ngữ thì có thể lược bỏ.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "topic": {
+    "name": "Modal Verbs",
+    "description": "Use modals for ability, permission, obligation, and possibility",
+    "difficulty": "A2"
+  },
+  "exercises": [
+    {
+      "title": "Can/Could: Expressing Ability",
+      "description": "Practice using 'can' and 'could' to talk about what people are able to do in the present and the past.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ speak French, but only a little. I want to learn more.",
+          "options": ["could", "can", "must", "have to"],
+          "correctAnswer": "can",
+          "explanation": "'Can' is used to express present ability. (Can dùng để diễn tả khả năng ở hiện tại.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "When she was younger, she ___ run very fast.",
+          "options": ["can", "must", "could", "has to"],
+          "correctAnswer": "could",
+          "explanation": "'Could' is used to express past ability. The phrase 'When she was younger' indicates a past time. (Could dùng để diễn tả khả năng trong quá khứ.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My little brother is only two years old, so he ___ read yet.",
+          "options": ["couldn't", "can't", "mustn't", "doesn't have to"],
+          "correctAnswer": "can't",
+          "explanation": "'Can't' (cannot) is used to express a lack of ability in the present. (Can't dùng để diễn tả không có khả năng ở hiện tại.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I looked everywhere, but I ___ find my keys this morning.",
+          "options": ["can't", "couldn't", "mustn't", "don't have to"],
+          "correctAnswer": "couldn't",
+          "explanation": "'Couldn't' (could not) is used to express a lack of ability or failure to do something in the past. (Couldn't dùng để diễn tả không thể làm gì đó trong quá khứ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ you swim? There's a nice pool here.",
+          "options": ["Could", "Must", "Can", "Do you have to"],
+          "correctAnswer": "Can",
+          "explanation": "'Can' is used to ask about present ability. (Can dùng để hỏi về khả năng ở hiện tại.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The internet was very slow yesterday. I ___ download the file.",
+          "options": ["could", "can", "couldn't", "can't"],
+          "correctAnswer": "couldn't",
+          "explanation": "Since the action happened 'yesterday' (past), 'couldn't' is the correct choice to express a lack of ability in the past. (Vì hành động xảy ra 'hôm qua' (quá khứ), 'couldn't' là lựa chọn đúng để diễn tả không thể làm gì đó trong quá khứ.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Can/Could: Asking for and Giving Permission",
+      "description": "Practice using 'can' and 'could' to ask for or give permission in different situations.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Excuse me, ___ I sit here? The other seats are taken.",
+          "options": ["must", "could", "can", "have to"],
+          "correctAnswer": "can",
+          "explanation": "'Can I...?' is a common way to ask for permission. (Can I...? là cách phổ biến để xin phép.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "You ___ borrow my pen if you need it.",
+          "options": ["must", "couldn't", "can", "can't"],
+          "correctAnswer": "can",
+          "explanation": "'You can...' is used to give permission. (You can... dùng để cho phép.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ I open the window? It's a bit warm in here.",
+          "options": ["Must", "Can't", "Could", "Don't have to"],
+          "correctAnswer": "Could",
+          "explanation": "'Could I...?' is a polite way to ask for permission, often more polite than 'Can I...?'. (Could I...? là cách lịch sự để xin phép.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "No, you ___ play outside now. It's raining heavily.",
+          "options": ["can", "could", "must", "can't"],
+          "correctAnswer": "can't",
+          "explanation": "'Can't' is used to deny permission or state that something is not allowed. (Can't dùng để từ chối hoặc cấm.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The teacher said we ___ use our dictionaries during the test.",
+          "options": ["must", "couldn't", "can", "have to"],
+          "correctAnswer": "can",
+          "explanation": "'Can' is used here to indicate that permission has been given. (Can ở đây dùng để chỉ rằng sự cho phép đã được cấp.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My parents said I ___ stay out until midnight on Saturday.",
+          "options": ["can't", "couldn't", "must", "can"],
+          "correctAnswer": "can",
+          "explanation": "'Can' is used here to indicate that permission has been given for a future action. (Can ở đây dùng để chỉ rằng sự cho phép đã được cấp cho một hành động trong tương lai.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Must/Have to: Expressing Obligation",
+      "description": "Practice using 'must' and 'have to' to talk about rules, duties, and necessities.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "You ___ finish your homework before watching TV.",
+          "options": ["can", "have to", "could", "don't have to"],
+          "correctAnswer": "have to",
+          "explanation": "'Have to' expresses an obligation, often imposed by an external rule or situation. (Have to diễn tả một nghĩa vụ, thường do quy tắc bên ngoài hoặc tình huống.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I ___ remember to buy milk on my way home.",
+          "options": ["must", "have to", "could", "can"],
+          "correctAnswer": "must",
+          "explanation": "'Must' often expresses a strong personal obligation or a strong recommendation. (Must thường diễn tả một nghĩa vụ cá nhân mạnh mẽ hoặc một lời khuyên mạnh mẽ.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Students ___ use their phones during the exam. It's strictly forbidden.",
+          "options": ["don't have to", "can't", "mustn't", "couldn't"],
+          "correctAnswer": "mustn't",
+          "explanation": "'Mustn't' (must not) is used to express a strong prohibition, meaning something is not allowed. (Mustn't dùng để diễn tả một sự cấm đoán mạnh mẽ, có nghĩa là không được phép.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Yesterday, I ___ wake up early for a meeting.",
+          "options": ["must", "have to", "had to", "can"],
+          "correctAnswer": "had to",
+          "explanation": "'Had to' is the past form of 'have to' and is used to express an obligation in the past. (Had to là thì quá khứ của have to, dùng để diễn tả nghĩa vụ trong quá khứ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ you wear a uniform at your school?",
+          "options": ["Must", "Do you have to", "Can", "Are you must"],
+          "correctAnswer": "Do you have to",
+          "explanation": "To form a question with 'have to', we use 'do/does' + subject + 'have to'. (Để đặt câu hỏi với have to, chúng ta dùng do/does + chủ ngữ + have to.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "It's a secret. You ___ tell anyone.",
+          "options": ["don't have to", "can't", "mustn't", "couldn't"],
+          "correctAnswer": "mustn't",
+          "explanation": "'Mustn't' expresses a strong prohibition or a very important obligation not to do something. (Mustn't diễn tả một sự cấm đoán mạnh mẽ hoặc một nghĩa vụ rất quan trọng là không được làm gì đó.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Speculation: What Happened?",
+      "description": "Practice using modal perfects (must have, might have, could have, etc.) to speculate about past events with varying degrees of certainty.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Sarah isn't answering her phone. She ___ forgotten about our meeting.",
+          "options": [
+            "must forget",
+            "must have forgotten",
+            "might forgot",
+            "should have forgotten"
+          ],
+          "correctAnswer": "must have forgotten",
+          "explanation": "We use 'must have + past participle' when we are almost certain about a past event. Sarah isn't answering, so it's highly probable she forgot. (Chúng ta dùng 'must have + quá khứ phân từ' khi gần như chắc chắn về một sự việc trong quá khứ.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The historical document is missing. It ___ by an anonymous collector many years ago.",
+          "options": [
+            "might be stolen",
+            "could have been stolen",
+            "must have stolen",
+            "should be stolen"
+          ],
+          "correctAnswer": "could have been stolen",
+          "explanation": "This sentence uses modal perfect in the passive voice. 'Could have been stolen' indicates a possibility that something happened in the past, and it was done to the document (passive). 'Must have stolen' would mean the document itself did the stealing, which is incorrect. (Câu này dùng modal perfect ở thể bị động. 'Could have been stolen' diễn tả khả năng một việc đã xảy ra trong quá khứ, và tài liệu là đối tượng chịu tác động.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The restaurant is closed today. They ___ decided to take a holiday.",
+          "options": [
+            "can have decided",
+            "must decided",
+            "might have decided",
+            "will have decided"
+          ],
+          "correctAnswer": "might have decided",
+          "explanation": "'Might have + past participle' is used to express a possibility about a past event. We are not certain, but it's a plausible explanation. (Chúng ta dùng 'might have + quá khứ phân từ' để diễn tả một khả năng có thể đã xảy ra trong quá khứ, chúng ta không chắc chắn.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I saw John leave the office at 5 PM. He ___ finished his work early.",
+          "options": [
+            "could finish",
+            "must have finished",
+            "should have finished",
+            "may finish"
+          ],
+          "correctAnswer": "must have finished",
+          "explanation": "When we have strong evidence or a logical deduction about a past event, 'must have + past participle' is used. Seeing him leave early is strong evidence for finishing work early. (Khi có bằng chứng mạnh hoặc suy luận logic về một sự việc trong quá khứ, chúng ta dùng 'must have + quá khứ phân từ'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The ancient ruins ___ once ___ used for religious ceremonies, but we are not entirely sure.",
+          "options": [
+            "might be",
+            "should have",
+            "could have been",
+            "will have been"
+          ],
+          "correctAnswer": "could have been",
+          "explanation": "'Could have been + past participle' (passive voice) is used for a past possibility or speculation when we are not certain. The phrase 'not entirely sure' confirms this uncertainty. (Chúng ta dùng 'could have been + quá khứ phân từ' (thể bị động) để suy đoán về một khả năng trong quá khứ khi chúng ta không hoàn toàn chắc chắn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Why didn't you answer my calls? You ___ asleep.",
+          "options": [
+            "can be",
+            "must have been",
+            "could be",
+            "should have been"
+          ],
+          "correctAnswer": "must have been",
+          "explanation": "This expresses a strong deduction about why the person didn't answer calls; being asleep is a very probable reason. 'Must have been + noun/adjective' is used for a strong past deduction. (Đây là một suy luận mạnh mẽ về lý do tại sao người đó không trả lời điện thoại; ngủ là một lý do rất có thể. 'Must have been + danh từ/tính từ' được dùng cho suy luận mạnh mẽ về quá khứ.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Modal Perfects: Regrets and Missed Chances",
+      "description": "Practice using modal perfects (should have, shouldn't have, could have, would have) to express regret, criticism, or unfulfilled possibilities in the past.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I feel terrible about what I said. I ___ so rude to her.",
+          "options": [
+            "shouldn't be",
+            "wouldn't have been",
+            "must not have been",
+            "shouldn't have been"
+          ],
+          "correctAnswer": "shouldn't have been",
+          "explanation": "'Shouldn't have + past participle' expresses regret or criticism about a past action that you did, but now realize was wrong. (Chúng ta dùng 'shouldn't have + quá khứ phân từ' để diễn tả sự hối tiếc hoặc chỉ trích về một hành động trong quá khứ mà bạn đã làm, nhưng giờ nhận ra là sai.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They arrived late because of traffic. They ___ much earlier.",
+          "options": [
+            "must leave",
+            "should have left",
+            "would leave",
+            "could be leaving"
+          ],
+          "correctAnswer": "should have left",
+          "explanation": "'Should have + past participle' is used to say that something was a good idea or the right thing to do in the past, but it wasn't done. Here, it implies they made a mistake by not leaving earlier. (Chúng ta dùng 'should have + quá khứ phân từ' để nói rằng lẽ ra nên làm điều gì đó trong quá khứ nhưng đã không làm, hàm ý hối tiếc hoặc chỉ trích.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If you had told me you were coming, I ___ for you.",
+          "options": [
+            "would have waited",
+            "should wait",
+            "could be waiting",
+            "must have waited"
+          ],
+          "correctAnswer": "would have waited",
+          "explanation": "This is a third conditional sentence, expressing an unreal past condition and its unreal past result. 'Would have + past participle' is used for the result. (Đây là câu điều kiện loại 3, diễn tả một điều kiện không có thật trong quá khứ và kết quả không có thật tương ứng. 'Would have + quá khứ phân từ' được dùng cho mệnh đề chính.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I didn't take that job offer. It ___ a great opportunity for my career.",
+          "options": ["might be", "could have been", "must be", "should be"],
+          "correctAnswer": "could have been",
+          "explanation": "'Could have been + noun/adjective' expresses a past possibility or an unfulfilled potential. The job was a possibility, but the speaker didn't take it, so the opportunity wasn't realized. (Chúng ta dùng 'could have been + danh từ/tính từ' để diễn tả một khả năng trong quá khứ hoặc một tiềm năng đã không được thực hiện.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ bought tickets earlier; now the concert is sold out.",
+          "options": ["would have", "must have", "could have", "should have"],
+          "correctAnswer": "should have",
+          "explanation": "Here, 'should have + past participle' indicates regret about not doing something that would have had a positive outcome (getting tickets). (Ở đây, 'should have + quá khứ phân từ' diễn tả sự hối tiếc vì đã không làm điều gì đó mà lẽ ra nên làm để có kết quả tốt.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He told me a secret, but I told someone else. I really ___ .",
+          "options": [
+            "shouldn't tell him",
+            "must not tell",
+            "couldn't have told",
+            "shouldn't have told"
+          ],
+          "correctAnswer": "shouldn's have told",
+          "explanation": "'Shouldn't have told' expresses regret and self-criticism for revealing the secret. It means it was a mistake to tell someone else. (Chúng ta dùng 'shouldn't have told' để diễn tả sự hối tiếc và tự phê bình vì đã tiết lộ bí mật. Điều đó có nghĩa là đã sai lầm khi nói cho người khác.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Modals in Passive Voice",
+      "description": "Practice forming sentences using modal verbs with the passive voice to express obligation, possibility, or necessity regarding actions done to a subject.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The new safety regulations ___ by all employees.",
+          "options": [
+            "must be followed",
+            "can be following",
+            "should follow",
+            "must followed"
+          ],
+          "correctAnswer": "must be followed",
+          "explanation": "The structure for modal + passive is 'modal + be + past participle'. 'Must be followed' indicates a strong obligation for the regulations to be adhered to. (Cấu trúc cho modal + bị động là 'modal + be + quá khứ phân từ'. 'Must be followed' diễn tả một nghĩa vụ mạnh mẽ rằng các quy định phải được tuân thủ.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Important documents ___ securely in the safe.",
+          "options": [
+            "should keep",
+            "should be kept",
+            "must keeping",
+            "might be keeping"
+          ],
+          "correctAnswer": "should be kept",
+          "explanation": "This expresses a recommendation or suggestion that the documents ought to be stored securely. The documents are the object of the action 'keep', so passive voice is required. (Điều này diễn tả một khuyến nghị rằng các tài liệu nên được lưu giữ an toàn. Tài liệu là đối tượng của hành động 'keep', vì vậy cần dùng thể bị động.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The broken window ___ by the landlord before winter.",
+          "options": [
+            "can be repair",
+            "must repairing",
+            "should be repaired",
+            "might repaired"
+          ],
+          "correctAnswer": "should be repaired",
+          "explanation": "'Should be repaired' means it is advisable or necessary for the landlord to repair the window. It's a recommendation in the passive voice. (Chúng ta dùng 'should be repaired' có nghĩa là chủ nhà nên sửa cửa sổ. Đây là một khuyến nghị ở thể bị động.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Access to this area ___ strictly limited to authorized personnel.",
+          "options": [
+            "must limiting",
+            "is being limited",
+            "must be limited",
+            "might be limit"
+          ],
+          "correctAnswer": "must be limited",
+          "explanation": "This shows a strong obligation or necessity that access must be restricted. 'Must be + past participle' for modal passive. (Điều này thể hiện một nghĩa vụ hoặc sự cần thiết mạnh mẽ rằng quyền truy cập phải được hạn chế. 'Must be + quá khứ phân từ' là cấu trúc bị động của động từ khuyết thiếu.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The project deadline is tight, but it ___ still ___ met if we work overtime.",
+          "options": ["can be", "will have", "might have", "should be"],
+          "correctAnswer": "can be",
+          "explanation": "'Can be met' expresses that it is possible for the deadline to be achieved. It's a statement of possibility in the passive voice. (Chúng ta dùng 'can be met' để diễn tả rằng có thể đạt được thời hạn. Đây là một câu nói về khả năng ở thể bị động.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The old building ___ to make way for the new shopping mall.",
+          "options": [
+            "will be demolished",
+            "must be demolishing",
+            "could demolished",
+            "should have demolish"
+          ],
+          "correctAnswer": "will be demolished",
+          "explanation": "'Will be demolished' indicates a future action that will be performed on the building (passive voice). It expresses a plan or certainty about a future event. (Chúng ta dùng 'will be demolished' để chỉ một hành động sẽ được thực hiện với tòa nhà trong tương lai (thể bị động). Nó diễn tả một kế hoạch hoặc sự chắc chắn về một sự kiện tương lai.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

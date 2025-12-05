@@ -164,3 +164,64 @@ export async function getGrammarProgress(userId: string) {
     throw new Error("Failed to fetch grammar progress");
   }
 }
+
+export async function getAllTopics(userId?: string) {
+  try {
+    const topics = await prisma.grammarTopic.findMany({
+      orderBy: { difficulty: "asc" },
+      include: {
+        _count: {
+          select: { exercises: true },
+        },
+        exercises: {
+          select: {
+            _count: {
+              select: { questions: true },
+            },
+          },
+        },
+      },
+    });
+
+    // If userId provided, get progress for each topic
+    const progressMap: Record<string, { completed: number; total: number }> =
+      {};
+
+    if (userId) {
+      const progress = await prisma.userGrammarProgress.findMany({
+        where: { userId },
+        include: {
+          exercise: {
+            select: { topicId: true },
+          },
+        },
+      });
+
+      progress.forEach((p) => {
+        const topicId = p.exercise.topicId;
+        if (!progressMap[topicId]) {
+          progressMap[topicId] = { completed: 0, total: 0 };
+        }
+        if (p.completed) {
+          progressMap[topicId].completed++;
+        }
+      });
+    }
+
+    return topics.map((topic) => ({
+      id: topic.id,
+      name: topic.name,
+      description: topic.description,
+      difficulty: topic.difficulty,
+      exerciseCount: topic._count.exercises,
+      questionCount: topic.exercises.reduce(
+        (sum, ex) => sum + ex._count.questions,
+        0,
+      ),
+      userProgress: progressMap[topic.id] || null,
+    }));
+  } catch (error) {
+    console.error("getAllTopics error:", error);
+    throw new Error("Failed to fetch grammar topics");
+  }
+}

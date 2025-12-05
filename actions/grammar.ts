@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import type { ProficiencyLevel } from "@/app/generated/prisma/enums";
 import { auth } from "@/lib/auth";
 import {
+  getAllTopics,
   getExercisesByTopic,
   getGrammarProgress,
   submitExercise,
@@ -86,6 +87,24 @@ export async function getGrammarProgressAction() {
       success: false,
       error:
         error instanceof Error ? error.message : "Failed to fetch progress",
+    };
+  }
+}
+
+export async function fetchAllTopicsAction() {
+  try {
+    const session = await auth.api.getSession({
+      headers: await headers(),
+    });
+
+    const userId = session?.user?.id;
+    const result = await getAllTopics(userId);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("fetchAllTopicsAction error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Failed to fetch topics",
     };
   }
 }

@@ -338,3 +338,80 @@ export async function getVocabularyStats(
     throw new Error("Failed to fetch vocabulary statistics");
   }
 }
+
+interface BrowseWordsParams {
+  difficulty?: ProficiencyLevel;
+  categoryId?: string;
+  search?: string;
+  page?: number;
+  limit?: number;
+}
+
+export async function browseWords(params: BrowseWordsParams) {
+  const { difficulty, categoryId, search, page = 1, limit = 20 } = params;
+
+  try {
+    const where: any = {};
+
+    if (difficulty) {
+      where.difficulty = difficulty;
+    }
+
+    if (categoryId) {
+      where.categories = {
+        some: { id: categoryId },
+      };
+    }
+
+    if (search) {
+      where.OR = [
+        { word: { contains: search, mode: "insensitive" } },
+        { translation: { contains: search, mode: "insensitive" } },
+      ];
+    }
+
+    const [words, total] = await Promise.all([
+      prisma.word.findMany({
+        where,
+        include: {
+          examples: { take: 1 },
+          categories: { select: { id: true, name: true } },
+        },
+        skip: (page - 1) * limit,
+        take: limit,
+        orderBy: { word: "asc" },
+      }),
+      prisma.word.count({ where }),
+    ]);
+
+    return {
+      words,
+      total,
+      page,
+      totalPages: Math.ceil(total / limit),
+    };
+  } catch (error) {
+    console.error("browseWords error:", error);
+    throw new Error("Failed to browse vocabulary");
+  }
+}
+
+export async function getCategories() {
+  try {
+    const categories = await prisma.wordCategory.findMany({
+      orderBy: { name: "asc" },
+      include: {
+        _count: { select: { words: true } },
+      },
+    });
+
+    return categories.map((cat) => ({
+      id: cat.id,
+      name: cat.name,
+      wordCount: cat._count.words,
+    }));
+  } catch (error) {
+    console.error("getCategories error:", error);
+    throw new Error("Failed to fetch categories");
+  }
+}

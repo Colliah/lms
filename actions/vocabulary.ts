@@ -1,9 +1,14 @@
 "use server";
 
 import { headers } from "next/headers";
-import type { ReviewQuality } from "@/app/generated/prisma/enums";
+import type {
+  ProficiencyLevel,
+  ReviewQuality,
+} from "@/app/generated/prisma/enums";
 import { auth } from "@/lib/auth";
 import {
+  browseWords,
+  getCategories,
   getDailyVocabulary,
   getVocabularyStats,
   submitReview,
@@ -78,6 +83,38 @@ export async function getVocabularyStatsAction() {
       success: false,
       error:
         error instanceof Error ? error.message : "Failed to fetch statistics",
+    };
+  }
+}
+
+export async function browseWordsAction(data: {
+  difficulty?: ProficiencyLevel;
+  categoryId?: string;
+  search?: string;
+  page?: number;
+}) {
+  try {
+    const result = await browseWords(data);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("browseWordsAction error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Failed to browse words",
+    };
+  }
+}
+
+export async function getCategoriesAction() {
+  try {
+    const result = await getCategories();
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("getCategoriesAction error:", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error ? error.message : "Failed to fetch categories",
     };
   }
 }

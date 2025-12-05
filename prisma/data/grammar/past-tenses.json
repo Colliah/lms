@@ -1,0 +1,554 @@
+{
+  "topic": {
+    "name": "Past Tenses",
+    "description": "Learn Past Simple, Past Continuous, and Past Perfect tenses",
+    "difficulty": "A1"
+  },
+  "exercises": [
+    {
+      "title": "Past Simple: Completed Actions",
+      "description": "Practice using the Past Simple tense for actions that finished in the past. Focus on regular verbs.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (watch) TV last night.",
+          "options": ["watch", "watched", "watching", "watches"],
+          "correctAnswer": "watched",
+          "explanation": "'Watched' is the Past Simple form of 'watch'. For regular verbs, we usually add '-ed' to the base form to make it Past Simple. (Đối với động từ thường, chúng ta thường thêm '-ed' vào sau động từ để tạo thành thì Quá Khứ Đơn.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ her friend yesterday.",
+          "options": ["visit", "visits", "visited", "visiting"],
+          "correctAnswer": "visited",
+          "explanation": "The action happened 'yesterday', so we need the Past Simple. 'Visited' is the Past Simple of 'visit'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ (play) football on Saturday.",
+          "options": ["play", "played", "playing", "plays"],
+          "correctAnswer": "played",
+          "explanation": "'Played' is the Past Simple form of 'play'. The action happened on a specific past day, 'Saturday'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We ___ dinner at 7 PM.",
+          "options": ["cook", "cooks", "cooked", "cooking"],
+          "correctAnswer": "cooked",
+          "explanation": "The time 'at 7 PM' implies a completed action in the past. 'Cooked' is the Past Simple of 'cook'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ (finish) his homework an hour ago.",
+          "options": ["finish", "finishes", "finished", "finishing"],
+          "correctAnswer": "finished",
+          "explanation": "The phrase 'an hour ago' indicates a past completed action. 'Finished' is the Past Simple of 'finish'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The dog ___ loudly.",
+          "options": ["bark", "barked", "barks", "barking"],
+          "correctAnswer": "barked",
+          "explanation": "This sentence describes an action that happened in the past. 'Barked' is the Past Simple form of 'bark'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Simple: Irregular Verbs",
+      "description": "Practice common irregular verbs in the Past Simple tense. These verbs do not follow the '-ed' rule.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (go) to the park last weekend.",
+          "options": ["go", "went", "gone", "goes"],
+          "correctAnswer": "went",
+          "explanation": "'Went' is the Past Simple form of the irregular verb 'go'. Irregular verbs change their form in the Past Simple tense, they don't simply add '-ed'. (Động từ bất quy tắc thay đổi hình thức của chúng ở thì Quá Khứ Đơn, không chỉ thêm '-ed'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ a new book yesterday.",
+          "options": ["buy", "buys", "bought", "buying"],
+          "correctAnswer": "bought",
+          "explanation": "The action happened 'yesterday'. 'Bought' is the Past Simple form of the irregular verb 'buy'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ (eat) pizza for dinner.",
+          "options": ["eat", "ate", "eaten", "eats"],
+          "correctAnswer": "ate",
+          "explanation": "'Ate' is the Past Simple form of the irregular verb 'eat'. This describes a completed action in the past.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We ___ milk for breakfast.",
+          "options": ["drink", "drank", "drinks", "drinking"],
+          "correctAnswer": "drank",
+          "explanation": "'Drank' is the Past Simple form of the irregular verb 'drink'. The sentence describes a past action.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ (see) his friend at the store.",
+          "options": ["see", "saw", "seen", "sees"],
+          "correctAnswer": "saw",
+          "explanation": "'Saw' is the Past Simple form of the irregular verb 'see'. The action of seeing happened in the past.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I ___ an email to my teacher.",
+          "options": ["write", "wrote", "writes", "writing"],
+          "correctAnswer": "wrote",
+          "explanation": "'Wrote' is the Past Simple form of the irregular verb 'write'. This indicates a completed action.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Continuous: Interrupted Actions",
+      "description": "Practice using the Past Continuous to describe an action that was in progress when another action interrupted it.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (read) a book when my phone rang.",
+          "options": ["was reading", "read", "am reading", "have read"],
+          "correctAnswer": "was reading",
+          "explanation": "Use Past Continuous ('was reading') for the longer, ongoing action, and Past Simple ('rang') for the shorter, interrupting action. (Dùng thì Quá khứ tiếp diễn cho hành động đang diễn ra và Quá khứ đơn cho hành động xen vào.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ dinner when her friends arrived.",
+          "options": ["was cooking", "cooked", "cooks", "had cooked"],
+          "correctAnswer": "was cooking",
+          "explanation": "The action of cooking was ongoing (Past Continuous) when her friends arrived (Past Simple), which is a sudden interruption.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "While they ___ (walk) in the park, it started to rain.",
+          "options": ["were walking", "walked", "walk", "had walked"],
+          "correctAnswer": "were walking",
+          "explanation": "'While' often introduces the Past Continuous for the longer, ongoing action. The rain starting was the interruption. (Trong khi họ đang đi bộ, trời bắt đầu mưa.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ (do) when the power went out?",
+          "options": ["were / doing", "did / do", "are / doing", "have / done"],
+          "correctAnswer": "were / doing",
+          "explanation": "This question asks about an ongoing action (Past Continuous) at a specific past moment when something else happened (power went out - Past Simple).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ (sleep) soundly when a loud noise woke him up.",
+          "options": ["was sleeping", "slept", "is sleeping", "had slept"],
+          "correctAnswer": "was sleeping",
+          "explanation": "Sleeping was an ongoing action (Past Continuous) that was interrupted by a loud noise (Past Simple).",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I ___ a shower when someone knocked on the door.",
+          "options": ["was taking", "took", "am taking", "had taken"],
+          "correctAnswer": "was taking",
+          "explanation": "Taking a shower was the continuous action in progress. The knock on the door was the interrupting action. (Tôi đang tắm thì có người gõ cửa.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Perfect: Actions Before Past",
+      "description": "Practice using the Past Perfect to describe an action that happened before another action in the past.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She couldn't enter the house because she ___ (forget) her keys.",
+          "options": ["had forgotten", "forgot", "forgets", "was forgetting"],
+          "correctAnswer": "had forgotten",
+          "explanation": "Forgetting the keys happened *before* she tried to enter the house (which is also in the past). Use Past Perfect for the earlier past action. (Hành động quên chìa khóa xảy ra trước hành động không thể vào nhà.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "When I arrived at the station, the train ___ already ___ (leave).",
+          "options": [
+            "had / left",
+            "has / left",
+            "was / leaving",
+            "left / already"
+          ],
+          "correctAnswer": "had / left",
+          "explanation": "The train leaving happened *before* I arrived at the station. 'Already' emphasizes this order of events.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He was tired because he ___ (not sleep) well the night before.",
+          "options": [
+            "hadn't slept",
+            "didn't sleep",
+            "wasn't sleeping",
+            "isn't sleeping"
+          ],
+          "correctAnswer": "hadn't slept",
+          "explanation": "Not sleeping well happened *before* he felt tired. The Past Perfect ('hadn't slept') shows this sequence.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "After they ___ (finish) their homework, they watched a movie.",
+          "options": ["had finished", "finished", "were finishing", "finish"],
+          "correctAnswer": "had finished",
+          "explanation": "Finishing their homework happened *before* they watched a movie. 'After' often signals that the first clause uses Past Perfect for the earlier action.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "By the time we got to the cinema, the film ___ already ___ (start).",
+          "options": [
+            "had / started",
+            "was / starting",
+            "started / already",
+            "has / started"
+          ],
+          "correctAnswer": "had / started",
+          "explanation": "The film starting happened *before* we arrived at the cinema. 'By the time' signals that the action in the main clause was completed before the time specified. (Khi chúng tôi đến rạp, phim đã bắt đầu rồi.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I knew him because I ___ (meet) him once before.",
+          "options": ["had met", "met", "was meeting", "meet"],
+          "correctAnswer": "had met",
+          "explanation": "Meeting him happened *before* I knew him (at that specific past point in time). The Past Perfect establishes the earlier past event.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Simple vs. Continuous: What Were You Doing?",
+      "description": "Practice distinguishing between the Past Simple for completed actions and the Past Continuous for actions in progress in the past.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (read) a book when the phone ___ (ring).",
+          "options": [
+            "was reading / rang",
+            "read / was ringing",
+            "was reading / was ringing",
+            "read / rang"
+          ],
+          "correctAnswer": "was reading / rang",
+          "explanation": "Use Past Continuous for an ongoing action (reading) that was interrupted by a short, completed action (the phone ringing) in the Past Simple. (Mẹo: Hành động đang diễn ra bị một hành động khác ngắt quãng.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "While she ___ (cook) dinner, her husband ___ (watch) TV.",
+          "options": [
+            "cooked / watched",
+            "was cooking / watched",
+            "cooked / was watching",
+            "was cooking / was watching"
+          ],
+          "correctAnswer": "was cooking / was watching",
+          "explanation": "Both actions were happening at the same time in the past, so both should be in the Past Continuous.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "At 8 PM last night, I ___ (have) dinner.",
+          "options": ["had", "was having", "have", "was had"],
+          "correctAnswer": "was having",
+          "explanation": "The phrase 'At 8 PM last night' specifies a particular moment in the past, implying an action that was in progress at that time, hence Past Continuous.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "It ___ (rain) all day yesterday.",
+          "options": ["rained", "was raining", "had rained", "is raining"],
+          "correctAnswer": "was raining",
+          "explanation": "'All day yesterday' indicates an action that was continuous throughout a period in the past. If it were a simple fact of rain, 'it rained' would work, but 'all day' emphasizes duration, making Past Continuous more appropriate.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The sun ___ (shine) and the birds ___ (sing) when I ___ (wake) up.",
+          "options": [
+            "shone / sang / woke",
+            "was shining / were singing / woke",
+            "shined / sang / was waking",
+            "was shining / sang / woke"
+          ],
+          "correctAnswer": "was shining / were singing / woke",
+          "explanation": "The shining sun and singing birds describe the background scene (ongoing actions - Past Continuous) at the moment a specific event happened (waking up - Past Simple).",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He ___ (break) his leg while he ___ (play) football.",
+          "options": [
+            "broke / played",
+            "was breaking / was playing",
+            "broke / was playing",
+            "was breaking / played"
+          ],
+          "correctAnswer": "broke / was playing",
+          "explanation": "The Past Simple 'broke' describes a sudden, completed action. The Past Continuous 'was playing' describes the ongoing activity during which the injury occurred.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Perfect vs. Past Simple: Before and After",
+      "description": "Learn to use the Past Perfect for actions that happened before another past action, and the Past Simple for the later action.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "When I arrived at the station, the train ___ (already/leave).",
+          "options": [
+            "already left",
+            "was already leaving",
+            "had already left",
+            "would already leave"
+          ],
+          "correctAnswer": "had already left",
+          "explanation": "The train leaving happened before I arrived at the station. Use Past Perfect for the action that occurred first. (Mẹo: Hành động nào xảy ra trước thì dùng Past Perfect.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ (not eat) anything before she ___ (go) to the party.",
+          "options": [
+            "didn't eat / went",
+            "hadn't eaten / went",
+            "didn't eat / had gone",
+            "hadn't eaten / had gone"
+          ],
+          "correctAnswer": "hadn't eaten / went",
+          "explanation": "Not eating happened before going to the party, so use Past Perfect for the earlier action and Past Simple for the later action.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I couldn't get into my house because I ___ (lose) my keys.",
+          "options": ["lost", "was losing", "had lost", "have lost"],
+          "correctAnswer": "had lost",
+          "explanation": "The reason (losing the keys) occurred before the result (couldn't get into the house). Therefore, Past Perfect is used for the earlier action.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He told me he ___ (never/see) such a beautiful place before.",
+          "options": [
+            "never saw",
+            "had never seen",
+            "was never seeing",
+            "has never seen"
+          ],
+          "correctAnswer": "had never seen",
+          "explanation": "The act of not seeing such a place happened before the moment he told me. When reporting a past event that occurred before another past event, Past Perfect is appropriate.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "By the time he was 20, he ___ (travel) to ten different countries.",
+          "options": [
+            "traveled",
+            "was traveling",
+            "had traveled",
+            "has traveled"
+          ],
+          "correctAnswer": "had traveled",
+          "explanation": "'By the time he was 20' indicates a point in the past, and the traveling was completed before or at that point. Past Perfect is used for actions completed before a specific past time. (Mẹo: 'By the time...' thường đi với Past Perfect.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "After they ___ (finish) their homework, they ___ (watch) a movie.",
+          "options": [
+            "finished / watched",
+            "had finished / watched",
+            "finished / had watched",
+            "had finished / had watched"
+          ],
+          "correctAnswer": "had finished / watched",
+          "explanation": "Finishing homework happened first, so it's in Past Perfect. Watching the movie happened next, so it's in Past Simple. The word 'After' helps establish the sequence.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Simple & Continuous: Describing Past Events",
+      "description": "Practice distinguishing between the Past Simple for completed actions and the Past Continuous for ongoing or interrupted actions in the past.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "While I ___ (walk) to the park, I suddenly ___ (realize) I had forgotten my phone.",
+          "options": [
+            "was walking / realized",
+            "walked / was realizing",
+            "was walking / was realizing",
+            "walked / realized"
+          ],
+          "correctAnswer": "was walking / realized",
+          "explanation": "The Past Continuous 'was walking' describes an ongoing action, which was interrupted by the Past Simple 'realized'. (Hành động 'đi bộ' đang diễn ra, bị 'nhận ra' cắt ngang đột ngột.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ (go) to the cinema last night, but the film ___ (be) quite boring.",
+          "options": [
+            "went / was",
+            "was going / was",
+            "went / had been",
+            "was going / had been"
+          ],
+          "correctAnswer": "went / was",
+          "explanation": "Both actions are completed in the past. 'Went' is the Past Simple of 'go' (an irregular verb) and 'was' is the Past Simple of 'be'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ (watch) TV when the power suddenly ___ (go) out.",
+          "options": [
+            "were watching / went",
+            "watched / went",
+            "were watching / was going",
+            "watched / was going"
+          ],
+          "correctAnswer": "were watching / went",
+          "explanation": "'Were watching' describes an ongoing action (Past Continuous) that was interrupted by a sudden, completed action 'went out' (Past Simple). (Hành động 'xem TV' đang diễn ra thì bị 'mất điện' làm gián đoạn.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'Yesterday, I was meeting an old friend while I walked home.'",
+          "options": [
+            "Yesterday, I met an old friend while I was walking home.",
+            "Yesterday, I was meeting an old friend when I was walking home.",
+            "Yesterday, I met an old friend while I walked home.",
+            "Yesterday, I had met an old friend while I was walking home."
+          ],
+          "correctAnswer": "Yesterday, I met an old friend while I was walking home.",
+          "explanation": "'Met' (Past Simple) is a completed action that happened during the ongoing action of 'was walking home' (Past Continuous). 'While' usually introduces the longer, ongoing action.",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ (do) when the earthquake ___ (start)?",
+          "options": [
+            "were / doing / started",
+            "did / do / started",
+            "were / doing / was starting",
+            "did / do / was starting"
+          ],
+          "correctAnswer": "were / doing / started",
+          "explanation": "'Were doing' describes the ongoing action at a specific past moment, and 'started' describes the sudden, completed action that interrupted it.",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Last summer, we ___ (spend) two weeks in Italy, and we ___ (eat) a lot of delicious food.",
+          "options": [
+            "spent / ate",
+            "were spending / ate",
+            "spent / were eating",
+            "were spending / were eating"
+          ],
+          "correctAnswer": "spent / ate",
+          "explanation": "Both 'spent' (Past Simple of 'spend', an irregular verb) and 'ate' (Past Simple of 'eat', an irregular verb) describe completed actions that happened over a specific period in the past.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Past Perfect: Sequencing Past Actions",
+      "description": "Focus on using the Past Perfect to describe an action that happened before another past action, and differentiating it from the Past Simple.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "By the time we arrived at the cinema, the film ___ (already / start).",
+          "options": [
+            "had already started",
+            "already started",
+            "was already starting",
+            "already starts"
+          ],
+          "correctAnswer": "had already started",
+          "explanation": "The film starting happened *before* we arrived. The Past Perfect 'had already started' is used for the earlier action. (Bộ phim đã bắt đầu TRƯỚC khi chúng tôi đến nơi.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She couldn't get into her house because she ___ (lose) her keys.",
+          "options": ["had lost", "lost", "was losing", "loses"],
+          "correctAnswer": "had lost",
+          "explanation": "Losing the keys happened *before* she tried to get into her house (and couldn't). The Past Perfect 'had lost' explains the reason for the past situation.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "After they ___ (finish) their homework, they ___ (go) out to play.",
+          "options": [
+            "had finished / went",
+            "finished / went",
+            "had finished / had gone",
+            "finished / were going"
+          ],
+          "correctAnswer": "had finished / went",
+          "explanation": "Finishing homework happened *before* going out. 'Had finished' is the Past Perfect for the earlier action, 'went' is Past Simple for the later action.",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'When I arrived, he already left.'",
+          "options": [
+            "When I arrived, he had already left.",
+            "When I arrived, he already was leaving.",
+            "When I arrived, he already leaves.",
+            "When I arrived, he was already left."
+          ],
+          "correctAnswer": "When I arrived, he had already left.",
+          "explanation": "His leaving happened *before* my arrival. The Past Perfect 'had already left' is needed for the earlier action.",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I didn't recognize him at first because he ___ (change) a lot since we last met.",
+          "options": ["had changed", "changed", "was changing", "changes"],
+          "correctAnswer": "had changed",
+          "explanation": "The change happened *before* I saw him and didn't recognize him. The Past Perfect 'had changed' describes the earlier state/action.",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Before she moved to London, she ___ (live) in Paris for five years.",
+          "options": ["had lived", "lived", "was living", "has lived"],
+          "correctAnswer": "had lived",
+          "explanation": "Living in Paris happened *before* she moved to London. The Past Perfect 'had lived' clarifies the sequence of events. (Cô ấy đã sống ở Paris TRƯỚC khi chuyển đến London.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

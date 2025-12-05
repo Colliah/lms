@@ -1,6 +1,52 @@
-import { fetchGrammarExercisesAction } from "@/actions/grammar";
+import { Suspense } from "react";
+import {
+  fetchAllTopicsAction,
+  fetchGrammarExercisesAction,
+} from "@/actions/grammar";
 import GrammarExerciseInterface from "@/components/grammar/grammar-exercise-interface";
+import { GrammarTopicBrowser } from "@/components/grammar/grammar-topic-browser";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+
+function TopicBrowserSkeleton() {
+  return (
+    <div className="space-y-6">
+      <div className="flex gap-2">
+        {Array.from({ length: 7 }).map((_, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <Skeleton>
+          <Skeleton key={i} className="h-9 w-16" />
+        ))}
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {Array.from({ length: 6 }).map((_, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <Skeleton>
+          <Skeleton key={i} className="h-40" />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+async function TopicBrowserContent() {
+  const result = await fetchAllTopicsAction();
+
+  if (!result.success || !result.data) {
+    return (
+      <Card className="max-w-2xl">
+        <CardHeader>
+          <CardTitle>Error Loading Topics</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">
+            {result.error || "Failed to load grammar topics."}
+          </p>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return <GrammarTopicBrowser topics={result.data} />;
+}
 
 export default async function GrammarPage({
   searchParams,
@@ -9,6 +55,7 @@ export default async function GrammarPage({
 }) {
   const topicId = (await searchParams).topicId;
 
+  // If no topicId, show topic browser
   if (!topicId) {
     return (
       <div className="container mx-auto py-8 px-4">
@@ -18,29 +65,19 @@ export default async function GrammarPage({
               Grammar Practice
             </h1>
             <p className="text-muted-foreground">
-              Select a grammar topic to practice
+              Choose a topic to practice grammar exercises
             </p>
           </div>
 
-          <Card className="max-w-2xl">
-            <CardHeader>
-              <CardTitle>Available Topics</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Please select a topic from the sidebar (feature coming soon), or
-                use the URL parameter.
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Example: /grammar?topicId=YOUR_TOPIC_ID
-              </p>
-            </CardContent>
-          </Card>
+          <Suspense fallback={<TopicBrowserSkeleton />}>
+            <TopicBrowserContent />
+          </Suspense>
         </div>
       </div>
     );
   }
 
+  // If topicId provided, show exercises
   const result = await fetchGrammarExercisesAction({ topicId });
 
   if (!result.success || !result.data || result.data.length === 0) {

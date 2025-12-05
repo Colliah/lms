@@ -1,35 +1,71 @@
 import { Suspense } from "react";
-import { fetchDailyVocabularyAction } from "@/actions/vocabulary";
+import {
+  fetchDailyVocabularyAction,
+  getVocabularyStatsAction,
+} from "@/actions/vocabulary";
 import { PronunciationPractice } from "@/components/ai/pronunciation-practice";
-import { VocabularySkeleton } from "@/components/skeletons/vocabulary-skeleton";
+import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { VocabularyBrowser } from "@/components/vocabulary/vocabulary-browser";
 import VocabularyLearning from "@/components/vocabulary/vocabulary-learning";
+import { VocabularyStats } from "@/components/vocabulary/vocabulary-stats";
 
-async function VocabularyContent() {
+function StatsSkeleton() {
+  return (
+    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      {Array.from({ length: 4 }).map((_, i) => (
+        // biome-ignore lint/suspicious/noArrayIndexKey: <Skeleton>
+        <Skeleton key={`stat-${i}`} className="h-28" />
+      ))}
+    </div>
+  );
+}
+
+function FlashcardSkeleton() {
+  return (
+    <div className="space-y-6 max-w-4xl mx-auto">
+      <Skeleton className="h-8 w-48" />
+      <Skeleton className="h-2 w-full" />
+      <Skeleton className="h-[400px] w-full" />
+    </div>
+  );
+}
+
+async function StatsContent() {
+  const result = await getVocabularyStatsAction();
+
+  if (!result.success || !result.data) {
+    return (
+      <div className="text-center py-8 text-muted-foreground">
+        Unable to load statistics
+      </div>
+    );
+  }
+
+  return <VocabularyStats stats={result.data} />;
+}
+
+async function FlashcardsContent() {
   const result = await fetchDailyVocabularyAction();
 
   if (!result.success || !result.data) {
     return (
-      <div className="container mx-auto py-8 flex items-center justify-center min-h-[400px]">
-        <div className="rounded-lg border border-destructive bg-destructive/10 p-6 max-w-md">
-          <p className="text-destructive">
-            Failed to load vocabulary:{" "}
-            {result.success ? "No data available" : result.error}
-          </p>
-        </div>
+      <div className="text-center py-8">
+        <p className="text-muted-foreground">
+          Failed to load vocabulary: {result.error || "Unknown error"}
+        </p>
       </div>
     );
   }
 
   const { reviews, newWords } = result.data;
 
-  // Transform reviews to flatten the nested word structure and add isReview flag
+  // Transform reviews to flatten the nested word structure
   const reviewWords = reviews.map((review) => ({
     ...review.word,
     isReview: true,
   }));
 
-  // Add isReview flag to new words
   const newWordsWithFlag = newWords.map((word) => ({
     ...word,
     isReview: false,
@@ -39,13 +75,12 @@ async function VocabularyContent() {
 
   if (allWords.length === 0) {
     return (
-      <div className="container mx-auto py-8 flex items-center justify-center min-h-[400px]">
-        <div className="text-center space-y-2">
-          <h2 className="text-2xl font-bold">All caught up!</h2>
-          <p className="text-muted-foreground">
-            No words due for review right now. Check back later!
-          </p>
-        </div>
+      <div className="text-center py-12 space-y-2">
+        <h2 className="text-2xl font-bold">All caught up!</h2>
+        <p className="text-muted-foreground">
+          No words due for review right now. Check back later or explore new
+          words in the Browse tab!
+        </p>
       </div>
     );
   }
@@ -54,32 +89,60 @@ async function VocabularyContent() {
   const firstWord = allWords[0];
 
   return (
-    <div className="container mx-auto py-8 px-4">
-      <Tabs defaultValue="flashcards">
-        <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-6">
-          <TabsTrigger value="flashcards">Flashcards</TabsTrigger>
-          <TabsTrigger value="pronunciation">Pronunciation</TabsTrigger>
-        </TabsList>
+    <Tabs defaultValue="flashcards" className="space-y-6">
+      <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
+        <TabsTrigger value="flashcards">Flashcards</TabsTrigger>
+        <TabsTrigger value="pronunciation">Pronunciation</TabsTrigger>
+      </TabsList>
 
-        <TabsContent value="flashcards">
-          <VocabularyLearning words={allWords} />
-        </TabsContent>
+      <TabsContent value="flashcards">
+        <VocabularyLearning words={allWords} />
+      </TabsContent>
 
-        <TabsContent value="pronunciation" className="max-w-2xl mx-auto">
-          <PronunciationPractice
-            targetWord={firstWord.word}
-            phonetic={firstWord.phonetic || undefined}
-          />
-        </TabsContent>
-      </Tabs>
-    </div>
+      <TabsContent value="pronunciation" className="max-w-2xl mx-auto">
+        <PronunciationPractice
+          targetWord={firstWord.word}
+          phonetic={firstWord.phonetic || undefined}
+        />
+      </TabsContent>
+    </Tabs>
   );
 }
 
 export default function VocabularyPage() {
   return (
-    <Suspense fallback={<VocabularySkeleton />}>
-      <VocabularyContent />
-    </Suspense>
+    <div className="container mx-auto py-8 px-4">
+      <div className="space-y-6">
+        <div className="space-y-2">
+          <h1 className="text-4xl font-bold tracking-tight">Vocabulary</h1>
+          <p className="text-muted-foreground">
+            Learn and review vocabulary with spaced repetition
+          </p>
+        </div>
+
+        {/* Stats Section */}
+        <Suspense fallback={<StatsSkeleton />}>
+          <StatsContent />
+        </Suspense>
+
+        {/* Main Content Tabs */}
+        <Tabs defaultValue="review" className="space-y-6">
+          <TabsList>
+            <TabsTrigger value="review">Daily Review</TabsTrigger>
+            <TabsTrigger value="browse">Browse Words</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="review">
+            <Suspense fallback={<FlashcardSkeleton />}>
+              <FlashcardsContent />
+            </Suspense>
+          </TabsContent>
+
+          <TabsContent value="browse">
+            <VocabularyBrowser />
+          </TabsContent>
+        </Tabs>
+      </div>
+    </div>
   );
 }
