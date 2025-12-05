@@ -1,0 +1,545 @@
+[
+  {
+    "title": "The Irrational Agent: An Introduction to Behavioral Economics",
+    "content": "Traditional economic theory, often termed classical or neoclassical economics, has long been predicated on the foundational assumption of Homo Economicus – a perfectly rational, self-interested agent capable of making optimal decisions to maximize utility. This idealized individual possesses complete information, processes it flawlessly, and always acts in a way that aligns with their long-term best interests. However, the observable realities of human decision-making often starkly contradict this theoretical construct.\n\nIt is precisely this divergence between theoretical prediction and empirical observation that forms the bedrock of behavioral economics. Emerging as a distinct field in the late 20th century, behavioral economics integrates insights from psychology, neuroscience, and economics to explore how psychological, cognitive, emotional, and social factors influence individuals' economic decisions. Pioneering work by psychologists Daniel Kahneman and Amos Tversky, for which Kahneman received the Nobel Memorial Prize in Economic Sciences in 2002 (Tversky had passed away), was instrumental in establishing this new paradigm.\n\nTheir research meticulously documented a range of cognitive biases and heuristics – mental shortcuts – that systematically lead people away from perfectly rational choices. One of their most significant contributions is Prospect Theory, which challenges the expected utility theory by positing that individuals evaluate potential outcomes in terms of gains and losses relative to a reference point, rather than in terms of absolute wealth. It suggests that people are typically risk-averse regarding gains but risk-seeking regarding losses, and that the perceived pain of a loss is often greater than the pleasure of an equivalent gain (loss aversion). This explains why people might hold onto losing investments longer than rationally advisable or why they might prefer a sure gain over a potentially larger but uncertain one.\n\nOther cognitive biases illuminated by behavioral economics include framing effects, where the presentation of information influences choice regardless of the underlying facts; anchoring, where an initial piece of information biases subsequent judgments; and the availability heuristic, where people overestimate the likelihood of events that are easily recalled from memory. The presence of these systematic deviations from rationality has profound implications, not just for understanding individual consumer behavior, but also for public policy, finance, and marketing.\n\nThe application of behavioral economics to public policy, often referred to as \"nudge theory,\" suggests that by subtly altering the \"choice architecture\" – the context in which choices are made – governments and organizations can guide individuals towards better outcomes without restricting their freedom of choice. Examples include defaulting people into organ donation programs or retirement savings schemes, simplifying complex forms, or placing healthier food options at eye level in cafeterias. These interventions leverage predictable human psychological tendencies to achieve societal benefits, moving beyond the traditional economist's toolkit of incentives and regulations.\n\nThe ascendancy of behavioral economics represents a significant evolution in economic thought. It offers a more nuanced, empirically grounded understanding of human economic behavior, acknowledging the inherent complexities and \"irrationalities\" that define us. While it doesn't entirely dismiss the value of classical models for certain aggregated analyses, it provides a vital corrective, reminding us that economic actors are not emotionless calculators but complex psychological beings navigating a world of uncertainty and limited cognitive resources. This paradigm shift has fundamentally reshaped how we approach everything from personal finance to global policy challenges, underscoring the enduring influence of the human psyche on market dynamics.",
+    "difficulty": "C1",
+    "topics": [
+      "Economic Theories",
+      "Behavioral Economics"
+    ],
+    "wordCount": 609,
+    "questions": [
+      {
+        "question": "What is the foundational assumption of traditional economic theory that behavioral economics challenges?",
+        "options": [
+          "Individuals always prioritize collective well-being over self-interest.",
+          "Economic decisions are primarily driven by emotional factors.",
+          "Homo Economicus is a perfectly rational, self-interested agent maximizing utility.",
+          "Markets are inherently inefficient and require constant intervention."
+        ],
+        "answer": "Homo Economicus is a perfectly rational, self-interested agent maximizing utility.",
+        "explanation": "The passage states, 'Traditional economic theory... has long been predicated on the foundational assumption of Homo Economicus – a perfectly rational, self-interested agent capable of making optimal decisions to maximize utility.' Behavioral economics challenges this idealization."
+      },
+      {
+        "question": "Which concept, central to behavioral economics, was developed by Kahneman and Tversky to explain how individuals evaluate potential outcomes?",
+        "options": [
+          "Expected Utility Theory",
+          "Market Equilibrium",
+          "Prospect Theory",
+          "Rational Choice Theory"
+        ],
+        "answer": "Prospect Theory",
+        "explanation": "The passage identifies Prospect Theory as 'one of their most significant contributions' developed by Kahneman and Tversky, which 'challenges the expected utility theory by positing that individuals evaluate potential outcomes in terms of gains and losses relative to a reference point.'"
+      },
+      {
+        "question": "According to the passage, what does 'loss aversion' imply?",
+        "options": [
+          "People are more willing to take risks to avoid a loss than to achieve an equivalent gain.",
+          "The pleasure of a gain is generally greater than the pain of an equivalent loss.",
+          "Individuals consistently prefer uncertain gains over certain losses.",
+          "People always make rational decisions when faced with potential losses."
+        ],
+        "answer": "People are more willing to take risks to avoid a loss than to achieve an equivalent gain.",
+        "explanation": "The passage states that Prospect Theory 'suggests that people are typically risk-averse regarding gains but risk-seeking regarding losses, and that the perceived pain of a loss is often greater than the pleasure of an equivalent gain (loss aversion).' Risk-seeking regarding losses implies willingness to take risks to avoid them."
+      },
+      {
+        "question": "How does 'nudge theory' apply behavioral economics to public policy?",
+        "options": [
+          "By restricting individual choices through direct legislation.",
+          "By subtly altering the choice environment to guide individuals towards better outcomes.",
+          "By offering large financial incentives to encourage desired behaviors.",
+          "By providing complete information and expecting individuals to make optimal choices independently."
+        ],
+        "answer": "By subtly altering the choice environment to guide individuals towards better outcomes.",
+        "explanation": "The passage explains, 'The application of behavioral economics to public policy, often referred to as 'nudge theory,' suggests that by subtly altering the 'choice architecture' – the context in which choices are made – governments and organizations can guide individuals towards better outcomes without restricting their freedom of choice.'"
+      },
+      {
+        "question": "The passage suggests that behavioral economics:",
+        "options": [
+          "Entirely dismisses classical economic models as irrelevant.",
+          "Offers a more empirically grounded and nuanced understanding of human economic behavior.",
+          "Focuses solely on irrational market bubbles and crashes.",
+          "Argues that all human economic decisions are fundamentally random."
+        ],
+        "answer": "Offers a more empirically grounded and nuanced understanding of human economic behavior.",
+        "explanation": "The passage concludes by stating, 'It offers a more nuanced, empirically grounded understanding of human economic behavior, acknowledging the inherent complexities and \"irrationalities\" that define us.'"
+      }
+    ]
+  },
+  {
+    "title": "Moral Frameworks: Navigating Deontology and Consequentialism",
+    "content": "The landscape of philosophical ethics is broadly populated by several overarching frameworks that attempt to delineate what constitutes right and wrong action. Among the most influential and frequently contrasted are deontology and consequentialism. While both seek to provide a systematic approach to moral decision-making, they diverge fundamentally in their primary focus: one emphasizes duties and rules, the other, outcomes and consequences.\n\nDeontology, derived from the Greek word 'deon' meaning duty, posits that the morality of an action should be based on whether that action adheres to a set of rules or duties, rather than its consequences. For a deontologist, certain actions are intrinsically right or wrong, irrespective of the good or bad they might produce. The most prominent exponent of deontological ethics is Immanuel Kant, who argued that moral actions must stem from a sense of duty and be guided by universalizable maxims – principles that could be applied to everyone, everywhere, all the time, without contradiction. His Categorical Imperative, particularly the formulation 'Act only according to that maxim whereby you can at the same time will that it should become a universal law,' encapsulates this idea. Kant also stressed the importance of treating humanity, whether oneself or another, always as an end and never merely as a means, emphasizing the inherent dignity and value of rational beings. For a deontologist, lying, breaking promises, or killing an innocent person might be considered inherently immoral, regardless of whether doing so could lead to a greater good. The act itself is the focal point of moral evaluation.\n\nIn stark contrast, consequentialism, as its name suggests, judges the morality of an action by its outcome or consequences. The most well-known form of consequentialism is utilitarianism, famously articulated by thinkers like Jeremy Bentham and John Stuart Mill. Utilitarianism holds that the most ethical choice is the one that produces the greatest good for the greatest number of people. An action is deemed morally right if it maximizes overall happiness or well-being and minimizes suffering. Unlike deontology, a utilitarian might countenance actions that a deontologist would deem intrinsically wrong, such as lying or even sacrificing an innocent individual, if such an action were demonstrably to lead to a net positive outcome for a larger population. The ends, in this framework, can often justify the means.\n\nThe practical implications of these two frameworks can lead to profoundly different ethical judgments in complex scenarios. Consider the classic \"trolley problem\": A runaway trolley is headed towards five people tied to the tracks. You can pull a lever to divert the trolley onto another track, where only one person is tied. A deontologist might struggle, arguing that actively choosing to kill one person (pulling the lever) is inherently wrong, even if it saves five, as it violates the duty not to kill. A utilitarian, however, would likely pull the lever, as sacrificing one life to save five results in a greater overall good.\n\nNeither framework is without its critics. Deontology is often criticized for its rigidity and its inability to account for situations where strict adherence to a rule leads to obviously terrible consequences. Consequentialism, on the other hand, faces challenges regarding the predictability of outcomes, the difficulty of quantifying \"good\" or \"happiness,\" and the potential for it to justify morally repugnant actions if they serve a greater number. Despite these criticisms, both deontology and consequentialism remain vital tools in ethical reasoning, providing distinct lenses through which to analyze and deliberate upon the myriad moral dilemmas that confront individuals and societies.",
+    "difficulty": "C1",
+    "topics": [
+      "Philosophy of Ethics",
+      "Deontology",
+      "Consequentialism"
+    ],
+    "wordCount": 605,
+    "questions": [
+      {
+        "question": "What is the primary difference in focus between deontology and consequentialism?",
+        "options": [
+          "Deontology focuses on individual rights, while consequentialism focuses on societal obligations.",
+          "Deontology emphasizes duties and rules, while consequentialism emphasizes outcomes and consequences.",
+          "Deontology prioritizes personal happiness, while consequentialism prioritizes universal laws.",
+          "Deontology uses empirical data, while consequentialism relies on abstract principles."
+        ],
+        "answer": "Deontology emphasizes duties and rules, while consequentialism emphasizes outcomes and consequences.",
+        "explanation": "The passage explicitly states, 'one emphasizes duties and rules, the other, outcomes and consequences.'"
+      },
+      {
+        "question": "According to the passage, what does Kant's Categorical Imperative primarily advocate for?",
+        "options": [
+          "Actions that maximize overall happiness for the greatest number.",
+          "Moral actions based on self-interest and personal gain.",
+          "Actions guided by universalizable maxims and a sense of duty.",
+          "Flexible moral rules that adapt to specific situations."
+        ],
+        "answer": "Actions guided by universalizable maxims and a sense of duty.",
+        "explanation": "The passage explains, 'His Categorical Imperative... encapsulates this idea,' referring to the preceding sentence: 'moral actions must stem from a sense of duty and be guided by universalizable maxims – principles that could be applied to everyone, everywhere, all the time, without contradiction.'"
+      },
+      {
+        "question": "How would a utilitarian typically approach the 'trolley problem' described in the passage?",
+        "options": [
+          "Refuse to pull the lever, viewing both options as equally wrong.",
+          "Pull the lever to sacrifice one person and save five, maximizing overall good.",
+          "Always choose the option that protects the most vulnerable individual.",
+          "Consult societal laws before making a decision."
+        ],
+        "answer": "Pull the lever to sacrifice one person and save five, maximizing overall good.",
+        "explanation": "The passage states, 'A utilitarian, however, would likely pull the lever, as sacrificing one life to save five results in a greater overall good.'"
+      },
+      {
+        "question": "What is a common criticism leveled against deontology?",
+        "options": [
+          "Its difficulty in predicting the long-term outcomes of actions.",
+          "Its potential to justify morally questionable actions for the greater good.",
+          "Its rigidity and inability to account for situations where strict adherence to a rule leads to terrible consequences.",
+          "Its exclusive focus on individual happiness rather than universal moral principles."
+        ],
+        "answer": "Its rigidity and inability to account for situations where strict adherence to a rule leads to terrible consequences.",
+        "explanation": "The passage notes, 'Deontology is often criticized for its rigidity and its inability to account for situations where strict adherence to a rule leads to obviously terrible consequences.'"
+      },
+      {
+        "question": "The passage suggests that both deontology and consequentialism are:",
+        "options": [
+          "Outdated frameworks with limited modern relevance.",
+          "Primarily concerned with personal virtue and character.",
+          "Useful and distinct tools for ethical reasoning despite their criticisms.",
+          "Mutually exclusive and cannot be applied in any combined approach."
+        ],
+        "answer": "Useful and distinct tools for ethical reasoning despite their criticisms.",
+        "explanation": "The passage concludes by stating, 'Despite these criticisms, both deontology and consequentialism remain vital tools in ethical reasoning, providing distinct lenses through which to analyze and deliberate upon the myriad moral dilemmas that confront individuals and societies.'"
+      }
+    ]
+  },
+  {
+    "title": "The Erosion of Democracy: Understanding Democratic Backsliding",
+    "content": "In the post-Cold War era, the global landscape witnessed a widespread wave of democratization, leading many political scientists and policymakers to believe that democracy was on an irreversible march towards universal adoption. However, the dawn of the 21st century has brought with it a sobering realization: democracy is not a terminal state but a dynamic process constantly susceptible to erosion. This phenomenon, termed \"democratic backsliding\" or \"democratic deconsolidation,\" describes the incremental decline in the quality of democracy, often occurring through legal and seemingly legitimate means, rather than outright military coups.\n\nDemocratic backsliding encompasses a range of processes that weaken democratic institutions and norms. Unlike traditional authoritarian transitions, which typically involve violent overthrows or overt repudiation of democratic principles, backsliding often manifests as a slow, creeping transformation. Leaders, frequently elected democratically, gradually undermine checks and balances, curtail civil liberties, and manipulate electoral processes, all while maintaining a veneer of democratic legitimacy. These actions erode the institutional safeguards that prevent the concentration of power and protect minority rights.\n\nOne common pathway to backsliding is the \"executive aggrandizement,\" where elected executives weaken judicial independence, capture regulatory agencies, and diminish legislative oversight. This can involve packing courts with loyalists, using emergency decrees to bypass parliamentary scrutiny, or intimidating critical media outlets. Another insidious method is the \"manipulation of electoral rules,\" which includes gerrymandering, voter suppression tactics, changing eligibility requirements, or even outright political interference in electoral administration, all designed to entrench the incumbent party's power.\n\nThe erosion of civil liberties and political rights is also a hallmark of democratic backsliding. This can manifest as restrictions on freedom of assembly, speech, and the press; the persecution of opposition figures; or the weaponization of legal systems against critics. While these actions might be justified under the guise of national security, public order, or combating \"fake news,\" their cumulative effect is to shrink the space for legitimate dissent and pluralistic political competition, which are essential for a healthy democracy.\n\nSeveral factors contribute to democratic backsliding. Economic inequality and stagnation can fuel popular discontent, making citizens more receptive to populist leaders who promise quick fixes and scapegoat minorities or external forces. Polarization, exacerbated by social media and partisan news, can deepen societal divisions, making compromise difficult and encouraging an \"us versus them\" mentality that undermines respect for democratic opposition. Weak institutions, a history of political instability, and the absence of a strong, independent civil society also render democracies more vulnerable. Furthermore, the international context plays a role, with rising authoritarian powers providing alternative models of governance and sometimes offering support to illiberal regimes.\n\nCombating democratic backsliding requires a multi-pronged approach. Strengthening independent institutions – such as a free press, an impartial judiciary, and robust electoral commissions – is paramount. Fostering civic education and a culture of democratic values can empower citizens to recognize and resist authoritarian tendencies. International cooperation, including targeted sanctions and diplomatic pressure, can also play a role in shoring up democratic norms. Ultimately, the resilience of democracy depends not just on its formal structures, but on the unwavering commitment of its citizens and leaders to uphold its foundational principles, even when faced with significant societal pressures or the temptation of centralized power.",
+    "difficulty": "C1",
+    "topics": [
+      "Political Science",
+      "Democracy",
+      "Authoritarianism"
+    ],
+    "wordCount": 606,
+    "questions": [
+      {
+        "question": "What distinguishes \"democratic backsliding\" from traditional authoritarian transitions?",
+        "options": [
+          "Backsliding involves violent overthrows, while traditional transitions are peaceful.",
+          "Backsliding occurs through legal and seemingly legitimate means, unlike overt repudiation of democracy.",
+          "Backsliding is always initiated by external actors, while traditional transitions are internal.",
+          "Backsliding primarily affects economic systems, not political ones."
+        ],
+        "answer": "Backsliding occurs through legal and seemingly legitimate means, unlike overt repudiation of democracy.",
+        "explanation": "The passage states, 'This phenomenon... describes the incremental decline in the quality of democracy, often occurring through legal and seemingly legitimate means, rather than outright military coups,' and contrasts it with 'traditional authoritarian transitions, which typically involve violent overthrows or overt repudiation of democratic principles.'"
+      },
+      {
+        "question": "Which of the following is NOT described as a method of 'executive aggrandizement'?",
+        "options": [
+          "Weakening judicial independence.",
+          "Capturing regulatory agencies.",
+          "Strengthening legislative oversight.",
+          "Using emergency decrees to bypass parliamentary scrutiny."
+        ],
+        "answer": "Strengthening legislative oversight.",
+        "explanation": "The passage lists 'diminish legislative oversight' as a method of executive aggrandizement, making 'strengthening legislative oversight' the opposite and thus the incorrect option."
+      },
+      {
+        "question": "According to the passage, what is a common tactic used in the 'manipulation of electoral rules'?",
+        "options": [
+          "Increasing funding for opposition parties.",
+          "Implementing stricter regulations on campaign finance.",
+          "Gerrymandering or changing voter eligibility requirements.",
+          "Encouraging robust public debate among all candidates."
+        ],
+        "answer": "Gerrymandering or changing voter eligibility requirements.",
+        "explanation": "The passage identifies 'manipulation of electoral rules' as including 'gerrymandering, voter suppression tactics, changing eligibility requirements, or even outright political interference in electoral administration.'"
+      },
+      {
+        "question": "What role do economic inequality and stagnation play in democratic backsliding?",
+        "options": [
+          "They directly lead to stronger democratic institutions.",
+          "They make citizens more receptive to populist leaders promising quick fixes.",
+          "They reduce societal polarization, promoting political unity.",
+          "They force governments to implement more liberal economic policies."
+        ],
+        "answer": "They make citizens more receptive to populist leaders promising quick fixes.",
+        "explanation": "The passage states, 'Economic inequality and stagnation can fuel popular discontent, making citizens more receptive to populist leaders who promise quick fixes and scapegoat minorities or external forces.'"
+      },
+      {
+        "question": "The passage suggests that combating democratic backsliding primarily requires:",
+        "options": [
+          "A complete overhaul of existing government structures.",
+          "An immediate return to purely traditional economic models.",
+          "Strengthening independent institutions and fostering a culture of democratic values.",
+          "Relying solely on military intervention and international sanctions."
+        ],
+        "answer": "Strengthening independent institutions and fostering a culture of democratic values.",
+        "explanation": "The passage explicitly states, 'Strengthening independent institutions... is paramount. Fostering civic education and a culture of democratic values can empower citizens to recognize and resist authoritarian tendencies.'"
+      }
+    ]
+  },
+  {
+    "title": "The Malleable Brain: Understanding Neuroplasticity",
+    "content": "For centuries, the prevailing scientific consensus held that the adult human brain was a largely immutable organ, its structure and function fixed after a critical period in early development. This view, often termed \"neurological determinism,\" suggested that once adulthood was reached, any damage or deficiency in brain function was permanent, and learning new complex skills became progressively harder due to a lack of capacity for significant change. However, groundbreaking discoveries in neuroscience over the last few decades have unequivocally overturned this long-held dogma, revealing the brain to be an astonishingly dynamic and adaptable entity. This remarkable capacity for change is known as neuroplasticity, or brain plasticity.\n\nNeuroplasticity refers to the brain's ability to reorganize itself throughout life – forming new neural connections, weakening old ones, and even creating new neurons in certain areas. It is not limited to childhood development but extends into adulthood, enabling continuous learning, memory formation, and recovery from injury. This profound understanding has revolutionized our approach to education, rehabilitation, and mental health.\n\nThere are several mechanisms through which neuroplasticity operates. Synaptic plasticity, perhaps the most well-understood form, involves changes in the strength and number of connections (synapses) between neurons. When we learn something new or repeat an action, the synapses involved in that circuit become stronger and more efficient – a phenomenon often summarized as \"neurons that fire together, wire together.\" Conversely, underutilized connections can weaken and even be pruned away, reflecting the brain's efficiency in adapting to its environment.\n\nAnother critical mechanism is neurogenesis, the birth of new neurons. While once believed to cease entirely after infancy, research has demonstrated that neurogenesis continues in specific brain regions throughout life, most notably in the hippocampus, an area crucial for learning and memory. The integration of these new neurons into existing circuits is vital for certain types of learning and memory consolidation.\n\nFurthermore, cortical remapping allows the brain to reassign cortical real estate in response to experience or injury. For instance, if a person loses a limb, the brain area previously dedicated to processing sensory input from that limb might be repurposed to process signals from other body parts or even other senses. This explains phantom limb pain, where the brain still 'feels' sensations from the missing limb due to the remapping. This capacity for structural and functional reorganization is particularly evident in individuals who compensate for sensory loss, such as blind individuals developing heightened auditory or tactile senses.\n\nThe implications of neuroplasticity are far-reaching. In rehabilitation, it offers hope for stroke victims or those with brain injuries, demonstrating that targeted therapies can help the brain rewire itself to recover lost functions. In education, it underscores the lifelong potential for learning, challenging traditional assumptions about fixed intelligence and learning plateaus. For mental health, it provides a framework for understanding how therapies like cognitive-behavioral therapy can literally change brain pathways associated with negative thought patterns and emotional responses. Lifestyle factors such as exercise, diet, sleep, and social engagement are also increasingly recognized as powerful modulators of neuroplasticity, suggesting that individual choices play a significant role in maintaining brain health and cognitive function.\n\nUltimately, the revelation of neuroplasticity presents a powerful and optimistic view of the human brain. It underscores our inherent capacity for adaptation, growth, and resilience, constantly shaping and reshaping itself in response to our experiences. The brain is not merely a static biological machine, but a living, evolving landscape, perpetually under construction.",
+    "difficulty": "C1",
+    "topics": [
+      "Neuroscience",
+      "Brain Science",
+      "Cognitive Science"
+    ],
+    "wordCount": 610,
+    "questions": [
+      {
+        "question": "What was the long-held scientific belief about the adult human brain that neuroplasticity overturned?",
+        "options": [
+          "The brain could only grow new neurons in response to severe injury.",
+          "The brain was largely immutable and fixed in structure and function after early development.",
+          "Learning complex skills was effortless in adulthood due to brain maturity.",
+          "The brain's capacity for change was entirely dependent on genetic predispositions."
+        ],
+        "answer": "The brain was largely immutable and fixed in structure and function after early development.",
+        "explanation": "The passage states, 'For centuries, the prevailing scientific consensus held that the adult human brain was a largely immutable organ, its structure and function fixed after a critical period in early development.' Neuroplasticity overturned this dogma."
+      },
+      {
+        "question": "Which of the following is NOT described as a mechanism through which neuroplasticity operates?",
+        "options": [
+          "Synaptic plasticity.",
+          "Genetic determinism.",
+          "Neurogenesis.",
+          "Cortical remapping."
+        ],
+        "answer": "Genetic determinism.",
+        "explanation": "The passage lists synaptic plasticity, neurogenesis, and cortical remapping as mechanisms. 'Neurological determinism' is mentioned as the old, overturned view, not a mechanism of plasticity itself."
+      },
+      {
+        "question": "According to the passage, what does the phrase 'neurons that fire together, wire together' describe?",
+        "options": [
+          "The process of neurogenesis, where new neurons are born.",
+          "The strengthening and increased efficiency of synaptic connections during learning.",
+          "The complete cessation of brain activity in certain regions.",
+          "The brain's tendency to prune away all existing connections."
+        ],
+        "answer": "The strengthening and increased efficiency of synaptic connections during learning.",
+        "explanation": "The passage explains, 'When we learn something new or repeat an action, the synapses involved in that circuit become stronger and more efficient – a phenomenon often summarized as 'neurons that fire together, wire together.''"
+      },
+      {
+        "question": "In which specific brain region is neurogenesis explicitly stated to continue throughout life?",
+        "options": [
+          "The cerebellum.",
+          "The brainstem.",
+          "The hippocampus.",
+          "The prefrontal cortex."
+        ],
+        "answer": "The hippocampus.",
+        "explanation": "The passage mentions 'neurogenesis continues in specific brain regions throughout life, most notably in the hippocampus, an area crucial for learning and memory.'"
+      },
+      {
+        "question": "The implications of neuroplasticity are described as 'far-reaching' for which fields?",
+        "options": [
+          "Astrobiology, quantum physics, and ancient history.",
+          "Education, rehabilitation, and mental health.",
+          "Geology, oceanography, and linguistics.",
+          "Classical economics, political philosophy, and abstract art."
+        ],
+        "answer": "Education, rehabilitation, and mental health.",
+        "explanation": "The passage states, 'This profound understanding has revolutionized our approach to education, rehabilitation, and mental health' and later elaborates on 'The implications of neuroplasticity are far-reaching. In rehabilitation, it offers hope... In education, it underscores... For mental health, it provides a framework...'"
+      }
+    ]
+  },
+  {
+    "title": "Building for Tomorrow: Principles and Practices of Sustainable Architecture",
+    "content": "As the global community grapples with the escalating challenges of climate change, resource depletion, and environmental degradation, the architectural profession finds itself at the forefront of a paradigm shift. The conventional practices of design and construction, historically major contributors to carbon emissions and waste generation, are giving way to a more conscientious and holistic approach: sustainable architecture. This movement, often synonymous with \"green building,\" seeks to minimize the negative environmental impact of buildings by efficiently using resources, reducing waste, and improving occupant health throughout a building's entire lifecycle.\n\nSustainable architecture is not merely about adding a few solar panels or recycling construction waste; it is a fundamental rethinking of how structures interact with their natural and human environments. At its core are several key principles. Firstly, site optimization involves careful consideration of the building's placement and orientation to leverage natural light, wind patterns, and topography, thereby reducing energy demands. This might mean designing for passive solar heating in colder climates or natural ventilation in warmer ones, minimizing the need for mechanical heating or cooling.\n\nSecondly, efficient resource use is paramount. This includes selecting materials that are sustainably sourced, recycled, or rapidly renewable, and minimizing the use of virgin materials with high embodied energy (the energy consumed during their production, transport, and disposal). Emphasis is placed on local materials to reduce transportation emissions and support local economies. Water efficiency is also crucial, employing strategies such as rainwater harvesting, greywater recycling, and the installation of low-flow fixtures to drastically cut consumption.\n\nEnergy efficiency constitutes another cornerstone. Beyond passive design, this involves integrating high-performance insulation, energy-efficient windows, and advanced HVAC (heating, ventilation, and air conditioning) systems. Increasingly, sustainable buildings incorporate renewable energy sources like photovoltaic (solar) panels, wind turbines, and geothermal systems, aiming for net-zero or even energy-positive operation, where the building produces more energy than it consumes.\n\nA holistic approach also extends to indoor environmental quality. Sustainable design strives to create healthy and comfortable internal spaces by maximizing natural light and views, ensuring optimal thermal comfort, and improving indoor air quality through the use of non-toxic materials and effective ventilation systems. This focus recognizes that buildings are not just structures but habitats that significantly influence the well-being and productivity of their occupants.\n\nThe benefits of sustainable architecture are multifaceted. Environmentally, it leads to reduced carbon footprints, lower water consumption, and less waste sent to landfills. Economically, despite potentially higher initial construction costs, sustainable buildings often offer substantial long-term savings through lower utility bills and reduced maintenance. Socially, they contribute to healthier communities, improved occupant comfort, and often foster a greater connection to the natural world.\n\nChallenges remain, of course. The initial investment for sustainable features can be higher, and there's a need for greater public awareness and governmental incentives to accelerate adoption. Furthermore, integrating complex sustainable technologies requires specialized knowledge and skilled labor. Nevertheless, as awareness of climate change deepens and regulatory frameworks evolve, sustainable architecture is transitioning from a niche practice to an essential standard, shaping a built environment that is resilient, responsible, and harmoniously integrated with our planet's delicate ecosystems. It is no longer just an ethical choice but an economic and ecological imperative for the future.",
+    "difficulty": "C1",
+    "topics": [
+      "Modern Architecture",
+      "Sustainability",
+      "Environmental Science"
+    ],
+    "wordCount": 620,
+    "questions": [
+      {
+        "question": "What is the primary goal of sustainable architecture?",
+        "options": [
+          "To maximize the aesthetic appeal of buildings regardless of cost.",
+          "To minimize the negative environmental impact of buildings throughout their lifecycle.",
+          "To exclusively use advanced technological systems in all constructions.",
+          "To construct buildings that are entirely self-sufficient and off-grid."
+        ],
+        "answer": "To minimize the negative environmental impact of buildings throughout their lifecycle.",
+        "explanation": "The passage states, 'This movement... seeks to minimize the negative environmental impact of buildings by efficiently using resources, reducing waste, and improving occupant health throughout a building's entire lifecycle.'"
+      },
+      {
+        "question": "According to the passage, what does 'site optimization' primarily involve?",
+        "options": [
+          "Purchasing the cheapest available land for construction.",
+          "Designing elaborate landscaping features around the building.",
+          "Considering building placement and orientation to leverage natural light, wind, and topography.",
+          "Focusing solely on maximizing the internal usable space of a building."
+        ],
+        "answer": "Considering building placement and orientation to leverage natural light, wind, and topography.",
+        "explanation": "The passage states, 'site optimization involves careful consideration of the building's placement and orientation to leverage natural light, wind patterns, and topography, thereby reducing energy demands.'"
+      },
+      {
+        "question": "Which of the following is NOT a strategy for 'efficient resource use' mentioned in the passage?",
+        "options": [
+          "Selecting materials with high embodied energy.",
+          "Using local, sustainably sourced, or recycled materials.",
+          "Implementing rainwater harvesting and greywater recycling.",
+          "Installing low-flow water fixtures."
+        ],
+        "answer": "Selecting materials with high embodied energy.",
+        "explanation": "The passage states that efficient resource use includes 'minimizing the use of virgin materials with high embodied energy,' making 'selecting materials with high embodied energy' the opposite and thus the incorrect option."
+      },
+      {
+        "question": "What is the aim of integrating renewable energy sources in sustainable buildings?",
+        "options": [
+          "To make buildings entirely dependent on the national grid.",
+          "To achieve net-zero or energy-positive operation.",
+          "To increase the building's aesthetic value.",
+          "To reduce the initial construction costs significantly."
+        ],
+        "answer": "To achieve net-zero or energy-positive operation.",
+        "explanation": "The passage mentions that sustainable buildings incorporate renewable energy sources 'aiming for net-zero or even energy-positive operation, where the building produces more energy than it consumes.'"
+      },
+      {
+        "question": "The passage suggests that one of the challenges for sustainable architecture is:",
+        "options": [
+          "The lack of any significant environmental benefits.",
+          "Lower utility bills leading to economic stagnation.",
+          "Potentially higher initial investment and the need for specialized knowledge.",
+          "A reduced focus on occupant health and well-being."
+        ],
+        "answer": "Potentially higher initial investment and the need for specialized knowledge.",
+        "explanation": "The passage notes, 'The initial investment for sustainable features can be higher, and... integrating complex sustainable technologies requires specialized knowledge and skilled labor.'"
+      }
+    ]
+  },
+  {
+    "title": "Deconstructing Narratives: An Exploration of Postmodern Literature",
+    "content": "Postmodernism in literature, a sprawling and often elusive movement that gained prominence in the mid-20th century, represents a radical departure from the certainties and structures that defined earlier literary periods like Modernism. Emerging in the aftermath of World War II and informed by philosophical currents questioning grand narratives, universal truths, and objective reality, postmodern literature embraces fragmentation, self-reflexivity, and an ironic detachment, challenging traditional notions of authorship, originality, and the very purpose of storytelling.\n\nAt its heart, postmodern literature is characterized by a deep skepticism towards claims of absolute knowledge or ultimate meaning. Authors employ a variety of techniques to dismantle conventional narrative forms. One prominent characteristic is **metafiction**, where the text self-consciously draws attention to its own status as a constructed work of fiction. This can involve an author directly addressing the reader, commenting on the process of writing, or embedding stories within stories, blurring the lines between fiction and reality. Examples include John Fowles's *The French Lieutenant's Woman* and Italo Calvino's *If on a winter's night a traveler*.\n\n**Pastiche** is another hallmark, which involves the playful imitation or blending of various styles, genres, or historical periods, often without the reverence or political critique found in parody. This eclectic mix creates a sense of intertextuality, where texts are seen as constantly referencing and remixing other texts, rather than existing as isolated, original creations. This can extend to incorporating elements of popular culture, scientific reports, or philosophical treatises into a single narrative, further fragmenting coherence.\n\nThe concept of the **unreliable narrator** is frequently exploited, pushing readers to question the veracity of the story being told. Unlike a modernist unreliable narrator whose flaws are often psychological and reveal a deeper truth, the postmodern unreliable narrator often signals the inherent impossibility of objective truth or a single, stable perspective. This technique aligns with the postmodern rejection of universal truths and the embrace of multiple, often contradictory, interpretations.\n\nPostmodern literature also often features **temporal distortion** and **non-linear narratives**, breaking away from chronological progression to mirror the fractured experience of modern life. Characters might lack clear motivations or fixed identities, existing as fluid constructs shaped by their environment or by the narrative itself. This contributes to a sense of existential uncertainty and challenges the reader's expectation of resolution or closure.\n\nThe political implications of postmodern literature are complex. While some critics argue that its fragmentation and relativism can lead to political apathy, others contend that by deconstructing dominant narratives, it opens up space for marginalized voices and critiques power structures. Authors like Thomas Pynchon (*Gravity's Rainbow*), Don DeLillo (*White Noise*), and Kurt Vonnegut (*Slaughterhouse-Five*) masterfully blend historical events with fantastical elements, conspiracy theories, and dark humor to interrogate the complexities of the modern world, often highlighting humanity's struggle against overwhelming systems.\n\nUltimately, postmodern literature invites readers into an active partnership, demanding critical engagement rather than passive consumption. It is literature that resists easy categorization, prioritizes questions over answers, and celebrates the inherent instability of meaning. Far from being nihilistic, its playful experimentation and relentless questioning serve as a profound commentary on the nature of reality, language, and storytelling in an increasingly complex and mediated world, leaving a lasting impact on contemporary literary practices.",
+    "difficulty": "C1",
+    "topics": [
+      "Literary Analysis",
+      "Postmodernism",
+      "Literary Theory"
+    ],
+    "wordCount": 647,
+    "questions": [
+      {
+        "question": "What distinguishes postmodern literature from earlier literary periods like Modernism?",
+        "options": [
+          "Its embrace of universal truths and objective reality.",
+          "Its strict adherence to chronological narrative structures.",
+          "Its skepticism towards grand narratives, fragmentation, and self-reflexivity.",
+          "Its exclusive focus on heroic, psychologically complex characters."
+        ],
+        "answer": "Its skepticism towards grand narratives, fragmentation, and self-reflexivity.",
+        "explanation": "The passage states that postmodern literature emerged 'informed by philosophical currents questioning grand narratives, universal truths, and objective reality,' and 'embraces fragmentation, self-reflexivity, and an ironic detachment, challenging traditional notions...'"
+      },
+      {
+        "question": "Which literary technique involves a text drawing attention to its own status as a constructed work of fiction?",
+        "options": [
+          "Pastiche.",
+          "Allegory.",
+          "Metafiction.",
+          "Stream of consciousness."
+        ],
+        "answer": "Metafiction.",
+        "explanation": "The passage defines metafiction as 'where the text self-consciously draws attention to its own status as a constructed work of fiction.'"
+      },
+      {
+        "question": "How does the postmodern concept of the 'unreliable narrator' often differ from its modernist counterpart?",
+        "options": [
+          "Postmodern unreliable narrators are always overtly malicious.",
+          "Modernist unreliable narrators explicitly address the reader.",
+          "Postmodern unreliable narrators often signal the impossibility of objective truth.",
+          "Modernist unreliable narrators never have psychological flaws."
+        ],
+        "answer": "Postmodern unreliable narrators often signal the impossibility of objective truth.",
+        "explanation": "The passage states, 'Unlike a modernist unreliable narrator whose flaws are often psychological and reveal a deeper truth, the postmodern unreliable narrator often signals the inherent impossibility of objective truth or a single, stable perspective.'"
+      },
+      {
+        "question": "The passage mentions that postmodern literature often features non-linear narratives and temporal distortion. What does this aim to mirror?",
+        "options": [
+          "The ordered and predictable nature of human existence.",
+          "The fractured experience of modern life.",
+          "The author's personal memories of historical events.",
+          "A clear and easily discernible plot progression."
+        ],
+        "answer": "The fractured experience of modern life.",
+        "explanation": "The passage states that non-linear narratives and temporal distortion are used 'to mirror the fractured experience of modern life.'"
+      },
+      {
+        "question": "What is one of the complex political implications of postmodern literature discussed in the passage?",
+        "options": [
+          "It always leads to explicit political activism and revolutionary movements.",
+          "Its fragmentation and relativism can sometimes lead to political apathy, but also critique power structures.",
+          "It strictly avoids any engagement with social or political themes.",
+          "It promotes unquestioning acceptance of dominant societal narratives."
+        ],
+        "answer": "Its fragmentation and relativism can sometimes lead to political apathy, but also critique power structures.",
+        "explanation": "The passage notes, 'While some critics argue that its fragmentation and relativism can lead to political apathy, others contend that by deconstructing dominant narratives, it opens up space for marginalized voices and critiques power structures.'"
+      }
+    ]
+  },
+  {
+    "title": "The Rise of the Gig Economy: Opportunities, Challenges, and Societal Impact",
+    "content": "The global workforce is undergoing a profound transformation, driven largely by technological advancements and shifting employment paradigms. Central to this evolution is the burgeoning \"gig economy,\" a labor market characterized by the prevalence of short-term contracts or freelance work, as opposed to permanent jobs. Enabled by digital platforms that connect workers directly with customers for specific tasks or projects, the gig economy has rapidly expanded across various sectors, from transportation and food delivery to professional services like graphic design and consulting. This structural shift presents both unprecedented opportunities for flexibility and economic participation, alongside significant challenges for workers, businesses, and regulatory bodies alike.\n\nFor many, the appeal of the gig economy lies in its promise of flexibility and autonomy. Workers, often referred to as \"gig workers\" or \"independent contractors,\" can set their own hours, choose their assignments, and work from virtually anywhere, offering a lifestyle that traditional employment rarely affords. This can be particularly attractive to students, parents, retirees, or individuals seeking supplemental income, allowing them to balance work with other commitments. Furthermore, digital platforms lower the barrier to entry for many services, enabling individuals to monetize their skills without the overheads associated with starting a traditional business. It also provides a vital source of income for those who might otherwise struggle to find employment in a conventional job market.\n\nHowever, the gig economy is not without its significant drawbacks and criticisms. A primary concern revolves around the lack of traditional employment benefits and protections. Gig workers typically do not receive minimum wage guarantees, health insurance, paid time off, retirement benefits, or unemployment insurance. They are often classified as independent contractors, which absolves companies of many employer respons responsibilities, shifting the burden of taxes, insurance, and operating costs onto the individual worker. This precarity can lead to financial insecurity, especially when demand for services fluctuates or when workers face unexpected illness or injury.\n\nThe algorithmic management inherent in many gig platforms also raises questions about worker control and fairness. Algorithms often determine pay rates, task assignments, and performance evaluations, leading to a lack of transparency and a sense of arbitrary decision-making. Workers may find themselves in a race to the bottom, competing on price and availability, which can depress wages and intensify work pressure. Critics also point to the potential for exploitation, particularly for low-skilled workers who have limited bargaining power.\n\nSocietally, the rapid expansion of the gig economy has broader implications. It challenges existing labor laws and regulations, prompting debates about worker classification and the need for new social safety nets adapted to this evolving work model. Governments globally are wrestling with how to define and protect gig workers, seeking a balance between fostering innovation and safeguarding labor rights. The shift also impacts urban planning, traffic congestion (due to increased delivery services), and even local economies as traditional businesses face new forms of competition.\n\nLooking ahead, the gig economy is unlikely to disappear. Instead, it will likely continue to evolve, with ongoing efforts to address its inherent contradictions. This may involve new legislative frameworks that offer a hybrid classification for gig workers, allowing for some benefits without full employee status, or the rise of worker cooperatives and collective bargaining efforts within the gig sphere. Ultimately, navigating the future of work demands a concerted effort from policymakers, businesses, and workers to ensure that the flexibility and innovation offered by the gig economy are harnessed responsibly, creating a more equitable and sustainable future for all participants in this dynamic new labor landscape.",
+    "difficulty": "C1",
+    "topics": [
+      "Sociological Trends",
+      "Economics",
+      "Labor Market"
+    ],
+    "wordCount": 658,
+    "questions": [
+      {
+        "question": "How does the passage primarily define the 'gig economy'?",
+        "options": [
+          "A labor market exclusively for high-skilled professional services.",
+          "A system where all workers receive comprehensive traditional employment benefits.",
+          "A labor market characterized by short-term contracts or freelance work, enabled by digital platforms.",
+          "A government-regulated sector aimed at full employment."
+        ],
+        "answer": "A labor market characterized by short-term contracts or freelance work, enabled by digital platforms.",
+        "explanation": "The passage defines the gig economy as 'a labor market characterized by the prevalence of short-term contracts or freelance work, as opposed to permanent jobs. Enabled by digital platforms that connect workers directly with customers for specific tasks or projects.'"
+      },
+      {
+        "question": "What is identified as a primary appeal of the gig economy for workers?",
+        "options": [
+          "Guaranteed long-term job security and comprehensive benefits.",
+          "The promise of flexibility and autonomy, allowing them to set their own hours.",
+          "Strict governmental oversight ensuring high wages for all tasks.",
+          "Opportunities for mandatory participation in company-sponsored training programs."
+        ],
+        "answer": "The promise of flexibility and autonomy, allowing them to set their own hours.",
+        "explanation": "The passage states, 'For many, the appeal of the gig economy lies in its promise of flexibility and autonomy. Workers... can set their own hours, choose their assignments, and work from virtually anywhere.'"
+      },
+      {
+        "question": "Which of the following is a significant drawback of the gig economy highlighted in the passage?",
+        "options": [
+          "The provision of excessive health insurance and retirement benefits.",
+          "The shifting of traditional employment benefits and protections burden onto individual workers.",
+          "The complete absence of digital platforms for connecting workers with tasks.",
+          "Guaranteed minimum wage for all independent contractors."
+        ],
+        "answer": "The shifting of traditional employment benefits and protections burden onto individual workers.",
+        "explanation": "The passage explains, 'A primary concern revolves around the lack of traditional employment benefits and protections... They are often classified as independent contractors, which absolves companies of many employer responsibilities, shifting the burden... onto the individual worker.'"
+      },
+      {
+        "question": "What concern is raised regarding the 'algorithmic management' in many gig platforms?",
+        "options": [
+          "It ensures complete transparency and fair decision-making for workers.",
+          "It allows workers to easily negotiate higher pay rates.",
+          "It can lead to a lack of transparency, arbitrary decision-making, and intensified work pressure.",
+          "It promotes strong worker unions and collective bargaining."
+        ],
+        "answer": "It can lead to a lack of transparency, arbitrary decision-making, and intensified work pressure.",
+        "explanation": "The passage states, 'Algorithms often determine pay rates, task assignments, and performance evaluations, leading to a lack of transparency and a sense of arbitrary decision-making. Workers may find themselves... intensifying work pressure.'"
+      },
+      {
+        "question": "What societal implication of the gig economy is discussed in the passage?",
+        "options": [
+          "It simplifies existing labor laws and regulations universally.",
+          "It promotes traditional employment models and reduces freelance work.",
+          "It challenges existing labor laws and prompts debates about worker classification and social safety nets.",
+          "It exclusively benefits large corporations without any impact on local economies."
+        ],
+        "answer": "It challenges existing labor laws and prompts debates about worker classification and social safety nets.",
+        "explanation": "The passage explains, 'Societally, the rapid expansion of the gig economy has broader implications. It challenges existing labor laws and regulations, prompting debates about worker classification and the need for new social safety nets adapted to this evolving work model.'"
+      }
+    ]
+  },
+  {
+    "title": "Beyond Ethnocentrism: Exploring Cultural Relativism in Anthropology",
+    "content": "The study of humanity, in its vast and intricate diversity, often confronts researchers with the challenge of understanding practices and beliefs that diverge significantly from their own cultural norms. Historically, this encounter frequently led to ethnocentrism – the tendency to view one's own culture as the most natural, correct, or superior way of life, judging other cultures by its standards. However, a cornerstone concept in modern anthropology, **cultural relativism**, emerged as a powerful counter-narrative, advocating for a more nuanced and empathetic approach to cross-cultural understanding.\n\nCultural relativism posits that an individual's beliefs and activities should be understood in terms of their own culture. It argues that there is no universal standard by which to judge cultures; rather, all cultural systems, practices, and beliefs are inherently valid within their own context. This does not imply moral endorsement of all practices but rather a methodological imperative for anthropologists to suspend judgment and strive for an internal understanding of another culture's logic and values. It emphasizes the importance of stepping outside one's own cultural lens to comprehend the complexities and rationales behind seemingly alien behaviors.\n\nThe concept was significantly advanced by early 20th-century anthropologists such as Franz Boas and his students, notably Ruth Benedict and Margaret Mead. Boas, reacting against the evolutionary theories that ranked cultures on a hierarchical scale from \"primitive\" to \"civilized,\" championed the idea that each culture has its own unique history and deserves to be studied on its own terms. He stressed that seemingly irrational customs often serve vital social, economic, or psychological functions within their specific cultural framework. For instance, a ritual that might appear superstitious to an outsider could be a crucial mechanism for social cohesion or stress relief for its practitioners.\n\nA core tenet of cultural relativism is the recognition that human nature is largely a product of culture, not biology. This challenges the notion that certain behaviors or values are inherent or universally human. Instead, it suggests that what is considered \"normal,\" \"moral,\" or \"rational\" varies dramatically across different societies, shaped by historical trajectories, ecological adaptations, and social structures. Understanding this plasticity of human experience is crucial for avoiding simplistic or biased interpretations.\n\nHowever, cultural relativism is not without its critics and complexities. The most significant debate centers around the question of \"absolute cultural relativism,\" which, if taken to its extreme, might imply that all cultural practices, including those that violate universal human rights (e.g., genocide, torture, severe oppression), are beyond moral critique. This extreme stance is widely rejected by contemporary anthropologists and ethicists, who often distinguish between methodological relativism (suspending judgment for understanding) and moral relativism (the belief that all moral systems are equally valid and none can be judged). Most advocates for cultural relativism today adhere to the former, recognizing the importance of ethical engagement and advocating for human rights while still striving for cultural sensitivity.\n\nFurthermore, the application of cultural relativism can sometimes be challenging in a globally interconnected world where cultural boundaries are permeable, and universal declarations of human rights seek to establish common ethical ground. It requires a constant negotiation between respecting cultural differences and upholding fundamental moral principles. Nevertheless, cultural relativism remains an indispensable analytical tool in anthropology, fostering an intellectual humility and profound respect for the diversity of human experience. It compels us to critically examine our own assumptions and biases, enriching our understanding not only of others but also of ourselves and the myriad ways humans construct meaning in the world.",
+    "difficulty": "C1",
+    "topics": [
+      "Anthropology",
+      "Cultural Studies",
+      "Ethics"
+    ],
+    "wordCount": 651,
+    "questions": [
+      {
+        "question": "What is \"ethnocentrism\" as defined in the passage?",
+        "options": [
+          "The practice of objectively comparing different cultural values.",
+          "The tendency to view one's own culture as superior and judge others by its standards.",
+          "A methodological approach to understanding cultures on their own terms.",
+          "The belief that all cultures share universal moral principles."
+        ],
+        "answer": "The tendency to view one's own culture as superior and judge others by its standards.",
+        "explanation": "The passage defines ethnocentrism as 'the tendency to view one's own culture as the most natural, correct, or superior way of life, judging other cultures by its standards.'"
+      },
+      {
+        "question": "What is the primary methodological imperative of cultural relativism for anthropologists?",
+        "options": [
+          "To actively promote one's own cultural values in other societies.",
+          "To suspend judgment and strive for an internal understanding of another culture's logic and values.",
+          "To rank cultures based on their level of technological advancement.",
+          "To identify universal truths applicable to all human cultures."
+        ],
+        "answer": "To suspend judgment and strive for an internal understanding of another culture's logic and values.",
+        "explanation": "The passage states, 'This does not imply moral endorsement of all practices but rather a methodological imperative for anthropologists to suspend judgment and strive for an internal understanding of another culture's logic and values.'"
+      },
+      {
+        "question": "According to the passage, who were significant figures in advancing the concept of cultural relativism?",
+        "options": [
+          "Karl Marx and Max Weber.",
+          "Franz Boas, Ruth Benedict, and Margaret Mead.",
+          "Adam Smith and David Ricardo.",
+          "Immanuel Kant and John Stuart Mill."
+        ],
+        "answer": "Franz Boas, Ruth Benedict, and Margaret Mead.",
+        "explanation": "The passage states, 'The concept was significantly advanced by early 20th-century anthropologists such as Franz Boas and his students, notably Ruth Benedict and Margaret Mead.'"
+      },
+      {
+        "question": "What does a core tenet of cultural relativism suggest about human nature?",
+        "options": [
+          "That human nature is largely innate and biologically determined.",
+          "That human nature is largely a product of culture, not biology.",
+          "That human nature is universally consistent across all societies.",
+          "That human nature is irrelevant to understanding cultural practices."
+        ],
+        "answer": "That human nature is largely a product of culture, not biology.",
+        "explanation": "The passage explicitly states, 'A core tenet of cultural relativism is the recognition that human nature is largely a product of culture, not biology.'"
+      },
+      {
+        "question": "What is the main point of debate surrounding 'absolute cultural relativism'?",
+        "options": [
+          "Whether cultures can ever truly be understood by outsiders.",
+          "Its potential to imply that all cultural practices, including harmful ones, are beyond moral critique.",
+          "Its inability to explain the origins of cultural diversity.",
+          "Its exclusive focus on economic practices over social structures."
+        ],
+        "answer": "Its potential to imply that all cultural practices, including harmful ones, are beyond moral critique.",
+        "explanation": "The passage states, 'The most significant debate centers around the question of \"absolute cultural relativism,\" which, if taken to its extreme, might imply that all cultural practices, including those that violate universal human rights... are beyond moral critique.'"
+      }
+    ]
+  }
+]

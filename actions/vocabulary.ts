@@ -10,6 +10,7 @@ import {
   browseWords,
   getCategories,
   getDailyVocabulary,
+  getReviewSchedule,
   getVocabularyStats,
   submitReview,
 } from "@/services/vocabulary";
@@ -115,6 +116,30 @@ export async function getCategoriesAction() {
       success: false,
       error:
         error instanceof Error ? error.message : "Failed to fetch categories",
+    };
+  }
+}
+
+export async function getReviewScheduleAction() {
+  try {
+    const session = await auth.api.getSession({
+      headers: await headers(),
+    });
+
+    if (!session) {
+      return { success: false, error: "Unauthorized" };
+    }
+
+    const result = await getReviewSchedule(session.user.id);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("getReviewScheduleAction error:", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error
+          ? error.message
+          : "Failed to fetch review schedule",
     };
   }
 }

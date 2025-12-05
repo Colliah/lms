@@ -73,10 +73,10 @@ export default function ReadingPassageInterface({
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       <div className="flex items-center justify-between">
-        <Link href="/">
+        <Link href="/reading">
           <Button variant="ghost" size="sm">
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Dashboard
+            Back to Reading
           </Button>
         </Link>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -96,8 +96,11 @@ export default function ReadingPassageInterface({
             </CardHeader>
             <CardContent>
               <div className="prose prose-zinc dark:prose-invert max-w-none">
-                {passage.content.split("\n").map((paragraph, idx) => (
-                  <p key={paragraph} className="mb-4 leading-relaxed">
+                {passage.content.split("\n").map((paragraph) => (
+                  <p
+                    key={paragraph.slice(0, 50)}
+                    className="mb-4 leading-relaxed"
+                  >
                     {paragraph}
                   </p>
                 ))}
@@ -194,10 +197,10 @@ export default function ReadingPassageInterface({
             )}
 
             <div className="flex gap-3">
-              <Button onClick={() => router.push("/")} variant="outline">
-                Back to Dashboard
+              <Button onClick={() => router.push("/reading")} variant="outline">
+                Back to Reading
               </Button>
-              <Button onClick={() => router.refresh()}>
+              <Button onClick={() => router.push("/reading")}>
                 Try Another Passage
               </Button>
             </div>

@@ -2,10 +2,13 @@ import { Suspense } from "react";
 import { getDashboardStatsAction } from "@/actions/progress";
 import { getVocabularyStatsAction } from "@/actions/vocabulary";
 import { WordOfTheDay } from "@/components/ai/word-of-day";
-import { DashboardSkeleton } from "@/components/skeletons/dashboard-skeleton";
+import { Leaderboard } from "@/components/dashboard/leaderboard";
+import { LearningPathDashboard } from "@/components/dashboard/learning-path-dashboard";
 import QuickActions from "@/components/dashboard/quick-actions";
 import StatsCards from "@/components/dashboard/stats-cards";
+import { WeaknessDashboard } from "@/components/dashboard/weakness-dashboard";
 import WeeklyChart from "@/components/dashboard/weekly-chart";
+import { DashboardSkeleton } from "@/components/skeletons/dashboard-skeleton";
 
 async function DashboardContent() {
   const [dashboardResult, vocabResult] = await Promise.all([
@@ -59,8 +62,6 @@ async function DashboardContent() {
         </p>
       </div>
 
-      {/* Word of the Day */}
-
       <StatsCards
         streak={streak}
         vocabularyStats={vocabularyStats}
@@ -72,6 +73,15 @@ async function DashboardContent() {
       <div className="grid gap-6 lg:grid-cols-2">
         <WeeklyChart data={weeklyProgress} />
         <QuickActions vocabStats={vocabularyStats} />
+      </div>
+
+      {/* Learning Path */}
+      <LearningPathDashboard />
+
+      {/* Leaderboard & Weakness Analysis */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Leaderboard />
+        <WeaknessDashboard />
       </div>
     </div>
   );

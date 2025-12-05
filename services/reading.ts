@@ -54,6 +54,30 @@ export async function getPassageByLevel(params: GetPassageParams) {
   }
 }
 
+export async function getPassageById(passageId: string) {
+  try {
+    const passage = await prisma.readingPassage.findUnique({
+      where: { id: passageId },
+      include: {
+        questions: {
+          orderBy: { orderIndex: "asc" },
+          select: {
+            id: true,
+            question: true,
+            options: true,
+            orderIndex: true,
+          },
+        },
+      },
+    });
+
+    return passage;
+  } catch (error) {
+    console.error("getPassageById error:", error);
+    throw new Error("Failed to fetch reading passage");
+  }
+}
+
 interface SubmitReadingParams {
   userId: string;
   passageId: string;
@@ -135,5 +159,68 @@ export async function submitReadingAnswers(params: SubmitReadingParams) {
   } catch (error) {
     console.error("submitReadingAnswers error:", error);
     throw new Error("Failed to submit reading answers");
+  }
+}
+
+export async function getAllPassages(userId?: string) {
+  try {
+    // Use raw query result - Prisma Accelerate extension strips type inference
+    const passages = (await prisma.readingPassage.findMany({
+      orderBy: [{ difficulty: "asc" }, { title: "asc" }],
+      select: {
+        id: true,
+        title: true,
+        difficulty: true,
+        topics: true,
+        wordCount: true,
+        questions: {
+          select: { id: true },
+        },
+      },
+    })) as unknown as Array<{
+      id: string;
+      title: string;
+      difficulty: ProficiencyLevel;
+      topics: string[];
+      wordCount: number;
+      questions: { id: string }[];
+    }>;
+
+    // Get user progress if userId provided
+    const progressMap: Record<
+      string,
+      { completed: boolean; score: number | null }
+    > = {};
+
+    if (userId) {
+      const progress = await prisma.userReadingProgress.findMany({
+        where: { userId },
+        select: {
+          passageId: true,
+          completed: true,
+          score: true,
+        },
+      });
+
+      for (const p of progress) {
+        progressMap[p.passageId] = {
+          completed: p.completed,
+          score: p.score,
+        };
+      }
+    }
+
+    return passages.map((p) => ({
+      id: p.id,
+      title: p.title,
+      difficulty: p.difficulty,
+      topics: p.topics,
+      wordCount: p.wordCount,
+      questionCount: p.questions.length,
+      userProgress: progressMap[p.id] || null,
+    }));
+  } catch (error) {
+    console.error("getAllPassages error:", error);
+    throw new Error("Failed to fetch passages");
   }
 }

@@ -3,7 +3,12 @@
 import { headers } from "next/headers";
 import type { ProficiencyLevel } from "@/app/generated/prisma/enums";
 import { auth } from "@/lib/auth";
-import { getPassageByLevel, submitReadingAnswers } from "@/services/reading";
+import {
+  getAllPassages,
+  getPassageById,
+  getPassageByLevel,
+  submitReadingAnswers,
+} from "@/services/reading";
 
 export async function fetchReadingPassageAction(data?: {
   level?: ProficiencyLevel;
@@ -60,6 +65,38 @@ export async function submitReadingAnswersAction(data: {
       success: false,
       error:
         error instanceof Error ? error.message : "Failed to submit answers",
+    };
+  }
+}
+
+export async function fetchAllPassagesAction() {
+  try {
+    const session = await auth.api.getSession({
+      headers: await headers(),
+    });
+
+    const userId = session?.user?.id;
+    const result = await getAllPassages(userId);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("fetchAllPassagesAction error:", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error ? error.message : "Failed to fetch passages",
+    };
+  }
+}
+
+export async function fetchPassageByIdAction(passageId: string) {
+  try {
+    const result = await getPassageById(passageId);
+    return { success: true, data: result };
+  } catch (error) {
+    console.error("fetchPassageByIdAction error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Failed to fetch passage",
     };
   }
 }

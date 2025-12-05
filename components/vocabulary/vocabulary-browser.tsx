@@ -1,7 +1,8 @@
 "use client";
 
-import { Search, Volume2 } from "lucide-react";
+import { Bookmark, BookmarkCheck, Search, Volume2 } from "lucide-react";
 import { useEffect, useState, useTransition } from "react";
+import { saveWordAction, unsaveWordAction } from "@/actions/saved-vocabulary";
 import { browseWordsAction, getCategoriesAction } from "@/actions/vocabulary";
 import type { ProficiencyLevel } from "@/app/generated/prisma/enums";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +28,7 @@ interface Word {
   definition: string;
   examples: Array<{ sentence: string }>;
   categories: Array<{ id: string; name: string }>;
+  isSaved?: boolean;
 }
 
 interface Category {
@@ -99,6 +101,24 @@ export function VocabularyBrowser() {
       await TTSService.speak(word);
     } finally {
       setPlayingWord(null);
+    }
+  }
+
+  async function toggleSave(wordId: string, isSaved: boolean) {
+    if (isSaved) {
+      const result = await unsaveWordAction(wordId);
+      if (result.success) {
+        setWords((prev) =>
+          prev.map((w) => (w.id === wordId ? { ...w, isSaved: false } : w)),
+        );
+      }
+    } else {
+      const result = await saveWordAction({ wordId });
+      if (result.success) {
+        setWords((prev) =>
+          prev.map((w) => (w.id === wordId ? { ...w, isSaved: true } : w)),
+        );
+      }
     }
   }
 
@@ -190,11 +210,25 @@ export function VocabularyBrowser() {
                       />
                     </Button>
                   </div>
-                  <Badge
-                    className={`${difficultyColors[word.difficulty]} text-white`}
-                  >
-                    {word.difficulty}
-                  </Badge>
+                  <div className="flex items-center gap-1">
+                    <Button
+                      size="icon"
+                      variant="ghost"
+                      className="h-6 w-6"
+                      onClick={() => toggleSave(word.id, word.isSaved || false)}
+                    >
+                      {word.isSaved ? (
+                        <BookmarkCheck className="h-4 w-4 text-primary" />
+                      ) : (
+                        <Bookmark className="h-4 w-4" />
+                      )}
+                    </Button>
+                    <Badge
+                      className={`${difficultyColors[word.difficulty]} text-white`}
+                    >
+                      {word.difficulty}
+                    </Badge>
+                  </div>
                 </div>
 
                 {word.phonetic && (

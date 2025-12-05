@@ -6,6 +6,9 @@ import {
 import { PronunciationPractice } from "@/components/ai/pronunciation-practice";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { CustomStudySession } from "@/components/vocabulary/custom-study-session";
+import { ReviewScheduleVisualization } from "@/components/vocabulary/review-schedule-visualization";
+import { SavedVocabularyList } from "@/components/vocabulary/saved-vocabulary-list";
 import { VocabularyBrowser } from "@/components/vocabulary/vocabulary-browser";
 import VocabularyLearning from "@/components/vocabulary/vocabulary-learning";
 import { VocabularyStats } from "@/components/vocabulary/vocabulary-stats";
@@ -13,9 +16,8 @@ import { VocabularyStats } from "@/components/vocabulary/vocabulary-stats";
 function StatsSkeleton() {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      {Array.from({ length: 4 }).map((_, i) => (
-        // biome-ignore lint/suspicious/noArrayIndexKey: <Skeleton>
-        <Skeleton key={`stat-${i}`} className="h-28" />
+      {["total", "mastered", "due", "accuracy"].map((stat) => (
+        <Skeleton key={`stat-${stat}`} className="h-28" />
       ))}
     </div>
   );
@@ -127,9 +129,12 @@ export default function VocabularyPage() {
 
         {/* Main Content Tabs */}
         <Tabs defaultValue="review" className="space-y-6">
-          <TabsList>
+          <TabsList className="flex-wrap h-auto gap-1">
             <TabsTrigger value="review">Daily Review</TabsTrigger>
-            <TabsTrigger value="browse">Browse Words</TabsTrigger>
+            <TabsTrigger value="custom">Custom Study</TabsTrigger>
+            <TabsTrigger value="schedule">Schedule</TabsTrigger>
+            <TabsTrigger value="browse">Browse</TabsTrigger>
+            <TabsTrigger value="saved">Saved</TabsTrigger>
           </TabsList>
 
           <TabsContent value="review">
@@ -138,8 +143,20 @@ export default function VocabularyPage() {
             </Suspense>
           </TabsContent>
 
+          <TabsContent value="custom">
+            <CustomStudySession />
+          </TabsContent>
+
+          <TabsContent value="schedule">
+            <ReviewScheduleVisualization />
+          </TabsContent>
+
           <TabsContent value="browse">
             <VocabularyBrowser />
+          </TabsContent>
+
+          <TabsContent value="saved">
+            <SavedVocabularyList />
           </TabsContent>
         </Tabs>
       </div>

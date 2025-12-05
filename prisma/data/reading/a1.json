@@ -1,0 +1,427 @@
+[
+  {
+    "title": "Leo's Daily Routine",
+    "content": "My name is Leo. Every morning, I wake up at 7 o'clock. First, I brush my teeth and wash my face. Then, I eat breakfast. I usually have toast and milk. After breakfast, I get dressed. I go to school at 8:30 AM. My classes start at 9 o'clock. At noon, I eat lunch with my friends. We play in the school yard too. After school, I come home. I do my homework and read a book. In the evening, I eat dinner with my family. Before I go to bed, I watch a little TV. I sleep at 9 PM. My routine is busy but good!",
+    "difficulty": "A1",
+    "topics": ["Daily Routine"],
+    "wordCount": 110,
+    "questions": [
+      {
+        "question": "What time does Leo wake up?",
+        "options": ["6 o'clock", "7 o'clock", "8 o'clock", "9 o'clock"],
+        "answer": "7 o'clock",
+        "explanation": "The passage states, 'Every morning, I wake up at 7 o'clock.'"
+      },
+      {
+        "question": "What does Leo eat for breakfast?",
+        "options": [
+          "Eggs and juice",
+          "Cereal and water",
+          "Toast and milk",
+          "Fruit and coffee"
+        ],
+        "answer": "Toast and milk",
+        "explanation": "Leo says, 'I usually have toast and milk' for breakfast."
+      },
+      {
+        "question": "Where does Leo eat lunch?",
+        "options": [
+          "At home",
+          "At a restaurant",
+          "At school",
+          "At a friend's house"
+        ],
+        "answer": "At school",
+        "explanation": "The passage says, 'At noon, I eat lunch with my friends' and 'We play in the school yard too', implying school."
+      },
+      {
+        "question": "What does Leo do after school?",
+        "options": [
+          "Watch TV",
+          "Play games",
+          "Do homework and read",
+          "Go to bed"
+        ],
+        "answer": "Do homework and read",
+        "explanation": "Leo states, 'After school, I come home. I do my homework and read a book.'"
+      }
+    ]
+  },
+  {
+    "title": "Anna's Family",
+    "content": "Hello! My name is Anna. I have a small but lovely family. There are four people in my family: my mom, my dad, my brother, and me. My mom's name is Maria. She is a teacher and she is very kind. My dad's name is David. He works in an office and he is funny. My brother's name is Tom. He is 10 years old and he likes to play football. I am 7 years old. We have a pet cat named Fluffy. Fluffy is black and white. We often eat dinner together and talk about our day. On weekends, we go to the park or watch a movie. I love my family very much!",
+    "difficulty": "A1",
+    "topics": ["My Family"],
+    "wordCount": 115,
+    "questions": [
+      {
+        "question": "How many people are in Anna's family?",
+        "options": ["Three", "Four", "Five", "Six"],
+        "answer": "Four",
+        "explanation": "Anna says, 'There are four people in my family: my mom, my dad, my brother, and me.'"
+      },
+      {
+        "question": "What is Anna's mom's job?",
+        "options": ["Doctor", "Teacher", "Chef", "Office worker"],
+        "answer": "Teacher",
+        "explanation": "Anna states, 'My mom's name is Maria. She is a teacher.'"
+      },
+      {
+        "question": "What does Anna's brother Tom like to do?",
+        "options": ["Read books", "Play football", "Watch TV", "Draw pictures"],
+        "answer": "Play football",
+        "explanation": "The passage mentions, 'My brother's name is Tom. He is 10 years old and he likes to play football.'"
+      },
+      {
+        "question": "What is the name of Anna's pet?",
+        "options": ["Tom", "David", "Fluffy", "Maria"],
+        "answer": "Fluffy",
+        "explanation": "Anna says, 'We have a pet cat named Fluffy.'"
+      }
+    ]
+  },
+  {
+    "title": "My Nice House",
+    "content": "I live in a nice house with my family. Our house is not very big, but it is comfortable. It has two floors. Downstairs, there is a living room, a kitchen, and a small bathroom. In the living room, we have a big sofa and a TV. My family likes to watch movies there. The kitchen is where my mom cooks delicious food. We eat at a table in the kitchen. Upstairs, there are three bedrooms and another bathroom. My bedroom is blue. I have a bed, a desk, and a small closet. Outside, there is a small garden with some flowers. I like my house. It is my favorite place.",
+    "difficulty": "A1",
+    "topics": ["My House"],
+    "wordCount": 116,
+    "questions": [
+      {
+        "question": "How many floors does the house have?",
+        "options": ["One", "Two", "Three", "Four"],
+        "answer": "Two",
+        "explanation": "The passage states, 'It has two floors.'"
+      },
+      {
+        "question": "What rooms are downstairs?",
+        "options": [
+          "Bedrooms and a bathroom",
+          "Living room, kitchen, and a bathroom",
+          "Kitchen and bedrooms",
+          "Living room and two bathrooms"
+        ],
+        "answer": "Living room, kitchen, and a bathroom",
+        "explanation": "The passage says, 'Downstairs, there is a living room, a kitchen, and a small bathroom.'"
+      },
+      {
+        "question": "What color is the narrator's bedroom?",
+        "options": ["Green", "Red", "Yellow", "Blue"],
+        "answer": "Blue",
+        "explanation": "The narrator states, 'My bedroom is blue.'"
+      },
+      {
+        "question": "What is in the living room?",
+        "options": [
+          "A bed and a desk",
+          "A sofa and a TV",
+          "A big table",
+          "Flowers"
+        ],
+        "answer": "A sofa and a TV",
+        "explanation": "The passage mentions, 'In the living room, we have a big sofa and a TV.'"
+      }
+    ]
+  },
+  {
+    "title": "Sam's Hobbies",
+    "content": "Hi, my name is Sam. I have a few hobbies that I enjoy very much. My favorite hobby is reading books. I like adventure stories and fantasy books. I read every evening before I go to sleep. Another hobby is playing football. I play with my friends at the park on Saturdays. It's a lot of fun, and it keeps me active. Sometimes, I also like to draw. I draw animals and nature scenes. I am not very good, but I enjoy it. On Sundays, I listen to music. Music makes me happy. Hobbies are important because they help me relax and learn new things. What are your hobbies?",
+    "difficulty": "A1",
+    "topics": ["Hobbies"],
+    "wordCount": 114,
+    "questions": [
+      {
+        "question": "What is Sam's favorite hobby?",
+        "options": [
+          "Playing football",
+          "Drawing",
+          "Reading books",
+          "Listening to music"
+        ],
+        "answer": "Reading books",
+        "explanation": "Sam says, 'My favorite hobby is reading books.'"
+      },
+      {
+        "question": "When does Sam play football?",
+        "options": [
+          "Every evening",
+          "On Saturdays",
+          "On Sundays",
+          "Every morning"
+        ],
+        "answer": "On Saturdays",
+        "explanation": "Sam states, 'I play with my friends at the park on Saturdays.'"
+      },
+      {
+        "question": "What does Sam like to draw?",
+        "options": [
+          "Cars and planes",
+          "People",
+          "Animals and nature scenes",
+          "Houses"
+        ],
+        "answer": "Animals and nature scenes",
+        "explanation": "Sam mentions, 'I draw animals and nature scenes.'"
+      },
+      {
+        "question": "What does Sam do on Sundays?",
+        "options": ["Read books", "Play football", "Draw", "Listen to music"],
+        "answer": "Listen to music",
+        "explanation": "The passage states, 'On Sundays, I listen to music.'"
+      }
+    ]
+  },
+  {
+    "title": "Maya's Food and Drink",
+    "content": "My name is Maya and I love food! For breakfast, I usually eat yogurt with some fruit, like bananas or strawberries. I drink a glass of orange juice. Lunch is often a sandwich with cheese and tomato, and a small salad. Sometimes I have soup. My favorite drink for lunch is water. For dinner, my family eats together. We often have chicken with rice and vegetables, or pasta. I love pasta with tomato sauce! After dinner, I sometimes have a small dessert, like an apple or a piece of dark chocolate. My favorite food is pizza. I eat it once a week with my family. It is delicious!",
+    "difficulty": "A1",
+    "topics": ["Food and Drink"],
+    "wordCount": 117,
+    "questions": [
+      {
+        "question": "What does Maya usually eat for breakfast?",
+        "options": [
+          "Toast and eggs",
+          "Cereal and milk",
+          "Yogurt and fruit",
+          "Pancakes"
+        ],
+        "answer": "Yogurt and fruit",
+        "explanation": "Maya says, 'For breakfast, I usually eat yogurt with some fruit, like bananas or strawberries.'"
+      },
+      {
+        "question": "What is Maya's favorite drink for lunch?",
+        "options": ["Milk", "Juice", "Soda", "Water"],
+        "answer": "Water",
+        "explanation": "Maya states, 'My favorite drink for lunch is water.'"
+      },
+      {
+        "question": "What does Maya's family often have for dinner?",
+        "options": [
+          "Fish and chips",
+          "Chicken with rice and vegetables, or pasta",
+          "Pizza and salad",
+          "Burgers and fries"
+        ],
+        "answer": "Chicken with rice and vegetables, or pasta",
+        "explanation": "The passage says, 'We often have chicken with rice and vegetables, or pasta.'"
+      },
+      {
+        "question": "What is Maya's favorite food?",
+        "options": ["Pasta", "Salad", "Pizza", "Chicken"],
+        "answer": "Pizza",
+        "explanation": "Maya explicitly says, 'My favorite food is pizza.'"
+      }
+    ]
+  },
+  {
+    "title": "My Hometown: Green Valley",
+    "content": "I live in a small town called Green Valley. It is a quiet and friendly place. There are not many tall buildings, but there are a lot of green trees and parks. The main street has a few small shops, a bakery, and a post office. My favorite place is the town library. I go there every Saturday to read books. There is also a small river that runs through the town. In summer, children play near the river. People in Green Valley are nice and they always say 'hello.' It is a peaceful place to live. I like my hometown because it is calm and beautiful, and everyone knows everyone.",
+    "difficulty": "A1",
+    "topics": ["My Hometown"],
+    "wordCount": 113,
+    "questions": [
+      {
+        "question": "What is the name of the town?",
+        "options": ["Blue Hills", "Green Valley", "Red River", "Sunny City"],
+        "answer": "Green Valley",
+        "explanation": "The narrator says, 'I live in a small town called Green Valley.'"
+      },
+      {
+        "question": "What can you find on the main street?",
+        "options": [
+          "Many tall buildings",
+          "A big shopping mall",
+          "Small shops, a bakery, and a post office",
+          "Only houses"
+        ],
+        "answer": "Small shops, a bakery, and a post office",
+        "explanation": "The passage lists: 'The main street has a few small shops, a bakery, and a post office.'"
+      },
+      {
+        "question": "What is the narrator's favorite place in town?",
+        "options": ["The park", "The river", "The library", "The bakery"],
+        "answer": "The library",
+        "explanation": "The narrator states, 'My favorite place is the town library.'"
+      },
+      {
+        "question": "What runs through the town?",
+        "options": ["A big road", "A train", "A small river", "A mountain"],
+        "answer": "A small river",
+        "explanation": "The passage mentions, 'There is also a small river that runs through the town.'"
+      }
+    ]
+  },
+  {
+    "title": "Seasons in My Country",
+    "content": "There are four seasons in my country: spring, summer, autumn, and winter. My favorite season is summer. In summer, the weather is hot and sunny. We often go to the beach or play outside in the park. The days are long and bright. Spring is also nice. It is warm, and many flowers bloom. Sometimes it rains, but it makes the plants grow. Autumn comes after summer. In autumn, the leaves on the trees turn red, yellow, and orange. The weather is cool and windy. Winter is the coldest season. Sometimes it snows, and we wear warm coats and hats. I like all seasons, but summer is the best for me.",
+    "difficulty": "A1",
+    "topics": ["Seasons and Weather"],
+    "wordCount": 120,
+    "questions": [
+      {
+        "question": "How many seasons are there in the narrator's country?",
+        "options": ["Two", "Three", "Four", "Five"],
+        "answer": "Four",
+        "explanation": "The passage begins with, 'There are four seasons in my country: spring, summer, autumn, and winter.'"
+      },
+      {
+        "question": "What is the narrator's favorite season?",
+        "options": ["Spring", "Summer", "Autumn", "Winter"],
+        "answer": "Summer",
+        "explanation": "The narrator says, 'My favorite season is summer.'"
+      },
+      {
+        "question": "What is the weather like in summer?",
+        "options": [
+          "Cold and snowy",
+          "Cool and windy",
+          "Warm and rainy",
+          "Hot and sunny"
+        ],
+        "answer": "Hot and sunny",
+        "explanation": "The passage describes summer as: 'the weather is hot and sunny.'"
+      },
+      {
+        "question": "What happens to the leaves in autumn?",
+        "options": [
+          "They fall off the trees.",
+          "They turn red, yellow, and orange.",
+          "They become green.",
+          "They disappear."
+        ],
+        "answer": "They turn red, yellow, and orange.",
+        "explanation": "The passage states, 'In autumn, the leaves on the trees turn red, yellow, and orange.'"
+      }
+    ]
+  },
+  {
+    "title": "Different Jobs",
+    "content": "My name is Sarah, and I am a doctor. I work in a big hospital. Every day, I help sick people feel better. It is an important and busy job. I start work early in the morning and finish in the evening. I talk to patients, check their health, and give them medicine. My uniform is a white coat. My friend, Mark, is a chef. He works in a restaurant. He cooks delicious food for many people. He wears a white hat and apron. My sister, Emily, is a teacher. She works at a school and teaches young children. She loves her job because she likes to help kids learn. All jobs are important.",
+    "difficulty": "A1",
+    "topics": ["Jobs"],
+    "wordCount": 119,
+    "questions": [
+      {
+        "question": "What is Sarah's job?",
+        "options": ["Teacher", "Chef", "Doctor", "Nurse"],
+        "answer": "Doctor",
+        "explanation": "Sarah introduces herself, 'My name is Sarah, and I am a doctor.'"
+      },
+      {
+        "question": "Where does Sarah work?",
+        "options": [
+          "In a school",
+          "In a restaurant",
+          "In an office",
+          "In a hospital"
+        ],
+        "answer": "In a hospital",
+        "explanation": "Sarah states, 'I work in a big hospital.'"
+      },
+      {
+        "question": "What does Sarah wear for work?",
+        "options": [
+          "A blue uniform",
+          "A white coat",
+          "A chef's hat",
+          "Casual clothes"
+        ],
+        "answer": "A white coat",
+        "explanation": "Sarah describes her uniform: 'My uniform is a white coat.'"
+      },
+      {
+        "question": "What is Mark's job?",
+        "options": ["Doctor", "Teacher", "Chef", "Waiter"],
+        "answer": "Chef",
+        "explanation": "The passage says, 'My friend, Mark, is a chef.'"
+      }
+    ]
+  },
+  {
+    "title": "My Best Friend Lily",
+    "content": "I have a best friend named Lily. She is 8 years old, just like me. We live on the same street, so we see each other every day. Lily has long brown hair and big blue eyes. She is very kind and always makes me laugh. We go to the same school and sit next to each other in class. Our favorite thing to do is play outside in the park. We love to swing and slide. After school, we sometimes do our homework together at my house or her house. Lily also loves to draw pictures of animals. We share our toys and secrets. She is truly the best friend anyone could ask for.",
+    "difficulty": "A1",
+    "topics": ["My Best Friend"],
+    "wordCount": 114,
+    "questions": [
+      {
+        "question": "What is the name of the narrator's best friend?",
+        "options": ["Sarah", "Emily", "Lily", "Maria"],
+        "answer": "Lily",
+        "explanation": "The narrator states, 'I have a best friend named Lily.'"
+      },
+      {
+        "question": "How old is Lily?",
+        "options": [
+          "7 years old",
+          "8 years old",
+          "9 years old",
+          "10 years old"
+        ],
+        "answer": "8 years old",
+        "explanation": "The passage says, 'She is 8 years old, just like me.'"
+      },
+      {
+        "question": "What color are Lily's eyes?",
+        "options": ["Green", "Brown", "Black", "Blue"],
+        "answer": "Blue",
+        "explanation": "Lily is described as having 'big blue eyes.'"
+      },
+      {
+        "question": "What is their favorite thing to do?",
+        "options": [
+          "Read books",
+          "Play outside in the park",
+          "Watch movies",
+          "Go shopping"
+        ],
+        "answer": "Play outside in the park",
+        "explanation": "The narrator states, 'Our favorite thing to do is play outside in the park.'"
+      }
+    ]
+  },
+  {
+    "title": "A Holiday at the Beach",
+    "content": "Last summer, my family and I went on a holiday to the beach. It was my first time seeing the ocean! We traveled by car for three hours. The weather was perfect – very hot and sunny every day. We stayed in a small hotel near the sea. Every morning, I woke up early and ran to the beach. I loved swimming in the cool water and building sandcastles. My dad taught me how to surf a little. In the evenings, we ate fresh fish at a restaurant by the sea. We watched the sunset. It was a wonderful holiday. I want to go to the beach again next year!",
+    "difficulty": "A1",
+    "topics": ["Holidays"],
+    "wordCount": 111,
+    "questions": [
+      {
+        "question": "Where did the narrator go for a holiday last summer?",
+        "options": ["The mountains", "The city", "The beach", "The forest"],
+        "answer": "The beach",
+        "explanation": "The narrator says, 'my family and I went on a holiday to the beach.'"
+      },
+      {
+        "question": "How did they travel?",
+        "options": ["By train", "By plane", "By bus", "By car"],
+        "answer": "By car",
+        "explanation": "The passage states, 'We traveled by car for three hours.'"
+      },
+      {
+        "question": "What was the weather like on the holiday?",
+        "options": [
+          "Cold and rainy",
+          "Windy and cloudy",
+          "Hot and sunny",
+          "Snowy"
+        ],
+        "answer": "Hot and sunny",
+        "explanation": "The narrator describes, 'The weather was perfect – very hot and sunny every day.'"
+      },
+      {
+        "question": "What did the narrator love to do at the beach?",
+        "options": [
+          "Read books",
+          "Play video games",
+          "Swim and build sandcastles",
+          "Watch TV"
+        ],
+        "answer": "Swim and build sandcastles",
+        "explanation": "The narrator states, 'I loved swimming in the cool water and building sandcastles.'"
+      }
+    ]
+  }
+]
