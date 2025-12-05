@@ -11,8 +11,8 @@ export const ExampleItem = ({
   const [isShow, setIsShow] = useState(false);
 
   return (
-    <div className="bg-muted/40 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600">
-      <div className="flex items-start justify-between gap-4">
+    <div className="bg-muted/40 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600 transition">
+      <div className="flex items-center justify-between gap-4">
         <p className="text-base font-medium text-foreground flex-1">
           {data.sentence}
         </p>
@@ -24,13 +24,13 @@ export const ExampleItem = ({
           size="sm"
         >
           {isShow ? (
-            <div className="flex items-center gap-1">
-              <EyeOff className="w-3 h-3" />{" "}
+            <div className="flex items-center gap-2 cursor-pointer">
+              <EyeOff className="w-4 h-4" />
               <span className="hidden sm:inline">Hide</span>
             </div>
           ) : (
-            <div className="flex items-center gap-1">
-              <Eye className="w-3 h-3" />{" "}
+            <div className="flex items-center gap-2 cursor-pointer">
+              <Eye className="w-4 h-4" />
               <span className="hidden sm:inline">See Translation</span>
             </div>
           )}

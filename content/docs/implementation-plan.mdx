@@ -96,6 +96,21 @@ Build a comprehensive English Learning Management System with vocabulary (SM-2 s
 - [x] Theory/study guide generator
 - [x] QuizGenerator UI component
 
+#### 3.7 Merriam-Webster API Integration
+- [x] Dictionary API service (`lib/merriam-webster.ts`)
+- [x] Thesaurus API service
+- [x] Dictionary lookup with definitions, pronunciations, etymology
+- [x] Thesaurus lookup with synonyms, antonyms, related words
+- [x] Audio pronunciation from MW CDN
+- [x] Server actions (`getDictionaryDefinitionAction`, `getThesaurusDataAction`, `getMWAudioUrlAction`)
+- [x] Dictionary card in word enhancements UI
+- [x] Thesaurus card with color-coded word badges
+- [x] Enhanced flashcard audio with 3-tier fallback (DB → MW → TTS)
+- [x] Standalone Dictionary page (`/dictionary`)
+- [x] Dictionary tab with definitions, examples, etymology
+- [x] Thesaurus tab with clickable synonym/antonym badges
+- [x] Sidebar menu integration
+
 ---
 
 ## Implementation Status
@@ -135,11 +150,18 @@ The LMS now includes comprehensive AI-powered features:
 - Daily Word of the Day with TTS
 - AI-generated vocabulary content
 
+**Dictionary & Thesaurus (Merriam-Webster):**
+- Official definitions from Merriam-Webster Dictionary
+- Pronunciations with IPA notation and audio playback
+- Etymology and first known use dates
+- Synonyms, antonyms, and related words from Thesaurus
+- Integrated into vocabulary flashcard enhancements
+
 ---
 
-**Last Updated**: November 29, 2025  
-**Version**: 3.0  
-**Status**: AI Integration Complete
+**Last Updated**: December 5, 2025  
+**Version**: 3.1  
+**Status**: Merriam-Webster Integration Complete
 - [x] Multi-step wizard (5 screens)
 - [x] Welcome screen with feature highlights
 - [x] Level assessment quiz (5 questions, auto-calculation)
@@ -269,6 +291,6 @@ The LMS now includes comprehensive AI-powered features:
 
 ---
 
-**Document Version**: 2.0  
-**Last Updated**: November 2025  
+**Document Version**: 2.1  
+**Last Updated**: December 2025  
 **Status**: Living Document (Updated Weekly)

@@ -11,7 +11,7 @@ export const GeminiService = {
    */
   async generateContent(
     prompt: string,
-    model = "gemini-2.5-flash"
+    model = "gemini-2.5-flash",
   ): Promise<string> {
     try {
       if (!process.env.GEMINI_API_KEY) {
@@ -35,7 +35,7 @@ export const GeminiService = {
    */
   async generateJSON<T>(
     prompt: string,
-    model = "gemini-2.5-flash"
+    model = "gemini-2.5-flash",
   ): Promise<T> {
     try {
       const response = await genAI.models.generateContent({
@@ -163,7 +163,7 @@ export const GeminiService = {
    */
   async evaluatePronunciation(
     targetWord: string,
-    spokenText: string
+    spokenText: string,
   ): Promise<string> {
     const prompt = `I am practicing English pronunciation. I tried to say "${targetWord}". The speech recognition heard "${spokenText}".
     Analyze this. 
@@ -246,7 +246,7 @@ export const GeminiService = {
       const randomSeed = Math.floor(Math.random() * 1000);
 
       const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(
-        imagePrompt
+        imagePrompt,
       )}?width=800&height=600&nologo=true&seed=${randomSeed}`;
 
       return {

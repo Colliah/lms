@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { TTSService } from "@/lib/tts";
-import { Badge } from "../ui/badge";
 import type { WordData } from "@/types/word";
+import { Badge } from "../ui/badge";
 import { ExampleItem } from "../word/example-word";
 
 export function WordOfTheDay() {
@@ -76,7 +76,7 @@ export function WordOfTheDay() {
           <div className="col-span-12 md:col-span-6 order-2 md:order-1">
             <div className="flex items-start justify-between">
               <div>
-                <div className="flex flex-col gap-3 md:flex-row md:items-baseline md:gap-6">
+                <div className="flex flex-col gap-3 md:gap-6">
                   <div className="flex items-baseline gap-3">
                     <h3 className="text-3xl md:text-4xl font-extrabold text-primary">
                       {wordData.word}
@@ -166,7 +166,7 @@ export function WordOfTheDay() {
         </div>
 
         <div className="space-y-4 pt-2 border-t border-dashed">
-          {wordData.example.map((example, index) => (
+          {wordData.example.map((example) => (
             <ExampleItem key={example.sentence} data={example} />
           ))}
         </div>

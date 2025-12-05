@@ -94,3 +94,69 @@ export async function getWordOfTheDayAction() {
     };
   }
 }
+
+// =============================================================================
+// Merriam-Webster API Actions
+// =============================================================================
+
+import {
+  type DictionaryEntry,
+  MerriamWebsterService,
+  type ThesaurusEntry,
+} from "@/lib/merriam-webster";
+
+export async function getDictionaryDefinitionAction(word: string): Promise<{
+  success: boolean;
+  data?: DictionaryEntry | null;
+  error?: string;
+}> {
+  try {
+    const definition =
+      await MerriamWebsterService.getDictionaryDefinition(word);
+    return { success: true, data: definition };
+  } catch (error) {
+    console.error("getDictionaryDefinitionAction error:", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error
+          ? error.message
+          : "Failed to get dictionary definition",
+    };
+  }
+}
+
+export async function getThesaurusDataAction(word: string): Promise<{
+  success: boolean;
+  data?: ThesaurusEntry | null;
+  error?: string;
+}> {
+  try {
+    const thesaurus = await MerriamWebsterService.getThesaurusEntry(word);
+    return { success: true, data: thesaurus };
+  } catch (error) {
+    console.error("getThesaurusDataAction error:", error);
+    return {
+      success: false,
+      error:
+        error instanceof Error ? error.message : "Failed to get thesaurus data",
+    };
+  }
+}
+
+export async function getMWAudioUrlAction(word: string): Promise<{
+  success: boolean;
+  data?: string | null;
+  error?: string;
+}> {
+  try {
+    const audioUrl = await MerriamWebsterService.getAudioUrl(word);
+    return { success: true, data: audioUrl };
+  } catch (error) {
+    console.error("getMWAudioUrlAction error:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Failed to get audio URL",
+    };
+  }
+}

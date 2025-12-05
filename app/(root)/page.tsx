@@ -2,9 +2,6 @@ import { Suspense } from "react";
 import { getDashboardStatsAction } from "@/actions/progress";
 import { getVocabularyStatsAction } from "@/actions/vocabulary";
 import { WordOfTheDay } from "@/components/ai/word-of-day";
-import QuickActions from "@/components/dashboard/quick-actions";
-import StatsCards from "@/components/dashboard/stats-cards";
-import WeeklyChart from "@/components/dashboard/weekly-chart";
 import { DashboardSkeleton } from "@/components/skeletons/dashboard-skeleton";
 
 async function DashboardContent() {

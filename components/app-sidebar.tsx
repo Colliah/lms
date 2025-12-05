@@ -7,6 +7,7 @@ import {
   FileText,
   GraduationCap,
   LayoutDashboard,
+  Library,
   Mic,
   Pencil,
   Sparkles,
@@ -66,6 +67,11 @@ const learningNav = [
     title: "AI Quiz",
     url: "/quiz",
     icon: Sparkles,
+  },
+  {
+    title: "Dictionary",
+    url: "/dictionary",
+    icon: Library,
   },
 ];
 

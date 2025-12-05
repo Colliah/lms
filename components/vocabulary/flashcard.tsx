@@ -3,6 +3,7 @@
 import { Volume2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { getMWAudioUrlAction } from "@/actions/ai";
 import { WordEnhancements } from "@/components/ai/word-enhancements";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,18 +35,62 @@ export default function Flashcard({ word, isFlipped, onFlip }: FlashcardProps) {
 
     setIsPlaying(true);
     try {
-      // Try audio file first if available
+      // 1. Try audio file from database first
       if (word.audios.length > 0) {
         const audio = new Audio(word.audios[0].url);
         await audio.play();
         audio.onended = () => setIsPlaying(false);
-      } else {
-        // Fallback to TTS
-        await TTSService.speak(word.word);
-        setIsPlaying(false);
+        audio.onerror = () => {
+          // If database audio fails, try MW fallback
+          tryMWAudioFallback();
+        };
+        return;
       }
+
+      // 2. Try Merriam-Webster audio
+      const mwResult = await getMWAudioUrlAction(word.word);
+      if (mwResult.success && mwResult.data) {
+        const audio = new Audio(mwResult.data);
+        await audio.play();
+        audio.onended = () => setIsPlaying(false);
+        audio.onerror = () => {
+          // If MW audio fails, try TTS
+          tryTTSFallback();
+        };
+        return;
+      }
+
+      // 3. Fallback to TTS
+      await TTSService.speak(word.word);
+      setIsPlaying(false);
     } catch (error) {
       console.error("Audio playback error:", error);
+      toast.error("Failed to play audio");
+      setIsPlaying(false);
+    }
+  }
+
+  async function tryMWAudioFallback() {
+    try {
+      const mwResult = await getMWAudioUrlAction(word.word);
+      if (mwResult.success && mwResult.data) {
+        const audio = new Audio(mwResult.data);
+        await audio.play();
+        audio.onended = () => setIsPlaying(false);
+        audio.onerror = () => tryTTSFallback();
+      } else {
+        await tryTTSFallback();
+      }
+    } catch {
+      await tryTTSFallback();
+    }
+  }
+
+  async function tryTTSFallback() {
+    try {
+      await TTSService.speak(word.word);
+      setIsPlaying(false);
+    } catch {
       toast.error("Failed to play audio");
       setIsPlaying(false);
     }

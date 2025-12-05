@@ -440,6 +440,103 @@ export async function generateAnalyticsSnapshot(
 
 ---
 
+## Merriam-Webster Service
+
+File: [`lib/merriam-webster.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/lib/merriam-webster.ts)
+
+Provides integration with Merriam-Webster's Collegiate Dictionary and Thesaurus APIs for authoritative word definitions, pronunciations, synonyms, and antonyms.
+
+### getDictionaryDefinition
+
+Fetches comprehensive dictionary data for a word.
+
+```typescript
+interface DictionaryEntry {
+  word: string;
+  pronunciations: Array<{
+    notation: string;
+    audioUrl: string | null;
+  }>;
+  partOfSpeech: string | null;
+  definitions: string[];
+  shortDefinitions: string[];
+  examples: string[];
+  etymology: string | null;
+  firstKnownUse: string | null;
+}
+
+export async function getDictionaryDefinition(
+  word: string
+): Promise<DictionaryEntry | null>
+```
+
+**Features**:
+- IPA-style pronunciation notation
+- Audio pronunciation URLs from MW CDN
+- Short definitions for quick display
+- Full definitions with examples
+- Etymology and first known use dates
+
+---
+
+### getThesaurusEntry
+
+Fetches synonyms, antonyms, and related words.
+
+```typescript
+interface ThesaurusEntry {
+  word: string;
+  partOfSpeech: string | null;
+  definition: string | null;
+  synonyms: string[];
+  antonyms: string[];
+  relatedWords: string[];
+  nearAntonyms: string[];
+}
+
+export async function getThesaurusEntry(
+  word: string
+): Promise<ThesaurusEntry | null>
+```
+
+**Data Sources**:
+- `syn_list`: Primary synonyms
+- `ant_list`: Primary antonyms
+- `sim_list`, `rel_list`: Related/similar words
+- `near_list`, `opp_list`: Near antonyms
+
+---
+
+### getAudioUrl
+
+Helper function to get pronunciation audio URL.
+
+```typescript
+export async function getAudioUrl(
+  word: string
+): Promise<string | null>
+```
+
+**Audio URL Construction**:
+```typescript
+// Base URL: https://media.merriam-webster.com/audio/prons/en/us/mp3/{subdirectory}/{audio}.mp3
+
+// Subdirectory logic:
+// - "bix" if audio starts with "bix"
+// - "gg" if audio starts with "gg"
+// - "number" if audio starts with number/punctuation
+// - First letter otherwise
+```
+
+---
+
+### Environment Variables
+
+```env
+MERRIAM_WEBSTER_DICTIONARY_API_KEY=your-dictionary-key
+MERRIAM_WEBSTER_THESAURUS_API_KEY=your-thesaurus-key
+```
+
 ## Service Layer Best Practices
 
 ### 1. Always Use Transactions for Complex Operations

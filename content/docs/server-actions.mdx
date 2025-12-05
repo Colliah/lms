@@ -416,6 +416,148 @@ Manually triggers snapshot generation (usually done automatically).
 
 ---
 
+## AI Actions
+
+File: [`app/actions/ai.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/ai.ts)
+
+### AI-Powered Vocabulary Enhancements
+
+```typescript
+// Get related word forms
+export async function getWordFamilyAction(word: string)
+
+// Get common word combinations
+export async function getCollocationsAction(word: string)
+
+// Get phrasal verbs containing the word
+export async function getPhrasalVerbsAction(word: string)
+
+// Get idioms containing the word
+export async function getIdiomsAction(word: string)
+```
+
+### Pronunciation
+
+```typescript
+export async function evaluatePronunciationAction(
+  targetWord: string,
+  spokenText: string
+)
+```
+
+Evaluates pronunciation accuracy using AI.
+
+### Word of the Day
+
+```typescript
+export async function getWordOfTheDayAction()
+```
+
+Returns AI-generated Word of the Day with definitions, examples, synonyms, and image prompt.
+
+---
+
+### Merriam-Webster Dictionary
+
+```typescript
+export async function getDictionaryDefinitionAction(word: string): Promise<{
+  success: boolean;
+  data?: DictionaryEntry | null;
+  error?: string;
+}>
+```
+
+Fetches official definitions from Merriam-Webster Collegiate Dictionary.
+
+**Returns**:
+```typescript
+{
+  word: string;
+  pronunciations: Array<{ notation: string; audioUrl: string | null }>;
+  partOfSpeech: string | null;
+  definitions: string[];
+  shortDefinitions: string[];
+  examples: string[];
+  etymology: string | null;
+  firstKnownUse: string | null;
+}
+```
+
+**Usage**:
+```typescript
+const result = await getDictionaryDefinitionAction("ephemeral");
+
+if (result.success && result.data) {
+  console.log(result.data.shortDefinitions);
+  // ["lasting a very short time"]
+}
+```
+
+---
+
+### Merriam-Webster Thesaurus
+
+```typescript
+export async function getThesaurusDataAction(word: string): Promise<{
+  success: boolean;
+  data?: ThesaurusEntry | null;
+  error?: string;
+}>
+```
+
+Fetches synonyms, antonyms, and related words from Merriam-Webster Thesaurus.
+
+**Returns**:
+```typescript
+{
+  word: string;
+  partOfSpeech: string | null;
+  definition: string | null;
+  synonyms: string[];
+  antonyms: string[];
+  relatedWords: string[];
+  nearAntonyms: string[];
+}
+```
+
+**Usage**:
+```typescript
+const result = await getThesaurusDataAction("happy");
+
+if (result.success && result.data) {
+  console.log(result.data.synonyms);
+  // ["joyful", "cheerful", "delighted", ...]
+  console.log(result.data.antonyms);
+  // ["sad", "unhappy", "miserable", ...]
+}
+```
+
+---
+
+### Merriam-Webster Audio
+
+```typescript
+export async function getMWAudioUrlAction(word: string): Promise<{
+  success: boolean;
+  data?: string | null;
+  error?: string;
+}>
+```
+
+Gets the audio pronunciation URL from Merriam-Webster CDN.
+
+**Usage**:
+```typescript
+const result = await getMWAudioUrlAction("pronunciation");
+
+if (result.success && result.data) {
+  const audio = new Audio(result.data);
+  await audio.play();
+}
+```
+
+---
+
 ## User Profile Actions
 
 File: [`app/actions/user-profile.ts`](file:///Users/phuhuynh/Downloads/nextjs/lms/app/actions/user-profile.ts)
