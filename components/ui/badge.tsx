@@ -21,12 +21,15 @@ const badgeVariants = cva(
         success:
           "border border-green-200 dark:border-green-800 border-transparent bg-green-600 text-white [a&]:hover:bg-green/90 focus-visible:ring-green/20 dark:focus-visible:ring-green/40 dark:bg-green/60",
         band: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-500 rounded-full border border-green-200 dark:border-green-800",
+        blue: "border-transparent bg-blue-800 text-white [a&]:hover:bg-blue/90 focus-visible:ring-blue/20 dark:focus-visible:ring-blue/40 dark:bg-blue/60",
+        orange:
+          "border-transparent bg-orange-800 text-white [a&]:hover:bg-orange/90 focus-visible:ring-orange/20 dark:focus-visible:ring-orange/40 dark:bg-orange/60",
       },
     },
     defaultVariants: {
       variant: "default",
     },
-  },
+  }
 );
 
 function Badge({

@@ -6,6 +6,9 @@
  * synonyms, and antonyms.
  */
 
+import { DictionaryEntry, ThesaurusEntry } from "@/types/dictionary";
+import { formatMWPhonetic } from ".";
+
 // =============================================================================
 // Types for Dictionary API Response
 // =============================================================================
@@ -85,30 +88,6 @@ interface MWThesaurusEntry {
 // =============================================================================
 // Parsed Output Types
 // =============================================================================
-
-export interface DictionaryEntry {
-  word: string;
-  pronunciations: Array<{
-    notation: string;
-    audioUrl: string | null;
-  }>;
-  partOfSpeech: string | null;
-  definitions: string[];
-  shortDefinitions: string[];
-  examples: string[];
-  etymology: string | null;
-  firstKnownUse: string | null;
-}
-
-export interface ThesaurusEntry {
-  word: string;
-  partOfSpeech: string | null;
-  definition: string | null;
-  synonyms: string[];
-  antonyms: string[];
-  relatedWords: string[];
-  nearAntonyms: string[];
-}
 
 // =============================================================================
 // API Configuration
@@ -219,7 +198,7 @@ function extractDefinitions(def: MWDefinition[] | undefined): {
  * Extract words from a thesaurus word list
  */
 function extractWordList(
-  list: Array<Array<{ wd: string }>> | undefined,
+  list: Array<Array<{ wd: string }>> | undefined
 ): string[] {
   if (!list) return [];
 
@@ -250,7 +229,9 @@ export const MerriamWebsterService = {
       throw new Error("MERRIAM_WEBSTER_DICTIONARY_API_KEY is not configured");
     }
 
-    const url = `${DICTIONARY_BASE_URL}/${encodeURIComponent(word)}?key=${apiKey}`;
+    const url = `${DICTIONARY_BASE_URL}/${encodeURIComponent(
+      word
+    )}?key=${apiKey}`;
 
     try {
       const response = await fetch(url);
@@ -278,19 +259,7 @@ export const MerriamWebsterService = {
       const entry = data[0] as MWDictionaryEntry;
 
       // Extract pronunciations
-      const pronunciations: DictionaryEntry["pronunciations"] = [];
-      if (entry.hwi?.prs) {
-        for (const prs of entry.hwi.prs) {
-          if (prs.mw) {
-            pronunciations.push({
-              notation: prs.mw,
-              audioUrl: prs.sound?.audio
-                ? buildAudioUrl(prs.sound.audio)
-                : null,
-            });
-          }
-        }
-      }
+      const pronunciations = extractPronunciations(entry.hwi);
 
       // Extract definitions and examples
       const { definitions, examples } = extractDefinitions(entry.def);
@@ -305,7 +274,7 @@ export const MerriamWebsterService = {
       }
 
       return {
-        word: entry.hwi?.hw?.replace(/\*/g, "·") || word,
+        word: entry.hwi?.hw?.replace(/[\u00B7*]/g, "") || word,
         pronunciations,
         partOfSpeech: entry.fl || null,
         definitions,
@@ -331,7 +300,9 @@ export const MerriamWebsterService = {
       throw new Error("MERRIAM_WEBSTER_THESAURUS_API_KEY is not configured");
     }
 
-    const url = `${THESAURUS_BASE_URL}/${encodeURIComponent(word)}?key=${apiKey}`;
+    const url = `${THESAURUS_BASE_URL}/${encodeURIComponent(
+      word
+    )}?key=${apiKey}`;
 
     try {
       const response = await fetch(url);
@@ -357,6 +328,7 @@ export const MerriamWebsterService = {
 
       // Take the first entry
       const entry = data[0] as MWThesaurusEntry;
+      const pronunciations = extractPronunciations(entry.hwi);
 
       // Collect all synonyms, antonyms, etc. from all senses
       let synonyms: string[] = [];
@@ -401,13 +373,14 @@ export const MerriamWebsterService = {
       nearAntonyms = [...new Set(nearAntonyms)];
 
       return {
-        word: entry.hwi?.hw?.replace(/\*/g, "·") || word,
+        word: entry.hwi?.hw?.replace(/[\u00B7*]/g, "") || word,
         partOfSpeech: entry.fl || null,
         definition: entry.shortdef?.[0] || null,
         synonyms,
         antonyms,
         relatedWords,
         nearAntonyms,
+        pronunciations,
       };
     } catch (error) {
       console.error("Merriam-Webster Thesaurus API error:", error);
@@ -432,3 +405,21 @@ export const MerriamWebsterService = {
     }
   },
 };
+
+function extractPronunciations(
+  hwi: any
+): { notation: string; audioUrl: string | null }[] {
+  const results = [];
+  if (hwi?.prs) {
+    for (const prs of hwi.prs) {
+      if (prs.mw) {
+        const cleanNotation = formatMWPhonetic(prs.mw);
+        results.push({
+          notation: cleanNotation,
+          audioUrl: prs.sound?.audio ? buildAudioUrl(prs.sound.audio) : null,
+        });
+      }
+    }
+  }
+  return results;
+}
