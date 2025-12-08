@@ -52,6 +52,7 @@ model User {
   analyticsSnapshots AnalyticsSnapshot[]
   learningPaths      LearningPath[]
   weaknessAreas      WeaknessArea[]
+  vocabCategories    VocabCategory[]
 
   @@unique([email])
   @@unique([phoneNumber])
@@ -702,3 +703,70 @@ model WeaknessArea {
   @@index([userId, category, resolvedAt])
   @@map("weakness_area")
 }
+
+// ============================================================
+// USER-OWNED VOCABULARY LEARNING MODULE
+// ============================================================
+
+enum MasteryLevel {
+  NEW
+  LEARNING
+  REVIEW
+  MASTERED
+}
+
+model VocabCategory {
+  id          String      @id @default(cuid())
+  name        String
+  description String?
+  color       String?     // Optional color for UI
+  userId      String
+  user        User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cards       VocabCard[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@unique([userId, name])
+  @@index([userId])
+  @@map("vocab_category")
+}
+
+model VocabCard {
+  id              String          @id @default(cuid())
+  word            String
+  meaning         String
+  partOfSpeech    String
+  exampleSentence String?
+  image           String?         // URL for visual association
+  note            String?         // User's personal notes
+  masteryLevel    MasteryLevel    @default(NEW)
+
+  // SRS fields (SM-2 algorithm)
+  easeFactor      Float           @default(2.5)
+  intervalDays    Int             @default(0)
+  repetitionCount Int             @default(0)
+  nextReviewDate  DateTime        @default(now())
+  lastReviewedAt  DateTime?
+
+  categoryId      String
+  category        VocabCategory   @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  reviews         VocabReviewLog[]
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  @@index([categoryId])
+  @@index([nextReviewDate])
+  @@map("vocab_card")
+}
+
+model VocabReviewLog {
+  id         String    @id @default(cuid())
+  cardId     String
+  card       VocabCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  quality    Int       // 0-5 (SM-2 quality rating)
+  reviewedAt DateTime  @default(now())
+
+  @@index([cardId, reviewedAt])
+  @@map("vocab_review_log")
+}
+

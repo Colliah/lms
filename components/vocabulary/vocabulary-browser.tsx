@@ -68,7 +68,6 @@ export function VocabularyBrowser() {
   const [isPending, startTransition] = useTransition();
   const [playingWord, setPlayingWord] = useState<string | null>(null);
 
-  // Fetch categories on mount
   useEffect(() => {
     getCategoriesAction().then((result) => {
       if (result.success && result.data) {
@@ -77,20 +76,25 @@ export function VocabularyBrowser() {
     });
   }, []);
 
-  // Fetch words when filters change
   useEffect(() => {
     startTransition(async () => {
-      const result = await browseWordsAction({
+      const params = {
         difficulty: difficulty === "ALL" ? undefined : difficulty,
         categoryId: categoryId === "ALL" ? undefined : categoryId,
         search: search || undefined,
         page,
-      });
+      };
+      console.log("Fetching words with params:", params);
+
+      const result = await browseWordsAction(params);
+      console.log("Browse result:", result);
 
       if (result.success && result.data) {
         setWords(result.data.words);
         setTotal(result.data.total);
         setTotalPages(result.data.totalPages);
+      } else {
+        console.error("Browse failed:", result.error);
       }
     });
   }, [difficulty, categoryId, search, page]);
@@ -109,14 +113,14 @@ export function VocabularyBrowser() {
       const result = await unsaveWordAction(wordId);
       if (result.success) {
         setWords((prev) =>
-          prev.map((w) => (w.id === wordId ? { ...w, isSaved: false } : w)),
+          prev.map((w) => (w.id === wordId ? { ...w, isSaved: false } : w))
         );
       }
     } else {
       const result = await saveWordAction({ wordId });
       if (result.success) {
         setWords((prev) =>
-          prev.map((w) => (w.id === wordId ? { ...w, isSaved: true } : w)),
+          prev.map((w) => (w.id === wordId ? { ...w, isSaved: true } : w))
         );
       }
     }
@@ -206,7 +210,9 @@ export function VocabularyBrowser() {
                       disabled={playingWord === word.word}
                     >
                       <Volume2
-                        className={`h-4 w-4 ${playingWord === word.word ? "animate-pulse" : ""}`}
+                        className={`h-4 w-4 ${
+                          playingWord === word.word ? "animate-pulse" : ""
+                        }`}
                       />
                     </Button>
                   </div>
@@ -224,7 +230,9 @@ export function VocabularyBrowser() {
                       )}
                     </Button>
                     <Badge
-                      className={`${difficultyColors[word.difficulty]} text-white`}
+                      className={`${
+                        difficultyColors[word.difficulty]
+                      } text-white`}
                     >
                       {word.difficulty}
                     </Badge>

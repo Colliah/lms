@@ -55,3 +55,11 @@ export function formatMWPhonetic(text: string): string {
 
   return formatted;
 }
+
+export function formatDateString(date: Date): string {
+  return date.toLocaleDateString("vi-VN", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  });
+}
