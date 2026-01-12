@@ -12,10 +12,18 @@ import {
 import { prisma } from "./prisma";
 
 export const auth = betterAuth({
+  appName: "lms",
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
-  appName: "lms",
+  user: {
+    additionalFields: {
+      role: {
+        type: "string",
+        input: false,
+      },
+    },
+  },
   emailAndPassword: {
     enabled: true,
   },

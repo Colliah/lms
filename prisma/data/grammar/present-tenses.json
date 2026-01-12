@@ -1,0 +1,579 @@
+{
+  "topic": {
+    "name": "Present Tenses",
+    "description": "Master Present Simple, Present Continuous, and Present Perfect tenses",
+    "difficulty": "A1"
+  },
+  "exercises": [
+    {
+      "title": "My Daily Habits",
+      "description": "Practice using the Present Simple to talk about daily routines and habits in positive sentences.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ up at 7 AM every day.",
+          "options": ["get", "gets", "getting", "got"],
+          "correctAnswer": "get",
+          "explanation": "For subjects 'I', 'you', 'we', 'they', we use the base form of the verb. 'Get up' means 'thức dậy'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ coffee in the morning.",
+          "options": ["drink", "drinks", "drinking", "drank"],
+          "correctAnswer": "drinks",
+          "explanation": "For third-person singular subjects ('he', 'she', 'it'), we add 's' to the verb. 'She drinks' means 'cô ấy uống'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ to school by bus.",
+          "options": ["go", "goes", "going", "went"],
+          "correctAnswer": "go",
+          "explanation": "For subjects 'we', 'you', 'I', 'they', we use the base form of the verb. 'We go' means 'chúng tôi đi'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He ___ his homework after dinner.",
+          "options": ["do", "does", "doing", "did"],
+          "correctAnswer": "does",
+          "explanation": "For third-person singular subjects ('he', 'she', 'it'), verbs ending in 'o' (like 'do') add 'es'. 'He does' means 'anh ấy làm'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ TV in the evening.",
+          "options": ["watch", "watches", "watching", "watched"],
+          "correctAnswer": "watch",
+          "explanation": "For subjects 'they', 'I', 'you', 'we', we use the base form of the verb. 'They watch' means 'họ xem'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My mother ___ delicious food.",
+          "options": ["cook", "cooks", "cooking", "cooked"],
+          "correctAnswer": "cooks",
+          "explanation": "'My mother' is a third-person singular subject (like 'she'), so we add 's' to the verb. 'My mother cooks' means 'mẹ tôi nấu'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Facts About the World",
+      "description": "Practice using the Present Simple to talk about general truths and facts.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The sun ___ in the east.",
+          "options": ["rise", "rises", "rising", "rose"],
+          "correctAnswer": "rises",
+          "explanation": "'The sun' is a third-person singular subject (like 'it'), so we add 's' to the verb. This is a general truth. 'The sun rises' means 'Mặt trời mọc'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Water ___ at 100 degrees Celsius.",
+          "options": ["boil", "boils", "boiling", "boiled"],
+          "correctAnswer": "boils",
+          "explanation": "'Water' is a third-person singular subject (like 'it'), so we add 's' to the verb. This is a scientific fact. 'Water boils' means 'Nước sôi'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Birds ___ in the sky.",
+          "options": ["fly", "flies", "flying", "flew"],
+          "correctAnswer": "fly",
+          "explanation": "'Birds' is a plural subject (like 'they'), so we use the base form of the verb. 'Birds fly' means 'Chim bay'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "A cat ___ four legs.",
+          "options": ["have", "has", "having", "had"],
+          "correctAnswer": "has",
+          "explanation": "'A cat' is a third-person singular subject (like 'it'), so we use 'has' for 'have'. 'A cat has' means 'Một con mèo có'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Fish ___ in water.",
+          "options": ["live", "lives", "living", "lived"],
+          "correctAnswer": "live",
+          "explanation": "When referring to 'fish' as a general plural group, we use the base form of the verb. 'Fish live' means 'Cá sống'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The Earth ___ around the sun.",
+          "options": ["orbit", "orbits", "orbiting", "orbited"],
+          "correctAnswer": "orbits",
+          "explanation": "'The Earth' is a third-person singular subject (like 'it'), so we add 's' to the verb. This is a scientific fact. 'The Earth orbits' means 'Trái Đất quay quanh'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Do You...?",
+      "description": "Practice forming negative sentences and questions with the Present Simple for habits and routines.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ not like cold weather.",
+          "options": ["do", "does", "am", "is"],
+          "correctAnswer": "do",
+          "explanation": "For subjects 'I', 'you', 'we', 'they', we use 'do' to form negative sentences (do not). 'I do not like' means 'Tôi không thích'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ she live in a big city?",
+          "options": ["Do", "Does", "Is", "Are"],
+          "correctAnswer": "Does",
+          "explanation": "For third-person singular subjects ('he', 'she', 'it'), we use 'does' to form questions. 'Does she live?' means 'Cô ấy có sống không?'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ not work on weekends.",
+          "options": ["do", "does", "are", "is"],
+          "correctAnswer": "do",
+          "explanation": "For subjects 'they', 'I', 'you', 'we', we use 'do' to form negative sentences (do not). 'They do not work' means 'Họ không làm việc'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He ___ not play tennis.",
+          "options": ["do", "does", "don't", "doesn't"],
+          "correctAnswer": "doesn't",
+          "explanation": "'He' is a third-person singular subject, so we use 'does not' or its contraction 'doesn't'. 'He doesn't play' means 'Anh ấy không chơi'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ you speak English?",
+          "options": ["Do", "Does", "Are", "Is"],
+          "correctAnswer": "Do",
+          "explanation": "For subjects 'you', 'I', 'we', 'they', we use 'do' to form questions. 'Do you speak?' means 'Bạn có nói không?'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My brother ___ not eat meat.",
+          "options": ["do", "does", "don't", "doesn't"],
+          "correctAnswer": "doesn't",
+          "explanation": "'My brother' is a third-person singular subject (like 'he'), so we use 'does not' or its contraction 'doesn't'. 'My brother doesn't eat' means 'Anh trai tôi không ăn'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Present Continuous: What's Happening Now?",
+      "description": "Practice using the Present Continuous tense to describe actions happening at the moment of speaking.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She ___ (read) a book right now.",
+          "options": ["read", "reads", "is reading", "are reading"],
+          "correctAnswer": "is reading",
+          "explanation": "The Present Continuous is formed with 'am/is/are' + verb-ing. 'She' takes 'is'. 'Right now' indicates an action happening at the moment. (Cấu trúc: Chủ ngữ + am/is/are + động từ-ing. 'Right now' nghĩa là 'ngay bây giờ'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Look! The cat ___ on the sofa.",
+          "options": ["sleeps", "is sleeping", "slept", "sleeping"],
+          "correctAnswer": "is sleeping",
+          "explanation": "The word 'Look!' tells us an action is happening at this very moment, so we use the Present Continuous: 'is' + verb-ing. ('Look!' báo hiệu hành động đang diễn ra.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ (not play) football today.",
+          "options": [
+            "do not play",
+            "are not playing",
+            "is not playing",
+            "not playing"
+          ],
+          "correctAnswer": "are not playing",
+          "explanation": "For negative sentences in the Present Continuous, we use 'am/is/are' + not + verb-ing. 'They' takes 'are'. (Thể phủ định của Hiện tại Tiếp diễn: Chủ ngữ + am/is/are + not + động từ-ing.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Why ___ you ___ (laugh)?",
+          "options": [
+            "do / laugh",
+            "are / laughing",
+            "have / laughed",
+            "is / laughing"
+          ],
+          "correctAnswer": "are / laughing",
+          "explanation": "For questions in the Present Continuous, the structure is 'Wh-word (optional) + am/is/are + subject + verb-ing?'. 'You' takes 'are'. (Câu hỏi Hiện tại Tiếp diễn: Wh-word + am/is/are + chủ ngữ + động từ-ing?)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (study) for my English exam this week.",
+          "options": ["study", "am study", "am studying", "is studying"],
+          "correctAnswer": "am studying",
+          "explanation": "Even if not 'right now', 'this week' suggests an ongoing activity or a temporary plan, which also uses the Present Continuous. 'I' takes 'am'. (Hành động mang tính tạm thời hoặc kế hoạch trong thời gian gần cũng dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: He is watch TV.",
+          "options": [
+            "He is watch TV.",
+            "He watching TV.",
+            "He is watching TV.",
+            "He watches TV."
+          ],
+          "correctAnswer": "He is watching TV.",
+          "explanation": "For the Present Continuous, the main verb must end in '-ing'. The correct form is 'is watching'. (Động từ chính trong Hiện tại Tiếp diễn phải thêm '-ing'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Present Perfect: Life Experiences",
+      "description": "Practice using the Present Perfect tense to talk about life experiences.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (never / visit) Paris.",
+          "options": [
+            "never visit",
+            "have never visited",
+            "has never visited",
+            "did never visit"
+          ],
+          "correctAnswer": "have never visited",
+          "explanation": "The Present Perfect (have/has + Past Participle) is used for life experiences. 'Never' goes between 'have/has' and the past participle. The past participle of 'visit' is 'visited'. (Thì Hiện tại Hoàn thành dùng để nói về kinh nghiệm sống. 'Never' đứng giữa 'have/has' và phân từ hai.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ you ever ___ sushi?",
+          "options": ["Do / ate", "Have / eaten", "Did / eat", "Are / eating"],
+          "correctAnswer": "Have / eaten",
+          "explanation": "This is a question about a life experience, so we use the Present Perfect. The structure is 'Have/Has + subject + ever + Past Participle?'. The past participle of 'eat' is 'eaten'. (Câu hỏi kinh nghiệm sống dùng Hiện tại Hoàn thành. Phân từ hai của 'eat' là 'eaten'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She ___ (be) to London many times.",
+          "options": ["has been", "have been", "is been", "was"],
+          "correctAnswer": "has been",
+          "explanation": "The Present Perfect is used for experiences that happened multiple times in the past. 'She' takes 'has'. The past participle of 'be' is 'been'. ('Be to' nghĩa là 'đã từng đến đó và trở về'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My parents ___ (not try) Italian food before.",
+          "options": [
+            "don't try",
+            "haven't tried",
+            "didn't try",
+            "aren't trying"
+          ],
+          "correctAnswer": "haven't tried",
+          "explanation": "The phrase 'before' indicates an experience at some point in the past, making the Present Perfect (haven't tried) appropriate. 'My parents' (they) takes 'have not' or 'haven't'. The past participle of 'try' is 'tried'. (Từ 'before' thường đi với Hiện tại Hoàn thành để nói về kinh nghiệm.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ (see) that movie already.",
+          "options": ["saw", "have seen", "has seen", "are seeing"],
+          "correctAnswer": "have seen",
+          "explanation": "'Already' suggests an action completed at an unspecified time before now, which is a key use of the Present Perfect. The past participle of 'see' is 'seen'. ('Already' thường dùng với Hiện tại Hoàn thành.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: He has never go to the beach.",
+          "options": [
+            "He has never go to the beach.",
+            "He never go to the beach.",
+            "He has never gone to the beach.",
+            "He is never gone to the beach."
+          ],
+          "correctAnswer": "He has never gone to the beach.",
+          "explanation": "In the Present Perfect, you need 'have/has' + the Past Participle of the verb. The past participle of 'go' is 'gone'. (Với Hiện tại Hoàn thành, động từ chính phải ở dạng Phân từ hai. Phân từ hai của 'go' là 'gone'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Present Continuous: Describing a Scene",
+      "description": "Use the Present Continuous to describe actions happening in a given scene or context, often relating to observation.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The children ___ (play) in the park right now.",
+          "options": ["play", "are playing", "is playing", "played"],
+          "correctAnswer": "are playing",
+          "explanation": "'Right now' indicates an action happening at the moment of speaking, requiring the Present Continuous (are + verb-ing). 'The children' is plural, so 'are'. (Hành động đang diễn ra 'ngay bây giờ' dùng Hiện tại Tiếp diễn. 'Children' là số nhiều.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Look! The dog ___ after the ball.",
+          "options": ["run", "runs", "is running", "ran"],
+          "correctAnswer": "is running",
+          "explanation": "'Look!' signals an immediate action, thus the Present Continuous ('is' + verb-ing) is used. Remember to double the 'n' in 'run' before adding '-ing'. (Khi có tín hiệu 'Look!', hành động đang diễn ra. Chú ý gấp đôi chữ 'n' trong 'running'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My sister ___ (cook) dinner in the kitchen.",
+          "options": ["cooks", "is cooking", "are cooking", "cook"],
+          "correctAnswer": "is cooking",
+          "explanation": "This describes an ongoing action in the kitchen. 'My sister' (she) takes 'is', and the verb 'cook' becomes 'cooking'. (Miêu tả hành động đang diễn ra. 'Sister' là số ít nên dùng 'is'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Shhh! The baby ___.",
+          "options": ["sleeps", "is sleeping", "slept", "sleeping"],
+          "correctAnswer": "is sleeping",
+          "explanation": "'Shhh!' is a command to be quiet, implying an action like sleeping is happening now. Use the Present Continuous ('is' + verb-ing). (Tiếng 'Shhh!' cho biết có điều gì đó đang diễn ra, như em bé đang ngủ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ (have) a great time at the party.",
+          "options": ["have", "are having", "is having", "had"],
+          "correctAnswer": "are having",
+          "explanation": "To express that you are enjoying yourself at this moment, use the Present Continuous. 'We' takes 'are'. (Để diễn tả đang tận hưởng một việc gì đó tại thời điểm nói, dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: They are listens to music.",
+          "options": [
+            "They are listens to music.",
+            "They listens to music.",
+            "They are listening to music.",
+            "They listen to music."
+          ],
+          "correctAnswer": "They are listening to music.",
+          "explanation": "For the Present Continuous, the main verb must end in '-ing'. The correct form is 'are listening'. (Động từ chính trong Hiện tại Tiếp diễn phải thêm '-ing'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Present Perfect: What's Just Happened?",
+      "description": "Practice using the Present Perfect to talk about recent actions and experiences with an impact on the present moment.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (just finish) my homework, so now I can relax.",
+          "options": [
+            "have just finished",
+            "just finish",
+            "am just finishing",
+            "just finished"
+          ],
+          "correctAnswer": "have just finished",
+          "explanation": "We use the Present Perfect (have/has + past participle) with 'just' to talk about an action completed a very short time ago. (Chúng ta dùng Thì Hiện tại Hoàn thành với 'just' để nói về hành động vừa mới hoàn thành.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ her keys, so she can't open the door.",
+          "options": ["has lost", "lost", "is losing", "lose"],
+          "correctAnswer": "has lost",
+          "explanation": "The Present Perfect ('has lost') is used because the action (losing keys) happened in the past, but the result (can't open the door) is relevant now. (Dùng Hiện tại Hoàn thành vì hành động mất chìa khóa xảy ra trong quá khứ nhưng kết quả vẫn còn ảnh hưởng đến hiện tại.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They ___ (not eat) lunch yet, so they must be hungry.",
+          "options": [
+            "haven't eaten",
+            "don't eat",
+            "didn't eat",
+            "aren't eating"
+          ],
+          "correctAnswer": "haven't eaten",
+          "explanation": "We use the Present Perfect with 'yet' in negative sentences and questions to talk about something that hasn't happened up to the present moment. (Dùng Hiện tại Hoàn thành với 'yet' trong câu phủ định và câu hỏi để nói về điều gì đó chưa xảy ra cho đến bây giờ.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ you ___ (ever visit) Paris?",
+          "options": [
+            "Have you ever visited",
+            "Did you ever visit",
+            "Do you ever visit",
+            "Are you ever visiting"
+          ],
+          "correctAnswer": "Have you ever visited",
+          "explanation": "The Present Perfect with 'ever' is used to ask about experiences at any point up to the present. (Dùng Hiện tại Hoàn thành với 'ever' để hỏi về kinh nghiệm trải nghiệm đã từng có trong đời.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ (already see) that movie twice.",
+          "options": [
+            "has already seen",
+            "already saw",
+            "is already seeing",
+            "already sees"
+          ],
+          "correctAnswer": "has already seen",
+          "explanation": "We use the Present Perfect with 'already' to emphasize that an action happened sooner than expected or before the present moment. (Dùng Hiện tại Hoàn thành với 'already' để nhấn mạnh hành động đã xảy ra sớm hơn dự kiến hoặc trước thời điểm hiện tại.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We ___ a new car! It's parked outside.",
+          "options": ["have bought", "bought", "buy", "are buying"],
+          "correctAnswer": "have bought",
+          "explanation": "The Present Perfect is used here to describe a recent action (buying a car) that has a clear present result (it's parked outside). (Dùng Hiện tại Hoàn thành để nói về hành động gần đây có kết quả rõ ràng ở hiện tại.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Simple or Continuous: Now or Always?",
+      "description": "Choose between the Present Simple for habits and facts, and the Present Continuous for actions happening at the moment of speaking or temporary situations.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Listen! The birds ___ (sing) beautifully outside.",
+          "options": ["are singing", "sing", "sings", "is singing"],
+          "correctAnswer": "are singing",
+          "explanation": "We use the Present Continuous for actions happening right now, at the moment of speaking. (Dùng Hiện tại Tiếp diễn cho hành động đang xảy ra ngay bây giờ, tại thời điểm nói.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She usually ___ (go) to bed at 10 PM.",
+          "options": ["goes", "is going", "go", "went"],
+          "correctAnswer": "goes",
+          "explanation": "The Present Simple is used for habits, routines, and actions that happen regularly. 'Usually' is a key word here. (Dùng Hiện tại Đơn cho thói quen, hoạt động thường ngày. 'Usually' là dấu hiệu nhận biết.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My brother ___ (work) as a software engineer.",
+          "options": ["works", "is working", "work", "has worked"],
+          "correctAnswer": "works",
+          "explanation": "We use the Present Simple to describe permanent situations, jobs, or facts. (Dùng Hiện tại Đơn để mô tả tình huống cố định, nghề nghiệp hoặc sự thật.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Why ___ you ___ (wear) a heavy coat? It's really hot today!",
+          "options": [
+            "are you wearing",
+            "do you wear",
+            "you wear",
+            "are you wear"
+          ],
+          "correctAnswer": "are you wearing",
+          "explanation": "This question asks about an action happening right now. (Câu hỏi này hỏi về hành động đang xảy ra ngay bây giờ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ (have) a big family dinner every Sunday.",
+          "options": ["have", "are having", "has", "is having"],
+          "correctAnswer": "have",
+          "explanation": "The phrase 'every Sunday' indicates a regular, repeated action, requiring the Present Simple. (Cụm từ 'every Sunday' chỉ hành động lặp lại thường xuyên, nên dùng Hiện tại Đơn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Right now, I ___ (read) a fascinating novel, but I usually ___ (watch) TV in the evenings.",
+          "options": [
+            "am reading / watch",
+            "read / am watching",
+            "am reading / am watching",
+            "read / watch"
+          ],
+          "correctAnswer": "am reading / watch",
+          "explanation": "The first blank describes an action happening at the moment ('right now' -> Present Continuous). The second blank describes a regular habit ('usually' -> Present Simple). (Chỗ trống thứ nhất diễn tả hành động đang xảy ra ('right now' -> Hiện tại Tiếp diễn). Chỗ trống thứ hai diễn tả thói quen ('usually' -> Hiện tại Đơn).)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Present Tenses: States and Schedules",
+      "description": "Practice distinguishing between Present Simple for states, facts, and scheduled events, and Present Continuous for temporary actions and future arrangements.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ (think) you are right about that.",
+          "options": ["think", "am thinking", "thought", "will think"],
+          "correctAnswer": "think",
+          "explanation": "'Think' in the sense of 'believe' or 'have an opinion' is a state verb and is generally not used in the continuous form. (Động từ 'think' với nghĩa 'tin rằng' hoặc 'có ý kiến' là động từ trạng thái, thường không dùng ở thể tiếp diễn.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The train to London ___ (depart) at 8:30 AM tomorrow.",
+          "options": ["departs", "is departing", "will depart", "depart"],
+          "correctAnswer": "departs",
+          "explanation": "We use the Present Simple to talk about future events that are part of a fixed timetable or schedule. (Dùng Hiện tại Đơn để nói về các sự kiện trong tương lai theo lịch trình cố định hoặc thời gian biểu.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This week, I ___ (study) a lot for my final exams.",
+          "options": ["am studying", "study", "studies", "have studied"],
+          "correctAnswer": "am studying",
+          "explanation": "The phrase 'this week' indicates a temporary action or situation happening around the present, requiring the Present Continuous. (Cụm từ 'this week' chỉ hành động hoặc tình huống tạm thời đang diễn ra xung quanh hiện tại, nên dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Water ___ (boil) at 100 degrees Celsius.",
+          "options": ["boils", "is boiling", "will boil", "boil"],
+          "correctAnswer": "boils",
+          "explanation": "This is a universal fact, which always takes the Present Simple. (Đây là một sự thật hiển nhiên, luôn dùng Hiện tại Đơn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ (not believe) in ghosts.",
+          "options": [
+            "doesn't believe",
+            "isn't believing",
+            "not believes",
+            "don't believe"
+          ],
+          "correctAnswer": "doesn't believe",
+          "explanation": "'Believe' is a state verb that expresses a mental state and is typically used in the Present Simple, even if it's a negative statement. (Động từ 'believe' là động từ trạng thái diễn tả trạng thái tinh thần, thường dùng ở Hiện tại Đơn, ngay cả khi là câu phủ định.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "She is wanting a new phone for her birthday.",
+          "options": [
+            "She wants a new phone for her birthday.",
+            "She wanting a new phone for her birthday.",
+            "She want a new phone for her birthday.",
+            "She is wanted a new phone for her birthday."
+          ],
+          "correctAnswer": "She wants a new phone for her birthday.",
+          "explanation": "'Want' is a state verb that expresses a desire, not an action in progress. Therefore, it is used in the Present Simple, not the Present Continuous. (Động từ 'want' là động từ trạng thái diễn tả mong muốn, không phải hành động đang diễn ra. Do đó, nó được dùng ở Hiện tại Đơn, không phải Hiện tại Tiếp diễn.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

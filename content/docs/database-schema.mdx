@@ -1,0 +1,529 @@
+---
+title: "Database Schema Documentation"
+description: "Complete reference for the LMS Prisma database schema with 35+ models"
+---
+
+# Database Schema Documentation
+
+This document provides a comprehensive overview of the Learning Management System database schema implemented with Prisma ORM.
+
+## Overview
+
+The LMS uses PostgreSQL with Prisma ORM and includes 35+ models organized into the following domains:
+
+- **Authentication & User Management**
+- **Vocabulary System with SM-2 Spaced Repetition**
+- **Grammar Exercises**
+- **Reading Comprehension**
+- **Writing Practice**
+- **Speaking & Pronunciation**
+- **Progress Tracking & Gamification**
+- **Analytics**
+
+## Core Models
+
+### Authentication Models
+
+These models are managed by Better Auth and extended for the LMS.
+
+#### User
+
+```prisma
+model User {
+  id                  String    @id
+  name                String
+  email               String    @unique
+  emailVerified       Boolean   @default(false)
+  image               String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  
+  // Relations to LMS features
+  profile             UserProfile?
+  preferences         UserPreferences?
+  wordProgress        UserWordProgress[]
+  wordReviews         UserWordReview[]
+  // ... more relations
+}
+```
+
+**Purpose**: Central user model for authentication and authorization.
+
+#### Session, Account, Verification
+
+Standard Better Auth models for session management, OAuth accounts, and email/phone verification.
+
+---
+
+## Vocabulary System
+
+### Word
+
+```prisma
+model Word {
+  id          String         @id @default(cuid())
+  word        String         @unique
+  translation String
+  phonetic    String?
+  definition  String
+  partOfSpeech PartOfSpeech
+  difficulty  ProficiencyLevel
+  
+  categories  WordCategory[]
+  audios      WordAudio[]
+  images      WordImage[]
+  examples    ExampleSentence[]
+  userProgress UserWordProgress[]
+}
+```
+
+**Purpose**: Stores vocabulary words with translations and metadata.
+
+**Key Fields**:
+- `partOfSpeech`: Enum (NOUN, VERB, ADJECTIVE, etc.)
+- `difficulty`: Proficiency level (A1, A2, B1, B2, C1, C2)
+
+### UserWordProgress
+
+```prisma
+model UserWordProgress {
+  id              String   @id @default(cuid())
+  userId          String
+  wordId          String
+  
+  // SM-2 Algorithm Fields
+  easeFactor      Float    @default(2.5)
+  intervalDays    Int      @default(1)
+  repetitionCount Int      @default(0)
+  nextReviewDate  DateTime @default(now())
+  mastered        Boolean  @default(false)
+  
+  user            User     @relation(...)
+  word            Word     @relation(...)
+  reviews         UserWordReview[]
+  
+  @@unique([userId, wordId])
+}
+```
+
+**Purpose**: Tracks individual user progress for each word using the SM-2 spaced repetition algorithm.
+
+**SM-2 Fields Explained**:
+- `easeFactor`: Difficulty multiplier (min 1.3, default 2.5)
+- `intervalDays`: Days until next review
+- `repetitionCount`: Consecutive successful reviews
+- `nextReviewDate`: Calculated review date
+- `mastered`: True when word is considered learned
+
+### UserWordReview
+
+```prisma
+model UserWordReview {
+  id         String        @id @default(cuid())
+  userId     String
+  wordId     String
+  progressId String
+  quality    ReviewQuality
+  reviewedAt DateTime      @default(now())
+  
+  user       User                 @relation(...)
+  word       Word                 @relation(...)
+  progress   UserWordProgress     @relation(...)
+}
+```
+
+**Purpose**: Logs individual review sessions for analytics.
+
+**ReviewQuality Enum**: `AGAIN`, `HARD`, `GOOD`, `EASY`
+
+---
+
+## Grammar System
+
+### GrammarTopic
+
+```prisma
+model GrammarTopic {
+  id          String           @id @default(cuid())
+  name        String           @unique
+  description String?
+  difficulty  ProficiencyLevel
+  exercises   GrammarExercise[]
+}
+```
+
+**Purpose**: Categories for grammar exercises (e.g., "Present Simple", "Past Perfect").
+
+### GrammarExercise
+
+```prisma
+model GrammarExercise {
+  id          String       @id @default(cuid())
+  topicId     String
+  title       String
+  description String?
+  difficulty  ProficiencyLevel
+  
+  topic       GrammarTopic @relation(...)
+  questions   GrammarQuestion[]
+  userProgress UserGrammarProgress[]
+  submissions UserGrammarSubmission[]
+}
+```
+
+### GrammarQuestion
+
+```prisma
+model GrammarQuestion {
+  id            String       @id @default(cuid())
+  exerciseId    String
+  type          ExerciseType
+  question      String
+  options       String[]     // JSON array for multiple choice
+  correctAnswer String
+  explanation   String
+  orderIndex    Int
+  
+  exercise      GrammarExercise @relation(...)
+}
+```
+
+**ExerciseType Enum**: `MULTIPLE_CHOICE`, `FILL_IN_BLANK`, `REORDER`, `MATCHING`
+
+---
+
+## Reading Module
+
+### ReadingPassage
+
+```prisma
+model ReadingPassage {
+  id         String           @id @default(cuid())
+  title      String
+  content    String           @db.Text
+  difficulty ProficiencyLevel
+  wordCount  Int
+  topics     String[]         // Array of topic tags
+  
+  questions  ReadingQuestion[]
+  userProgress UserReadingProgress[]
+}
+```
+
+### ReadingQuestion
+
+```prisma
+model ReadingQuestion {
+  id         String          @id @default(cuid())
+  passageId  String
+  question   String
+  options    String[]
+  answer     String
+  orderIndex Int
+  
+  passage    ReadingPassage  @relation(...)
+}
+```
+
+### UserReadingProgress
+
+```prisma
+model UserReadingProgress {
+  id             String   @id @default(cuid())
+  userId         String
+  passageId      String
+  completed      Boolean  @default(false)
+  answers        Json     // User's answers
+  score          Int?
+  readingTime    Int?     // Seconds
+  wordsPerMinute Int?
+  completedAt    DateTime?
+  
+  user           User            @relation(...)
+  passage        ReadingPassage  @relation(...)
+  
+  @@unique([userId, passageId])
+}
+```
+
+**Purpose**: Tracks reading comprehension performance and speed.
+
+---
+
+## Writing Module
+
+### WritingPrompt
+
+```prisma
+model WritingPrompt {
+  id         String           @id @default(cuid())
+  title      String
+  prompt     String           @db.Text
+  type       WritingType
+  difficulty ProficiencyLevel
+  minWords   Int?
+  maxWords   Int?
+  
+  submissions UserWriting[]
+}
+```
+
+**WritingType Enum**: `ESSAY`, `PARAGRAPH`, `STORY`, `EMAIL`, `ARGUMENTATIVE`, `DESCRIPTIVE`
+
+### UserWriting
+
+```prisma
+model UserWriting {
+  id         String   @id @default(cuid())
+  userId     String
+  promptId   String
+  content    String   @db.Text
+  wordCount  Int
+  submittedAt DateTime @default(now())
+  
+  user       User           @relation(...)
+  prompt     WritingPrompt  @relation(...)
+  feedback   WritingFeedback?
+}
+```
+
+### WritingFeedback
+
+```prisma
+model WritingFeedback {
+  id              String   @id @default(cuid())
+  writingId       String   @unique
+  grammarScore    Int
+  vocabularyScore Int
+  structureScore  Int
+  overallScore    Int
+  grammarErrors   Json     // Array of error objects
+  suggestions     String[]
+  strengths       String[]
+  weaknesses      String[]
+  
+  writing         UserWriting @relation(...)
+}
+```
+
+**Purpose**: Stores AI-generated feedback for writing submissions.
+
+---
+
+## Speaking Module
+
+### PronunciationExercise
+
+```prisma
+model PronunciationExercise {
+  id           String           @id @default(cuid())
+  targetPhrase String
+  phonetic     String?
+  audioUrl     String?
+  difficulty   ProficiencyLevel
+  tips         String?
+  
+  userSubmissions UserPronunciation[]
+}
+```
+
+### UserPronunciation
+
+```prisma
+model UserPronunciation {
+  id           String   @id @default(cuid())
+  userId       String
+  exerciseId   String
+  recordingUrl String
+  score        Int?
+  feedback     String?
+  submittedAt  DateTime @default(now())
+  
+  user         User                    @relation(...)
+  exercise     PronunciationExercise   @relation(...)
+}
+```
+
+---
+
+## Progress & Gamification
+
+### UserStreak
+
+```prisma
+model UserStreak {
+  id               String    @id @default(cuid())
+  userId           String    @unique
+  currentStreak    Int       @default(0)
+  longestStreak    Int       @default(0)
+  lastActivityDate DateTime?
+  freezesAvailable Int       @default(0)
+  
+  user             User      @relation(...)
+}
+```
+
+**Purpose**: Tracks daily study streaks with freeze feature.
+
+### DailyActivity
+
+```prisma
+model DailyActivity {
+  id             String   @id @default(cuid())
+  userId         String
+  date           DateTime
+  wordsLearned   Int      @default(0)
+  wordsReviewed  Int      @default(0)
+  exercisesCount Int      @default(0)
+  readingCount   Int      @default(0)
+  writingCount   Int      @default(0)
+  speakingCount  Int      @default(0)
+  totalMinutes   Int      @default(0)
+  
+  user           User     @relation(...)
+  
+  @@unique([userId, date])
+}
+```
+
+**Purpose**: Daily activity tracking for dashboard and analytics.
+
+### Achievement
+
+```prisma
+model Achievement {
+  id          String          @id @default(cuid())
+  name        String          @unique
+  description String
+  type        AchievementType
+  requirement Int             // Threshold to unlock
+  iconUrl     String?
+  
+  userAchievements UserAchievement[]
+}
+```
+
+**AchievementType Enum**: `GENERAL`, `VOCABULARY`, `GRAMMAR`, `READING`, `WRITING`, `SPEAKING`, `STREAK`
+
+---
+
+## Analytics
+
+### AnalyticsSnapshot
+
+```prisma
+model AnalyticsSnapshot {
+  id                  String   @id @default(cuid())
+  userId              String
+  date                DateTime
+  vocabularyMastery   Int      // Percentage
+  grammarAccuracy     Int      // Percentage
+  readingSpeed        Int      // WPM
+  writingScore        Int      // Average score
+  pronunciationScore  Int      // Average score
+  timeSpent           Int      // Minutes
+  
+  user                User     @relation(...)
+  
+  @@unique([userId, date])
+}
+```
+
+**Purpose**: Daily snapshots of user performance across all modules.
+
+---
+
+## Enums Reference
+
+### ProficiencyLevel
+```prisma
+enum ProficiencyLevel {
+  A1  // Beginner
+  A2  // Elementary
+  B1  // Intermediate
+  B2  // Upper Intermediate
+  C1  // Advanced
+  C2  // Proficiency
+}
+```
+
+### ReviewQuality
+```prisma
+enum ReviewQuality {
+  AGAIN  // Forgot completely
+  HARD   // Struggled to remember
+  GOOD   // Remembered well
+  EASY   // Remembered perfectly
+}
+```
+
+### PartOfSpeech
+```prisma
+enum PartOfSpeech {
+  NOUN
+  VERB
+  ADJECTIVE
+  ADVERB
+  PRONOUN
+  PREPOSITION
+  CONJUNCTION
+  INTERJECTION
+  PHRASE
+}
+```
+
+---
+
+## Database Relationships
+
+### Key Patterns
+
+1. **User-Centric Design**: All learning data is tied to the `User` model
+2. **Progress Tracking**: Separate progress models for each learning module
+3. **Many-to-Many**: Words ↔ Categories, Achievements ↔ Users
+4. **One-to-Many**: Exercises → Questions, Passages → Questions
+5. **One-to-One**: UserWriting → WritingFeedback
+
+---
+
+## Indexes and Performance
+
+Key indexes for optimal query performance:
+
+```prisma
+// Frequently queried fields
+@@index([userId, nextReviewDate])  // UserWordProgress
+@@index([userId, date])            // DailyActivity
+@@index([difficulty])              // Words, Passages, Exercises
+@@unique([userId, wordId])         // UserWordProgress
+```
+
+---
+
+## Migration Strategy
+
+To apply this schema:
+
+```bash
+# Generate Prisma Client
+bun run db:generate
+
+# Push to database (development)
+bun run db:push
+
+# Or create migration (production)
+bunx prisma migrate dev --name init_lms_schema
+```
+
+---
+
+## Seeding Data
+
+The seed script ([prisma/seed.ts](file:///Users/phuhuynh/Downloads/nextjs/lms/prisma/seed.ts)) populates:
+- 14 vocabulary words (A1-B2 levels)
+- 4 grammar topics with exercises
+- 2 reading passages
+- 2 writing prompts
+- 4 achievements
+
+Run with: `bun seed`

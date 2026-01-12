@@ -1,0 +1,374 @@
+{
+  "topic": {
+    "name": "Articles",
+    "description": "Master the use of a, an, the, and zero article",
+    "difficulty": "A1"
+  },
+  "exercises": [
+    {
+      "title": "General Truths with Articles",
+      "description": "Practice using articles (or no article) when talking about general ideas, abstract concepts, and plural nouns in a general sense.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ water is essential for life.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "We use 'no article' when talking about uncountable nouns (like 'water') or plural nouns in a general sense, meaning 'all water' or 'water in general'. (Không dùng mạo từ khi nói về danh từ không đếm được hoặc danh từ số nhiều theo nghĩa chung chung.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I love ___ music.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "'Music' is an uncountable noun, and here we are talking about music in general, not a specific piece of music. So, no article is needed. (Không dùng mạo từ khi nói về danh từ không đếm được như 'music' theo nghĩa chung.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ happiness is important for everyone.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "'Happiness' is an abstract noun and we are talking about it in a general sense. We do not use articles with abstract nouns when referring to them generally. (Hạnh phúc là một danh từ trừu tượng. Không dùng mạo từ khi nói về danh từ trừu tượng theo nghĩa chung.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ doctors help sick people.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "Here, 'doctors' refers to all doctors in general, not specific ones. When talking about plural nouns in a general sense, we use 'no article'. (Các bác sĩ nói chung. Không dùng mạo từ với danh từ số nhiều khi nói về chúng theo nghĩa chung.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ crime is a serious problem in many big cities.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "'Crime' is an abstract noun used in a general sense here. We don't use articles with abstract nouns when referring to them generally. (Tội phạm là một danh từ trừu tượng, được dùng với nghĩa chung chung. Không dùng mạo từ.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ children love to play games.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "'Children' is a plural noun and we are talking about children in general, not specific children. So, no article is needed. (Trẻ em nói chung. Không dùng mạo từ với danh từ số nhiều khi nói về chúng theo nghĩa chung.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Articles with Places",
+      "description": "Practice using 'the' or no article with different types of geographical names like countries, rivers, oceans, mountains, and cities.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ France is a beautiful country in Europe.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "We generally do not use an article before the names of most individual countries. (Không dùng mạo từ trước tên các quốc gia đơn lẻ.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ Amazon River is the largest river by discharge volume in the world.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "The",
+          "explanation": "We use 'the' before the names of rivers. (Chúng ta dùng 'the' trước tên các con sông.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They crossed ___ Atlantic Ocean to get to America.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "The",
+          "explanation": "We use 'the' before the names of oceans and seas. (Chúng ta dùng 'the' trước tên các đại dương và biển.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ Alps are a famous mountain range in Europe.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "The",
+          "explanation": "We use 'the' before the names of mountain ranges (plural), but usually no article for single mountains like Mount Everest or Mount Fuji. (Dùng 'the' trước tên các dãy núi (số nhiều), nhưng không dùng mạo từ với tên một ngọn núi đơn lẻ.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My cousin lives in ___ New York City.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "We generally do not use an article before the names of cities. (Không dùng mạo từ trước tên các thành phố.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ United Kingdom consists of England, Scotland, Wales, and Northern Ireland.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "The",
+          "explanation": "We use 'the' before country names that include words like 'United', 'Republic', 'Kingdom', or 'States'. (Dùng 'the' trước tên các quốc gia có chứa các từ như 'United', 'Republic', 'Kingdom' hoặc 'States'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Articles with Uncountable Nouns",
+      "description": "Practice using 'a/an', 'the', or no article with uncountable nouns in various contexts.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I need ___ advice on my career path.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "'Advice' is an uncountable noun. When talking about general advice, we don't use 'a/an' and usually not 'the' unless it's specific. (Lời khuyên là danh từ không đếm được. Khi nói về lời khuyên chung chung, chúng ta không dùng 'a/an' và thường không dùng 'the' trừ khi là lời khuyên cụ thể.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Could you pass me ___ sugar, please? It's right there on the table.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "the",
+          "explanation": "We use 'the' because it refers to specific sugar that is known to both the speaker and listener (e.g., on the table).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I heard some interesting ___ news today about the new president.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "'News' is an uncountable noun. We don't use articles like 'a/an' with uncountable nouns. We also don't use 'the' here because it's general news, even if it has a specific topic.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They are studying ___ history of Ancient Rome for their project.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "the",
+          "explanation": "We use 'the' because it specifies a particular history – that of Ancient Rome. If it were 'studying history' (general academic subject), it would be no article.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We need new ___ furniture for our new apartment; it's quite empty now.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "'Furniture' is an uncountable noun. When talking about furniture in general, we don't use 'a/an' or 'the'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Did you enjoy ___ weather on your holiday in Spain?",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "the",
+          "explanation": "We use 'the' because it refers to the specific weather during your particular holiday, which is understood by both speaker and listener.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Fixed Expressions with Articles",
+      "description": "Practice common English phrases where articles are used in a fixed way (or not used at all).",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She usually goes to work ___ bus every morning.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "With means of transport used generally, we say 'by bus', 'by car', 'by train' with no article. (Khi nói về phương tiện giao thông một cách chung chung, chúng ta dùng 'by + phương tiện' mà không có mạo từ.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I listen to ___ radio every morning while having breakfast.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "the",
+          "explanation": "'Listen to the radio' is a common fixed expression that always uses 'the'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My brother is still in ___ hospital after his accident; he broke his leg.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "When referring to institutions like 'hospital', 'school', 'church' in terms of their primary purpose (e.g., being a patient, a student), we often use no article. (Anh trai tôi vẫn còn ở bệnh viện để được điều trị, nên dùng không mạo từ.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We went to ___ cinema last night to see the new action movie.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "the",
+          "explanation": "'Go to the cinema' is a common fixed expression that always uses 'the'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "In ___ fact, I have never been to Paris, although I've always wanted to.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "'In fact' is a common fixed expression that does not use an article.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "After work, I usually go ___ home to relax and cook dinner.",
+          "options": ["a", "an", "the", "-"],
+          "correctAnswer": "-",
+          "explanation": "'Go home' is a common fixed expression that does not use an article. (Đây là một thành ngữ cố định, không dùng mạo từ.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Mastering A/An, The, and Zero Article",
+      "description": "Practice using 'a/an' for first mention, 'the' for specific references, and no article for generalizations about countable and uncountable nouns.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I saw ___ interesting documentary about space last night.",
+          "options": ["a", "an", "the", "no article"],
+          "correctAnswer": "an",
+          "explanation": "Use 'an' before a word starting with a vowel sound ('interesting'). This is the first mention of the documentary.",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Do you remember ___ restaurant we went to on our first date?",
+          "options": ["a", "an", "the", "no article"],
+          "correctAnswer": "the",
+          "explanation": "'The' is used because both speakers know exactly which specific restaurant is being referred to. (Chúng ta dùng 'the' khi cả hai người nói đều biết rõ về nhà hàng cụ thể nào đó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ Happiness is not something you can buy with money.",
+          "options": ["A", "An", "The", "No article"],
+          "correctAnswer": "No article",
+          "explanation": "No article is used before abstract nouns (like 'happiness') when speaking in a general sense. (Hạnh phúc là một khái niệm chung chung, không đếm được và không xác định cụ thể, nên không dùng mạo từ.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We need ___ new car. ___ old one keeps breaking down.",
+          "options": ["A) a / The", "B) the / A", "C) a / An", "D) The / The"],
+          "correctAnswer": "A) a / The",
+          "explanation": "'A' is used for 'new car' because it's the first mention of any new car. 'The' is used for 'old one' because it refers specifically to their existing car. (Chiếc xe mới là lần đầu được nhắc đến, nên dùng 'a'. Chiếc xe cũ là chiếc xe cụ thể mà họ đang có, nên dùng 'the'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'The success requires hard work.'",
+          "options": [
+            "A) Success requires hard work.",
+            "B) A success requires hard work.",
+            "C) An success requires hard work.",
+            "D) The success require hard work."
+          ],
+          "correctAnswer": "A) Success requires hard work.",
+          "explanation": "'Success' is an uncountable, abstract noun used in a general sense here, so no article is needed. (Thành công là một khái niệm chung chung, không đếm được, nên không cần mạo từ.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ Water is essential for life, but ___ water in this bottle tastes strange.",
+          "options": [
+            "A) The / the",
+            "B) No article / the",
+            "C) A / the",
+            "D) No article / No article"
+          ],
+          "correctAnswer": "B) No article / the",
+          "explanation": "'Water' in the first part is a general statement about the substance, so no article. 'The water in this bottle' refers to specific water, so 'the' is used. (Nước là khái niệm chung chung thì không mạo từ, nhưng 'nước trong chai này' là cụ thể, nên dùng 'the'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Articles with Specific Nouns and Phrases",
+      "description": "Focus on using articles correctly with geographical names, uncountable nouns when specified, and in common fixed expressions.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ Amazon River is ___ longest river in South America.",
+          "options": [
+            "A) The / the",
+            "B) An / a",
+            "C) No article / the",
+            "D) The / a"
+          ],
+          "correctAnswer": "A) The / the",
+          "explanation": "We use 'the' with rivers (The Amazon River) and with superlatives (the longest). (Chúng ta dùng 'the' với tên sông và với các dạng so sánh nhất.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Which option correctly completes the sentence: '___ patience is a virtue, but I lost ___ patience I had with his constant excuses.'",
+          "options": [
+            "A) The / the",
+            "B) No article / the",
+            "C) A / the",
+            "D) No article / No article"
+          ],
+          "correctAnswer": "B) No article / the",
+          "explanation": "'Patience' in the first part is used generally as an abstract concept, so no article. 'The patience I had' refers to a specific amount of patience, so 'the' is used. (Sự kiên nhẫn là một đức tính chung chung, không mạo từ. Nhưng 'sự kiên nhẫn tôi có' là cụ thể, nên dùng 'the'.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "It's important to keep ___ eye on the children.",
+          "options": ["a", "an", "the", "no article"],
+          "correctAnswer": "an",
+          "explanation": "'Keep an eye on' is a common fixed expression meaning to watch carefully. (Đây là một thành ngữ cố định 'keep an eye on' có nghĩa là để mắt trông chừng.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He's planning a trip to ___ United States and wants to visit ___ Lake Superior.",
+          "options": [
+            "A) the / No article",
+            "B) No article / the",
+            "C) the / the",
+            "D) No article / No article"
+          ],
+          "correctAnswer": "A) the / No article",
+          "explanation": "We use 'the' with countries that are plural or include words like 'states' or 'kingdom' (The United States). We generally don't use articles with single lakes (Lake Superior). (Dùng 'the' với những quốc gia có tên số nhiều hoặc bao gồm các từ như 'states'. Không dùng mạo từ với tên một hồ duy nhất.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'I often travel by the bus to work.'",
+          "options": [
+            "A) I often travel by bus to work.",
+            "B) I often travel by a bus to work.",
+            "C) I often travel by an bus to work.",
+            "D) I often travel by the bus to the work."
+          ],
+          "correctAnswer": "A) I often travel by bus to work.",
+          "explanation": "The fixed expression for modes of transport is 'by + noun' (e.g., by bus, by train, by car) without an article. (Cụm từ cố định để chỉ phương tiện đi lại là 'by + danh từ', không dùng mạo từ.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ Progress in science is crucial, but we've seen little ___ progress on this specific project.",
+          "options": [
+            "A) The / the",
+            "B) No article / the",
+            "C) A / the",
+            "D) No article / No article"
+          ],
+          "correctAnswer": "B) No article / the",
+          "explanation": "'Progress' in general (first part) takes no article as it's an abstract concept. 'The progress on this specific project' refers to specific progress, so 'the' is used. (Tiến bộ nói chung thì không dùng mạo từ. Nhưng 'tiến bộ trong dự án cụ thể này' thì dùng 'the'.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "topic": {
+    "name": "Passive Voice",
+    "description": "Transform active sentences to passive and vice versa",
+    "difficulty": "B1"
+  },
+  "exercises": [
+    {
+      "title": "Daily Life in Passive Present Simple",
+      "description": "Practice forming passive sentences in the Present Simple tense to describe everyday situations and facts.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "English ___ (speak) in many countries around the world.",
+          "options": ["speak", "is spoke", "is spoken", "are spoken"],
+          "correctAnswer": "is spoken",
+          "explanation": "For the Present Simple Passive, we use 'am/is/are' + the past participle of the main verb. 'English' is singular, so we use 'is'. The past participle of 'speak' is 'spoken'. (Dạng bị động thì Hiện tại Đơn: 'am/is/are' + V3/ed)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "This old bridge ___ every year for safety.",
+          "options": ["repairs", "is repaired", "is repairing", "repaired"],
+          "correctAnswer": "is repaired",
+          "explanation": "The bridge doesn't repair itself; it is repaired by someone. This is a regular action in the present, so Present Simple Passive ('is' + past participle 'repaired') is correct. (Cây cầu được sửa chữa, không tự sửa chữa)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The newspaper ___ (deliver) to your door early in the morning.",
+          "options": [
+            "delivers",
+            "is delivering",
+            "is delivered",
+            "are delivered"
+          ],
+          "correctAnswer": "is delivered",
+          "explanation": "The newspaper is the receiver of the action 'deliver'. 'Newspaper' is singular, so 'is delivered' (Present Simple Passive) is correct. (Báo được giao tới cửa)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Many new cars ___ in Japan.",
+          "options": ["produce", "is produced", "are produced", "produced"],
+          "correctAnswer": "are produced",
+          "explanation": "'Many new cars' is plural, so we use 'are' for the Present Simple Passive. The past participle of 'produce' is 'produced'. (Nhiều xe ô tô được sản xuất -> chủ ngữ số nhiều)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Coffee ___ (grow) in warm climates.",
+          "options": ["grows", "is growing", "is grown", "are grown"],
+          "correctAnswer": "is grown",
+          "explanation": "Coffee doesn't grow itself in the sense of 'cultivate'; it is grown by farmers. 'Coffee' is singular and uncountable, so 'is grown' (Present Simple Passive) is correct. (Cà phê được trồng)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Important announcements ___ on the school website.",
+          "options": ["post", "is posted", "are posted", "are posting"],
+          "correctAnswer": "are posted",
+          "explanation": "'Important announcements' is plural, requiring 'are'. For the Present Simple Passive, we use 'are' + the past participle 'posted'. (Thông báo được đăng tải -> chủ ngữ số nhiều)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Passive Voice: Ongoing and Completed Actions",
+      "description": "Focus on using the Passive Voice with Present Continuous for actions happening now and Present Perfect for completed actions with current relevance.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The new shopping mall ___ (build) right now.",
+          "options": [
+            "is built",
+            "is being built",
+            "has built",
+            "has been built"
+          ],
+          "correctAnswer": "is being built",
+          "explanation": "This describes an action happening at the moment, so Present Continuous Passive is needed: 'is/are being' + past participle. 'Mall' is singular. (Hành động đang diễn ra, bị động: 'is/are being' + V3/ed)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "A delicious meal ___ in the kitchen.",
+          "options": [
+            "is preparing",
+            "is being prepared",
+            "has been prepared",
+            "prepares"
+          ],
+          "correctAnswer": "is being prepared",
+          "explanation": "The phrase implies an ongoing action ('in the kitchen' suggests activity right now). So, Present Continuous Passive ('is being prepared') is correct. (Bữa ăn đang được chuẩn bị)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My wallet ___ (steal)! I can't find it anywhere.",
+          "options": [
+            "is stolen",
+            "is being stolen",
+            "has stolen",
+            "has been stolen"
+          ],
+          "correctAnswer": "has been stolen",
+          "explanation": "The action of stealing is completed, and the result (can't find it) has current relevance. This requires Present Perfect Passive: 'has/have been' + past participle. 'Wallet' is singular. (Ví đã bị trộm, có kết quả ở hiện tại)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The final report ___ by the project manager.",
+          "options": [
+            "has written",
+            "has been written",
+            "is being written",
+            "writes"
+          ],
+          "correctAnswer": "has been written",
+          "explanation": "The report is completed and ready (implied). The Present Perfect Passive ('has been written') is used for actions completed recently or with a result that affects the present. (Báo cáo đã được viết xong)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "All the tickets ___ (sell) out for the concert. There are none left!",
+          "options": [
+            "are sold",
+            "are being sold",
+            "have sold",
+            "have been sold"
+          ],
+          "correctAnswer": "have been sold",
+          "explanation": "The tickets are completely sold out – a completed action with a current result. Since 'tickets' is plural, we use 'have been sold' (Present Perfect Passive). (Tất cả vé đã được bán hết)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Our old car ___ at the moment.",
+          "options": ["is fixing", "is being fixed", "has been fixed", "fixed"],
+          "correctAnswer": "is being fixed",
+          "explanation": "'At the moment' indicates an ongoing action, so Present Continuous Passive ('is being fixed') is appropriate. (Xe đang được sửa chữa)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Passive Voice: Past Events and Actions",
+      "description": "Practice forming passive sentences in the Past Simple tense for completed actions and Past Continuous for actions ongoing in the past.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The official letter ___ (write) by the secretary yesterday.",
+          "options": ["wrote", "was writing", "was written", "were written"],
+          "correctAnswer": "was written",
+          "explanation": "'Yesterday' indicates a specific completed action in the past. 'Letter' is singular, so Past Simple Passive ('was' + past participle 'written') is correct. (Thư được viết ngày hôm qua)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "America ___ by Christopher Columbus in 1492.",
+          "options": [
+            "discovered",
+            "was discovered",
+            "is discovered",
+            "has been discovered"
+          ],
+          "correctAnswer": "was discovered",
+          "explanation": "The year '1492' points to a specific completed action in the past. 'America' is singular, so Past Simple Passive ('was discovered') is correct. (Châu Mỹ được khám phá vào năm 1492)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "While I was studying, the street lights ___ (repair) outside.",
+          "options": [
+            "were repairing",
+            "was being repaired",
+            "were being repaired",
+            "are being repaired"
+          ],
+          "correctAnswer": "were being repaired",
+          "explanation": "The action 'repair' was ongoing at a specific point in the past ('while I was studying'). 'Street lights' is plural, so Past Continuous Passive ('were being' + past participle 'repaired') is correct. (Đèn đường đang được sửa chữa lúc tôi đang học)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "At 7 PM last night, dinner ___. Everyone was waiting.",
+          "options": [
+            "was preparing",
+            "was being prepared",
+            "has been prepared",
+            "prepared"
+          ],
+          "correctAnswer": "was being prepared",
+          "explanation": "The phrase 'At 7 PM last night' and 'Everyone was waiting' suggests an action that was ongoing in the past. Past Continuous Passive ('was being prepared') is correct. (Bữa tối đang được chuẩn bị vào 7 giờ tối qua)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Many trees ___ (damage) during the strong storm last month.",
+          "options": ["damaged", "was damaged", "were damaged", "are damaged"],
+          "correctAnswer": "were damaged",
+          "explanation": "'Last month' indicates a completed action in the past. 'Many trees' is plural, so Past Simple Passive ('were' + past participle 'damaged') is correct. (Nhiều cây bị hư hại vào tháng trước)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The first mobile phone ___ by Motorola in 1973.",
+          "options": ["invented", "was invented", "is invented", "invents"],
+          "correctAnswer": "was invented",
+          "explanation": "The year '1973' points to a specific completed action in the past. 'The first mobile phone' is singular, so Past Simple Passive ('was invented') is correct. (Điện thoại di động đầu tiên được phát minh)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Future Passive Voice: Predictions and Plans",
+      "description": "Practice forming sentences in the future simple passive voice to describe future events, predictions, and plans.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The new city library ___ (open) by the mayor next month.",
+          "options": [
+            "will open",
+            "will be opened",
+            "is opened",
+            "will have opened"
+          ],
+          "correctAnswer": "will be opened",
+          "explanation": "The subject 'The new city library' is receiving the action, so the passive voice is required. For the future simple passive, the structure is 'will be + past participle'. (Thư viện sẽ được khai trương. Cấu trúc bị động thì tương lai đơn là 'will be + P2').",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "All assignments for this course ___ online.",
+          "options": [
+            "will be submitted",
+            "will submit",
+            "are submitting",
+            "will have submitted"
+          ],
+          "correctAnswer": "will be submitted",
+          "explanation": "Assignments are the object of the action 'submit', so the passive voice is needed. The future passive 'will be submitted' correctly expresses that this action will happen in the future.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "A decision on the new policy ___ (make) at the next board meeting.",
+          "options": ["will make", "will be made", "is made", "will making"],
+          "correctAnswer": "will be made",
+          "explanation": "'A decision' is the recipient of the action 'make', requiring the future passive form 'will be made'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Important documents ___ to your email by tomorrow morning.",
+          "options": [
+            "will send",
+            "will be sent",
+            "are sent",
+            "will have sent"
+          ],
+          "correctAnswer": "will be sent",
+          "explanation": "'Important documents' will receive the action of sending. The future passive voice 'will be sent' is the correct form.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The old bridge ___ (replace) with a new one next year.",
+          "options": [
+            "will replace",
+            "will be replaced",
+            "is replaced",
+            "will have replaced"
+          ],
+          "correctAnswer": "will be replaced",
+          "explanation": "The subject 'The old bridge' is the one being replaced, not performing the action. Therefore, the future passive 'will be replaced' is correct.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "It is expected that the next Olympic Games ___ in Paris.",
+          "options": [
+            "will hold",
+            "will be held",
+            "are held",
+            "will be holding"
+          ],
+          "correctAnswer": "will be held",
+          "explanation": "The Olympic Games are the event that will be held, so the passive voice is necessary. 'Will be held' is the correct future passive form.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Modal Verbs in Passive Voice",
+      "description": "Practice using modal verbs (can, must, should, might, etc.) in the passive voice to express possibility, necessity, advice, or permission.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This problem ___ (can / solve) if we work together.",
+          "options": [
+            "can solve",
+            "can be solved",
+            "can solved",
+            "could solved"
+          ],
+          "correctAnswer": "can be solved",
+          "explanation": "The problem is the object of the action 'solve', requiring the passive voice. When a modal verb is used, the structure is 'modal + be + past participle'. (Vấn đề này có thể được giải quyết. Cấu trúc bị động với động từ khiếm khuyết là 'modal + be + P2').",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "All visitors ___ to show their ID at the entrance.",
+          "options": [
+            "must be required",
+            "must require",
+            "must be requiring",
+            "must have required"
+          ],
+          "correctAnswer": "must be required",
+          "explanation": "Visitors are receiving the action of being required. The modal passive 'must be required' correctly conveys the necessity.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The environment ___ (should / protect) for future generations.",
+          "options": [
+            "should protect",
+            "should be protected",
+            "should protected",
+            "should have protected"
+          ],
+          "correctAnswer": "should be protected",
+          "explanation": "The environment is the recipient of the protection. The modal passive 'should be protected' is used to give advice or express obligation.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Important decisions ___ by the board members.",
+          "options": [
+            "might make",
+            "might be made",
+            "might making",
+            "might have made"
+          ],
+          "correctAnswer": "might be made",
+          "explanation": "Decisions are the objects of the action 'make'. 'Might be made' expresses a possibility in the passive voice.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "New software updates ___ (should / install) overnight.",
+          "options": [
+            "should install",
+            "should be installed",
+            "should installing",
+            "should have installed"
+          ],
+          "correctAnswer": "should be installed",
+          "explanation": "The software updates are being installed. This sentence uses 'should' as a modal to give advice in passive voice: 'should be installed'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "This historical building ___ from demolition.",
+          "options": [
+            "must be saved",
+            "must save",
+            "must be saving",
+            "must have saved"
+          ],
+          "correctAnswer": "must be saved",
+          "explanation": "The building is the object that needs saving. 'Must be saved' indicates a strong necessity in the passive voice.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Identifying and Using the 'by' Agent in Passive Sentences",
+      "description": "Practice understanding when and how to use the 'by' agent to specify who performed the action in passive voice sentences.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The new bridge ___ (design) by a team of engineers.",
+          "options": [
+            "was designed",
+            "designed",
+            "was design",
+            "was being designed"
+          ],
+          "correctAnswer": "was designed",
+          "explanation": "The bridge is the recipient of the action 'design'. The 'by' phrase indicates the agent, making the passive voice necessary. 'Was designed' is the correct past simple passive. (Cây cầu được thiết kế bởi... Cấu trúc bị động quá khứ đơn là 'was/were + P2'. 'by + tác nhân' dùng để chỉ rõ ai làm hành động).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The award-winning novel ___ last year.",
+          "options": [
+            "was written by J.K. Rowling",
+            "wrote J.K. Rowling",
+            "was written J.K. Rowling",
+            "was written for J.K. Rowling"
+          ],
+          "correctAnswer": "was written by J.K. Rowling",
+          "explanation": "The novel is the object being written. The 'by' phrase correctly introduces the author (agent) in the passive sentence.",
+          "orderIndex": 2
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: \"The delicious cake baked my grandmother.\"",
+          "options": [
+            "My grandmother baked the delicious cake.",
+            "The delicious cake was baked by my grandmother.",
+            "The delicious cake was baked my grandmother.",
+            "My grandmother was baked the delicious cake."
+          ],
+          "correctAnswer": "The delicious cake was baked by my grandmother.",
+          "explanation": "The original sentence implies the cake did the baking. To correctly state that the grandmother baked the cake, we need the passive voice with 'by + agent': 'The delicious cake was baked by my grandmother.'",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The proposal ___ (present) by the project manager tomorrow.",
+          "options": [
+            "will present",
+            "will be presented by",
+            "will be presented",
+            "is presented"
+          ],
+          "correctAnswer": "will be presented",
+          "explanation": "The proposal will be the object of the presentation. Since the agent ('the project manager') is specified and important, the 'by' phrase is included. The future passive form is 'will be presented'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The windows ___ the cleaning crew earlier today.",
+          "options": [
+            "were cleaned",
+            "were cleaned by",
+            "cleaned",
+            "were cleaning by"
+          ],
+          "correctAnswer": "were cleaned by",
+          "explanation": "The windows received the action of cleaning. The 'by' phrase tells us who did it. 'Were cleaned by' is the correct past simple passive form with the agent.",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This famous painting ___ (paint) by Van Gogh.",
+          "options": [
+            "painted",
+            "was painted",
+            "was painted by",
+            "is painted by"
+          ],
+          "correctAnswer": "was painted by",
+          "explanation": "The painting is the object of the action 'paint'. Since Van Gogh is a specific and known artist, the 'by' agent is crucial. The correct past simple passive is 'was painted by'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Impersonal Passive Structures",
+      "description": "Practice forming and understanding impersonal passive constructions, often used for general statements or reports without specifying the agent.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "It ___ that the new policy will benefit many.",
+          "options": ["hopes", "is hoped", "has hoped", "will hope"],
+          "correctAnswer": "is hoped",
+          "explanation": "The impersonal passive uses 'It + passive verb + that-clause' to make a general statement. Here, 'hope' is in the present simple passive. 'It is hoped' means 'người ta hy vọng rằng'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "People say he is a genius. → ___ to be a genius.",
+          "options": ["He is said", "It is said", "He says", "He has said"],
+          "correctAnswer": "He is said",
+          "explanation": "When the original active sentence has a specific subject (he), we can use 'Subject + passive verb + to-infinitive'. 'He is said to be a genius' means 'Anh ta được cho là một thiên tài'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "It ___ that the project will be completed on time.",
+          "options": ["expects", "is expected", "has expected", "will expect"],
+          "correctAnswer": "is expected",
+          "explanation": "This is another impersonal passive construction with 'It + passive verb + that-clause'. 'It is expected' means 'người ta mong đợi rằng'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOENCE",
+          "question": "They reported that the suspect had fled the country. → ___ that the suspect had fled the country.",
+          "options": [
+            "It reported",
+            "It was reported",
+            "They were reported",
+            "It is reported"
+          ],
+          "correctAnswer": "It was reported",
+          "explanation": "The original verb 'reported' is in the past simple, so the impersonal passive form should also be in the past simple: 'It was reported'. This means 'có báo cáo rằng / người ta đã báo cáo rằng'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The CEO ___ to have resigned due to health issues.",
+          "options": [
+            "is believed",
+            "believes",
+            "has believed",
+            "will believe"
+          ],
+          "correctAnswer": "is believed",
+          "explanation": "This follows the 'Subject + passive verb + to-infinitive' structure. 'The CEO is believed to have resigned' means 'CEO được tin là đã từ chức'. The perfect infinitive 'to have resigned' indicates the resignation happened before the belief.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Many believe that carbon emissions cause global warming. → Carbon emissions ___ to cause global warming.",
+          "options": [
+            "are believed",
+            "is believed",
+            "believe",
+            "are believing"
+          ],
+          "correctAnswer": "are believed",
+          "explanation": "The subject 'Carbon emissions' is plural, so the passive verb must agree: 'are believed'. This structure ('Subject + passive verb + to-infinitive') is an alternative to the 'It is believed that...' construction. 'Lượng khí thải carbon được tin là gây ra nóng lên toàn cầu'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Active to Passive Transformation (Basic & Intermediate)",
+      "description": "Transform active sentences into passive voice, practicing various tenses and basic structures.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Someone stole my wallet yesterday. → My wallet ___ yesterday.",
+          "options": ["is stolen", "was stolen", "has stolen", "had stolen"],
+          "correctAnswer": "was stolen",
+          "explanation": "The active sentence is in the simple past ('stole'). To form the passive, use 'was/were + past participle'. 'My wallet was stolen' means 'Ví của tôi đã bị trộm'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They are building a new bridge. → A new bridge ___ by them.",
+          "options": [
+            "is built",
+            "is being built",
+            "has been built",
+            "was built"
+          ],
+          "correctAnswer": "is being built",
+          "explanation": "The active sentence is in the present continuous ('are building'). The passive form for continuous tenses is 'be + being + past participle'. 'A new bridge is being built' means 'Một cây cầu mới đang được xây'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The committee will announce the results tomorrow. → The results ___ by the committee tomorrow.",
+          "options": [
+            "will announce",
+            "will be announced",
+            "are announced",
+            "have been announced"
+          ],
+          "correctAnswer": "will be announced",
+          "explanation": "The active sentence uses the future simple ('will announce'). The passive form is 'will be + past participle'. 'Kết quả sẽ được công bố'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We have completed the report. → The report ___ by us.",
+          "options": [
+            "was completed",
+            "is completed",
+            "has been completed",
+            "had been completed"
+          ],
+          "correctAnswer": "has been completed",
+          "explanation": "The active sentence is in the present perfect ('have completed'). The passive form is 'has/have been + past participle'. 'Báo cáo đã được hoàn thành'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The students had finished their homework before the class. → Their homework ___ by the students before the class.",
+          "options": [
+            "was finished",
+            "has been finished",
+            "had been finished",
+            "is finished"
+          ],
+          "correctAnswer": "had been finished",
+          "explanation": "The active sentence is in the past perfect ('had finished'). The passive form is 'had been + past participle'. 'Bài tập về nhà của họ đã được hoàn thành'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She gave him a present. → He ___ a present by her.",
+          "options": ["was given", "is given", "had given", "has given"],
+          "correctAnswer": "was given",
+          "explanation": "This is a ditransitive verb ('gave' - past simple). When there are two objects, either can become the subject of the passive sentence. Here, the indirect object 'him' becomes the subject 'He', so the verb is 'was given'. 'Anh ấy đã được tặng một món quà'.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Advanced Passive Transformations",
+      "description": "Practice transforming more complex active sentences into passive voice, including modals, infinitives, and perception verbs.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "You must submit your assignments by Friday. → Your assignments ___ by Friday.",
+          "options": [
+            "must submit",
+            "must be submitted",
+            "should submit",
+            "will be submitted"
+          ],
+          "correctAnswer": "must be submitted",
+          "explanation": "For modal verbs, the passive form is 'modal + be + past participle'. 'Must be submitted' means 'phải được nộp'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They expect her to win the award. → She ___ the award.",
+          "options": [
+            "is expected to win",
+            "expects to win",
+            "is expected winning",
+            "has expected to win"
+          ],
+          "correctAnswer": "is expected to win",
+          "explanation": "This is a complex active structure 'Subject + verb + object + to-infinitive'. In passive, it becomes 'Subject (object from active) + passive verb + to-infinitive'. 'She is expected to win' means 'Cô ấy được mong đợi sẽ thắng'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We need to clean the house. → The house needs ___ .",
+          "options": ["to clean", "to be clean", "to be cleaned", "cleaning"],
+          "correctAnswer": "to be cleaned",
+          "explanation": "When 'need' is followed by a passive construction, it can be 'need + to be + past participle' or 'need + -ing form' (which has a passive meaning). 'The house needs to be cleaned' or 'The house needs cleaning' both mean 'Ngôi nhà cần được dọn dẹp'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Someone saw him break into the bank. → He ___ into the bank.",
+          "options": [
+            "was seen breaking",
+            "was seen to break",
+            "is seen break",
+            "saw breaking"
+          ],
+          "correctAnswer": "was seen to break",
+          "explanation": "When verbs of perception (see, hear, feel, watch, notice) are used in the active with a bare infinitive (e.g., 'see him break'), the passive form is 'be + seen/heard/etc. + to-infinitive'. Alternatively, a present participle ('was seen breaking') can also be used. Both are correct, but 'to break' is often preferred in formal contexts. 'Anh ta đã bị nhìn thấy đột nhập vào ngân hàng'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The government ought to address these issues urgently. → These issues ___ urgently by the government.",
+          "options": [
+            "ought to address",
+            "ought to be addressed",
+            "should address",
+            "are addressed"
+          ],
+          "correctAnswer": "ought to be addressed",
+          "explanation": "Similar to modals, 'ought to' followed by a passive verb takes the form 'ought to be + past participle'. 'Những vấn đề này cần được chính phủ giải quyết khẩn cấp'.",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "The manager arranged for the documents to sign.",
+          "options": [
+            "The manager arranged for the documents to be signed.",
+            "The manager arranged for the documents to signing.",
+            "The manager arranged the documents to sign.",
+            "The manager arranged for the documents signing."
+          ],
+          "correctAnswer": "The manager arranged for the documents to be signed.",
+          "explanation": "When 'arrange for something' is followed by an action performed on that 'something', the infinitive phrase needs to be in the passive voice: 'to be + past participle'. 'To be signed' means 'được ký'. The original sentence implied the documents themselves would do the signing, which is incorrect.",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

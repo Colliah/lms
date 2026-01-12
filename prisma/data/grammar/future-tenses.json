@@ -1,0 +1,609 @@
+{
+  "topic": {
+    "name": "Future Tenses",
+    "description": "Express future with will, going to, and present continuous",
+    "difficulty": "A2"
+  },
+  "exercises": [
+    {
+      "title": "Sudden Plans: 'Will' for Spontaneous Decisions",
+      "description": "Practice using 'will' to talk about decisions made at the moment of speaking.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Oh, the phone is ringing! I ___ answer it.",
+          "options": ["will", "am going to", "answer", "will be"],
+          "correctAnswer": "will",
+          "explanation": "Use 'will' for decisions made instantly, at the moment of speaking. (Chúng ta dùng 'will' cho các quyết định được đưa ra ngay lập tức, tại thời điểm nói.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "It's cold in here. ___ turn on the heater.",
+          "options": ["I will", "I am going to", "I turn", "I am turning"],
+          "correctAnswer": "I will",
+          "explanation": "This is a spontaneous decision based on the current situation. (Đây là một quyết định tự phát dựa trên tình hình hiện tại.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I'm hungry. I think I ___ make a sandwich.",
+          "options": ["will", "am making", "make", "going to make"],
+          "correctAnswer": "will",
+          "explanation": "The speaker just decided to make a sandwich. 'Will' is used for new, spontaneous decisions. (Người nói vừa mới quyết định làm bánh mì. 'Will' được dùng cho các quyết định mới, tự phát.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What would you like to drink? Oh, I ___ have a coffee, please.",
+          "options": ["will", "am having", "have", "am going to have"],
+          "correctAnswer": "will",
+          "explanation": "The speaker is deciding what to drink at that very moment. (Người nói đang quyết định uống gì ngay tại thời điểm đó.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This bag is very heavy. Don't worry, I ___ help you.",
+          "options": ["will", "am helping", "help", "am going to help"],
+          "correctAnswer": "will",
+          "explanation": "Offering help instantly is a spontaneous decision. (Việc đề nghị giúp đỡ ngay lập tức là một quyết định tự phát.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "There's no milk left. I know! I ___ buy some later.",
+          "options": ["will", "am buying", "buy", "am going to buy"],
+          "correctAnswer": "will",
+          "explanation": "The decision to buy milk is made at the moment of speaking. (Quyết định mua sữa được đưa ra ngay tại thời điểm nói.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Crystal Ball: 'Will' for Predictions",
+      "description": "Practice using 'will' to express general predictions about the future.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I think it ___ rain tomorrow. The sky is very dark.",
+          "options": ["will", "is going to", "rains", "is raining"],
+          "correctAnswer": "will",
+          "explanation": "'Will' is often used for general predictions, especially with 'I think' or 'I believe'. (Chúng ta thường dùng 'will' cho các dự đoán chung chung, đặc biệt là với 'I think' hoặc 'I believe'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Scientists say that in the future, people ___ live on Mars.",
+          "options": ["will", "are going to", "live", "are living"],
+          "correctAnswer": "will",
+          "explanation": "This is a general prediction about a future possibility, often without strong immediate evidence. (Đây là một dự đoán chung về một khả năng trong tương lai, thường không có bằng chứng rõ ràng ngay lập tức.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Don't worry, I'm sure you ___ pass your exam.",
+          "options": ["will", "are going to", "pass", "are passing"],
+          "correctAnswer": "will",
+          "explanation": "'I'm sure' indicates a belief or prediction about the future. (Cụm từ 'I'm sure' cho thấy một niềm tin hoặc dự đoán về tương lai.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I don't think she ___ like this movie. It's too sad.",
+          "options": ["will", "is going to", "likes", "is liking"],
+          "correctAnswer": "will",
+          "explanation": "Expressing an opinion about what someone will or won't like in the future is a prediction. (Thể hiện ý kiến về việc ai đó sẽ thích hay không thích điều gì trong tương lai là một dự đoán.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Maybe someday, flying cars ___ be common.",
+          "options": ["will", "are going to", "are", "will be being"],
+          "correctAnswer": "will",
+          "explanation": "'Maybe someday' suggests a future possibility, which is a prediction. (Cụm từ 'Maybe someday' gợi ý một khả năng trong tương lai, đây là một dự đoán.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "It's very cold. I think the lake ___ freeze soon.",
+          "options": ["will", "is going to", "freezes", "is freezing"],
+          "correctAnswer": "will",
+          "explanation": "This is a prediction based on a general thought or opinion, often introduced by 'I think'. (Đây là một dự đoán dựa trên suy nghĩ hoặc ý kiến chung, thường được giới thiệu bằng 'I think'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Future Commitments: 'Will' for Promises",
+      "description": "Practice using 'will' to make promises and assurances about future actions.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I promise I ___ call you tomorrow.",
+          "options": ["will", "am going to", "call", "will be calling"],
+          "correctAnswer": "will",
+          "explanation": "'Will' is used directly after 'I promise' to show a firm commitment. (Chúng ta dùng 'will' ngay sau 'I promise' để thể hiện một cam kết chắc chắn.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Don't worry, I ___ be late again.",
+          "options": ["won't", "am not going to", "don't", "will not be"],
+          "correctAnswer": "won't",
+          "explanation": "'Won't' (will not) is used to promise that something will not happen. (Chúng ta dùng 'won't' (viết tắt của 'will not') để hứa rằng điều gì đó sẽ không xảy ra.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I ___ help you with your homework, I swear!",
+          "options": ["will", "am going to", "help", "will be helping"],
+          "correctAnswer": "will",
+          "explanation": "'I swear' emphasizes the promise. 'Will' is the correct choice for promises. (Cụm từ 'I swear' nhấn mạnh lời hứa. 'Will' là lựa chọn đúng cho lời hứa.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Thank you for the loan. I ___ pay you back next week.",
+          "options": ["will", "am going to", "pay", "am paying"],
+          "correctAnswer": "will",
+          "explanation": "This is a promise to return money. (Đây là một lời hứa sẽ trả lại tiền.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She promises she ___ tell anyone your secret.",
+          "options": ["won't", "isn't going to", "doesn't", "isn't"],
+          "correctAnswer": "won't",
+          "explanation": "Use 'won't' for a negative promise. (Dùng 'won't' cho một lời hứa phủ định.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I promise I ___ visit you when I'm in London.",
+          "options": ["will", "am going to", "visit", "am visiting"],
+          "correctAnswer": "will",
+          "explanation": "This sentence expresses a promise to visit. (Câu này thể hiện một lời hứa sẽ đến thăm.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Future Plans: 'Going to'",
+      "description": "Practice using 'going to' for future plans and intentions, things you have decided to do.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Next summer, my family and I ___ visit my grandparents in the countryside.",
+          "options": ["are going to", "will", "visit", "are visiting"],
+          "correctAnswer": "are going to",
+          "explanation": "We use 'be going to' for plans and intentions that we have already decided. 'Are going to visit' shows a clear plan. (Chúng ta dùng 'be going to' cho các kế hoạch và dự định đã được quyết định.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I've saved enough money. I ___ a new laptop next month.",
+          "options": ["will buy", "am buying", "am going to buy", "buy"],
+          "correctAnswer": "am going to buy",
+          "explanation": "The speaker has saved money, indicating an intention or a plan. 'Am going to buy' expresses this decision. (Người nói đã tiết kiệm đủ tiền, cho thấy một ý định hoặc kế hoạch rõ ràng.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ study for his English test this evening because he feels sick.",
+          "options": [
+            "isn't going to",
+            "won't",
+            "doesn't go to",
+            "isn't studying"
+          ],
+          "correctAnswer": "isn't going to",
+          "explanation": "'Isn't going to study' shows a negative intention or a cancelled plan due to feeling sick. (Thể hiện một ý định không làm gì hoặc kế hoạch bị hủy bỏ.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ do after you graduate from university?",
+          "options": [
+            "are / going to",
+            "will / be",
+            "do / go to",
+            "are / doing"
+          ],
+          "correctAnswer": "are / going to",
+          "explanation": "This is a question about future plans or intentions. 'Are you going to do' correctly forms the question. (Đây là câu hỏi về kế hoạch hoặc dự định trong tương lai.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Look at those dark clouds! It ___ rain very soon.",
+          "options": ["is going to", "will", "rains", "is raining"],
+          "correctAnswer": "is going to",
+          "explanation": "'Is going to rain' is used for predictions based on present evidence (dark clouds). It's a type of 'going to' usage closely related to imminent future. (Chúng ta dùng 'be going to' để dự đoán dựa trên bằng chứng hiện tại.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My sister has decided she ___ a volunteer abroad next year.",
+          "options": [
+            "becomes",
+            "is becoming",
+            "is going to become",
+            "will become"
+          ],
+          "correctAnswer": "is going to become",
+          "explanation": "The phrase 'has decided' clearly indicates a prior decision, making 'is going to become' the correct choice for an intention. (Cụm từ 'has decided' cho thấy một quyết định đã có trước đó, nên dùng 'is going to'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Fixed Future: Present Continuous",
+      "description": "Practice using the Present Continuous for definite future arrangements that have already been planned and confirmed.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I can't meet you on Friday. I ___ the dentist at 3 PM.",
+          "options": ["am seeing", "will see", "am going to see", "see"],
+          "correctAnswer": "am seeing",
+          "explanation": "'Am seeing' indicates a fixed appointment or arrangement in the future. It's already in the diary. (Chúng ta dùng Hiện tại Tiếp diễn cho các cuộc hẹn hoặc sắp xếp đã cố định và xác nhận trong tương lai.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They ___ for London tomorrow morning. Everything is ready.",
+          "options": [
+            "are leaving",
+            "leave",
+            "will leave",
+            "are going to leave"
+          ],
+          "correctAnswer": "are leaving",
+          "explanation": "The phrase 'Everything is ready' confirms this is a fixed arrangement, so Present Continuous ('are leaving') is appropriate. (Việc 'mọi thứ đã sẵn sàng' cho thấy đây là một sắp xếp đã cố định.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ dinner with our friends on Saturday evening.",
+          "options": ["are having", "will have", "have", "are going to have"],
+          "correctAnswer": "are having",
+          "explanation": "Having dinner with friends is a common social arrangement, often planned in advance. 'Are having' is the correct form for this fixed future event. (Ăn tối với bạn bè là một sắp xếp xã hội phổ biến, thường được lên kế hoạch trước.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What time ___ your train ___ on Sunday?",
+          "options": [
+            "is / arriving",
+            "does / arrive",
+            "will / arrive",
+            "is / going to arrive"
+          ],
+          "correctAnswer": "is / arriving",
+          "explanation": "For schedules and timetables, or fixed travel arrangements, Present Continuous is often used. 'Is arriving' fits a pre-booked train. (Đối với lịch trình tàu xe hoặc sắp xếp du lịch đã cố định, chúng ta dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'I will meet John for coffee at 10 AM tomorrow.'",
+          "options": [
+            "I meet John for coffee at 10 AM tomorrow.",
+            "I am going to meet John for coffee at 10 AM tomorrow.",
+            "I am meeting John for coffee at 10 AM tomorrow.",
+            "I met John for coffee at 10 AM tomorrow."
+          ],
+          "correctAnswer": "I am meeting John for coffee at 10 AM tomorrow.",
+          "explanation": "A confirmed meeting at a specific time is a fixed arrangement, which is best expressed with the Present Continuous. 'Will' is for spontaneous decisions or general predictions. (Một cuộc gặp đã xác nhận vào thời gian cụ thể là một sắp xếp cố định, nên dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The company ___ a new CEO next month, it's already announced.",
+          "options": [
+            "is appointing",
+            "will appoint",
+            "appoints",
+            "is going to appoint"
+          ],
+          "correctAnswer": "is appointing",
+          "explanation": "The announcement implies a fixed, confirmed arrangement for the future. 'Is appointing' is suitable for this official arrangement. (Việc thông báo cho thấy một sắp xếp cố định, đã được xác nhận trong tương lai.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Plans or Arrangements?",
+      "description": "Decide whether to use 'going to' for plans/intentions or Present Continuous for fixed arrangements.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I've already bought the tickets. We ___ a concert next Friday.",
+          "options": ["are seeing", "are going to see", "will see", "see"],
+          "correctAnswer": "are seeing",
+          "explanation": "When tickets are bought, it confirms a fixed arrangement, not just a plan. Therefore, the Present Continuous ('are seeing') is the correct choice. (Khi vé đã được mua, đó là một sắp xếp cố định, dùng Present Continuous.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "It's my birthday next week. My friends ___ a surprise party for me!",
+          "options": [
+            "are throwing",
+            "will throw",
+            "are going to throw",
+            "throw"
+          ],
+          "correctAnswer": "are throwing",
+          "explanation": "A 'surprise party' implies that the arrangements are already made and confirmed by your friends, making it a fixed arrangement. The Present Continuous ('are throwing') is used for such arrangements. (Một 'bữa tiệc bất ngờ' ngụ ý rằng các sắp xếp đã được thực hiện và xác nhận, nên đây là một sắp xếp cố định.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I'm tired of my old car. I ___ a new one next year.",
+          "options": ["am buying", "am going to buy", "will buy", "buy"],
+          "correctAnswer": "am going to buy",
+          "explanation": "This sentence expresses a personal intention or a plan that the speaker has decided on, but there's no indication it's a fixed arrangement yet (like having paid a deposit). 'Am going to buy' is correct for plans and intentions. (Đây là một ý định hoặc kế hoạch cá nhân, chưa phải là một sắp xếp cố định. Dùng 'be going to'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The manager ___ a meeting with the team at 2 PM on Tuesday.",
+          "options": ["is having", "is going to have", "will have", "has"],
+          "correctAnswer": "is having",
+          "explanation": "A scheduled meeting at a specific time is a fixed arrangement, often written in a diary or calendar. The Present Continuous ('is having') is used for such pre-arranged future events. (Một cuộc họp đã lên lịch vào thời gian cụ thể là một sắp xếp cố định, dùng Hiện tại Tiếp diễn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Look! He's got his sports gear on. He ___ jogging.",
+          "options": ["is going", "is going to go", "will go", "goes"],
+          "correctAnswer": "is going to go",
+          "explanation": "We use 'be going to' for predictions based on present evidence or signs. The sports gear is evidence that he intends to go jogging. (Chúng ta dùng 'be going to' cho dự đoán dựa trên bằng chứng hiện tại hoặc dấu hiệu rõ ràng.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'I am going to fly to New York next week, I've already booked the flight.'",
+          "options": [
+            "I will fly to New York next week, I've already booked the flight.",
+            "I fly to New York next week, I've already booked the flight.",
+            "I am flying to New York next week, I've already booked the flight.",
+            "I'm going to fly to New York next week, I've already booked the flight."
+          ],
+          "correctAnswer": "I am flying to New York next week, I've already booked the flight.",
+          "explanation": "When a flight is booked and confirmed ('I've already booked the flight'), it becomes a fixed arrangement. For fixed arrangements, the Present Continuous ('am flying') is the most appropriate tense. While 'going to' can sometimes be used, Present Continuous strongly emphasizes the fixed nature of the arrangement. (Khi chuyến bay đã được đặt và xác nhận, đó là một sắp xếp cố định. Hiện tại Tiếp diễn là thì phù hợp nhất.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Will vs. Going to: Plans & Predictions",
+      "description": "Practice differentiating between 'will' for spontaneous decisions, predictions without strong evidence, promises, and offers, and 'going to' for pre-planned actions or predictions based on current evidence.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Look at those dark clouds! It ___ rain very soon.",
+          "options": ["will", "is going to", "is raining", "will be"],
+          "correctAnswer": "is going to",
+          "explanation": "'Is going to' is used for predictions based on present evidence (the dark clouds). (Dùng 'going to' cho dự đoán có bằng chứng hiện tại.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I haven't bought any tickets, but I think I ___ visit Paris next summer.",
+          "options": ["am going to", "will", "will be", "am visiting"],
+          "correctAnswer": "will",
+          "explanation": "'Will' is used for a spontaneous decision or a prediction without strong prior planning or evidence. (Dùng 'will' cho quyết định tự phát hoặc dự đoán không có kế hoạch cụ thể.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "A: 'The phone is ringing!' B: 'Don't worry, I ___ get it.'",
+          "options": ["am going to", "will", "am getting", "will be getting"],
+          "correctAnswer": "will",
+          "explanation": "'Will' is used for a spontaneous decision made at the moment of speaking. (Dùng 'will' cho quyết định tức thời, nói ra ngay lúc đó.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "By 2050, scientists predict that artificial intelligence ___ a major role in our daily lives.",
+          "options": [
+            "is going to play",
+            "plays",
+            "will play",
+            "will be playing"
+          ],
+          "correctAnswer": "will play",
+          "explanation": "'Will' is used for general predictions about the future, often without specific current evidence or prior plans. (Dùng 'will' cho dự đoán chung về tương lai.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I've decided that I ___ learn to play the guitar starting next month.",
+          "options": ["will", "am going to", "learn", "am learning"],
+          "correctAnswer": "am going to",
+          "explanation": "'Am going to' is used for intentions or plans that have already been decided. (Dùng 'going to' cho kế hoạch hoặc ý định đã được quyết định trước.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Don't lift that heavy box by yourself; I ___ help you.",
+          "options": ["am going to", "will", "am helping", "will be helping"],
+          "correctAnswer": "will",
+          "explanation": "'Will' is used for an offer to help, often made spontaneously. (Dùng 'will' để đưa ra lời đề nghị giúp đỡ.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Future Perfect: Actions Completed by a Future Point",
+      "description": "Practice using the Future Perfect tense to describe actions that will be completed before a specific time or event in the future.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "By the time you arrive, I ___ (finish) cooking dinner.",
+          "options": [
+            "will finish",
+            "will have finished",
+            "will be finishing",
+            "am finishing"
+          ],
+          "correctAnswer": "will have finished",
+          "explanation": "The Future Perfect ('will have + past participle') is used to show an action that will be completed before a specific point in the future (by the time you arrive). (Dùng 'will have + P2' để diễn tả hành động sẽ hoàn thành trước một thời điểm cụ thể trong tương lai.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "In two years, she ___ (work) for this company for a decade.",
+          "options": [
+            "will work",
+            "will have worked",
+            "will be working",
+            "is going to work"
+          ],
+          "correctAnswer": "will have worked",
+          "explanation": "This sentence indicates an action (working) that will be completed (reaching the 10-year mark) by a future point (in two years). (Câu này chỉ hành động sẽ hoàn thành (đạt mốc 10 năm) trước một thời điểm trong tương lai.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "By midnight, the students ___ (submit) all their assignments.",
+          "options": [
+            "will submit",
+            "will have submitted",
+            "will be submitting",
+            "are submitting"
+          ],
+          "correctAnswer": "will have submitted",
+          "explanation": "The action of submitting assignments will be completed before midnight. (Hành động nộp bài tập sẽ hoàn thành trước nửa đêm.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "When we reach London, the sun ___ (already set).",
+          "options": [
+            "will already set",
+            "will already be setting",
+            "will have already set",
+            "sets"
+          ],
+          "correctAnswer": "will have already set",
+          "explanation": "The Future Perfect is used here to indicate that the sun setting will be completed before or at the time of reaching London. (Dùng thì Tương lai Hoàn thành để chỉ mặt trời đã lặn xong trước hoặc vào thời điểm đến Luân Đôn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I hope they ___ (build) the new bridge by the end of next year.",
+          "options": [
+            "will build",
+            "will have built",
+            "will be building",
+            "are building"
+          ],
+          "correctAnswer": "will have built",
+          "explanation": "The sentence expresses hope that the building of the bridge will be finished by a future deadline. (Câu này bày tỏ hy vọng việc xây cầu sẽ hoàn thành trước hạn chót trong tương lai.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "By next summer, I will be living abroad for five years.",
+          "options": [
+            "By next summer, I will have lived abroad for five years.",
+            "By next summer, I live abroad for five years.",
+            "By next summer, I will live abroad for five years.",
+            "By next summer, I am living abroad for five years."
+          ],
+          "correctAnswer": "By next summer, I will have lived abroad for five years.",
+          "explanation": "The original sentence uses Future Continuous, implying an ongoing action. However, 'for five years' indicates a duration that will be completed by 'next summer,' requiring the Future Perfect. (Câu gốc dùng Tương lai Tiếp diễn, ám chỉ hành động đang diễn ra. Nhưng 'trong 5 năm' chỉ khoảng thời gian sẽ hoàn tất vào 'mùa hè tới,' nên phải dùng Tương lai Hoàn thành.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Future Continuous: Actions in Progress",
+      "description": "Practice using the Future Continuous tense to describe actions that will be ongoing at a specific moment or over a period in the future.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "This time next week, I ___ (lie) on a beach in Hawaii.",
+          "options": [
+            "will lie",
+            "will be lying",
+            "will have lain",
+            "am lying"
+          ],
+          "correctAnswer": "will be lying",
+          "explanation": "The Future Continuous ('will be + -ing') is used to describe an action that will be in progress at a specific time in the future. (Dùng 'will be + V-ing' để diễn tả hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Don't call me between 7 and 8 PM tonight; I ___ (have) dinner with my family.",
+          "options": [
+            "will have",
+            "will be having",
+            "will have had",
+            "am having"
+          ],
+          "correctAnswer": "will be having",
+          "explanation": "This indicates an action that will be in progress during a specified period in the future. (Điều này chỉ ra một hành động sẽ đang diễn ra trong một khoảng thời gian cụ thể trong tương lai.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "When you arrive at the party, I'm sure everyone ___ (dance) and singing.",
+          "options": [
+            "will dance",
+            "will be dancing",
+            "will have danced",
+            "is dancing"
+          ],
+          "correctAnswer": "will be dancing",
+          "explanation": "This describes an action (dancing and singing) that will be ongoing when another event (your arrival) happens. (Điều này mô tả hành động đang diễn ra khi một sự kiện khác (bạn đến) xảy ra.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "At 10 AM tomorrow, I ___ (attend) a very important meeting.",
+          "options": [
+            "will attend",
+            "will be attending",
+            "will have attended",
+            "am attending"
+          ],
+          "correctAnswer": "will be attending",
+          "explanation": "This describes an action that will be in progress at a specific future moment (10 AM tomorrow). (Điều này mô tả hành động sẽ đang diễn ra vào một thời điểm cụ thể trong tương lai (10 giờ sáng mai).)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I wonder what John ___ (do) this time next year.",
+          "options": ["will do", "will be doing", "will have done", "is doing"],
+          "correctAnswer": "will be doing",
+          "explanation": "The Future Continuous is used to ask about an action that will be in progress at a future point. (Thì Tương lai Tiếp diễn được dùng để hỏi về hành động sẽ đang diễn ra tại một thời điểm trong tương lai.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Please don't disturb me. I will work on my presentation all morning.",
+          "options": [
+            "Please don't disturb me. I will be working on my presentation all morning.",
+            "Please don't disturb me. I will work on my presentation.",
+            "Please don't disturb me. I work on my presentation all morning.",
+            "Please don't disturb me. I have worked on my presentation all morning."
+          ],
+          "correctAnswer": "Please don't disturb me. I will be working on my presentation all morning.",
+          "explanation": "'All morning' indicates a duration during which the action will be in progress, so Future Continuous is appropriate. ( 'Suốt buổi sáng' chỉ ra một khoảng thời gian mà hành động sẽ đang diễn ra, nên Tương lai Tiếp diễn là phù hợp.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

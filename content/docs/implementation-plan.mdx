@@ -1,0 +1,314 @@
+---
+title: "Implementation Plan"
+description: "Development roadmap and implementation strategy for the LMS"
+---
+
+# LMS Implementation Plan
+
+## Project Overview
+
+Build a comprehensive English Learning Management System with vocabulary (SM-2 spaced repetition), grammar, reading, writing, speaking modules, and robust progress tracking.
+
+## Implementation Phases
+
+### Phase 1: Foundation & Core Features ✅
+
+**Timeline**: Weeks 1-4  
+**Status**: COMPLETED
+
+#### 1.1 Database Schema
+- [x] Design Prisma schema with 35+ models
+- [x] User authentication models (Better Auth)
+- [x] Vocabulary system with SM-2 fields
+- [x] Grammar, Reading, Writing, Speaking models
+- [x] Progress tracking and gamification models
+- [x] Analytics and reporting models
+- [x] User role system (USER, ADMIN)
+
+#### 1.2 Service Layer
+- [x] Vocabulary service with SM-2 algorithm
+- [x] Progress service (streaks, dashboard stats)
+- [x] User profile service (onboarding, preferences)
+- [x] Grammar service (exercises, grading)
+- [x] Reading service (passages, WPM calculation)
+- [x] Writing service (prompts, submissions)
+- [x] Speaking service (pronunciation tracking)
+- [x] Analytics service (performance snapshots)
+
+#### 1.3 API Layer (Server Actions)
+- [x] Authentication pattern implementation
+- [x] Vocabulary actions (daily fetch, review submission)
+- [x] Progress actions (dashboard stats, logging)
+- [x] User profile actions (onboarding, preferences)
+- [x] Profile actions (update profile, fetch achievements)
+- [x] Grammar, Reading, Writing, Speaking actions
+- [x] Analytics actions
+
+#### 1.4 Core UI Components
+- [x] Dashboard with stats cards and charts
+- [x] Vocabulary flashcard system
+- [x] Navigation sidebar with role-based access
+- [x] Grammar exercise interface
+- [x] Reading comprehension interface
+- [x] Writing editor
+- [x] Speaking
+### Phase 3: AI Integration ✅
+
+**Timeline**: Week 11  
+**Status**: COMPLETED
+
+#### 3.1 Core AI Services
+- [x] Gemini AI service (`lib/gemini.ts`)
+- [x] Text-to-Speech service (`lib/tts.ts`)
+- [x] Grammar checking service (`lib/grammar.ts`)
+- [x] Quiz generator service (`lib/quiz-generator.ts`)
+- [x] AI server actions (`actions/ai.ts`, `actions/quiz-generator.ts`)
+
+#### 3.2 Vocabulary AI Enhancements
+- [x] Word families (related word forms)
+- [x] Collocations (common word combinations)
+- [x] Phrasal verbs lookup
+- [x] Idioms finder
+- [x] Vietnamese translations
+- [x] Integration into flashcards
+
+#### 3.3 Writing & Grammar
+- [x] Real-time grammar checker component
+- [x] LanguageTool API integration
+- [x] Inline error highlighting
+- [x] Click-to-apply suggestions
+- [x] Tab-based integration in writing editor
+
+#### 3.4 Pronunciation & Speaking
+- [x] Web Speech API integration
+- [x] AI pronunciation evaluation
+- [x] Real-time feedback with tips
+- [x] Pronunciation practice component
+
+#### 3.5 Dashboard Features
+- [x] Word of the Day widget
+- [x] AI-generated daily vocabulary
+- [x] TTS playback integration
+
+#### 3.6 Content Generation
+- [x] AI quiz generation (customizable topics/levels)
+- [x] TOEIC practice generator (all 7 parts)
+- [x] Theory/study guide generator
+- [x] QuizGenerator UI component
+
+#### 3.7 Merriam-Webster API Integration
+- [x] Dictionary API service (`lib/merriam-webster.ts`)
+- [x] Thesaurus API service
+- [x] Dictionary lookup with definitions, pronunciations, etymology
+- [x] Thesaurus lookup with synonyms, antonyms, related words
+- [x] Audio pronunciation from MW CDN
+- [x] Server actions (`getDictionaryDefinitionAction`, `getThesaurusDataAction`, `getMWAudioUrlAction`)
+- [x] Dictionary card in word enhancements UI
+- [x] Thesaurus card with color-coded word badges
+- [x] Enhanced flashcard audio with 3-tier fallback (DB → MW → TTS)
+- [x] Standalone Dictionary page (`/dictionary`)
+- [x] Dictionary tab with definitions, examples, etymology
+- [x] Thesaurus tab with clickable synonym/antonym badges
+- [x] Sidebar menu integration
+
+---
+
+## Implementation Status
+
+### ✅ Completed Phases
+- **Phase 1**: Foundation & Core Features
+- **Phase 2.1**: User Experience
+- **Phase 2.2**: Content Expansion (1,265 words, 93 exercises, 53 passages)
+- **Phase 3**: AI Integration
+
+### 🚧 In Progress
+- **Phase 2.3**: Advanced Features
+
+### 📅 Upcoming Phases
+- **Phase 2.4**: Mobile responsiveness
+- **Phase 2.5**: Performance Optimization
+- **Phase 4**: Testing & deployment
+
+---
+
+## AI Features Summary
+
+The LMS now includes comprehensive AI-powered features:
+
+**Vocabulary Enhancement:**
+- Word families, collocations, phrasal verbs, idioms
+- All accessible from flashcard "Show AI Enhancements" button
+
+**Writing Tools:**
+- Grammar checker with error detection
+- Inline highlighting and suggestions
+- Integrated in writing page tabs
+
+**Content Generation:**
+- Custom quiz generation on any topic
+- TOEIC practice for all 7 parts
+- Grammar theory/study guides
+
+**Dashboard:**
+- Daily Word of the Day with TTS
+- AI-generated vocabulary content
+
+**Dictionary & Thesaurus (Merriam-Webster):**
+- Official definitions from Merriam-Webster Dictionary
+- Pronunciations with IPA notation and audio playback
+- Etymology and first known use dates
+- Synonyms, antonyms, and related words from Thesaurus
+- Integrated into vocabulary flashcard enhancements
+
+---
+
+**Last Updated**: December 6, 2025  
+**Version**: 3.2  
+**Status**: Phase 2.2 Content Expansion Complete
+- [x] Multi-step wizard (5 screens)
+- [x] Welcome screen with feature highlights
+- [x] Level assessment quiz (5 questions, auto-calculation)
+- [x] Learning goals selection (multi-select)
+- [x] Study schedule configuration (slider 5-120 min)
+- [x] Learning style identification
+- [x] Completion screen with auto-save
+- [x] Onboarding server action
+- [x] Progress indicator component
+- [x] Session storage state management
+
+#### User Preferences Management
+- [x] Comprehensive preferences page
+- [x] Notification settings (email, push, daily reminders with time)
+- [x] Learning preferences (sound effects, auto-play audio, translations)
+- [x] Language settings (interface and translation languages)
+- [x] Preferences server actions (fetch & update)
+- [x] Toast notifications for save feedback
+
+#### Profile Customization
+- [x] Tab-based profile organization (Info, Preferences, Achievements)
+- [x] Avatar display with initials fallback
+- [x] Display name editor
+- [x] Email display (read-only)
+- [x] Bio field (500 character limit)
+- [x] Edit/Save/Cancel workflow with unsaved changes detection
+- [x] Achievement showcase with earned badges
+- [x] Profile server actions
+
+#### UI Enhancements
+- [x] Loading states with skeleton screens (Dashboard, Vocabulary)
+- [x] Global error boundary component
+- [x] Toast notifications (Sonner library)
+- [x] Confirmation dialogs (ConfirmDialog component)
+- [x] Tutorial tooltips with localStorage persistence
+- [x] Suspense integration for async data fetching
+
+---
+
+### Phase 2.2: Content Expansion ✅
+
+**Timeline**: Week 6  
+**Status**: COMPLETED
+
+- [x] Expand vocabulary database to 1,265 words (6 CEFR levels)
+- [x] Add 93 grammar exercises (545 questions across 12 topics)
+- [x] Create 53 reading passages (234 comprehension questions)
+- [x] Grammar topic browser UI with level filters
+- [x] Vocabulary stats dashboard and word browser
+- [ ] Writing prompts (skipped)
+- [ ] Speaking exercises (skipped)
+
+**Scripts created:**
+- `scripts/generate-vocabulary.ts`, `scripts/seed-vocabulary.ts`
+- `scripts/generate-grammar.ts`, `scripts/seed-grammar.ts`
+- `scripts/generate-reading.ts`, `scripts/seed-reading.ts`
+
+---
+
+### Phase 2.3: Advanced Features ✅
+
+**Timeline**: Week 7  
+**Status**: COMPLETED
+
+- [x] Reading passage browser UI
+- [x] Saved vocabulary lists
+- [x] Spaced repetition scheduler visualization
+- [x] Custom study sessions
+- [x] Weakness area identification
+- [x] Personalized learning paths
+- [x] Achievement unlock animations
+- [x] Leaderboards
+
+---
+
+### Phase 2.4: Mobile Responsiveness 📅
+
+**Timeline**: Week 7-8  
+**Status**: PLANNED
+
+- [ ] Optimize layouts for mobile (320px+)
+- [ ] Touch-friendly interactions
+- [ ] Mobile navigation drawer
+- [ ] Progressive Web App (PWA) setup
+- [ ] Offline functionality basics
+
+---
+
+### Phase 2.5: Performance Optimization ✅
+
+**Timeline**: Week 8  
+**Status**: COMPLETED
+
+- [x] TanStack Query integration for client-side data fetching
+  - QueryProvider with optimized defaults
+  - Hooks: useVocabularyStats, useSavedWords, useLeaderboard, useWeaknesses
+  - Hooks: useDashboardStats, useLearningPath
+  - Mutations: useSaveWord, useUnsaveWord, useSubmitWordReview
+- [x] Query invalidation strategies (automatic on mutations)
+- [x] Background refetching for fresh data
+- [x] Prisma Accelerate caching (database query optimization)
+  - Categories: 1hr cache
+  - Grammar topics: 30min cache
+  - Reading passages: 15min cache
+  - Leaderboard: 5min cache
+- [ ] Optimistic updates for user actions (optional)
+- [ ] Page-level caching strategies (optional)
+- [ ] Image optimization (optional)
+- [ ] Code splitting for large components (optional)
+
+---
+
+### Phase 3: AI Integration & Advanced Analytics 📅
+
+**Timeline**: Weeks 9-12  
+**Status**: PLANNED
+
+#### 3.1 AI-Powered Features
+- [ ] Writing feedback with GPT-4
+- [ ] Speech recognition for pronunciation
+- [ ] Intelligent content recommendations
+- [ ] Adaptive difficulty adjustment
+
+#### 3.2 Advanced Analytics
+- [ ] Learning velocity tracking
+- [ ] Retention curve visualization
+- [ ] Historical trend analysis (charts)
+- [ ] Export reports (PDF, CSV)
+
+---
+
+## Next Immediate Steps
+
+1. ✅ Complete Phase 1 (Foundation)
+2. ✅ Complete Phase 2.1 (User Experience)
+3. ✅ Complete Phase 2.2: Content expansion
+4. 🎯 Phase 2.3: Reading browser UI, saved vocabulary lists
+5. 🎯 Phase 2.4: Mobile responsiveness
+6. 🎯 Phase 2.5: TanStack Query integration
+7. 🎯 Production deployment setup
+8. 🎯 Beta testing program launch
+
+---
+
+**Document Version**: 3.2  
+**Last Updated**: December 6, 2025  
+**Status**: Living Document (Updated Weekly)

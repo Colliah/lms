@@ -1,0 +1,632 @@
+[
+  {
+    "title": "The Double-Edged Sword of Social Media",
+    "content": "Social media has become an inseparable part of modern life. Platforms like Facebook, Instagram, Twitter, and TikTok connect billions of people worldwide. For many, these sites are a primary way to stay in touch with friends and family, especially those who live far away. They allow us to share important life moments, from birthdays to graduations, and to see what our loved ones are doing. Beyond personal connections, social media also serves as a powerful tool for information. News spreads incredibly fast, and people can easily follow current events or learn about various topics through pages and groups. Businesses use social media for marketing, reaching customers directly and building brand awareness.\n\nHowever, social media also presents challenges. One major concern is privacy. Users often share a lot of personal information, sometimes without fully understanding who can see it or how it might be used. Cyberbullying is another serious issue, where individuals use online platforms to harass or intimidate others. The constant comparison with others' seemingly perfect online lives can also lead to feelings of inadequacy or anxiety, affecting mental health. Furthermore, the amount of time people spend on these platforms can be excessive, leading to reduced productivity and less face-to-face interaction. It's clear that while social media offers many benefits, a balanced and mindful approach is essential to navigate its complexities and enjoy its advantages responsibly.",
+    "difficulty": "B1",
+    "topics": ["Social Media"],
+    "wordCount": 259,
+    "questions": [
+      {
+        "question": "What is one primary benefit of social media mentioned in the passage?",
+        "options": [
+          "It helps people find new jobs.",
+          "It allows people to stay connected with friends and family.",
+          "It teaches people new languages.",
+          "It provides free entertainment."
+        ],
+        "answer": "It allows people to stay connected with friends and family.",
+        "explanation": "The passage states, 'For many, these sites are a primary way to stay in touch with friends and family...'"
+      },
+      {
+        "question": "Which of the following is NOT listed as a challenge of social media?",
+        "options": [
+          "Privacy concerns.",
+          "Cyberbullying.",
+          "Lack of educational content.",
+          "Negative effects on mental health."
+        ],
+        "answer": "Lack of educational content.",
+        "explanation": "The passage mentions privacy, cyberbullying, and negative effects on mental health as challenges, but not a lack of educational content; in fact, it mentions learning about various topics."
+      },
+      {
+        "question": "How do businesses typically use social media?",
+        "options": [
+          "To entertain their employees.",
+          "To market their products and build brand awareness.",
+          "To gather personal information about users.",
+          "To replace traditional customer service."
+        ],
+        "answer": "To market their products and build brand awareness.",
+        "explanation": "The passage states, 'Businesses use social media for marketing, reaching customers directly and building brand awareness.'"
+      },
+      {
+        "question": "What does the phrase 'double-edged sword' in the title suggest about social media?",
+        "options": [
+          "It is dangerous and should be avoided.",
+          "It has both advantages and disadvantages.",
+          "It is only used by a small group of people.",
+          "It is very complicated and hard to understand."
+        ],
+        "answer": "It has both advantages and disadvantages.",
+        "explanation": "A 'double-edged sword' implies something that has both positive and negative consequences, which is elaborated on in the passage's discussion of benefits and challenges."
+      },
+      {
+        "question": "What does the passage suggest for a healthy relationship with social media?",
+        "options": [
+          "To avoid it completely.",
+          "To spend as much time as possible on it.",
+          "To use it in a balanced and mindful way.",
+          "To only use it for business purposes."
+        ],
+        "answer": "To use it in a balanced and mindful way.",
+        "explanation": "The passage concludes by saying, 'a balanced and mindful approach is essential to navigate its complexities and enjoy its advantages responsibly.'"
+      }
+    ]
+  },
+  {
+    "title": "The Urgent Call for Environmental Protection",
+    "content": "Our planet faces numerous environmental challenges that require immediate attention. One of the most talked-about issues is climate change, largely caused by human activities such as burning fossil fuels. This leads to rising global temperatures, melting glaciers, and more extreme weather events like floods and droughts. Another significant problem is pollution. Air pollution from factories and vehicles harms our health, while plastic pollution chokes our oceans, endangering marine life and entering the food chain. Deforestation, the clearing of forests for agriculture or timber, also contributes to climate change by reducing the number of trees that absorb carbon dioxide.\n\nThese problems affect everyone, not just specific countries. The good news is that there are many things we can do. Governments need to implement stricter regulations on emissions and support renewable energy sources like solar and wind power. Individuals can also make a difference by reducing their energy consumption, recycling properly, and choosing eco-friendly products. Simple actions like walking or cycling instead of driving, reducing plastic use, and supporting sustainable businesses can collectively have a huge impact. Educating ourselves and others about these issues is also crucial. By working together, we can protect our planet for future generations and ensure a healthier, more sustainable world.",
+    "difficulty": "B1",
+    "topics": ["Environmental Issues"],
+    "wordCount": 266,
+    "questions": [
+      {
+        "question": "What is identified as a main cause of climate change in the passage?",
+        "options": [
+          "Volcanic eruptions.",
+          "Burning fossil fuels.",
+          "Too much recycling.",
+          "Solar flares."
+        ],
+        "answer": "Burning fossil fuels.",
+        "explanation": "The passage states, 'climate change, largely caused by human activities such as burning fossil fuels.'"
+      },
+      {
+        "question": "How does plastic pollution mainly affect the environment?",
+        "options": [
+          "It makes the air dirty.",
+          "It helps plants grow faster.",
+          "It harms marine life in the oceans.",
+          "It causes glaciers to melt."
+        ],
+        "answer": "It harms marine life in the oceans.",
+        "explanation": "The text mentions, 'plastic pollution chokes our oceans, endangering marine life and entering the food chain.'"
+      },
+      {
+        "question": "What is deforestation?",
+        "options": [
+          "The process of planting new trees.",
+          "The clearing of forests for other uses.",
+          "A natural disaster like a flood.",
+          "The increase of marine life."
+        ],
+        "answer": "The clearing of forests for other uses.",
+        "explanation": "The passage defines deforestation as 'the clearing of forests for agriculture or timber.'"
+      },
+      {
+        "question": "Which of the following is suggested as an individual action to help the environment?",
+        "options": [
+          "Building more factories.",
+          "Increasing energy consumption.",
+          "Recycling properly.",
+          "Driving more often."
+        ],
+        "answer": "Recycling properly.",
+        "explanation": "The passage suggests, 'Individuals can also make a difference by... recycling properly...'"
+      },
+      {
+        "question": "According to the passage, what is a key outcome of global warming?",
+        "options": [
+          "Cleaner air.",
+          "Reduced ocean levels.",
+          "More extreme weather events.",
+          "Increased forest areas."
+        ],
+        "answer": "More extreme weather events.",
+        "explanation": "The passage states that rising global temperatures lead to 'more extreme weather events like floods and droughts.'"
+      }
+    ]
+  },
+  {
+    "title": "Understanding and Appreciating Cultural Differences",
+    "content": "When people from different countries or backgrounds meet, they often notice cultural differences. These differences can be seen in many aspects of daily life, from how people greet each other to their eating habits and communication styles. For example, in some cultures, it's common to greet with a handshake, while in others, a hug or a bow might be more appropriate. Personal space also varies greatly; what feels comfortable in one country might feel too close or too distant in another.\n\nFood is another area where cultural differences are very clear. Certain foods are staples in one culture but might be rare or even unusual in another. Think about rice in Asian countries, bread in European ones, or corn in parts of Latin America. Table manners also differ; in some places, it’s polite to finish everything on your plate, while in others, leaving a little food shows you’ve had enough. Communication can be tricky too. Some cultures prefer direct speech, meaning they say exactly what they mean. Others use indirect communication, where messages are hinted at rather than stated explicitly. Understanding these nuances is crucial for effective cross-cultural communication and avoiding misunderstandings. Embracing and respecting these differences enriches our global perspective and helps build stronger relationships between people from all walks of life.",
+    "difficulty": "B1",
+    "topics": ["Cultural Differences"],
+    "wordCount": 269,
+    "questions": [
+      {
+        "question": "What are some examples of cultural differences mentioned in the passage?",
+        "options": [
+          "Weather patterns and geography.",
+          "Greetings, eating habits, and communication styles.",
+          "Types of cars and building materials.",
+          "Political systems and economic models."
+        ],
+        "answer": "Greetings, eating habits, and communication styles.",
+        "explanation": "The passage specifically lists 'how people greet each other to their eating habits and communication styles' as examples of cultural differences."
+      },
+      {
+        "question": "How does personal space differ across cultures?",
+        "options": [
+          "It is always the same everywhere.",
+          "What is comfortable in one country might not be in another.",
+          "It only matters when people are talking about serious topics.",
+          "It is only an issue in very crowded places."
+        ],
+        "answer": "What is comfortable in one country might not be in another.",
+        "explanation": "The passage says, 'Personal space also varies greatly; what feels comfortable in one country might feel too close or too distant in another.'"
+      },
+      {
+        "question": "What is meant by 'indirect communication'?",
+        "options": [
+          "Speaking very loudly.",
+          "Saying exactly what you mean.",
+          "Hinting at messages rather than stating them clearly.",
+          "Using only body language to communicate."
+        ],
+        "answer": "Hinting at messages rather than stating them clearly.",
+        "explanation": "The passage explains, 'Others use indirect communication, where messages are hinted at rather than stated explicitly.'"
+      },
+      {
+        "question": "Why is it important to understand cultural differences?",
+        "options": [
+          "To avoid speaking to foreigners.",
+          "To only interact with people from your own culture.",
+          "To improve cross-cultural communication and avoid misunderstandings.",
+          "To prove that your own culture is superior."
+        ],
+        "answer": "To improve cross-cultural communication and avoid misunderstandings.",
+        "explanation": "The passage states, 'Understanding these nuances is crucial for effective cross-cultural communication and avoiding misunderstandings.'"
+      },
+      {
+        "question": "What is an example of a food staple mentioned in the passage for Asian countries?",
+        "options": ["Bread.", "Corn.", "Rice.", "Pasta."],
+        "answer": "Rice.",
+        "explanation": "The passage mentions, 'Think about rice in Asian countries...'"
+      }
+    ]
+  },
+  {
+    "title": "Finding Harmony: The Importance of Work-Life Balance",
+    "content": "In today's fast-paced world, achieving a good work-life balance has become increasingly important. It means finding a healthy equilibrium between your professional responsibilities and your personal life, including family, hobbies, and relaxation. Many people find themselves working longer hours, constantly connected to their jobs through smartphones and email, which can lead to stress, burnout, and a decline in overall well-being.\n\nA poor work-life balance can have several negative consequences. It might lead to health problems, such as sleep deprivation and anxiety, as well as strained relationships with family and friends. When work takes over everything, there's little time left for activities that bring joy or allow for personal growth. On the other hand, prioritizing work-life balance can boost productivity and job satisfaction. Employees who have enough time for rest and personal activities tend to be more focused, creative, and motivated when they are at work.\n\nTo improve work-life balance, individuals can set clear boundaries between work and personal time, learn to say \"no\" to extra tasks when overwhelmed, and make time for exercise and hobbies. Employers also have a role to play by offering flexible working hours, remote work options, and promoting a culture that values employees' well-being. Ultimately, a balanced life is not just about doing less work; it's about working smarter and living more fully, creating a sustainable lifestyle that supports both professional success and personal happiness.",
+    "difficulty": "B1",
+    "topics": ["Work-Life Balance"],
+    "wordCount": 280,
+    "questions": [
+      {
+        "question": "What does 'work-life balance' primarily refer to?",
+        "options": [
+          "Working as many hours as possible.",
+          "Separating your work from your personal life completely.",
+          "A healthy equilibrium between professional responsibilities and personal life.",
+          "Only focusing on your hobbies and relaxation."
+        ],
+        "answer": "A healthy equilibrium between professional responsibilities and personal life.",
+        "explanation": "The passage defines it as 'finding a healthy equilibrium between your professional responsibilities and your personal life, including family, hobbies, and relaxation.'"
+      },
+      {
+        "question": "What is a common consequence of a poor work-life balance?",
+        "options": [
+          "Increased job satisfaction.",
+          "Better relationships with family.",
+          "Stress and burnout.",
+          "More time for personal growth."
+        ],
+        "answer": "Stress and burnout.",
+        "explanation": "The passage states that working longer hours and constant connection 'can lead to stress, burnout, and a decline in overall well-being.'"
+      },
+      {
+        "question": "How can prioritizing work-life balance affect productivity?",
+        "options": [
+          "It makes employees less focused.",
+          "It can boost productivity and job satisfaction.",
+          "It has no effect on productivity.",
+          "It forces employees to work longer hours."
+        ],
+        "answer": "It can boost productivity and job satisfaction.",
+        "explanation": "The passage states, 'prioritizing work-life balance can boost productivity and job satisfaction.'"
+      },
+      {
+        "question": "What is one individual action suggested to improve work-life balance?",
+        "options": [
+          "Constantly check work emails.",
+          "Set clear boundaries between work and personal time.",
+          "Take on more extra tasks.",
+          "Avoid hobbies and relaxation."
+        ],
+        "answer": "Set clear boundaries between work and personal time.",
+        "explanation": "The passage suggests individuals 'can set clear boundaries between work and personal time.'"
+      },
+      {
+        "question": "What role can employers play in promoting work-life balance?",
+        "options": [
+          "Making employees work overtime more often.",
+          "Offering flexible working hours and remote work options.",
+          "Discouraging personal activities during weekends.",
+          "Increasing stress levels to improve performance."
+        ],
+        "answer": "Offering flexible working hours and remote work options.",
+        "explanation": "The passage mentions employers can 'offering flexible working hours, remote work options, and promoting a culture that values employees' well-being.'"
+      }
+    ]
+  },
+  {
+    "title": "Navigating the Future of Work",
+    "content": "Thinking about a future career can be both exciting and challenging, especially with the rapid changes happening in the world. Technology is transforming industries, and some jobs that exist today might be automated or replaced in the coming decades, while entirely new roles will emerge. This means that lifelong learning and adaptability are becoming more important than ever. Skills like critical thinking, problem-solving, creativity, and digital literacy are highly valued, regardless of the specific field.\n\nMany young people today are not just looking for a job; they are seeking a career that offers purpose, flexibility, and opportunities for growth. Remote work, for example, which gained significant popularity recently, is likely to remain a common option, offering employees more autonomy and potentially a better work-life balance. Entrepreneurship is also an attractive path for those who want to create their own opportunities and be their own bosses.\n\nTo prepare for future careers, students are encouraged to explore various subjects, gain practical experience through internships or volunteer work, and develop a strong network of contacts. It’s also wise to research emerging industries like artificial intelligence, renewable energy, or biotechnology, as these areas are expected to see significant growth. Ultimately, the key to a successful future career lies in continuous learning, embracing change, and understanding how your unique skills and passions can contribute to a constantly evolving job market.",
+    "difficulty": "B1",
+    "topics": ["Future Career"],
+    "wordCount": 288,
+    "questions": [
+      {
+        "question": "What is mentioned as a major factor transforming industries and future careers?",
+        "options": [
+          "Changes in climate.",
+          "Technological advancements.",
+          "Traditional farming methods.",
+          "Slower communication."
+        ],
+        "answer": "Technological advancements.",
+        "explanation": "The passage states, 'Technology is transforming industries...'"
+      },
+      {
+        "question": "Which skills are highlighted as highly valued for future careers?",
+        "options": [
+          "Manual labor and memorization.",
+          "Critical thinking, problem-solving, creativity, and digital literacy.",
+          "Handwriting and typing speed.",
+          "Playing musical instruments."
+        ],
+        "answer": "Critical thinking, problem-solving, creativity, and digital literacy.",
+        "explanation": "The passage lists 'Skills like critical thinking, problem-solving, creativity, and digital literacy are highly valued.'"
+      },
+      {
+        "question": "What kind of career attributes are many young people seeking today?",
+        "options": [
+          "A job that is stable and doesn't change.",
+          "A career that offers purpose, flexibility, and growth opportunities.",
+          "A job that requires no learning or development.",
+          "A career that involves only physical tasks."
+        ],
+        "answer": "A career that offers purpose, flexibility, and growth opportunities.",
+        "explanation": "The passage notes, 'they are seeking a career that offers purpose, flexibility, and opportunities for growth.'"
+      },
+      {
+        "question": "How can students prepare for future careers?",
+        "options": [
+          "By avoiding new technologies.",
+          "By specializing in only one very narrow field.",
+          "By exploring subjects, gaining practical experience, and networking.",
+          "By waiting for jobs to come to them."
+        ],
+        "answer": "By exploring subjects, gaining practical experience, and networking.",
+        "explanation": "The passage advises students to 'explore various subjects, gain practical experience through internships or volunteer work, and develop a strong network of contacts.'"
+      },
+      {
+        "question": "What is the ultimate key to a successful future career, according to the passage?",
+        "options": [
+          "Finding a job quickly.",
+          "Avoiding continuous learning.",
+          "Continuous learning, embracing change, and understanding your skills.",
+          "Relying solely on past experiences."
+        ],
+        "answer": "Continuous learning, embracing change, and understanding your skills.",
+        "explanation": "The passage concludes, 'the key to a successful future career lies in continuous learning, embracing change, and understanding how your unique skills and passions can contribute...'"
+      }
+    ]
+  },
+  {
+    "title": "Celebrating Culture: The Joy of Traditional Festivals",
+    "content": "Traditional festivals are vibrant expressions of a culture's history, beliefs, and values. They are celebrated worldwide, often marking important events like harvests, religious observances, or historical milestones. These occasions bring communities together, strengthening social bonds and passing traditions down from one generation to the next. From colorful parades to ancient rituals, each festival offers a unique glimpse into the heart of a society.\n\nConsider Diwali, the Hindu \"festival of lights,\" celebrated over five days in India and by Hindus globally. It symbolizes the victory of light over darkness and good over evil. Homes are decorated with lamps and candles, families share sweets and gifts, and fireworks light up the night sky. In Japan, the Cherry Blossom Festival, or \"Hanami,\" celebrates the beauty of cherry blossoms in spring. People gather in parks to picnic under the blooming trees, reflecting on the transient nature of life. Then there's Carnival, celebrated in many Catholic countries before Lent, most famously in Rio de Janeiro, Brazil. It's a time of elaborate costumes, samba music, and massive street parties, showcasing incredible energy and joy.\n\nThese festivals are not just about fun; they play a crucial role in preserving cultural heritage. They provide an opportunity for people to reconnect with their roots, share stories, and reinforce their identity. Experiencing a traditional festival is a fantastic way to understand and appreciate the richness and diversity of global cultures.",
+    "difficulty": "B1",
+    "topics": ["Traditional Festivals"],
+    "wordCount": 271,
+    "questions": [
+      {
+        "question": "What do traditional festivals primarily express?",
+        "options": [
+          "Economic growth and political changes.",
+          "A culture's history, beliefs, and values.",
+          "Scientific discoveries and technological advancements.",
+          "Individual hobbies and personal interests."
+        ],
+        "answer": "A culture's history, beliefs, and values.",
+        "explanation": "The passage states, 'Traditional festivals are vibrant expressions of a culture's history, beliefs, and values.'"
+      },
+      {
+        "question": "What is one of the main purposes of these festivals for communities?",
+        "options": [
+          "To encourage competition between neighbors.",
+          "To strengthen social bonds and pass down traditions.",
+          "To introduce new foreign customs.",
+          "To promote individual isolation."
+        ],
+        "answer": "To strengthen social bonds and pass down traditions.",
+        "explanation": "The passage notes, 'These occasions bring communities together, strengthening social bonds and passing traditions down from one generation to the next.'"
+      },
+      {
+        "question": "What does Diwali symbolize?",
+        "options": [
+          "The beginning of winter.",
+          "The celebration of new technology.",
+          "The victory of light over darkness and good over evil.",
+          "The end of the harvest season."
+        ],
+        "answer": "The victory of light over darkness and good over evil.",
+        "explanation": "The passage states, 'It symbolizes the victory of light over darkness and good over evil.'"
+      },
+      {
+        "question": "What activity is popular during Japan's Cherry Blossom Festival?",
+        "options": [
+          "Lighting fireworks.",
+          "Eating sweets indoors.",
+          "Picnicking under blooming trees.",
+          "Wearing elaborate costumes."
+        ],
+        "answer": "Picnicking under blooming trees.",
+        "explanation": "The passage mentions, 'People gather in parks to picnic under the blooming trees...'"
+      },
+      {
+        "question": "Beyond fun, what crucial role do festivals play?",
+        "options": [
+          "They increase working hours.",
+          "They help preserve cultural heritage.",
+          "They encourage people to move to new places.",
+          "They make people forget their past."
+        ],
+        "answer": "They help preserve cultural heritage.",
+        "explanation": "The passage says, 'they play a crucial role in preserving cultural heritage.'"
+      }
+    ]
+  },
+  {
+    "title": "The Rewards of Learning a New Language",
+    "content": "Learning a new language can seem like a daunting task, but the benefits it offers are truly extensive and rewarding. Beyond the obvious advantage of being able to communicate with more people, acquiring another language opens up a world of opportunities, both personal and professional. It's not just about memorizing vocabulary and grammar rules; it's about understanding different ways of thinking and seeing the world.\n\nFrom a personal perspective, learning a language can significantly enhance travel experiences. Imagine navigating a foreign city, ordering food, or chatting with locals in their native tongue – it makes for a much richer and more authentic trip. It also improves cognitive skills, such as problem-solving, multitasking, and even memory. Studies have shown that bilingual people often have better analytical skills and can make decisions more easily.\n\nProfessionally, language skills are a huge asset in today's globalized job market. Companies are increasingly looking for employees who can communicate with international clients and colleagues. Being bilingual or multilingual can open doors to careers in diplomacy, international business, translation, teaching, and tourism, among others. There are many ways to learn, from traditional classroom settings and online courses to language exchange partners and immersion programs. The key is consistent practice and a willingness to embrace mistakes as part of the learning journey. Ultimately, investing time in a new language is an investment in yourself and your future.",
+    "difficulty": "B1",
+    "topics": ["Learning Languages"],
+    "wordCount": 286,
+    "questions": [
+      {
+        "question": "What is one personal benefit of learning a new language?",
+        "options": [
+          "It makes travel experiences less interesting.",
+          "It limits career options.",
+          "It enhances travel experiences and improves cognitive skills.",
+          "It makes you forget your native language."
+        ],
+        "answer": "It enhances travel experiences and improves cognitive skills.",
+        "explanation": "The passage states, 'learning a language can significantly enhance travel experiences. ... It also improves cognitive skills, such as problem-solving, multitasking, and even memory.'"
+      },
+      {
+        "question": "What do studies suggest about bilingual people?",
+        "options": [
+          "They are less analytical.",
+          "They often have better analytical skills and make decisions more easily.",
+          "They struggle with multitasking.",
+          "They only speak one language."
+        ],
+        "answer": "They often have better analytical skills and make decisions more easily.",
+        "explanation": "The passage notes, 'Studies have shown that bilingual people often have better analytical skills and can make decisions more easily.'"
+      },
+      {
+        "question": "Why are language skills valuable in the professional world?",
+        "options": [
+          "They are not important for globalized companies.",
+          "They limit job opportunities.",
+          "Companies look for employees who can communicate with international clients.",
+          "They are only useful for translators."
+        ],
+        "answer": "Companies look for employees who can communicate with international clients.",
+        "explanation": "The passage mentions, 'Companies are increasingly looking for employees who can communicate with international clients and colleagues.'"
+      },
+      {
+        "question": "What are some methods mentioned for learning a language?",
+        "options": [
+          "Only traveling to a foreign country.",
+          "Traditional classrooms, online courses, language exchange, and immersion.",
+          "Only memorizing lists of words.",
+          "Watching TV without subtitles."
+        ],
+        "answer": "Traditional classrooms, online courses, language exchange, and immersion.",
+        "explanation": "The passage lists 'traditional classroom settings and online courses to language exchange partners and immersion programs.'"
+      },
+      {
+        "question": "What is considered key to successful language learning?",
+        "options": [
+          "Avoiding all mistakes.",
+          "Consistent practice and willingness to embrace mistakes.",
+          "Only focusing on grammar rules.",
+          "Never speaking until perfect."
+        ],
+        "answer": "Consistent practice and willingness to embrace mistakes.",
+        "explanation": "The passage advises, 'The key is consistent practice and a willingness to embrace mistakes as part of the learning journey.'"
+      }
+    ]
+  },
+  {
+    "title": "The Universal Appeal of Sports Events",
+    "content": "Sports events, from local matches to international championships, hold a powerful appeal for people all over the world. They bring together athletes who have trained for years, pushing the limits of human capability, and spectators who share a collective passion. Whether it's football (soccer), basketball, tennis, or the Olympic Games, these events create moments of intense drama, joy, and sometimes heartbreak, captivating billions.\n\nOne of the main reasons for their popularity is the sense of community and shared identity they foster. Fans often support a particular team or athlete with incredible loyalty, and watching a game with others, whether at a stadium or in front of a TV, creates a feeling of belonging. Sports events also inspire. Athletes serve as role models, demonstrating dedication, discipline, and perseverance. Their stories of overcoming challenges motivate people in their own lives.\n\nBeyond the competition, major sports events also boost economies through tourism, merchandise sales, and advertising. Cities that host big tournaments see an influx of visitors and significant media attention. Moreover, sports promote a healthy lifestyle. Participating in sports encourages physical activity and teamwork, while watching them can spark interest in fitness. In essence, sports events are more than just games; they are cultural phenomena that unite people, celebrate achievement, and provide universal entertainment.",
+    "difficulty": "B1",
+    "topics": ["Sports Events"],
+    "wordCount": 272,
+    "questions": [
+      {
+        "question": "What is one major reason for the popularity of sports events?",
+        "options": [
+          "They create a sense of community and shared identity.",
+          "They teach people new languages.",
+          "They only appeal to a small group of people.",
+          "They always predict the future."
+        ],
+        "answer": "They create a sense of community and shared identity.",
+        "explanation": "The passage states, 'One of the main reasons for their popularity is the sense of community and shared identity they foster.'"
+      },
+      {
+        "question": "How do athletes serve as role models?",
+        "options": [
+          "By only focusing on winning.",
+          "By demonstrating dedication, discipline, and perseverance.",
+          "By avoiding challenges.",
+          "By never making mistakes."
+        ],
+        "answer": "By demonstrating dedication, discipline, and perseverance.",
+        "explanation": "The passage explains, 'Athletes serve as role models, demonstrating dedication, discipline, and perseverance.'"
+      },
+      {
+        "question": "What economic impact do major sports events have?",
+        "options": [
+          "They always lose money for host cities.",
+          "They boost economies through tourism, sales, and advertising.",
+          "They discourage physical activity.",
+          "They reduce media attention."
+        ],
+        "answer": "They boost economies through tourism, sales, and advertising.",
+        "explanation": "The passage notes, 'major sports events also boost economies through tourism, merchandise sales, and advertising.'"
+      },
+      {
+        "question": "What does participating in sports encourage?",
+        "options": [
+          "Laziness and isolation.",
+          "Physical activity and teamwork.",
+          "Unhealthy habits.",
+          "Only individual competition."
+        ],
+        "answer": "Physical activity and teamwork.",
+        "explanation": "The passage says, 'Participating in sports encourages physical activity and teamwork...'"
+      },
+      {
+        "question": "According to the passage, what are sports events essentially?",
+        "options": [
+          "Just simple games.",
+          "Cultural phenomena that unite people and celebrate achievement.",
+          "Only for professional athletes.",
+          "A way to avoid real-world problems."
+        ],
+        "answer": "Cultural phenomena that unite people and celebrate achievement.",
+        "explanation": "The passage concludes, 'In essence, sports events are more than just games; they are cultural phenomena that unite people, celebrate achievement, and provide universal entertainment.'"
+      }
+    ]
+  },
+  {
+    "title": "A World of Sound: Exploring Music Genres",
+    "content": "Music is a universal language, and its diversity is expressed through countless genres, each with its own history, instruments, and cultural context. From the powerful beats of rock to the soothing melodies of classical, there's a style of music for every mood and occasion. Exploring different genres can broaden your appreciation for music and even introduce you to new cultures.\n\nRock music, for example, originated in the 1950s and evolved through the decades, embracing electric guitars, drums, and strong vocals. Subgenres like punk, heavy metal, and alternative rock emerged, each with its distinct sound and message. Pop music, short for popular music, is known for its catchy tunes and widespread appeal, often topping charts globally. It's constantly evolving, incorporating elements from other genres to stay fresh and relevant.\n\nJazz, born in African-American communities in the late 19th and early 20th centuries, is celebrated for its improvisation, complex harmonies, and swing rhythms. Blues, another foundational genre, expresses deep emotions through soulful vocals and distinctive guitar riffs. Classical music, spanning centuries from Baroque to contemporary, is known for its intricate compositions, often performed by orchestras or choirs, evoking grandeur and beauty.\n\nThen there are electronic dance music (EDM), hip-hop, country, reggae, folk, and many more. Each genre reflects a specific time, place, and group of people. Listening to a variety of music can be an enriching experience, allowing you to connect with different emotions and stories, and understand the vast spectrum of human creativity. So, next time you're looking for something new, dive into an unfamiliar genre and see where the music takes you.",
+    "difficulty": "B1",
+    "topics": ["Music Genres"],
+    "wordCount": 294,
+    "questions": [
+      {
+        "question": "What is one characteristic of rock music mentioned in the passage?",
+        "options": [
+          "It is only played with acoustic instruments.",
+          "It originated in the 1950s and uses electric guitars and drums.",
+          "It focuses on soothing melodies.",
+          "It is primarily known for improvisation."
+        ],
+        "answer": "It originated in the 1950s and uses electric guitars and drums.",
+        "explanation": "The passage states, 'Rock music, for example, originated in the 1950s and evolved through the decades, embracing electric guitars, drums, and strong vocals.'"
+      },
+      {
+        "question": "What is pop music known for?",
+        "options": [
+          "Its complex harmonies.",
+          "Its catchy tunes and widespread appeal.",
+          "Its deep emotional guitar riffs.",
+          "Its long, intricate compositions."
+        ],
+        "answer": "Its catchy tunes and widespread appeal.",
+        "explanation": "The passage says, 'Pop music... is known for its catchy tunes and widespread appeal, often topping charts globally.'"
+      },
+      {
+        "question": "Which music genre is celebrated for its improvisation and swing rhythms?",
+        "options": ["Classical.", "Heavy metal.", "Jazz.", "Country."],
+        "answer": "Jazz.",
+        "explanation": "The passage describes Jazz as 'celebrated for its improvisation, complex harmonies, and swing rhythms.'"
+      },
+      {
+        "question": "How does the passage suggest one can broaden their appreciation for music?",
+        "options": [
+          "By only listening to one genre.",
+          "By avoiding new music.",
+          "By exploring different genres.",
+          "By only listening to what's popular."
+        ],
+        "answer": "By exploring different genres.",
+        "explanation": "The passage suggests, 'Exploring different genres can broaden your appreciation for music...'"
+      },
+      {
+        "question": "What is the main idea of the last paragraph regarding different music genres?",
+        "options": [
+          "They are all exactly the same.",
+          "Each genre reflects a specific time, place, and group of people.",
+          "They only appeal to a very small audience.",
+          "Only old music genres are important."
+        ],
+        "answer": "Each genre reflects a specific time, place, and group of people.",
+        "explanation": "The passage states, 'Each genre reflects a specific time, place, and group of people.'"
+      }
+    ]
+  },
+  {
+    "title": "The Art of Film Reviews",
+    "content": "Film reviews are much more than just summaries of movies; they are a critical assessment of a film's various elements, helping potential viewers decide what to watch. A good review doesn't just tell you the plot; it offers insights into the director's vision, the quality of acting, the effectiveness of the cinematography, and how the soundtrack contributes to the overall experience. Reviewers often analyze themes, symbolism, and the film's cultural impact, providing a deeper understanding of the work.\n\nFor instance, a review might praise a science fiction film for its stunning visual effects and thought-provoking storyline, but criticize it for weak character development. Or it could highlight how a historical drama beautifully recreates a past era through its costumes and sets, even if the pacing is slow. Critics also evaluate the emotional resonance of a film – does it make you laugh, cry, or think long after you've left the cinema?\n\nFilm reviews serve different audiences. For casual moviegoers, they offer a quick recommendation or warning. For film enthusiasts, they provide a starting point for discussion and debate. Professional critics, working for newspapers, magazines, or online platforms, use their expertise to guide public opinion and sometimes even influence award nominations. While personal taste always plays a role, a well-written review aims to be objective and articulate, explaining why a film succeeds or fails based on cinematic principles. In a world with countless new releases, film reviews are an invaluable tool for navigating the vast landscape of cinema.",
+    "difficulty": "B1",
+    "topics": ["Film Reviews"],
+    "wordCount": 280,
+    "questions": [
+      {
+        "question": "What is the primary purpose of film reviews?",
+        "options": [
+          "To only summarize the plot of a movie.",
+          "To help potential viewers decide what to watch through critical assessment.",
+          "To just list the actors in a film.",
+          "To replace watching the actual movie."
+        ],
+        "answer": "To help potential viewers decide what to watch through critical assessment.",
+        "explanation": "The passage states, 'they are a critical assessment of a film's various elements, helping potential viewers decide what to watch.'"
+      },
+      {
+        "question": "What elements of a film do reviewers often analyze?",
+        "options": [
+          "Only the ending of the story.",
+          "Director's vision, acting, cinematography, soundtrack, themes, and symbolism.",
+          "The financial budget of the film.",
+          "The weather conditions during filming."
+        ],
+        "answer": "Director's vision, acting, cinematography, soundtrack, themes, and symbolism.",
+        "explanation": "The passage mentions reviewers analyze 'the director's vision, the quality of acting, the effectiveness of the cinematography, and how the soundtrack contributes... Reviewers often analyze themes, symbolism...'"
+      },
+      {
+        "question": "What might a review criticize a science fiction film for, according to the passage?",
+        "options": [
+          "Its stunning visual effects.",
+          "Weak character development.",
+          "A thought-provoking storyline.",
+          "Its contribution to the overall experience."
+        ],
+        "answer": "Weak character development.",
+        "explanation": "The passage gives an example: 'a review might praise a science fiction film... but criticize it for weak character development.'"
+      },
+      {
+        "question": "Who do film reviews serve?",
+        "options": [
+          "Only professional critics.",
+          "Only the actors of the film.",
+          "Casual moviegoers and film enthusiasts.",
+          "Only people who dislike movies."
+        ],
+        "answer": "Casual moviegoers and film enthusiasts.",
+        "explanation": "The passage explains, 'For casual moviegoers, they offer a quick recommendation... For film enthusiasts, they provide a starting point for discussion...'"
+      },
+      {
+        "question": "What quality does a well-written review aim for, besides personal taste?",
+        "options": [
+          "To be as subjective as possible.",
+          "To be objective and articulate, explaining success or failure.",
+          "To simply praise every film.",
+          "To confuse the reader with complex language."
+        ],
+        "answer": "To be objective and articulate, explaining success or failure.",
+        "explanation": "The passage notes, 'a well-written review aims to be objective and articulate, explaining why a film succeeds or fails based on cinematic principles.'"
+      }
+    ]
+  }
+]

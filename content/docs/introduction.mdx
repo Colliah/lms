@@ -1,0 +1,198 @@
+---
+title: "Introduction to the LMS"
+description: "Overview of the English Learning Management System"
+---
+
+# English Learning Management System
+
+## Overview
+
+The English Learning Management System (LMS) is a comprehensive web-based platform designed to help learners master English through interactive lessons, spaced repetition, and personalized progress tracking.
+
+## Key Features
+
+### 🎯 Adaptive Learning
+- Proficiency-based content (A1-C2 CEFR levels)
+- Personalized learning paths
+- Real-time progress adaptation
+
+### 📚 Five Learning Modules
+
+#### 1. Vocabulary
+- **SM-2 Spaced Repetition**: Scientifically-proven algorithm for optimal retention
+- Interactive flashcards with audio pronunciation
+- Example sentences and visual aids
+- Daily review scheduling based on performance
+
+#### 2. Grammar
+- Topic-based exercises (Present Simple, Past Perfect, etc.)
+- Multiple question types (Multiple Choice, Fill-in-the-Blank)
+- Instant feedback with explanations
+- Progressive difficulty levels
+
+#### 3. Reading Comprehension
+- Graded passages appropriate to user level
+- Comprehension questions
+- Reading speed tracking (Words Per Minute)
+- Vocabulary highlighting and definitions
+
+#### 4. Writing Practice
+- Guided prompts across multiple formats (Essay, Email, Story)
+- Word count validation
+- AI-powered feedback (grammar, vocabulary, structure)
+- Portfolio of past submissions
+
+#### 5. Speaking & Pronunciation
+- Target phrase exercises
+- Native speaker audio references
+- Recording and playback
+- Pronunciation scoring and feedback
+
+### 📊 Progress Tracking
+
+- **Daily Streaks**: Maintain motivation with streak counters and freeze features
+- **Achievements**: Unlock badges across all learning modules
+- **Analytics Dashboard**: Visualize progress with charts and statistics
+- **Weekly Reports**: Track study time and performance trends
+
+### 🎮 Gamification
+
+- Streak-based rewards
+- Achievement system
+- Progress milestones
+- Daily goals and challenges
+
+## Technology Stack
+
+### Frontend
+- **React 19**: Latest React with Server Components
+- **Next.js 16**: App Router for optimal performance
+- **Tailwind CSS**: Utility-first styling
+- **Shadcn UI**: High-quality, accessible components
+
+### Backend
+- **PostgreSQL**: Robust relational database
+- **Prisma ORM**: Type-safe database access
+- **Better Auth**: Secure authentication and authorization
+- **Server Actions**: Type-safe API endpoints
+
+### Development
+- **Bun**: Fast JavaScript runtime and package manager
+- **TypeScript**: Full type safety
+- **Biome**: Fast linter and formatter
+
+## Architecture Highlights
+
+### Clean Layer Separation
+```
+UI Components → Server Actions → Service Layer → Database
+```
+
+### Type Safety
+- End-to-end TypeScript
+- Prisma-generated types
+- Zod validation (planned)
+
+### Performance
+- Server-side rendering
+- Optimistic UI updates
+- Efficient caching strategies
+- Image optimization
+
+## Learning Algorithm: SM-2
+
+The vocabulary module uses the **SM-2 (SuperMemo 2)** spaced repetition algorithm, which:
+
+1. **Adapts to Individual Performance**: Easiness Factor adjusts based on recall quality
+2. **Optimizes Review Intervals**: Schedules reviews at optimal times for retention
+3. **Prevents Cramming**: Spaces reviews for long-term memory formation
+4. **Tracks Mastery**: Identifies when a word is truly learned
+
+### Quality Ratings
+- **Again**: Forgot completely → Reset to 1-day interval
+- **Hard**: Struggled → Short interval (1-3 days)
+- **Good**: Remembered well → Moderate interval (3-7 days)  
+- **Easy**: Perfect recall → Long interval (7+ days)
+
+## User Journey
+
+### 1. Onboarding
+- Proficiency assessment
+- Learning goals selection
+- Study schedule preferences
+- Learning style identification
+
+### 2. Daily Learning
+- Personalized daily lessons
+- Due vocabulary reviews
+- New content introduction
+- Progress updates
+
+### 3. Progress Tracking
+- Dashboard overview
+- Detailed analytics
+- Achievement unlocks
+- Streak maintenance
+
+### 4. Long-term Growth
+- Proficiency level advancement
+- Mastery of thousands of words
+- Complete grammar coverage
+- Comprehensive language skills
+
+## Data Privacy & Security
+
+- **Encrypted Authentication**: Better Auth with secure sessions
+- **SQL Injection Protection**: Prisma ORM parameterized queries
+- **HTTPS**: Secure data transmission
+- **Privacy-First**: User data never shared without consent
+
+## Accessibility
+
+- **WCAG AA Compliant**: Meets web accessibility standards
+- **Keyboard Navigation**: Full keyboard support
+- **Screen Reader Compatible**: Proper ARIA labels
+- **High Contrast**: Readable text across all themes
+
+## Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Getting Started
+
+1. **Create Account**: Sign up with email or social login
+2. **Complete Onboarding**: Set your proficiency level and goals
+3. **Start Learning**: Begin with daily vocabulary reviews
+4. **Track Progress**: Monitor your growth on the dashboard
+5. **Stay Consistent**: Build streaks and unlock achievements
+
+## Roadmap
+
+### Upcoming Features
+- [ ] Mobile app (iOS/Android)
+- [ ] Offline mode
+- [ ] Community features (forums, study groups)
+- [ ] Live tutoring integration
+- [ ] Advanced analytics with AI insights
+- [ ] Custom vocabulary lists
+- [ ] Listening comprehension exercises
+- [ ] Video lessons
+
+## Support
+
+- **Documentation**: Comprehensive guides in `/docs`
+- **In-App Help**: Contextual tooltips and tutorials
+- **Community**: Forums and discussion boards (planned)
+- **Email Support**: Contact for technical assistance
+
+## License
+
+This software is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
+
+---
+
+**Version**: 1.0.0  
+**Last Updated**: January 2025

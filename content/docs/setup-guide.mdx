@@ -1,0 +1,601 @@
+---
+title: "Setup & Deployment Guide"
+description: "Complete guide to setting up and deploying the LMS"
+---
+
+# Setup & Deployment Guide
+
+Complete instructions for setting up the English Learning Management System locally and deploying to production.
+
+## Prerequisites
+
+### Required Software
+
+- **Bun**: v1.0+ (JavaScript runtime and package manager)
+- **Node.js**: v18+ (if not using Bun)
+- **PostgreSQL**: v14+ (Database)
+- **Git**: For version control
+
+### Installation
+
+```bash
+# Install Bun (macOS/Linux)
+curl -fsSL https://bun.sh/install | bash
+
+# Install Bun (Windows)
+powershell -c "irm bun.sh/install.ps1|iex"
+
+# Verify installation
+bun --version
+```
+
+---
+
+## Local Development Setup
+
+### 1. Clone Repository
+
+```bash
+git clone <repository-url>
+cd lms
+```
+
+### 2. Install Dependencies
+
+```bash
+bun install
+```
+
+This installs:
+- Next.js 16
+- React 19
+- Prisma ORM
+- Shadcn UI components
+- Tailwind CSS
+- Recharts
+- Better Auth
+- And more...
+
+### 3. Database Setup
+
+#### Option A: Local PostgreSQL
+
+```bash
+# Install PostgreSQL (macOS)
+brew install postgresql@14
+brew services start postgresql@14
+
+# Create database
+createdb lms_dev
+```
+
+#### Option B: Prisma Postgres (Recommended for Development)
+
+```bash
+bunx prisma dev
+```
+
+This starts a local Prisma Postgres instance automatically.
+
+### 4. Environment Variables
+
+Create `.env` file in project root:
+
+```bash
+# Database
+DATABASE_URL="postgresql://username:password@localhost:5432/lms_dev"
+
+# Better Auth
+BETTER_AUTH_SECRET="your-secret-key-min-32-chars"
+BETTER_AUTH_URL="http://localhost:3000"
+
+# Optional: Email service (for notifications)
+SMTP_HOST="smtp.example.com"
+SMTP_PORT="587"
+SMTP_USER="your-email@example.com"
+SMTP_PASS="your-password"
+```
+
+**Generate Secret Key**:
+```bash
+openssl rand -base64 32
+```
+
+### 5. Initialize Database
+
+```bash
+# Generate Prisma Client
+bun run db:generate
+
+# Push schema to database
+bun run db:push
+
+# Seed initial data
+bun seed
+```
+
+**What gets seeded**:
+- 14 vocabulary words (A1-B2 levels)
+- 6 word categories
+- 4 grammar topics with exercises
+- 2 reading passages with questions
+- 2 writing prompts
+- 4 achievements
+
+### 6. Start Development Server
+
+```bash
+bun dev
+```
+
+Visit: `http://localhost:3000`
+
+---
+
+## Project Structure
+
+```
+lms/
+├── app/
+│   ├── (root)/              # Main application routes
+│   │   ├── page.tsx          # Dashboard
+│   │   ├── vocabulary/
+│   │   ├── grammar/
+│   │   ├── reading/
+│   │   ├── writing/
+│   │   ├── speaking/
+│   │   └── profile/
+│   ├── actions/             # Server Actions
+│   ├── generated/           # Prisma generated files
+│   ├── globals.css
+│   └── layout.tsx
+├── components/
+│   ├── ui/                  # Shadcn UI components
+│   ├── dashboard/
+│   ├── vocabulary/
+│   └── ...
+├── services/                # Business logic
+│   ├── vocabulary.ts
+│   ├── grammar.ts
+│   └── ...
+├── prisma/
+│   ├── schema.prisma        # Database schema
+│   └── seed.ts              # Seed script
+├── lib/
+│   ├── prisma.ts            # Prisma client
+│   ├── auth.ts              # Better Auth config
+│   └── utils.ts
+├── docs/                    # Documentation
+└── public/                  # Static assets
+```
+
+---
+
+## Development Workflow
+
+### Making Database Changes
+
+1. **Edit Schema**:
+   ```prisma
+   // prisma/schema.prisma
+   model NewFeature {
+     id String @id @default(cuid())
+     // Add fields
+   }
+   ```
+
+2. **Regenerate Client**:
+   ```bash
+   bun run db:generate
+   ```
+
+3. **Push to Database**:
+   ```bash
+   bun run db:push
+   ```
+
+4. **(Production) Create Migration**:
+   ```bash
+   bunx prisma migrate dev --name add_new_feature
+   ```
+
+### Adding New Service Function
+
+1. **Create Function** in `services/module.ts`:
+   ```typescript
+   export async function newFunction(params: Params) {
+     try {
+       const result = await prisma.model.operation();
+       return result;
+     } catch (error) {
+       console.error("newFunction error:", error);
+       throw new Error("User-friendly message");
+     }
+   }
+   ```
+
+2. **Create Server Action** in `app/actions/module.ts`:
+   ```typescript
+   export async function newAction(data: Data) {
+     try {
+       const session = await auth.api.getSession({ headers: await headers() });
+       if (!session) return { success: false, error: "Unauthorized" };
+       
+       const result = await newFunction({ userId: session.user.id, ...data });
+       return { success: true, data: result };
+     } catch (error) {
+       return { success: false, error: error.message };
+     }
+   }
+   ```
+
+3. **Use in Component**:
+   ```typescript
+   const result = await newAction(data);
+   if (result.success) {
+     // Handle success
+   }
+   ```
+
+### Code Quality
+
+```bash
+# Lint code
+bun lint
+
+# Format code
+bun run format
+
+# Type check
+bunx tsc --noEmit
+```
+
+---
+
+## Testing
+
+### Unit Tests
+
+```bash
+# Run tests
+bun test
+
+# Watch mode
+bun test --watch
+```
+
+### E2E Tests (if configured)
+
+```bash
+bunx playwright test
+```
+
+---
+
+## Production Deployment
+
+### Vercel (Recommended)
+
+#### 1. Prepare Database
+
+Use a managed PostgreSQL service:
+- **Vercel Postgres**
+- **Supabase**
+- **Neon**
+- **Railway**
+- **PlanetScale** (requires MySQL adapter)
+
+#### 2. Environment Variables
+
+In Vercel dashboard, add:
+```
+DATABASE_URL=<production-database-url>
+BETTER_AUTH_SECRET=<production-secret>
+BETTER_AUTH_URL=<your-domain>
+```
+
+#### 3. Deploy
+
+```bash
+# Install Vercel CLI
+bun add -g vercel
+
+# Deploy
+vercel
+
+# Production deployment
+vercel --prod
+```
+
+#### 4. Run Migrations
+
+```bash
+# After first deployment
+bunx prisma migrate deploy
+
+# Seed data (run once)
+bun seed
+```
+
+### Manual Deployment (Docker)
+
+#### Dockerfile
+
+```dockerfile
+FROM oven/bun:1 as base
+WORKDIR /app
+
+# Install dependencies
+COPY package.json bun.lockb ./
+RUN bun install --frozen-lockfile
+
+# Copy source
+COPY . .
+
+# Generate Prisma Client
+RUN bun run db:generate
+
+# Build Next.js
+RUN bun run build
+
+# Production
+EXPOSE 3000
+CMD ["bun", "start"]
+```
+
+#### docker-compose.yml
+
+```yaml
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/lms
+      - BETTER_AUTH_SECRET=${BETTER_AUTH_SECRET}
+    depends_on:
+      - db
+  
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_DB=lms
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+```
+
+#### Deploy
+
+```bash
+docker-compose up -d
+```
+
+---
+
+## Performance Optimization
+
+### Database
+
+1. **Connection Pooling**:
+   ```typescript
+   // lib/prisma.ts
+   export const prisma = new PrismaClient({
+     datasources: {
+       db: {
+         url: process.env.DATABASE_URL,
+       },
+     },
+   });
+   ```
+
+2. **Indexes** (already defined in schema):
+   ```prisma
+   @@index([userId, nextReviewDate])
+   @@index([difficulty])
+   ```
+
+### Next.js
+
+1. **Static Generation**:
+   ```typescript
+   export const revalidate = 3600; // Revalidate every hour
+   ```
+
+2. **Image Optimization**:
+   ```typescript
+   <Image src="/image.jpg" width={500} height={300} />
+   ```
+
+3. **Bundle Analysis**:
+   ```bash
+   ANALYZE=true bun run build
+   ```
+
+---
+
+## Monitoring & Logging
+
+### Error Tracking
+
+Integrate Sentry:
+
+```bash
+bun add @sentry/nextjs
+```
+
+```typescript
+// sentry.client.config.ts
+import * as Sentry from "@sentry/nextjs";
+
+Sentry.init({
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+  environment: process.env.NODE_ENV,
+});
+```
+
+### Analytics
+
+Google Analytics:
+
+```typescript
+// app/layout.tsx
+import Script from "next/script";
+
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=GA_ID"
+  strategy="afterInteractive"
+/>
+```
+
+---
+
+## Backup & Recovery
+
+### Database Backups
+
+```bash
+# Manual backup
+pg_dump lms_production > backup_$(date +%Y%m%d).sql
+
+# Restore
+psql lms_production < backup_20240101.sql
+```
+
+### Automated Backups (Cron)
+
+```bash
+# Add to crontab
+0 2 * * * pg_dump lms_production > /backups/lms_$(date +\%Y\%m\%d).sql
+```
+
+---
+
+## Scaling Considerations
+
+### Horizontal Scaling
+
+1. **Load Balancer**: Distribute traffic across multiple instances
+2. **Session Store**: Use Redis for session management
+3. **File Storage**: Use S3/Cloudinary for uploads
+
+### Database Scaling
+
+1. **Read Replicas**: Route read queries to replicas
+2. **Partitioning**: Partition large tables by date
+3. **Caching**: Use Redis for frequently accessed data
+
+---
+
+## Troubleshooting
+
+### Common Issues
+
+#### Prisma Client Not Generated
+
+```bash
+bun run db:generate
+```
+
+#### Database Connection Errors
+
+Check `.env` file and database status:
+```bash
+psql -U username -d lms_dev -c "SELECT 1"
+```
+
+#### Build Errors
+
+Clear Next.js cache:
+```bash
+rm -rf .next
+bun run build
+```
+
+#### Type Errors
+
+Regenerate Prisma types:
+```bash
+bun run db:generate
+```
+
+---
+
+## Environment-Specific Configuration
+
+### Development
+
+```bash
+NODE_ENV=development
+DATABASE_URL="postgresql://localhost:5432/lms_dev"
+NEXT_PUBLIC_API_URL="http://localhost:3000"
+```
+
+### Staging
+
+```bash
+NODE_ENV=production
+DATABASE_URL="<staging-db-url>"
+NEXT_PUBLIC_API_URL="https://staging.example.com"
+```
+
+### Production
+
+```bash
+NODE_ENV=production
+DATABASE_URL="<production-db-url>"
+NEXT_PUBLIC_API_URL="https://example.com"
+```
+
+---
+
+## Security Checklist
+
+- [x] Environment variables secured
+- [ ] HTTPS enabled (production)
+- [x] SQL injection prevention (Prisma ORM)
+- [x] CSRF protection (Next.js built-in)
+- [x] Authentication with Better Auth
+- [ ] Rate limiting (implement for production)
+- [ ] Input validation with Zod (recommended)
+- [ ] Security headers configured
+
+### Security Headers
+
+```typescript
+// next.config.js
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY'
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          }
+        ]
+      }
+    ];
+  }
+};
+```
+
+---
+
+## Support & Resources
+
+- **Documentation**: `/docs`
+- **GitHub Issues**: `<repository-issues-url>`
+- **Prisma Docs**: https://www.prisma.io/docs
+- **Next.js Docs**: https://nextjs.org/docs
+- **Better Auth Docs**: https://www.better-auth.com/docs

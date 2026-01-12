@@ -1,0 +1,488 @@
+[
+  {
+    "title": "My First Trip Abroad",
+    "content": "Last summer, I went on my first big trip abroad. I visited Spain with my family. We flew from London to Barcelona. The flight was about two hours long. When we arrived, the weather was sunny and warm, much better than in England! We stayed in a nice hotel near the beach. Every morning, we ate breakfast at the hotel. They had fresh fruit, bread, and delicious coffee.\nDuring our stay, we explored many places. We walked around the old Gothic Quarter, which has very old buildings and narrow streets. We also visited Park Güell, a beautiful park designed by Antoni Gaudí. The colours were amazing, and we saw many interesting sculptures. One evening, we watched a flamenco show. The music was lively, and the dancers wore beautiful dresses. We also spent some time relaxing on the beach, swimming in the sea, and building sandcastles.\nMy favourite part was trying the local food. We ate paella, a traditional rice dish, and tapas, small plates of different foods. Everything was so tasty! We also learned a few Spanish words, like \"hola\" (hello) and \"gracias\" (thank you). It was a wonderful experience, and I hope to visit Spain again soon. I took many photos to remember our amazing holiday.",
+    "difficulty": "A2",
+    "topics": ["Travel Experiences"],
+    "wordCount": 234,
+    "questions": [
+      {
+        "question": "Where did the author go for their first trip abroad?",
+        "options": ["London", "Barcelona", "England", "Park Güell"],
+        "answer": "Barcelona",
+        "explanation": "The passage states, 'I visited Spain with my family. We flew from London to Barcelona.'"
+      },
+      {
+        "question": "What was the weather like when they arrived in Spain?",
+        "options": ["Cold and rainy", "Sunny and warm", "Cloudy", "Snowy"],
+        "answer": "Sunny and warm",
+        "explanation": "The passage says, 'When we arrived, the weather was sunny and warm, much better than in England!'"
+      },
+      {
+        "question": "Which famous park did they visit?",
+        "options": ["Hyde Park", "Central Park", "Park Güell", "Green Park"],
+        "answer": "Park Güell",
+        "explanation": "The passage mentions, 'We also visited Park Güell, a beautiful park designed by Antoni Gaudí.'"
+      },
+      {
+        "question": "What traditional Spanish food did they try?",
+        "options": [
+          "Pizza and pasta",
+          "Paella and tapas",
+          "Hamburgers and fries",
+          "Sushi"
+        ],
+        "answer": "Paella and tapas",
+        "explanation": "The passage states, 'We ate paella, a traditional rice dish, and tapas, small plates of different foods.'"
+      },
+      {
+        "question": "What did the author hope to do again soon?",
+        "options": [
+          "Fly from London",
+          "Watch a flamenco show",
+          "Visit Spain",
+          "Eat breakfast at the hotel"
+        ],
+        "answer": "Visit Spain",
+        "explanation": "The passage concludes with, 'It was a wonderful experience, and I hope to visit Spain again soon.'"
+      }
+    ]
+  },
+  {
+    "title": "My Weekend Shopping Trip",
+    "content": "Last Saturday, I went shopping with my friend, Maria. We wanted new clothes for the summer. First, we went to the big shopping mall in the city centre. It has many different shops, from clothes to electronics. We started in a large department store. I was looking for a new dress, and Maria needed sandals.\nWe spent a lot of time in the clothes section. I tried on three dresses, but none were perfect. Maria found some lovely blue sandals, but they were a little expensive. So, we decided to look in other shops.\nNext, we went to a smaller boutique. Here, I found a beautiful yellow dress! It was exactly what I wanted, and it wasn't too expensive. Maria also found a different pair of sandals that were on sale. They were comfortable and the right price. We were both very happy with our purchases.\nAfter buying our clothes, we felt hungry. So, we went to the food court on the top floor. We bought some tasty pizzas and drinks. We sat and talked about our new clothes. Shopping can be tiring, but it's also a lot of fun, especially when you find exactly what you're looking for! We finished our day happy and full.",
+    "difficulty": "A2",
+    "topics": ["Shopping"],
+    "wordCount": 248,
+    "questions": [
+      {
+        "question": "Who did the author go shopping with?",
+        "options": ["Her sister", "Her mother", "Maria", "A neighbour"],
+        "answer": "Maria",
+        "explanation": "The passage begins, 'Last Saturday, I went shopping with my friend, Maria.'"
+      },
+      {
+        "question": "What kind of items were they looking for?",
+        "options": [
+          "Books and stationery",
+          "Food and drinks",
+          "New clothes",
+          "Electronics"
+        ],
+        "answer": "New clothes",
+        "explanation": "The passage states, 'We wanted new clothes for the summer.'"
+      },
+      {
+        "question": "Where did the author find a beautiful yellow dress?",
+        "options": [
+          "In the large department store",
+          "In a smaller boutique",
+          "At the food court",
+          "In an electronics shop"
+        ],
+        "answer": "In a smaller boutique",
+        "explanation": "The passage says, 'Next, we went to a smaller boutique. Here, I found a beautiful yellow dress!'"
+      },
+      {
+        "question": "What did they do after buying their clothes?",
+        "options": [
+          "Went home immediately",
+          "Went to another shopping mall",
+          "Ate pizza and drinks at the food court",
+          "Went to a cinema"
+        ],
+        "answer": "Ate pizza and drinks at the food court",
+        "explanation": "The passage states, 'After buying our clothes, we felt hungry. So, we went to the food court on the top floor. We bought some tasty pizzas and drinks.'"
+      }
+    ]
+  },
+  {
+    "title": "My Morning Exercise Routine",
+    "content": "Staying healthy is important to me, so I exercise every morning. I usually wake up at 6:30 AM, even on weekends. First, I drink a large glass of water to hydrate my body. Then, I change into my sports clothes and put on my running shoes.\nMy exercise routine starts with a 10-minute warm-up. I do light stretches and jumping jacks to get my muscles ready. After that, I jog in the park near my house. The park is beautiful in the morning, and it's nice to see the trees and flowers. I usually jog for about 30 minutes. Sometimes, I listen to music or a podcast while I run.\nWhen I return home, I do strength exercises for about 15 minutes. This includes push-ups, squats, and planks. These help me build strong muscles. Finally, I finish with a 5-minute cool-down, stretching my body gently.\nAfter my workout, I take a shower and then make a healthy breakfast. I usually eat oatmeal with fruit or eggs on toast. Exercising in the morning gives me lots of energy for the day and helps me feel good. It's a great way to start my day.",
+    "difficulty": "A2",
+    "topics": ["Health and Fitness"],
+    "wordCount": 248,
+    "questions": [
+      {
+        "question": "What time does the author usually wake up?",
+        "options": ["6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM"],
+        "answer": "6:30 AM",
+        "explanation": "The passage says, 'I usually wake up at 6:30 AM, even on weekends.'"
+      },
+      {
+        "question": "What does the author do first after waking up?",
+        "options": [
+          "Change into sports clothes",
+          "Drink a glass of water",
+          "Go for a jog",
+          "Eat breakfast"
+        ],
+        "answer": "Drink a glass of water",
+        "explanation": "The passage states, 'First, I drink a large glass of water to hydrate my body.'"
+      },
+      {
+        "question": "How long does the author usually jog in the park?",
+        "options": ["10 minutes", "15 minutes", "30 minutes", "45 minutes"],
+        "answer": "30 minutes",
+        "explanation": "The passage mentions, 'I usually jog for about 30 minutes.'"
+      },
+      {
+        "question": "What does the author eat for a healthy breakfast?",
+        "options": [
+          "Pizza or pasta",
+          "Oatmeal with fruit or eggs on toast",
+          "Burgers and fries",
+          "Only coffee"
+        ],
+        "answer": "Oatmeal with fruit or eggs on toast",
+        "explanation": "The passage says, 'I usually eat oatmeal with fruit or eggs on toast.'"
+      }
+    ]
+  },
+  {
+    "title": "Learning English at School",
+    "content": "My name is Maya, and I'm a student in high school. My favourite subject is English. I have English class four times a week, and it's always interesting. Our teacher, Mr. Jones, makes lessons fun.\nIn English class, we learn many things. We read stories and poems, which helps us understand different cultures. We also learn new vocabulary every week. Mr. Jones gives us words, and we practice using them in sentences. This helps me write better.\nA big part of our class is speaking. We often work in pairs or small groups, discussing topics and doing role-plays. We also give presentations. At first, I was shy, but now I feel more confident. Speaking English helps me improve my pronunciation and fluency.\nWe also focus on grammar. We do exercises to use tenses correctly and form sentences. This can be challenging, but it's important for clear communication.\nI want to study at a university in an English-speaking country. So, learning English well is very important for me. I also watch English movies and listen to English songs to practice. It's a lot of work, but I enjoy it.",
+    "difficulty": "A2",
+    "topics": ["Education"],
+    "wordCount": 232,
+    "questions": [
+      {
+        "question": "What is Maya's favourite subject this year?",
+        "options": ["History", "Science", "English", "Art"],
+        "answer": "English",
+        "explanation": "The passage states, 'My favourite subject is English.'"
+      },
+      {
+        "question": "How often does Maya have English class?",
+        "options": [
+          "Once a week",
+          "Twice a week",
+          "Three times a week",
+          "Four times a week"
+        ],
+        "answer": "Four times a week",
+        "explanation": "The passage mentions, 'I have English class four times a week.'"
+      },
+      {
+        "question": "What does Maya do to improve her speaking skills?",
+        "options": [
+          "Reads books silently",
+          "Works in pairs and does role-plays",
+          "Only listens to the teacher",
+          "Watches movies at home"
+        ],
+        "answer": "Works in pairs and does role-plays",
+        "explanation": "The passage says, 'We often work in pairs or small groups, discussing topics and doing role-plays.'"
+      },
+      {
+        "question": "Why is learning English important for Maya's future?",
+        "options": [
+          "She wants to travel a lot.",
+          "She wants to be an English teacher.",
+          "She wants to study at a university in an English-speaking country.",
+          "Her parents want her to learn it."
+        ],
+        "answer": "She wants to study at a university in an English-speaking country.",
+        "explanation": "The passage states, 'I want to study at a university in an English-speaking country. So, learning English well is very important for me.'"
+      }
+    ]
+  },
+  {
+    "title": "A Fun Night at the Cinema",
+    "content": "Last Friday evening, my friends and I went to the cinema. It was a cold and rainy night, so a movie was a perfect idea. We chose the new action film, \"City Heroes.\" Everyone was talking about it.\nWe met at the cinema at 7:00 PM and bought our tickets. The cinema was busy, but we got good seats. Then, we bought snacks. I got a large popcorn and a soda; my friends got sweets and water. We enjoy snacks with a movie.\nThe film started at 7:30 PM. \"City Heroes\" was very exciting! It had car chases, special effects, and a good story. Brave detectives saved the city from a villain. The sound was loud, and the pictures on the big screen were amazing. We were on the edge of our seats.\nAfter the movie, around 9:30 PM, we went to a cafe. We talked about the film, our favourite scenes, and the ending. We agreed it was fantastic and a great way to spend Friday night. It's nice to spend time with friends.",
+    "difficulty": "A2",
+    "topics": ["Entertainment"],
+    "wordCount": 228,
+    "questions": [
+      {
+        "question": "Why did the friends decide to go to the cinema?",
+        "options": [
+          "It was a very hot day.",
+          "They wanted to eat popcorn.",
+          "It was a cold and rainy night.",
+          "They had nothing else to do."
+        ],
+        "answer": "It was a cold and rainy night.",
+        "explanation": "The passage says, 'It was a cold and rainy night, so a movie was a perfect idea.'"
+      },
+      {
+        "question": "What kind of film did they watch?",
+        "options": [
+          "A comedy",
+          "A romantic film",
+          "A horror film",
+          "An action film"
+        ],
+        "answer": "An action film",
+        "explanation": "The passage states, 'We chose the new action film, \"City Heroes.\""
+      },
+      {
+        "question": "What snacks did the author buy?",
+        "options": [
+          "Sweets and water",
+          "A large popcorn and a soda",
+          "Popcorn and sweets",
+          "Only a soda"
+        ],
+        "answer": "A large popcorn and a soda",
+        "explanation": "The author states, 'I got a large popcorn and a soda...'"
+      },
+      {
+        "question": "What did they do after the movie?",
+        "options": [
+          "Went home immediately",
+          "Went to another cinema",
+          "Talked about the film at a cafe",
+          "Played video games"
+        ],
+        "answer": "Talked about the film at a cafe",
+        "explanation": "The passage says, 'After the movie...we went to a cafe. We talked about the film...'"
+      }
+    ]
+  },
+  {
+    "title": "My Daily Commute",
+    "content": "My name is Leo. I live in the suburbs, but my office is in the city centre, so I commute to work daily. My commute usually takes about 45 minutes, using public transport.\nI start by walking to the bus stop, five minutes from my house. I catch the 7:45 AM bus. The bus ride takes about 20 minutes, depending on traffic. During this time, I often read a book or check news on my phone.\nAfter the bus, I get off at the train station. From there, I take the underground train, also known as the subway. The train is fast and comfortable, taking about 15 minutes to my office's station. I always try to find a seat because it gets crowded.\nWhen I arrive at the city station, I walk for about 5-7 minutes to my office. I like this part because I get fresh air and see people.\nI prefer public transport as it's cheaper than driving and I don't worry about parking. It allows me to relax instead of focusing on the road. I enjoy my daily commute.",
+    "difficulty": "A2",
+    "topics": ["Transport"],
+    "wordCount": 239,
+    "questions": [
+      {
+        "question": "Where is Leo's office located?",
+        "options": [
+          "In the suburbs",
+          "Near his house",
+          "In the city centre",
+          "At the bus stop"
+        ],
+        "answer": "In the city centre",
+        "explanation": "The passage says, 'my office is in the city centre.'"
+      },
+      {
+        "question": "What time does Leo usually catch the bus?",
+        "options": ["7:00 AM", "7:30 AM", "7:45 AM", "8:00 AM"],
+        "answer": "7:45 AM",
+        "explanation": "The passage states, 'I usually catch the 7:45 AM bus.'"
+      },
+      {
+        "question": "What kind of transport does Leo take after the bus?",
+        "options": ["A taxi", "A bicycle", "An underground train", "His car"],
+        "answer": "An underground train",
+        "explanation": "The passage says, 'After the bus, I get off at the train station. From there, I take the underground train...'"
+      },
+      {
+        "question": "Why does Leo prefer public transport?",
+        "options": [
+          "It's faster than driving.",
+          "It's more exciting.",
+          "It's cheaper and he doesn't worry about parking.",
+          "He likes to talk to other passengers."
+        ],
+        "answer": "It's cheaper and he doesn't worry about parking.",
+        "explanation": "The passage mentions, 'I prefer public transport as it's cheaper than driving and I don't worry about parking.'"
+      }
+    ]
+  },
+  {
+    "title": "My Smart Home",
+    "content": "Technology makes my life easier, especially my smart home devices. I have gadgets for daily tasks, making my home comfortable.\nFirst, I have a smart speaker in my living room. I play music by speaking, \"Play jazz music.\" I also ask it the weather or to set a timer. It's convenient.\nMy smart lighting system is another useful device. I control all lights from my phone. I can turn them on/off, change brightness and colour. In the evening, I make lights warm and dim for a relaxed atmosphere. I can even set a schedule.\nI also have a smart thermostat. It controls heating and air conditioning. I adjust temperature from my phone, even when away. This saves energy; I turn off heating when out and turn it on before returning.\nThese smart devices save time and energy. They make my home efficient and enjoyable. Technology has a positive impact on my daily life.",
+    "difficulty": "A2",
+    "topics": ["Technology in Daily Life"],
+    "wordCount": 202,
+    "questions": [
+      {
+        "question": "What does the author use the smart speaker for?",
+        "options": [
+          "To make phone calls",
+          "To play music and ask about the weather",
+          "To watch movies",
+          "To control the lights"
+        ],
+        "answer": "To play music and ask about the weather",
+        "explanation": "The passage says, 'I can play music by speaking... I also ask it the weather or to set a timer.'"
+      },
+      {
+        "question": "How does the author control the smart lighting system?",
+        "options": [
+          "With a remote control",
+          "By clapping hands",
+          "From their phone",
+          "By speaking commands to the lights"
+        ],
+        "answer": "From their phone",
+        "explanation": "The passage states, 'I control all lights from my phone.'"
+      },
+      {
+        "question": "What is the purpose of the smart thermostat?",
+        "options": [
+          "To open and close windows",
+          "To control heating and air conditioning",
+          "To play music",
+          "To display photos"
+        ],
+        "answer": "To control heating and air conditioning",
+        "explanation": "The passage mentions, 'It controls heating and air conditioning.'"
+      },
+      {
+        "question": "How does the smart thermostat help save energy?",
+        "options": [
+          "By turning off all other devices",
+          "By adjusting temperature from the phone, even when away",
+          "By telling the user about energy consumption",
+          "By using solar power"
+        ],
+        "answer": "By adjusting temperature from the phone, even when away",
+        "explanation": "The passage explains, 'I adjust temperature from my phone, even when away. This saves energy; I turn off heating when out and turn it on before returning.'"
+      }
+    ]
+  },
+  {
+    "title": "My Sister's Birthday Party",
+    "content": "Last Saturday, we celebrated my younger sister, Anna's, 10th birthday. It was a wonderful party! My parents started planning two weeks before. Anna loves fairy tales, so the theme was \"Magical Forest.\"\nWe invited about 15 friends from school and our neighbourhood. The party started at 2:00 PM. First, everyone arrived and gave Anna presents. She got many lovely gifts, like a new book and a beautiful necklace. She was very happy.\nOur garden was decorated like a magical forest. We hung green and brown streamers, and there were pictures of trees and flowers. My mom even made small fairy houses.\nFor entertainment, we played games. We had a treasure hunt for hidden \"magic stones.\" The winner got a small prize. After games, it was food time. My mom baked a fantastic birthday cake, decorated with edible flowers and a fairy doll. We sang \"Happy Birthday\" and Anna blew out the candles. We also had sandwiches, fruit, and juice.\nEveryone had a great time, laughing and playing. The weather was perfect, sunny and warm. Anna said it was the best birthday party! It was lovely to see her so happy.",
+    "difficulty": "A2",
+    "topics": ["Celebrations"],
+    "wordCount": 237,
+    "questions": [
+      {
+        "question": "How old was Anna celebrating?",
+        "options": [
+          "5th birthday",
+          "8th birthday",
+          "10th birthday",
+          "12th birthday"
+        ],
+        "answer": "10th birthday",
+        "explanation": "The passage states, 'we celebrated my younger sister, Anna's, 10th birthday.'"
+      },
+      {
+        "question": "What was the theme of Anna's birthday party?",
+        "options": [
+          "Superheroes",
+          "Space adventure",
+          "Magical Forest",
+          "Under the sea"
+        ],
+        "answer": "Magical Forest",
+        "explanation": "The passage mentions, 'the theme was \"Magical Forest.\""
+      },
+      {
+        "question": "What were some of the gifts Anna received?",
+        "options": [
+          "Toys and clothes",
+          "A new book and a beautiful necklace",
+          "Video games and sweets",
+          "Money and a bicycle"
+        ],
+        "answer": "A new book and a beautiful necklace",
+        "explanation": "The passage says, 'She got many lovely gifts, like a new book and a beautiful necklace.'"
+      },
+      {
+        "question": "What kind of cake did Anna's mom bake?",
+        "options": [
+          "A chocolate cake",
+          "A vanilla cake",
+          "A birthday cake decorated with edible flowers and a fairy doll",
+          "A fruit cake"
+        ],
+        "answer": "A birthday cake decorated with edible flowers and a fairy doll",
+        "explanation": "The passage states, 'My mom baked a fantastic birthday cake, decorated with edible flowers and a fairy doll.'"
+      }
+    ]
+  },
+  {
+    "title": "Dinner at the Italian Restaurant",
+    "content": "Last Tuesday, my friend Emily and I had dinner at a new Italian restaurant called \"La Bella Luna.\" We heard good things about it.\nWe arrived at 7:00 PM. The restaurant was full, but we had a reservation and got a table right away. The atmosphere was nice, with soft music and warm lighting. Our waiter, Marco, was friendly. He brought the menu and water.\nFor starters, Emily ordered a green salad, and I chose bruschetta. Both were delicious! For the main course, Emily had a Margherita pizza, and I ordered spaghetti carbonara. The pizza was crispy, and my pasta was creamy. We also shared sparkling water.\nWe were full but tried a dessert. We shared tiramisu, an Italian coffee-flavoured dessert. It was perfect.\nThe bill was reasonable, around £40. We enjoyed our evening at La Bella Luna. The food was excellent, service great, and we had a lovely time. We would definitely go back soon.",
+    "difficulty": "A2",
+    "topics": ["Eating Out"],
+    "wordCount": 206,
+    "questions": [
+      {
+        "question": "What is the name of the Italian restaurant they visited?",
+        "options": [
+          "The Green Salad",
+          "Marco's Place",
+          "La Bella Luna",
+          "Spaghetti House"
+        ],
+        "answer": "La Bella Luna",
+        "explanation": "The passage states, 'It's called \"La Bella Luna.\""
+      },
+      {
+        "question": "What did Emily order for her main course?",
+        "options": [
+          "Spaghetti carbonara",
+          "Bruschetta",
+          "A Margherita pizza",
+          "Tiramisu"
+        ],
+        "answer": "A Margherita pizza",
+        "explanation": "The passage mentions, 'for the main course, Emily had a Margherita pizza.'"
+      },
+      {
+        "question": "What dessert did they share?",
+        "options": ["Ice cream", "Chocolate cake", "Fruit salad", "Tiramisu"],
+        "answer": "Tiramisu",
+        "explanation": "The passage says, 'We shared tiramisu, an Italian coffee-flavoured dessert.'"
+      },
+      {
+        "question": "How much did the bill cost approximately?",
+        "options": ["£20", "£30", "£40", "£50"],
+        "answer": "£40",
+        "explanation": "The passage states, 'We paid around £40.'"
+      }
+    ]
+  },
+  {
+    "title": "A Walk in the Forest",
+    "content": "Last Sunday, my family and I walked in the big forest near our town. The weather was lovely, sunny but not too hot. We packed a small picnic.\nWhen we arrived, we noticed the fresh, clean air. It smelled like pine trees. The forest was quiet, except for birds singing and leaves rustling. Tall trees surrounded us, some with green leaves, others colourful, as it was autumn.\nWe followed a small path deeper into the forest. My younger brother, Tom, was excited. He pointed at plants and tried to spot animals. We saw squirrels climbing trees and colourful butterflies. We hoped to see a deer.\nAfter walking an hour, we found a nice spot near a small stream. We spread our blanket and enjoyed our picnic. The sound of water was relaxing. We watched tiny fish swimming.\nIt was a peaceful and refreshing day. Being in nature always makes me feel calm and happy. We returned home in the late afternoon, tired but content. We plan to visit the forest again soon.",
+    "difficulty": "A2",
+    "topics": ["Nature"],
+    "wordCount": 234,
+    "questions": [
+      {
+        "question": "What was the weather like for the walk?",
+        "options": [
+          "Rainy and cold",
+          "Sunny and hot",
+          "Sunny but not too hot",
+          "Cloudy and windy"
+        ],
+        "answer": "Sunny but not too hot",
+        "explanation": "The passage states, 'The weather was lovely, sunny but not too hot.'"
+      },
+      {
+        "question": "What sounds did they hear in the forest?",
+        "options": [
+          "Traffic noise",
+          "Birds singing and leaves rustling",
+          "People talking loudly",
+          "Animals roaring"
+        ],
+        "answer": "Birds singing and leaves rustling",
+        "explanation": "The passage mentions, 'The forest was quiet, except for birds singing and leaves rustling.'"
+      },
+      {
+        "question": "What animals did they see in the forest?",
+        "options": [
+          "Deer and rabbits",
+          "Squirrels and colourful butterflies",
+          "Bears and wolves",
+          "Birds and foxes"
+        ],
+        "answer": "Squirrels and colourful butterflies",
+        "explanation": "The passage says, 'We saw squirrels climbing trees and colourful butterflies.'"
+      },
+      {
+        "question": "Where did they have their picnic?",
+        "options": [
+          "Under a big tree",
+          "Near a small stream",
+          "In an open field",
+          "On a mountain top"
+        ],
+        "answer": "Near a small stream",
+        "explanation": "The passage states, 'we found a nice spot near a small stream. We spread our blanket and enjoyed our picnic.'"
+      }
+    ]
+  }
+]

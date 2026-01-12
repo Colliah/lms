@@ -1,0 +1,644 @@
+{
+  "topic": {
+    "name": "Conditionals",
+    "description": "Master Zero, First, Second, Third, and Mixed Conditionals",
+    "difficulty": "B1"
+  },
+  "exercises": [
+    {
+      "title": "Zero Conditional: Everyday Facts",
+      "description": "Practice forming sentences about general truths and scientific facts using the Zero Conditional.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If you heat ice, it ___ (melt).",
+          "options": ["melts", "will melt", "melted", "melt"],
+          "correctAnswer": "melts",
+          "explanation": "We use the Zero Conditional for facts and general truths. Both clauses use the present simple. (Trong câu điều kiện loại 0, chúng ta dùng thì hiện tại đơn cho cả hai mệnh đề để nói về sự thật và chân lý.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What happens if you mix blue and yellow?",
+          "options": [
+            "It turns green.",
+            "It will turn green.",
+            "It turned green.",
+            "It is turning green."
+          ],
+          "correctAnswer": "It turns green.",
+          "explanation": "This is a general truth, so we use the present simple in both the 'if' clause (implied) and the main clause.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If people ___ (not eat), they get hungry.",
+          "options": ["don't eat", "didn't eat", "won't eat", "aren't eating"],
+          "correctAnswer": "don't eat",
+          "explanation": "This is a general truth about human needs. Use present simple in both clauses.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If I touch a hot stove, I ___ my hand.",
+          "options": ["burn", "will burn", "burned", "am burning"],
+          "correctAnswer": "burn",
+          "explanation": "This describes an automatic, factual reaction. Use present simple in both clauses.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Water ___ (boil) if it reaches 100 degrees Celsius.",
+          "options": ["boils", "will boil", "boiled", "is boiling"],
+          "correctAnswer": "boils",
+          "explanation": "This is a scientific fact. Both clauses use the present simple. (Đây là một sự thật khoa học. Cả hai mệnh đề đều dùng thì hiện tại đơn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If you press this button, the machine ___.",
+          "options": ["starts", "will start", "started", "is starting"],
+          "correctAnswer": "starts",
+          "explanation": "This describes a factual outcome of an action. Use present simple in both clauses.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "First Conditional: Real Possibilities",
+      "description": "Practice forming sentences about future possibilities and their likely outcomes using the First Conditional.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If it rains tomorrow, we ___ (not go) to the beach.",
+          "options": ["won't go", "don't go", "wouldn't go", "didn't go"],
+          "correctAnswer": "won't go",
+          "explanation": "This describes a real possibility in the future. Use present simple in the 'if' clause and 'will' + base verb in the main clause. (Đây là một khả năng có thật trong tương lai. Dùng thì hiện tại đơn trong mệnh đề 'if' và 'will' + động từ nguyên mẫu trong mệnh đề chính.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If I study hard, I ___ the exam.",
+          "options": ["will pass", "pass", "passed", "would pass"],
+          "correctAnswer": "will pass",
+          "explanation": "This is a likely future outcome based on a present action. Use 'will' + base verb.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She ___ (be) late if she doesn't hurry up.",
+          "options": ["will be", "is", "was", "would be"],
+          "correctAnswer": "will be",
+          "explanation": "This describes a possible future consequence. Use 'will' + base verb in the main clause.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If they invite me, I ___ to their party.",
+          "options": ["will go", "go", "went", "would go"],
+          "correctAnswer": "will go",
+          "explanation": "This describes a probable future event. Use 'will' + base verb.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ (visit) Paris next year if we save enough money.",
+          "options": ["will visit", "visit", "visited", "are visiting"],
+          "correctAnswer": "will visit",
+          "explanation": "This describes a future plan dependent on a condition. Use 'will' + base verb. (Đây là một kế hoạch tương lai phụ thuộc vào một điều kiện. Dùng 'will' + động từ nguyên mẫu.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If you help me with this task, I ___ you later.",
+          "options": ["will help", "help", "helped", "am helping"],
+          "correctAnswer": "will help",
+          "explanation": "This describes a conditional promise for the future. Use 'will' + base verb.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Conditionals: Facts and Future Possibilities",
+      "description": "Practice identifying and using Zero and First Conditionals in various contexts.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If you mix red and white, you ___ (get) pink.",
+          "options": ["get", "will get", "got", "are getting"],
+          "correctAnswer": "get",
+          "explanation": "This is a general truth/fact. Use present simple in both clauses (Zero Conditional).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If it's sunny tomorrow, we ___ for a picnic.",
+          "options": ["will go", "go", "went", "are going"],
+          "correctAnswer": "will go",
+          "explanation": "This is a real possibility for the future. Use 'will' + base verb in the main clause (First Conditional).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Plants ___ (die) if they don't get water.",
+          "options": ["die", "will die", "died", "are dying"],
+          "correctAnswer": "die",
+          "explanation": "This is a general scientific fact. Use present simple in both clauses (Zero Conditional).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ if you study hard for the test?",
+          "options": ["will happen", "happens", "happened", "is happening"],
+          "correctAnswer": "will happen",
+          "explanation": "This asks about a likely future outcome. Use 'will' + base verb in the main clause (First Conditional).",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'If she will call me, I answer the phone.'",
+          "options": [
+            "If she calls me, I will answer the phone.",
+            "If she will call me, I will answer the phone.",
+            "If she calls me, I answer the phone.",
+            "If she called me, I will answer the phone."
+          ],
+          "correctAnswer": "If she calls me, I will answer the phone.",
+          "explanation": "In the First Conditional, the 'if' clause uses the present simple, and the main clause uses 'will' + base verb. (Trong câu điều kiện loại 1, mệnh đề 'if' dùng thì hiện tại đơn, và mệnh đề chính dùng 'will' + động từ nguyên mẫu.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If you ___ (freeze) water, it turns into ice.",
+          "options": ["freeze", "will freeze", "froze", "are freezing"],
+          "correctAnswer": "freeze",
+          "explanation": "This is a scientific fact. Both clauses use the present simple (Zero Conditional).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Second Conditional: Imagining the Present",
+      "description": "Practice forming and using the Second Conditional to talk about imaginary or unlikely situations in the present or future.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If I ___ the lottery, I ___ the world.",
+          "options": [
+            "won / would travel",
+            "win / travel",
+            "would win / travelled",
+            "had won / would travel"
+          ],
+          "correctAnswer": "won / would travel",
+          "explanation": "The Second Conditional is used for hypothetical or unlikely situations in the present or future. The structure is 'If + simple past, would + base verb'. (Nếu... thì... (nhưng không có thật ở hiện tại/tương lai))",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She ___ happier if she ___ more free time.",
+          "options": [
+            "would be / had",
+            "will be / has",
+            "is / had",
+            "would be / have"
+          ],
+          "correctAnswer": "would be / had",
+          "explanation": "For the Second Conditional, use 'would + base verb' in the main clause and the simple past ('had') in the if-clause. (Nếu cô ấy có nhiều thời gian rảnh hơn thì cô ấy sẽ vui hơn.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If we ___ enough money, we ___ that house.",
+          "options": [
+            "didn't have / wouldn't buy",
+            "don't have / won't buy",
+            "hadn't / wouldn't buy",
+            "didn't have / didn't buy"
+          ],
+          "correctAnswer": "didn't have / wouldn't buy",
+          "explanation": "This describes a hypothetical present situation. The negative form for the simple past is 'didn't have', and for 'would + base verb' is 'wouldn't buy'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ if you ___ a ghost?",
+          "options": [
+            "would / do / saw",
+            "will / do / see",
+            "would / do / had seen",
+            "would / did / saw"
+          ],
+          "correctAnswer": "would / do / saw",
+          "explanation": "In a question for the Second Conditional, the structure is 'What would you do if + simple past?'. (Bạn sẽ làm gì nếu bạn thấy một con ma?)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If he ___ English fluently, he ___ the job.",
+          "options": [
+            "spoke / would get",
+            "speaks / will get",
+            "had spoken / would have got",
+            "would speak / got"
+          ],
+          "correctAnswer": "spoke / would get",
+          "explanation": "To express an unlikely present condition and its result, use the simple past ('spoke') in the if-clause and 'would + base verb' ('would get') in the main clause.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I ___ you if I ___ how.",
+          "options": [
+            "would help / knew",
+            "will help / know",
+            "helped / knew",
+            "would have helped / had known"
+          ],
+          "correctAnswer": "would help / knew",
+          "explanation": "This is a Second Conditional statement about a present inability to help. 'Would help' is for the main clause, and 'knew' (simple past) is for the if-clause.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Second Conditional: Unlikely Scenarios",
+      "description": "Reinforce your understanding of the Second Conditional by choosing the correct verb forms for present hypothetical situations.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If I ___ taller, I ___ play basketball professionally.",
+          "options": [
+            "were / would",
+            "was / would",
+            "am / will",
+            "were / will"
+          ],
+          "correctAnswer": "were / would",
+          "explanation": "In the Second Conditional, 'were' is often used for all persons (I, he, she, it) in the if-clause, especially for hypothetical statements. The main clause uses 'would + base verb'. (Nếu tôi cao hơn, tôi sẽ chơi bóng rổ chuyên nghiệp.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If she ___ so shy, she ___ more friends.",
+          "options": [
+            "weren't / would make",
+            "isn't / will make",
+            "wasn't / would make",
+            "hadn't been / would have made"
+          ],
+          "correctAnswer": "weren't / would make",
+          "explanation": "Use 'were not' (weren't) or 'was not' (wasn't) in the if-clause for hypothetical situations. 'Were not' is generally preferred in formal English. The main clause uses 'would + base verb'. (Nếu cô ấy không quá nhút nhát, cô ấy sẽ kết bạn được nhiều hơn.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They ___ buy a new car if they ___ enough savings.",
+          "options": [
+            "would / had",
+            "will / have",
+            "would / have",
+            "will / had"
+          ],
+          "correctAnswer": "would / had",
+          "explanation": "The Second Conditional requires 'would + base verb' in the main clause ('would buy') and the simple past ('had') in the if-clause.",
+          "orderIndex": 3
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'If I would have more time, I will learn to play the guitar.'",
+          "options": [
+            "If I had more time, I would learn to play the guitar.",
+            "If I have more time, I will learn to play the guitar.",
+            "If I had more time, I will learn to play the guitar.",
+            "If I would have more time, I would learn to play the guitar."
+          ],
+          "correctAnswer": "If I had more time, I would learn to play the guitar.",
+          "explanation": "In the Second Conditional, the if-clause uses the simple past ('had'), not 'would have'. The main clause uses 'would + base verb' ('would learn'), not 'will'. (Nếu tôi có nhiều thời gian hơn, tôi sẽ học chơi guitar.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ if you ___ a day off tomorrow?",
+          "options": [
+            "would / do / had",
+            "will / do / have",
+            "would / did / have",
+            "will / did / had"
+          ],
+          "correctAnswer": "would / do / had",
+          "explanation": "This is a Second Conditional question for a hypothetical future event. Use 'would + base verb' (would do) and the simple past (had).",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If he ___ the answer, he ___ us.",
+          "options": [
+            "knew / would tell",
+            "knows / will tell",
+            "had known / would have told",
+            "know / would tell"
+          ],
+          "correctAnswer": "knew / would tell",
+          "explanation": "To talk about a current hypothetical situation, use the simple past ('knew') in the if-clause and 'would + base verb' ('would tell') in the main clause.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Third Conditional: Regretting the Past",
+      "description": "Practice forming and using the Third Conditional to talk about hypothetical situations and their results in the past.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If I ___ harder, I ___ the exam.",
+          "options": [
+            "had studied / would have passed",
+            "studied / would pass",
+            "had studied / would pass",
+            "would have studied / had passed"
+          ],
+          "correctAnswer": "had studied / would have passed",
+          "explanation": "The Third Conditional talks about a hypothetical past situation and its past result. Structure: 'If + past perfect, would have + past participle'. (Nếu tôi đã học chăm hơn, tôi đã đậu kỳ thi.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She ___ missed the train if she ___ left earlier.",
+          "options": [
+            "wouldn't have / had",
+            "wouldn't have / hadn't",
+            "wouldn't / had",
+            "would / had"
+          ],
+          "correctAnswer": "wouldn't have / had",
+          "explanation": "This is a Third Conditional sentence. The main clause uses 'would have + past participle' (wouldn't have missed), and the if-clause uses the past perfect ('had left'). (Cô ấy đã không lỡ tàu nếu cô ấy đã rời đi sớm hơn.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If they ___ us, we ___ the project.",
+          "options": [
+            "hadn't helped / would have failed",
+            "didn't help / would fail",
+            "haven't helped / would fail",
+            "wouldn't have helped / had failed"
+          ],
+          "correctAnswer": "hadn't helped / would have failed",
+          "explanation": "For a past hypothetical condition, use the past perfect ('hadn't helped') in the if-clause and 'would have + past participle' ('would have failed') in the main clause.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "What ___ you ___ if you ___ known about the traffic jam?",
+          "options": [
+            "would / have done / had",
+            "will / do / have",
+            "would / do / had",
+            "would have / done / had"
+          ],
+          "correctAnswer": "would / have done / had",
+          "explanation": "In a Third Conditional question, the structure is 'What would you have done if + past perfect?'. ('had known' is the past perfect). (Bạn đã làm gì nếu bạn đã biết về tình trạng kẹt xe?)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He ___ lost if he ___ to the directions.",
+          "options": [
+            "wouldn't have got / had listened",
+            "wouldn't get / listened",
+            "didn't get / had listened",
+            "hadn't got / would have listened"
+          ],
+          "correctAnswer": "wouldn't have got / had listened",
+          "explanation": "This describes a hypothetical past situation. Use 'wouldn't have + past participle' ('wouldn't have got') in the main clause and 'had + past participle' ('had listened') in the if-clause. ('Gotten' is also a correct past participle for 'get' in American English.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'If she had took her umbrella, she wouldn't have got wet.'",
+          "options": [
+            "If she had taken her umbrella, she wouldn't have got wet.",
+            "If she had taken her umbrella, she wouldn't have gotten wet.",
+            "If she took her umbrella, she wouldn't have got wet.",
+            "If she had taken her umbrella, she wouldn't get wet."
+          ],
+          "correctAnswer": "If she had taken her umbrella, she wouldn't have got wet.",
+          "explanation": "The past participle of 'take' is 'taken', not 'took'. The rest of the sentence (Third Conditional structure) is correct. Both 'got' (British English) and 'gotten' (American English) are acceptable past participles for 'get'. (Nếu cô ấy đã mang ô, cô ấy đã không bị ướt.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Mastering Mixed Conditionals",
+      "description": "Practice using various mixed conditional structures to express hypothetical situations spanning different time frames.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If she ___ (not miss) her flight yesterday, she ___ (be) here with us now.",
+          "options": [
+            "hadn't missed, would be",
+            "didn't miss, would have been",
+            "wouldn't miss, was",
+            "hasn't missed, will be"
+          ],
+          "correctAnswer": "hadn't missed, would be",
+          "explanation": "This is a mixed conditional Type 3-2. The condition (missing the flight) happened in the past (If she hadn't missed - Past Perfect), and its result is a present hypothetical situation (she would be here - Present Conditional). (Đây là câu điều kiện hỗn hợp loại 3-2. Điều kiện xảy ra trong quá khứ, và kết quả của nó là một tình huống giả định ở hiện tại.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If he ___ more responsible, he ___ that crucial mistake last week.",
+          "options": [
+            "were / wouldn't have made",
+            "had been / wouldn't make",
+            "is / wouldn't have made",
+            "would be / hadn't made"
+          ],
+          "correctAnswer": "were / wouldn't have made",
+          "explanation": "This is a mixed conditional Type 2-3. The condition is a general present hypothetical or a characteristic (If he were more responsible - Past Simple), and the result is about a specific past event (he wouldn't have made that mistake - Past Conditional Perfect).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We ___ (not be) in this predicament if you ___ (listen) to my advice earlier.",
+          "options": [
+            "wouldn't be, had listened",
+            "wouldn't have been, listened",
+            "aren't, would have listened",
+            "won't be, had listened"
+          ],
+          "correctAnswer": "wouldn't be, had listened",
+          "explanation": "This is a mixed conditional Type 3-2. A past condition (if you had listened - Past Perfect) affects a present situation (we wouldn't be in this predicament - Present Conditional). (Chúng ta sẽ không ở trong tình cảnh khó khăn này nếu bạn đã nghe lời khuyên của tôi sớm hơn.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "If I ___ (be) more organized, I ___ (not lose) my keys last night.",
+          "options": [
+            "were / wouldn't have lost",
+            "had been / wouldn't lose",
+            "am / didn't lose",
+            "was / wouldn't lose"
+          ],
+          "correctAnswer": "were / wouldn't have lost",
+          "explanation": "This is a mixed conditional Type 2-3. The condition refers to a present general characteristic (If I were more organized - Past Simple), and the result is a specific past event (I wouldn't have lost my keys - Past Conditional Perfect).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If she ___ (study) harder at university, she ___ (have) a more prestigious job now.",
+          "options": [
+            "had studied, would have",
+            "studied, would have had",
+            "has studied, will have",
+            "was studying, had"
+          ],
+          "correctAnswer": "had studied, would have",
+          "explanation": "This is a mixed conditional Type 3-2. A past condition (if she had studied - Past Perfect) has a result in the present (she would have a job - Present Conditional). (Nếu cô ấy học chăm hơn ở đại học, thì bây giờ cô ấy đã có một công việc danh giá hơn rồi.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They ___ here with us today if they ___ that critical decision last year.",
+          "options": [
+            "would be / hadn't made",
+            "would have been / didn't make",
+            "are / hadn't made",
+            "were / wouldn't have made"
+          ],
+          "correctAnswer": "would be / hadn't made",
+          "explanation": "This is a mixed conditional Type 3-2. A past condition (if they hadn't made - Past Perfect) has a current impact (they would be here - Present Conditional).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Understanding 'Unless' and Negative Conditionals",
+      "description": "Practice using 'unless' and other negative conditional expressions to convey conditions and their consequences.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "You won't get a promotion ___ you improve your leadership skills.",
+          "options": ["if", "unless", "provided that", "on condition that"],
+          "correctAnswer": "unless",
+          "explanation": "'Unless' means 'if not'. So, the sentence implies: 'You won't get a promotion if you don't improve your leadership skills.' (Từ 'unless' có nghĩa là 'nếu không'. Câu này có nghĩa là bạn sẽ không được thăng chức nếu bạn không cải thiện kỹ năng lãnh đạo của mình.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We'll miss the deadline ___ we start working overtime immediately.",
+          "options": ["if", "unless", "provided that", "as long as"],
+          "correctAnswer": "unless",
+          "explanation": "Here, 'unless' introduces the only condition that can prevent us from missing the deadline. It means 'if we don't start working overtime'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'Unless you don't submit the report by Friday, the project will be delayed.'",
+          "options": [
+            "Unless you submit the report by Friday, the project will be delayed.",
+            "If you don't submit the report by Friday, the project will be delayed.",
+            "Unless you submitted the report by Friday, the project will be delayed.",
+            "You don't submit the report by Friday, unless the project will be delayed."
+          ],
+          "correctAnswer": "Unless you submit the report by Friday, the project will be delayed.",
+          "explanation": "'Unless' already carries a negative meaning ('if not'), so using 'don't' in the 'unless' clause creates a double negative, which is incorrect. (Vì 'unless' đã mang nghĩa phủ định 'nếu không', nên không dùng thêm từ phủ định 'don't' trong mệnh đề 'unless'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The team can't succeed ___ everyone fully commits to their roles.",
+          "options": ["if", "in case", "unless", "as long as"],
+          "correctAnswer": "unless",
+          "explanation": "'Unless' is used to state the necessary condition for the team to succeed. Without full commitment, success is not possible.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I wouldn't accept that job offer ___ they significantly increase the salary.",
+          "options": ["if", "unless", "otherwise", "in case"],
+          "correctAnswer": "unless",
+          "explanation": "The speaker would not accept the offer if the salary is not increased. 'Unless' effectively conveys this negative condition.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ there's an emergency, all employees must attend the mandatory meeting.",
+          "options": ["Provided that", "In case", "Unless", "Supposing"],
+          "correctAnswer": "Unless",
+          "explanation": "This sentence means 'If there is not an emergency, all employees must attend...'. 'Unless' is the correct choice to express this exception to the rule.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Beyond 'If': Other Conditional Conjunctions",
+      "description": "Practice using various advanced conditional conjunctions to express conditions, provisions, and hypothetical scenarios.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "You can borrow my car ___ you promise to fill up the tank.",
+          "options": ["provided that", "supposing", "otherwise", "in case"],
+          "correctAnswer": "provided that",
+          "explanation": "'Provided that' (or 'providing that', 'as long as', 'on condition that') introduces a specific condition that must be met for something else to happen. (Bạn có thể mượn xe của tôi với điều kiện là bạn hứa đổ đầy bình xăng.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ you agree to our terms, we can proceed with the contract.",
+          "options": ["In case", "Supposing", "On condition that", "Otherwise"],
+          "correctAnswer": "On condition that",
+          "explanation": "'On condition that' emphasizes a strong prerequisite or requirement for an action to take place. It's similar to 'provided that'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "___ we miss the last train, we'll have to take a taxi home.",
+          "options": ["Supposing", "Unless", "Provided that", "So long as"],
+          "correctAnswer": "Supposing",
+          "explanation": "'Supposing' (or 'imagine', 'what if') is used to introduce a hypothetical situation and consider its potential consequences. (Giả sử chúng ta lỡ chuyến tàu cuối cùng thì sao, chúng ta sẽ phải đi taxi về nhà.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Bring an umbrella ___ it rains later.",
+          "options": ["provided that", "unless", "in case", "otherwise"],
+          "correctAnswer": "in case",
+          "explanation": "'In case' is used to talk about precautions or things we do to be prepared for possible future situations. (Mang ô theo phòng khi trời mưa.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "Correct the sentence: 'You should study hard, otherwise you will pass the exam.'",
+          "options": [
+            "You should study hard, otherwise you won't pass the exam.",
+            "You should study hard, provided that you will pass the exam.",
+            "You should study hard, unless you will pass the exam.",
+            "You should study hard, in case you won't pass the exam."
+          ],
+          "correctAnswer": "You should study hard, otherwise you won't pass the exam.",
+          "explanation": "'Otherwise' means 'if not' or 'or else'. It introduces the negative consequence of not fulfilling the prior condition (studying hard). (Từ 'otherwise' có nghĩa là 'nếu không thì'. Hậu quả của việc không học chăm chỉ là trượt, chứ không phải đỗ.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I will lend you the money, ___ you pay me back by next month.",
+          "options": ["as long as", "unless", "in case", "supposing"],
+          "correctAnswer": "as long as",
+          "explanation": "'As long as' specifies a condition that must be met for something else to be true or to happen. It's similar in meaning to 'provided that'.",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

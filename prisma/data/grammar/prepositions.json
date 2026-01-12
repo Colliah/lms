@@ -1,0 +1,449 @@
+{
+  "topic": {
+    "name": "Prepositions",
+    "description": "Use prepositions of time, place, and movement correctly",
+    "difficulty": "A1"
+  },
+  "exercises": [
+    {
+      "title": "Prepositions of Time: At, On, In",
+      "description": "Practice using 'at', 'on', and 'in' for different times and dates.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I wake up ___ 7 o'clock every day.",
+          "options": ["at", "on", "in", "by"],
+          "correctAnswer": "at",
+          "explanation": "'At' is used for specific times like '7 o'clock'. (Dùng 'at' cho các giờ cụ thể.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My birthday is ___ July.",
+          "options": ["at", "on", "in", "for"],
+          "correctAnswer": "in",
+          "explanation": "'In' is used for months. (Dùng 'in' cho các tháng.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We have English class ___ Monday mornings.",
+          "options": ["at", "on", "in", "to"],
+          "correctAnswer": "on",
+          "explanation": "'On' is used for specific days of the week, like 'Monday'. (Dùng 'on' cho các ngày cụ thể trong tuần.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The party is ___ the evening.",
+          "options": ["at", "on", "in", "by"],
+          "correctAnswer": "in",
+          "explanation": "'In' is used for parts of the day like 'the evening', 'the morning', 'the afternoon'. (Dùng 'in' cho các buổi trong ngày như 'buổi tối', 'buổi sáng', 'buổi chiều'. Lưu ý: dùng 'at night'.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Christmas is ___ December 25th.",
+          "options": ["at", "on", "in", "with"],
+          "correctAnswer": "on",
+          "explanation": "'On' is used for specific dates, like 'December 25th'. (Dùng 'on' cho các ngày cụ thể.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I like to sleep ___ night.",
+          "options": ["at", "on", "in", "during"],
+          "correctAnswer": "at",
+          "explanation": "We use 'at' with 'night'. (Dùng 'at' với 'night' - ban đêm.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Prepositions of Place: At, On, In",
+      "description": "Practice using 'at', 'on', and 'in' to talk about locations.",
+      "difficulty": "A1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The book is ___ the table.",
+          "options": ["at", "on", "in", "under"],
+          "correctAnswer": "on",
+          "explanation": "'On' is used when something is on a surface. (Dùng 'on' khi vật gì đó nằm trên một bề mặt.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She lives ___ a small village.",
+          "options": ["at", "on", "in", "by"],
+          "correctAnswer": "in",
+          "explanation": "'In' is used for larger areas like cities, countries, or enclosed spaces like a village. (Dùng 'in' cho các khu vực lớn hơn như thành phố, quốc gia, hoặc không gian được bao quanh như một ngôi làng.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I am waiting ___ the bus stop.",
+          "options": ["at", "on", "in", "to"],
+          "correctAnswer": "at",
+          "explanation": "'At' is used for a specific point or location, like 'the bus stop'. (Dùng 'at' cho một điểm hoặc địa điểm cụ thể, như 'trạm xe buýt'.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The picture is ___ the wall.",
+          "options": ["at", "on", "in", "above"],
+          "correctAnswer": "on",
+          "explanation": "'On' is used for something attached to or touching a surface, like a wall. (Dùng 'on' cho vật gì đó gắn vào hoặc chạm vào một bề mặt, như tường.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My keys are ___ my bag.",
+          "options": ["at", "on", "in", "next to"],
+          "correctAnswer": "in",
+          "explanation": "'In' is used when something is inside an enclosed space, like a bag. (Dùng 'in' khi vật gì đó nằm bên trong một không gian kín, như túi xách.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The children are playing ___ the park.",
+          "options": ["at", "on", "in", "near"],
+          "correctAnswer": "in",
+          "explanation": "'In' is often used when talking about being inside a park or a garden, suggesting an enclosed area. (Dùng 'in' khi nói về việc ở bên trong một công viên hoặc khu vườn, ám chỉ một khu vực kín.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Moving Around: Prepositions of Movement",
+      "description": "Practice using prepositions 'to', 'into', and 'onto' to describe movement and direction.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She went ___ the market to buy some vegetables.",
+          "options": ["to", "into", "onto", "at"],
+          "correctAnswer": "to",
+          "explanation": "'To' indicates movement towards a destination. (Dùng 'to' để chỉ hướng di chuyển đến một địa điểm.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The cat jumped ___ the chair to take a nap.",
+          "options": ["to", "into", "onto", "in"],
+          "correctAnswer": "onto",
+          "explanation": "'Onto' means movement to a position on the surface of something. (Dùng 'onto' khi di chuyển lên trên bề mặt của vật gì đó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He poured water ___ the glass.",
+          "options": ["to", "into", "onto", "for"],
+          "correctAnswer": "into",
+          "explanation": "'Into' means movement from outside to inside something. (Dùng 'into' khi di chuyển từ bên ngoài vào bên trong.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Please put the books ___ the shelf.",
+          "options": ["to", "into", "onto", "in"],
+          "correctAnswer": "onto",
+          "explanation": "'Onto' indicates placing something on a surface. (Dùng 'onto' khi đặt vật gì đó lên trên một bề mặt.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We are going ___ the cinema tonight.",
+          "options": ["to", "into", "onto", "at"],
+          "correctAnswer": "to",
+          "explanation": "'To' indicates direction towards a destination. (Dùng 'to' để chỉ hướng di chuyển đến một địa điểm.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The boy ran ___ the house when it started raining.",
+          "options": ["to", "into", "onto", "with"],
+          "correctAnswer": "into",
+          "explanation": "'Into' indicates movement from outside to inside a place. (Dùng 'into' khi di chuyển từ bên ngoài vào bên trong một nơi nào đó.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Verbs and Their Partners: Dependent Prepositions",
+      "description": "Practice common verbs that are always followed by specific prepositions.",
+      "difficulty": "A2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She is interested ___ learning English.",
+          "options": ["at", "in", "on", "for"],
+          "correctAnswer": "in",
+          "explanation": "The adjective 'interested' is always followed by the preposition 'in'. (Tính từ 'interested' luôn đi với giới từ 'in'.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Don't worry ___ your exam; you'll do great!",
+          "options": ["on", "in", "about", "for"],
+          "correctAnswer": "about",
+          "explanation": "The verb 'worry' is followed by 'about' when talking about concerns or problems. (Động từ 'worry' đi với 'about' khi nói về sự lo lắng, bận tâm.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He is good ___ playing the guitar.",
+          "options": ["on", "in", "at", "for"],
+          "correctAnswer": "at",
+          "explanation": "The adjective 'good' (or 'bad') is followed by 'at' when talking about skills or abilities. (Tính từ 'good' (hoặc 'bad') đi với 'at' khi nói về kỹ năng hoặc khả năng.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I need to talk ___ my boss about the new project.",
+          "options": ["with", "for", "to", "about"],
+          "correctAnswer": "to",
+          "explanation": "When you direct your speech to someone, you 'talk to' them. (Dùng 'talk to' khi nói chuyện trực tiếp với ai đó.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Thank you ___ your help.",
+          "options": ["at", "on", "for", "with"],
+          "correctAnswer": "for",
+          "explanation": "The verb 'thank' is followed by 'for' to indicate the reason for gratitude. (Động từ 'thank' đi với 'for' để chỉ lý do cảm ơn.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They listened ___ the music quietly.",
+          "options": ["for", "at", "in", "to"],
+          "correctAnswer": "to",
+          "explanation": "The verb 'listen' is always followed by the preposition 'to'. (Động từ 'listen' luôn đi với giới từ 'to'.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Adjectives and Their Prepositions",
+      "description": "Practice common adjectives that are followed by specific prepositions.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Sarah is very proud ___ her new car.",
+          "options": ["of", "for", "about", "with"],
+          "correctAnswer": "of",
+          "explanation": "The adjective 'proud' is typically followed by the preposition 'of' when talking about something you are pleased or satisfied with.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He's not very good ___ math.",
+          "options": ["at", "on", "in", "with"],
+          "correctAnswer": "at",
+          "explanation": "When talking about skills or abilities, we use 'good at' or 'bad at'.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Are you afraid ___ spiders?",
+          "options": ["of", "from", "by", "with"],
+          "correctAnswer": "of",
+          "explanation": "The adjective 'afraid' is followed by the preposition 'of'.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I'm really interested ___ learning about different cultures.",
+          "options": ["in", "on", "at", "about"],
+          "correctAnswer": "in",
+          "explanation": "When expressing interest in something, we use 'interested in'.",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Don't worry, I'm not worried ___ the exam.",
+          "options": ["about", "for", "of", "at"],
+          "correctAnswer": "about",
+          "explanation": "The adjective 'worried' is followed by the preposition 'about' when you are concerned or anxious about something.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "My sister is very keen ___ sports.",
+          "options": ["on", "about", "at", "for"],
+          "correctAnswer": "on",
+          "explanation": "'Keen on' means to be very interested in or enthusiastic about something.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Common Prepositional Phrases",
+      "description": "Practice using common prepositional phrases related to time, place, and manner.",
+      "difficulty": "B1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I'm busy ___ the moment, can I call you back later?",
+          "options": ["at", "in", "on", "for"],
+          "correctAnswer": "at",
+          "explanation": "'At the moment' is a common prepositional phrase meaning 'now' or 'currently'.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "We usually go to school ___ foot.",
+          "options": ["on", "by", "with", "in"],
+          "correctAnswer": "on",
+          "explanation": "We say 'on foot' when referring to walking somewhere. For other means of transport like car or bus, we use 'by' (e.g., by car, by bus).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She broke the vase ___ accident. She didn't mean to.",
+          "options": ["by", "with", "from", "on"],
+          "correctAnswer": "by",
+          "explanation": "'By accident' is a common phrase meaning something happened unintentionally.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ the end, everyone agreed with her decision.",
+          "options": ["In", "At", "On", "For"],
+          "correctAnswer": "In",
+          "explanation": "'In the end' means finally, or after a period of time/consideration. 'At the end' refers to the literal end of something specific (e.g., at the end of the movie).",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Sorry, I can't talk right now, I'm ___ a hurry.",
+          "options": ["in", "on", "at", "with"],
+          "correctAnswer": "in",
+          "explanation": "'In a hurry' is a fixed phrase meaning to be moving or doing something quickly.",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "___ average, I drink two cups of coffee a day.",
+          "options": ["On", "In", "At", "By"],
+          "correctAnswer": "On",
+          "explanation": "'On average' is a common phrase used when talking about a typical or usual amount/rate.",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Prepositions of Time and Place: At, On, In",
+      "description": "Practice using 'at', 'on', and 'in' correctly for various expressions of time and place.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The meeting is scheduled ___ 3 PM on Friday.",
+          "options": ["at", "on", "in", "by"],
+          "correctAnswer": "at",
+          "explanation": "We use 'at' for specific times. (Chúng ta dùng 'at' cho thời gian cụ thể.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I always go for a run ___ Saturday mornings.",
+          "options": ["at", "on", "in", "during"],
+          "correctAnswer": "on",
+          "explanation": "We use 'on' for specific days of the week or dates. (Chúng ta dùng 'on' cho các ngày trong tuần hoặc ngày cụ thể.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She was born ___ May 1995.",
+          "options": ["at", "on", "in", "during"],
+          "correctAnswer": "in",
+          "explanation": "We use 'in' for months, years, seasons, and longer periods. (Chúng ta dùng 'in' cho tháng, năm, mùa và các khoảng thời gian dài hơn.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The party will be held ___ 25 Oak Street.",
+          "options": ["at", "on", "in", "by"],
+          "correctAnswer": "at",
+          "explanation": "We use 'at' for specific addresses or points. (Chúng ta dùng 'at' cho địa chỉ cụ thể hoặc một điểm.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Don't forget to put the book ___ the shelf when you're done.",
+          "options": ["at", "on", "in", "over"],
+          "correctAnswer": "on",
+          "explanation": "We use 'on' when something is on a surface. (Chúng ta dùng 'on' khi một vật ở trên bề mặt.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "My keys are probably ___ my bag.",
+          "options": ["at", "on", "in", "inside"],
+          "correctAnswer": "in",
+          "explanation": "We use 'in' for enclosed spaces or large geographical areas (e.g., countries, cities). (Chúng ta dùng 'in' cho không gian kín hoặc khu vực địa lý lớn.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Dependent Prepositions & Movement",
+      "description": "Practice using prepositions that follow certain verbs and adjectives, as well as prepositions of movement and common prepositional phrases.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I often dream ___ flying around the world.",
+          "options": ["about", "of", "on", "for"],
+          "correctAnswer": "about",
+          "explanation": "The verb 'dream' is often followed by 'about' when talking about hopes or aspirations. (Động từ 'dream' thường đi với 'about' khi nói về ước mơ hoặc khát vọng.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She is very keen ___ learning new languages.",
+          "options": ["in", "on", "about", "with"],
+          "correctAnswer": "on",
+          "explanation": "The adjective 'keen' is followed by 'on' when expressing enthusiasm for something. (Tính từ 'keen' đi với 'on' khi diễn tả sự nhiệt tình với điều gì đó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They walked ___ the park to enjoy the sunshine.",
+          "options": ["to", "into", "towards", "at"],
+          "correctAnswer": "to",
+          "explanation": "'To' is used to indicate destination or direction of movement. (Chúng ta dùng 'to' để chỉ điểm đến hoặc hướng di chuyển.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The child climbed ___ the chair to reach the cookie jar.",
+          "options": ["in", "into", "on", "onto"],
+          "correctAnswer": "onto",
+          "explanation": "'Onto' is used to show movement towards a surface, especially when climbing or moving to a higher position. (Chúng ta dùng 'onto' để chỉ sự di chuyển lên trên một bề mặt, đặc biệt khi leo trèo hoặc di chuyển đến vị trí cao hơn.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He managed to finish the project ___ time, despite the tight deadline.",
+          "options": ["on", "in", "at", "with"],
+          "correctAnswer": "on",
+          "explanation": "The phrase 'on time' means punctually, not late. 'In time' means with enough time to spare. Given 'tight deadline', 'on time' is the more appropriate choice. (Cụm từ 'on time' có nghĩa là đúng giờ. 'In time' có nghĩa là kịp lúc, có thời gian dư.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We should apologize ___ being late for the meeting.",
+          "options": ["for", "about", "of", "to"],
+          "correctAnswer": "for",
+          "explanation": "The verb 'apologize' is followed by 'for' when stating the reason for the apology. (Động từ 'apologize' đi với 'for' khi nêu lý do xin lỗi.)",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "topic": {
+    "name": "Gerunds and Infinitives",
+    "description": "Choose between -ing forms and to-infinitive correctly",
+    "difficulty": "B1"
+  },
+  "exercises": [
+    {
+      "title": "Verbs with Both: Different Meanings (Part 1)",
+      "description": "Practice using verbs like 'stop', 'remember', 'forget', and 'regret' followed by a gerund or an infinitive, understanding how the meaning changes.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She stopped ___ (smoke) years ago for health reasons.",
+          "options": ["to smoke", "smoking", "smoke", "smoked"],
+          "correctAnswer": "smoking",
+          "explanation": "When 'stop' is followed by a gerund (-ing), it means to cease an activity or habit. (Gợi ý tiếng Việt: 'stop smoking' nghĩa là ngừng hẳn việc hút thuốc.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "On her way to work, she stopped ___ (buy) a coffee.",
+          "options": ["to buy", "buying", "bought", "buy"],
+          "correctAnswer": "to buy",
+          "explanation": "When 'stop' is followed by an infinitive (to + verb), it means to pause one action in order to do something else. (Gợi ý tiếng Việt: 'stop to buy' nghĩa là dừng lại để mua.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "I remember ___ (visit) Paris when I was a child; it was magical.",
+          "options": ["to visit", "visiting", "visited", "visit"],
+          "correctAnswer": "visiting",
+          "explanation": "Use 'remember' + gerund (-ing) to talk about a memory of a past event. (Gợi ý tiếng Việt: 'remember visiting' nghĩa là nhớ lại việc đã từng đến thăm.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "Please remember ___ (lock) the door when you leave.",
+          "options": ["locking", "to lock", "lock", "locked"],
+          "correctAnswer": "to lock",
+          "explanation": "Use 'remember' + infinitive (to + verb) to talk about something you need to do or a future obligation. (Gợi ý tiếng Việt: 'remember to lock' nghĩa là nhớ phải khóa.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "We regret ___ (inform) you that your application was unsuccessful.",
+          "options": ["informing", "to inform", "inform", "informed"],
+          "correctAnswer": "to inform",
+          "explanation": "'Regret' + infinitive (to + verb) is a formal way to say you are about to give bad news. (Gợi ý tiếng Việt: 'regret to inform' là cách nói trang trọng để báo tin xấu.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He regretted ___ (lie) to his parents and wished he had told the truth.",
+          "options": ["to lie", "lying", "lie", "lied"],
+          "correctAnswer": "lying",
+          "explanation": "'Regret' + gerund (-ing) means to feel sorry or sad about something you have done in the past. (Gợi ý tiếng Việt: 'regret lying' nghĩa là hối hận vì đã nói dối.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Gerunds After Prepositions",
+      "description": "Practice forming sentences using gerunds correctly after various prepositions.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Are you interested in ___ (learn) a new language?",
+          "options": ["to learn", "learning", "learn", "learnt"],
+          "correctAnswer": "learning",
+          "explanation": "After a preposition (like 'in'), a verb must be in the gerund form (-ing). (Gợi ý tiếng Việt: Sau giới từ, động từ luôn ở dạng V-ing.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "He apologized for ___ (be) late to the meeting.",
+          "options": ["to be", "being", "be", "been"],
+          "correctAnswer": "being",
+          "explanation": "The preposition 'for' is followed by a gerund (-ing). (Gợi ý tiếng Việt: Giới từ 'for' đi với V-ing.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Instead of ___ (watch) TV, let's go for a walk.",
+          "options": ["to watch", "watching", "watch", "watched"],
+          "correctAnswer": "watching",
+          "explanation": "The phrase 'instead of' acts as a preposition and requires a gerund (-ing) afterwards. (Gợi ý tiếng Việt: Cụm 'instead of' đòi hỏi V-ing.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She's very good at ___ (solve) complex problems.",
+          "options": ["to solve", "solving", "solve", "solves"],
+          "correctAnswer": "solving",
+          "explanation": "The preposition 'at' is followed by a gerund (-ing). (Gợi ý tiếng Việt: Giới từ 'at' đi với V-ing.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He left the room without ___ (say) a word.",
+          "options": ["to say", "saying", "said", "say"],
+          "correctAnswer": "saying",
+          "explanation": "The preposition 'without' is followed by a gerund (-ing). (Gợi ý tiếng Việt: Giới từ 'without' đi với V-ing.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They dreamt of ___ (travel) around the world after retirement.",
+          "options": ["to travel", "traveling", "travel", "travelled"],
+          "correctAnswer": "traveling",
+          "explanation": "The preposition 'of' is followed by a gerund (-ing). (Gợi ý tiếng Việt: Giới từ 'of' đi với V-ing.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Verbs with Both: Different Meanings (Part 2)",
+      "description": "Further practice with verbs like 'try', 'mean', 'go on', and 'need' followed by a gerund or an infinitive, focusing on their distinct meanings.",
+      "difficulty": "B2",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "If the TV isn't working, try ___ (unplug) it and plugging it back in.",
+          "options": ["to unplug", "unplugging", "unplug", "unplugged"],
+          "correctAnswer": "unplugging",
+          "explanation": "'Try' + gerund (-ing) means to experiment with a method to see if it works. (Gợi ý tiếng Việt: 'try unplugging' nghĩa là thử làm gì đó.)",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I tried ___ (reach) the top shelf, but it was too high.",
+          "options": ["reaching", "to reach", "reach", "reaches"],
+          "correctAnswer": "to reach",
+          "explanation": "'Try' + infinitive (to + verb) means to make an effort to do something, often with difficulty. (Gợi ý tiếng Việt: 'try to reach' nghĩa là cố gắng làm gì đó.)",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Losing that promotion meant ___ (work) harder for another year.",
+          "options": ["to work", "working", "work", "worked"],
+          "correctAnswer": "working",
+          "explanation": "'Mean' + gerund (-ing) refers to what is involved or implied by something, a result. (Gợi ý tiếng Việt: 'mean working' nghĩa là có nghĩa là phải làm.)",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "I didn't mean ___ (offend) you with my comment.",
+          "options": ["offending", "to offend", "offend", "offended"],
+          "correctAnswer": "to offend",
+          "explanation": "'Mean' + infinitive (to + verb) refers to intention. (Gợi ý tiếng Việt: 'mean to offend' nghĩa là có ý định làm gì.)",
+          "orderIndex": 4
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "After discussing the budget, he went on ___ (talk) about project timelines.",
+          "options": ["talking", "to talk", "talk", "talked"],
+          "correctAnswer": "to talk",
+          "explanation": "'Go on' + infinitive (to + verb) means to move to the next stage or a new topic after finishing the previous one. (Gợi ý tiếng Việt: 'go on to talk' nghĩa là tiếp tục chuyển sang nói về.)",
+          "orderIndex": 5
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The car needs ___ (wash) before we go on our trip.",
+          "options": ["to wash", "washing", "wash", "washed"],
+          "correctAnswer": "washing",
+          "explanation": "When 'need' is followed by a gerund (-ing), it has a passive meaning, implying 'needs to be washed'. (Gợi ý tiếng Việt: 'needs washing' nghĩa là cần được rửa.)",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Infinitive of Purpose: Explaining Why",
+      "description": "Practice using the infinitive (to + base verb) to express the reason or purpose behind an action, a key structure for advanced English communication.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The company held an urgent meeting ___ a solution to the ongoing production issues.",
+          "options": ["finding", "to find", "for finding", "find"],
+          "correctAnswer": "to find",
+          "explanation": "The infinitive 'to find' is used here to express the purpose of holding the meeting. It answers the question 'Why did the company hold an urgent meeting?' (Để tìm một giải pháp).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She's been studying intensively for months ___ her dream of becoming a doctor.",
+          "options": ["realizing", "for realizing", "to realize", "realize"],
+          "correctAnswer": "to realize",
+          "explanation": "'To realize' correctly expresses the purpose of her intensive studying. It's the goal she wants to achieve. (Để hiện thực hóa ước mơ của mình).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They invested heavily in renewable energy ___ their carbon footprint.",
+          "options": ["to reducing", "for reduce", "to reduce", "reducing"],
+          "correctAnswer": "to reduce",
+          "explanation": "The infinitive 'to reduce' is the correct form to indicate the purpose of their investment (giảm thiểu lượng khí thải carbon của họ). 'For reducing' is incorrect in this context for purpose.",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The ambassador traveled to several countries ___ international relations.",
+          "options": ["for improving", "improving", "to improve", "improve"],
+          "correctAnswer": "to improve",
+          "explanation": "The infinitive of purpose 'to improve' clearly states the reason for the ambassador's travel. (Để cải thiện quan hệ quốc tế).",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "The research team conducted extensive experiments for validating their hypothesis.",
+          "options": [
+            "The research team conducted extensive experiments for validate their hypothesis.",
+            "The research team conducted extensive experiments to validating their hypothesis.",
+            "The research team conducted extensive experiments to validate their hypothesis.",
+            "The research team conducted extensive experiments validating their hypothesis."
+          ],
+          "correctAnswer": "The research team conducted extensive experiments to validate their hypothesis.",
+          "explanation": "When expressing purpose, we typically use the infinitive 'to + base verb'. 'For validating' is incorrect; it should be 'to validate' (để kiểm chứng giả thuyết của họ).",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He saved every penny he earned ___ his own business someday.",
+          "options": ["starting", "for start", "to starting", "to start"],
+          "correctAnswer": "to start",
+          "explanation": "'To start' is the correct infinitive of purpose, indicating the reason for saving money (để bắt đầu công việc kinh doanh của riêng mình).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Perfect Gerunds & Infinitives: Past Actions and States",
+      "description": "Strengthen your understanding of perfect gerunds (having + past participle) and perfect infinitives (to have + past participle) to refer to actions or states completed before another point in time.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He was accused of ___ the confidential report to the press, but he vehemently denied it.",
+          "options": ["leak", "leaking", "having leaked", "to leak"],
+          "correctAnswer": "having leaked",
+          "explanation": "The perfect gerund 'having leaked' is used here because the action of leaking happened before the accusation. It emphasizes the completion of that action in the past (đã làm rò rỉ).",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "She claims ___ the entire novel by herself, a feat few could achieve.",
+          "options": ["write", "writing", "to write", "to have written"],
+          "correctAnswer": "to have written",
+          "explanation": "The perfect infinitive 'to have written' indicates that the action of writing was completed at some point in the past, prior to the claim being made. (Đã viết xong).",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "The manager regretted ___ the opportunity to invest in the startup when he had the chance.",
+          "options": ["miss", "missing", "to miss", "having missed"],
+          "correctAnswer": "having missed",
+          "explanation": "The perfect gerund 'having missed' shows that the act of missing the opportunity happened before the manager felt regret. The regret is about a past, completed action (đã bỏ lỡ).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "They were relieved ___ the challenging project successfully before the deadline.",
+          "options": [
+            "complete",
+            "completing",
+            "to complete",
+            "to have completed"
+          ],
+          "correctAnswer": "to have completed",
+          "explanation": "The perfect infinitive 'to have completed' indicates that the completion of the project occurred before the feeling of relief. (Đã hoàn thành xong).",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "He seemed to forget that he already told me about his plan.",
+          "options": [
+            "He seemed to forgetting that he already told me about his plan.",
+            "He seemed to have forgotten that he already told me about his plan.",
+            "He seemed to have forget that he already told me about his plan.",
+            "He seemed forgotten that he already told me about his plan."
+          ],
+          "correctAnswer": "He seemed to have forgotten that he already told me about his plan.",
+          "explanation": "The action of forgetting happened before 'seemed'. The perfect infinitive 'to have forgotten' is needed to convey that the forgetting occurred in the past relative to when he 'seemed' to forget. (Dường như đã quên).",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "Many believe him ___ the true mastermind behind the elaborate scheme for years.",
+          "options": ["to be", "being", "to have been", "having been"],
+          "correctAnswer": "to have been",
+          "explanation": "The perfect infinitive 'to have been' is used here because his role as the mastermind existed over a period of time in the past, before people came to believe this. (Được cho là đã là).",
+          "orderIndex": 6
+        }
+      ]
+    },
+    {
+      "title": "Passive Gerunds & Infinitives: When the Subject Receives the Action",
+      "description": "Practice forming and using passive gerunds (being + past participle) and passive infinitives (to be + past participle / to have been + past participle) when the subject of the verb is the recipient of the action.",
+      "difficulty": "C1",
+      "questions": [
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "She despises ___ told what to do, preferring to make her own decisions.",
+          "options": ["telling", "to tell", "being told", "to be told"],
+          "correctAnswer": "being told",
+          "explanation": "The passive gerund 'being told' is correct here because she is the one receiving the action of being told. (Bị bảo/được bảo). 'Despises' is followed by a gerund.",
+          "orderIndex": 1
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The ancient artifacts need ___ carefully, as they are extremely fragile.",
+          "options": ["handle", "handling", "to be handled", "to handle"],
+          "correctAnswer": "to be handled",
+          "explanation": "The passive infinitive 'to be handled' is used because the artifacts are the ones receiving the action of being handled. (Cần được xử lý). After 'need', we can use 'gerund' (handling) or 'to be + past participle' (to be handled) for passive meaning.",
+          "orderIndex": 2
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "He admitted ___ by his rival in the final round of the competition.",
+          "options": [
+            "defeating",
+            "to defeat",
+            "being defeated",
+            "to be defeated"
+          ],
+          "correctAnswer": "being defeated",
+          "explanation": "The passive gerund 'being defeated' indicates that he was the one who experienced the defeat. 'Admitted' is followed by a gerund. (Thừa nhận đã bị đánh bại).",
+          "orderIndex": 3
+        },
+        {
+          "type": "MULTIPLE_CHOICE",
+          "question": "The new policy is expected ___ by the board of directors next month.",
+          "options": [
+            "to approve",
+            "approving",
+            "to be approved",
+            "to have approved"
+          ],
+          "correctAnswer": "to be approved",
+          "explanation": "The passive infinitive 'to be approved' is necessary because the policy itself will receive the action of approval. (Dự kiến sẽ được phê duyệt).",
+          "orderIndex": 4
+        },
+        {
+          "type": "SENTENCE_CORRECTION",
+          "question": "The manager appreciated being praise by the CEO for his hard work.",
+          "options": [
+            "The manager appreciated being praising by the CEO for his hard work.",
+            "The manager appreciated being praised by the CEO for his hard work.",
+            "The manager appreciated to be praised by the CEO for his hard work.",
+            "The manager appreciated praised by the CEO for his hard work."
+          ],
+          "correctAnswer": "The manager appreciated being praised by the CEO for his hard work.",
+          "explanation": "The passive gerund requires a past participle: 'being + past participle'. So, 'being praise' should be 'being praised' because the manager received the praise. (Được khen ngợi).",
+          "orderIndex": 5
+        },
+        {
+          "type": "FILL_IN_BLANK",
+          "question": "They were disappointed ___ from the list of nominees, despite their excellent contributions.",
+          "options": [
+            "to exclude",
+            "to have been excluded",
+            "excluding",
+            "having excluded"
+          ],
+          "correctAnswer": "to have been excluded",
+          "explanation": "The perfect passive infinitive 'to have been excluded' is used because the exclusion happened before their disappointment, and they were the ones who were excluded. (Đã bị loại trừ).",
+          "orderIndex": 6
+        }
+      ]
+    }
+  ]
+}
